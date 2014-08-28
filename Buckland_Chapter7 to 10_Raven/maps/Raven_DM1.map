@@ -1,0 +1,2562 @@
+340
+Index: 0 PosX: 250 PosY: 200
+Index: 1 PosX: 250 PosY: 180
+Index: 2 PosX: 250 PosY: 220
+Index: 3 PosX: 270 PosY: 200
+Index: 4 PosX: 230 PosY: 200
+Index: 5 PosX: 250 PosY: 160
+Index: 6 PosX: 270 PosY: 180
+Index: 7 PosX: 230 PosY: 180
+Index: 8 PosX: 250 PosY: 240
+Index: 9 PosX: 270 PosY: 220
+Index: 10 PosX: 230 PosY: 220
+Index: 11 PosX: 270 PosY: 160
+Index: 12 PosX: 230 PosY: 160
+Index: 13 PosX: 290 PosY: 180
+Index: 14 PosX: 210 PosY: 180
+Index: 15 PosX: 250 PosY: 260
+Index: 16 PosX: 270 PosY: 240
+Index: 17 PosX: 230 PosY: 240
+Index: 18 PosX: 290 PosY: 220
+Index: 19 PosX: 210 PosY: 220
+Index: 20 PosX: 290 PosY: 160
+Index: 21 PosX: 210 PosY: 160
+Index: 22 PosX: 310 PosY: 180
+Index: 23 PosX: 190 PosY: 180
+Index: 24 PosX: 250 PosY: 280
+Index: 25 PosX: 270 PosY: 260
+Index: 26 PosX: 230 PosY: 260
+Index: 27 PosX: 290 PosY: 240
+Index: 28 PosX: 210 PosY: 240
+Index: 29 PosX: 310 PosY: 220
+Index: 30 PosX: 190 PosY: 220
+Index: 31 PosX: 290 PosY: 140
+Index: 32 PosX: 310 PosY: 160
+Index: 33 PosX: 210 PosY: 140
+Index: 34 PosX: 190 PosY: 160
+Index: 35 PosX: 250 PosY: 300
+Index: 36 PosX: 270 PosY: 280
+Index: 37 PosX: 230 PosY: 280
+Index: 38 PosX: 290 PosY: 260
+Index: 39 PosX: 210 PosY: 260
+Index: 40 PosX: 310 PosY: 240
+Index: 41 PosX: 190 PosY: 240
+Index: 42 PosX: 330 PosY: 220
+Index: 43 PosX: 170 PosY: 220
+Index: 44 PosX: 290 PosY: 120
+Index: 45 PosX: 310 PosY: 140
+Index: 46 PosX: 210 PosY: 120
+Index: 47 PosX: 190 PosY: 140
+Index: 48 PosX: 250 PosY: 320
+Index: 49 PosX: 270 PosY: 300
+Index: 50 PosX: 230 PosY: 300
+Index: 51 PosX: 290 PosY: 280
+Index: 52 PosX: 210 PosY: 280
+Index: 53 PosX: 310 PosY: 260
+Index: 54 PosX: 190 PosY: 260
+Index: 55 PosX: 330 PosY: 240
+Index: 56 PosX: 170 PosY: 240
+Index: 57 PosX: 350 PosY: 220
+Index: 58 PosX: 150 PosY: 220
+Index: 59 PosX: 290 PosY: 100
+Index: 60 PosX: 310 PosY: 120
+Index: 61 PosX: 210 PosY: 100
+Index: 62 PosX: 190 PosY: 120
+Index: 63 PosX: 250 PosY: 340
+Index: 64 PosX: 270 PosY: 320
+Index: 65 PosX: 230 PosY: 320
+Index: 66 PosX: 290 PosY: 300
+Index: 67 PosX: 210 PosY: 300
+Index: 68 PosX: 310 PosY: 280
+Index: 69 PosX: 190 PosY: 280
+Index: 70 PosX: 330 PosY: 260
+Index: 71 PosX: 170 PosY: 260
+Index: 72 PosX: 350 PosY: 240
+Index: 73 PosX: 150 PosY: 240
+Index: 74 PosX: 370 PosY: 220
+Index: 75 PosX: 290 PosY: 80
+Index: 76 PosX: 310 PosY: 100
+Index: 77 PosX: 210 PosY: 80
+Index: 78 PosX: 190 PosY: 100
+Index: 79 PosX: 250 PosY: 360
+Index: 80 PosX: 270 PosY: 340
+Index: 81 PosX: 230 PosY: 340
+Index: 82 PosX: 290 PosY: 320
+Index: 83 PosX: 210 PosY: 320
+Index: 84 PosX: 310 PosY: 300
+Index: 85 PosX: 190 PosY: 300
+Index: 86 PosX: 330 PosY: 280
+Index: 87 PosX: 170 PosY: 280
+Index: 88 PosX: 350 PosY: 260
+Index: 89 PosX: 150 PosY: 260
+Index: 90 PosX: 370 PosY: 240
+Index: 91 PosX: 290 PosY: 60
+Index: 92 PosX: 310 PosY: 80
+Index: 93 PosX: 330 PosY: 100
+Index: 94 PosX: 210 PosY: 60
+Index: 95 PosX: 190 PosY: 80
+Index: 96 PosX: 250 PosY: 380
+Index: 97 PosX: 270 PosY: 360
+Index: 98 PosX: 290 PosY: 340
+Index: 99 PosX: 210 PosY: 340
+Index: 100 PosX: 310 PosY: 320
+Index: 101 PosX: 190 PosY: 320
+Index: 102 PosX: 330 PosY: 300
+Index: 103 PosX: 170 PosY: 300
+Index: 104 PosX: 350 PosY: 280
+Index: 105 PosX: 150 PosY: 280
+Index: 106 PosX: 370 PosY: 260
+Index: 107 PosX: 290 PosY: 40
+Index: 108 PosX: 310 PosY: 60
+Index: 109 PosX: 270 PosY: 60
+Index: 110 PosX: 330 PosY: 80
+Index: 111 PosX: 350 PosY: 100
+Index: 112 PosX: 210 PosY: 40
+Index: 113 PosX: 230 PosY: 60
+Index: 114 PosX: 190 PosY: 60
+Index: 115 PosX: 170 PosY: 80
+Index: 116 PosX: 250 PosY: 400
+Index: 117 PosX: 270 PosY: 380
+Index: 118 PosX: 230 PosY: 380
+Index: 119 PosX: 290 PosY: 360
+Index: 120 PosX: 310 PosY: 340
+Index: 121 PosX: 190 PosY: 340
+Index: 122 PosX: 330 PosY: 320
+Index: 123 PosX: 170 PosY: 320
+Index: 124 PosX: 350 PosY: 300
+Index: 125 PosX: 150 PosY: 300
+Index: 126 PosX: 370 PosY: 280
+Index: 127 PosX: 390 PosY: 260
+Index: 128 PosX: 290 PosY: 20
+Index: 129 PosX: 310 PosY: 40
+Index: 130 PosX: 270 PosY: 40
+Index: 131 PosX: 250 PosY: 60
+Index: 132 PosX: 350 PosY: 80
+Index: 133 PosX: 350 PosY: 120
+Index: 134 PosX: 370 PosY: 100
+Index: 135 PosX: 210 PosY: 20
+Index: 136 PosX: 230 PosY: 40
+Index: 137 PosX: 190 PosY: 40
+Index: 138 PosX: 150 PosY: 80
+Index: 139 PosX: 270 PosY: 400
+Index: 140 PosX: 230 PosY: 400
+Index: 141 PosX: 290 PosY: 380
+Index: 142 PosX: 210 PosY: 380
+Index: 143 PosX: 330 PosY: 340
+Index: 144 PosX: 170 PosY: 340
+Index: 145 PosX: 350 PosY: 320
+Index: 146 PosX: 150 PosY: 320
+Index: 147 PosX: 370 PosY: 300
+Index: 148 PosX: 390 PosY: 280
+Index: 149 PosX: 410 PosY: 260
+Index: 150 PosX: 310 PosY: 20
+Index: 151 PosX: 270 PosY: 20
+Index: 152 PosX: 250 PosY: 40
+Index: 153 PosX: 350 PosY: 60
+Index: 154 PosX: 370 PosY: 80
+Index: 155 PosX: 350 PosY: 140
+Index: 156 PosX: 370 PosY: 120
+Index: 157 PosX: 390 PosY: 100
+Index: 158 PosX: 230 PosY: 20
+Index: 159 PosX: 190 PosY: 20
+Index: 160 PosX: 150 PosY: 60
+Index: 161 PosX: 150 PosY: 100
+Index: 162 PosX: 130 PosY: 80
+Index: 163 PosX: 290 PosY: 400
+Index: 164 PosX: 210 PosY: 400
+Index: 165 PosX: 310 PosY: 380
+Index: 166 PosX: 190 PosY: 380
+Index: 167 PosX: 350 PosY: 340
+Index: 168 PosX: 150 PosY: 340
+Index: 169 PosX: 370 PosY: 320
+Index: 170 PosX: 410 PosY: 280
+Index: 171 PosX: 430 PosY: 260
+Index: 172 PosX: 250 PosY: 20
+Index: 173 PosX: 350 PosY: 40
+Index: 174 PosX: 370 PosY: 60
+Index: 175 PosX: 390 PosY: 80
+Index: 176 PosX: 370 PosY: 140
+Index: 177 PosX: 390 PosY: 120
+Index: 178 PosX: 410 PosY: 100
+Index: 179 PosX: 150 PosY: 40
+Index: 180 PosX: 130 PosY: 60
+Index: 181 PosX: 150 PosY: 120
+Index: 182 PosX: 130 PosY: 100
+Index: 183 PosX: 110 PosY: 80
+Index: 184 PosX: 310 PosY: 400
+Index: 185 PosX: 190 PosY: 400
+Index: 186 PosX: 330 PosY: 380
+Index: 187 PosX: 170 PosY: 380
+Index: 188 PosX: 370 PosY: 340
+Index: 189 PosX: 150 PosY: 360
+Index: 190 PosX: 130 PosY: 340
+Index: 191 PosX: 430 PosY: 280
+Index: 192 PosX: 430 PosY: 240
+Index: 193 PosX: 450 PosY: 260
+Index: 194 PosX: 370 PosY: 40
+Index: 195 PosX: 390 PosY: 60
+Index: 196 PosX: 410 PosY: 80
+Index: 197 PosX: 410 PosY: 120
+Index: 198 PosX: 430 PosY: 100
+Index: 199 PosX: 150 PosY: 20
+Index: 200 PosX: 130 PosY: 40
+Index: 201 PosX: 110 PosY: 60
+Index: 202 PosX: 130 PosY: 120
+Index: 203 PosX: 110 PosY: 100
+Index: 204 PosX: 90 PosY: 80
+Index: 205 PosX: 330 PosY: 400
+Index: 206 PosX: 170 PosY: 400
+Index: 207 PosX: 350 PosY: 380
+Index: 208 PosX: 150 PosY: 380
+Index: 209 PosX: 130 PosY: 360
+Index: 210 PosX: 110 PosY: 340
+Index: 211 PosX: 430 PosY: 300
+Index: 212 PosX: 450 PosY: 280
+Index: 213 PosX: 430 PosY: 220
+Index: 214 PosX: 450 PosY: 240
+Index: 215 PosX: 390 PosY: 40
+Index: 216 PosX: 410 PosY: 60
+Index: 217 PosX: 430 PosY: 80
+Index: 218 PosX: 430 PosY: 120
+Index: 219 PosX: 450 PosY: 100
+Index: 220 PosX: 130 PosY: 20
+Index: 221 PosX: 110 PosY: 40
+Index: 222 PosX: 90 PosY: 60
+Index: 223 PosX: 110 PosY: 120
+Index: 224 PosX: 90 PosY: 100
+Index: 225 PosX: 70 PosY: 80
+Index: 226 PosX: 350 PosY: 400
+Index: 227 PosX: 150 PosY: 400
+Index: 228 PosX: 370 PosY: 380
+Index: 229 PosX: 130 PosY: 380
+Index: 230 PosX: 110 PosY: 360
+Index: 231 PosX: 90 PosY: 340
+Index: 232 PosX: 430 PosY: 320
+Index: 233 PosX: 450 PosY: 300
+Index: 234 PosX: 430 PosY: 200
+Index: 235 PosX: 450 PosY: 220
+Index: 236 PosX: 410 PosY: 40
+Index: 237 PosX: 430 PosY: 60
+Index: 238 PosX: 450 PosY: 80
+Index: 239 PosX: 430 PosY: 140
+Index: 240 PosX: 450 PosY: 120
+Index: 241 PosX: 470 PosY: 100
+Index: 242 PosX: 110 PosY: 20
+Index: 243 PosX: 90 PosY: 40
+Index: 244 PosX: 70 PosY: 60
+Index: 245 PosX: 90 PosY: 120
+Index: 246 PosX: 70 PosY: 100
+Index: 247 PosX: 50 PosY: 80
+Index: 248 PosX: 370 PosY: 400
+Index: 249 PosX: 130 PosY: 400
+Index: 250 PosX: 390 PosY: 380
+Index: 251 PosX: 110 PosY: 380
+Index: 252 PosX: 90 PosY: 360
+Index: 253 PosX: 70 PosY: 340
+Index: 254 PosX: 430 PosY: 340
+Index: 255 PosX: 450 PosY: 320
+Index: 256 PosX: 430 PosY: 180
+Index: 257 PosX: 450 PosY: 200
+Index: 258 PosX: 430 PosY: 40
+Index: 259 PosX: 450 PosY: 60
+Index: 260 PosX: 470 PosY: 80
+Index: 261 PosX: 430 PosY: 160
+Index: 262 PosX: 450 PosY: 140
+Index: 263 PosX: 470 PosY: 120
+Index: 264 PosX: 90 PosY: 20
+Index: 265 PosX: 70 PosY: 40
+Index: 266 PosX: 50 PosY: 60
+Index: 267 PosX: 90 PosY: 140
+Index: 268 PosX: 70 PosY: 120
+Index: 269 PosX: 50 PosY: 100
+Index: 270 PosX: 30 PosY: 80
+Index: 271 PosX: 390 PosY: 400
+Index: 272 PosX: 110 PosY: 400
+Index: 273 PosX: 410 PosY: 380
+Index: 274 PosX: 90 PosY: 380
+Index: 275 PosX: 70 PosY: 360
+Index: 276 PosX: 50 PosY: 340
+Index: 277 PosX: 430 PosY: 360
+Index: 278 PosX: 450 PosY: 340
+Index: 279 PosX: 450 PosY: 180
+Index: 280 PosX: 450 PosY: 40
+Index: 281 PosX: 470 PosY: 60
+Index: 282 PosX: 450 PosY: 160
+Index: 283 PosX: 470 PosY: 140
+Index: 284 PosX: 70 PosY: 20
+Index: 285 PosX: 50 PosY: 40
+Index: 286 PosX: 30 PosY: 60
+Index: 287 PosX: 90 PosY: 160
+Index: 288 PosX: 50 PosY: 120
+Index: 289 PosX: 30 PosY: 100
+Index: 290 PosX: 410 PosY: 400
+Index: 291 PosX: 90 PosY: 400
+Index: 292 PosX: 430 PosY: 380
+Index: 293 PosX: 70 PosY: 380
+Index: 294 PosX: 50 PosY: 360
+Index: 295 PosX: 30 PosY: 340
+Index: 296 PosX: 450 PosY: 360
+Index: 297 PosX: 470 PosY: 180
+Index: 298 PosX: 470 PosY: 40
+Index: 299 PosX: 470 PosY: 160
+Index: 300 PosX: 50 PosY: 20
+Index: 301 PosX: 30 PosY: 40
+Index: 302 PosX: 90 PosY: 180
+Index: 303 PosX: 30 PosY: 120
+Index: 304 PosX: 430 PosY: 400
+Index: 305 PosX: 70 PosY: 400
+Index: 306 PosX: 450 PosY: 380
+Index: 307 PosX: 50 PosY: 380
+Index: 308 PosX: 30 PosY: 360
+Index: 309 PosX: 30 PosY: 320
+Index: 310 PosX: 30 PosY: 20
+Index: 311 PosX: 90 PosY: 200
+Index: 312 PosX: 450 PosY: 400
+Index: 313 PosX: 50 PosY: 400
+Index: 314 PosX: 30 PosY: 380
+Index: 315 PosX: 30 PosY: 300
+Index: 316 PosX: 90 PosY: 220
+Index: 317 PosX: 70 PosY: 200
+Index: 318 PosX: 30 PosY: 400
+Index: 319 PosX: 30 PosY: 280
+Index: 320 PosX: 70 PosY: 220
+Index: 321 PosX: 50 PosY: 200
+Index: 322 PosX: 30 PosY: 260
+Index: 323 PosX: 50 PosY: 280
+Index: 324 PosX: 70 PosY: 240
+Index: 325 PosX: 50 PosY: 220
+Index: 326 PosX: 30 PosY: 200
+Index: 327 PosX: 30 PosY: 240
+Index: 328 PosX: 50 PosY: 260
+Index: 329 PosX: 70 PosY: 260
+Index: 330 PosX: 50 PosY: 240
+Index: 331 PosX: 30 PosY: 220
+Index: 332 PosX: 360 PosY: 150
+Index: 333 PosX: 20 PosY: 190
+Index: 334 PosX: 160 PosY: 230
+Index: 335 PosX: 200 PosY: 30
+Index: 336 PosX: 70 PosY: 260
+Index: 337 PosX: 450 PosY: 60
+Index: 338 PosX: 360 PosY: 330
+Index: 339 PosX: 110 PosY: 380
+2150
+From: 0 To: 1 Cost: 20 Flags: 0 ID: -1
+From: 0 To: 2 Cost: 20 Flags: 0 ID: -1
+From: 0 To: 3 Cost: 20 Flags: 0 ID: -1
+From: 0 To: 4 Cost: 20 Flags: 0 ID: -1
+From: 0 To: 6 Cost: 28.2843 Flags: 0 ID: -1
+From: 0 To: 7 Cost: 28.2843 Flags: 0 ID: -1
+From: 0 To: 9 Cost: 28.2843 Flags: 0 ID: -1
+From: 0 To: 10 Cost: 28.2843 Flags: 0 ID: -1
+From: 1 To: 0 Cost: 20 Flags: 0 ID: -1
+From: 1 To: 3 Cost: 28.2843 Flags: 0 ID: -1
+From: 1 To: 4 Cost: 28.2843 Flags: 0 ID: -1
+From: 1 To: 5 Cost: 20 Flags: 0 ID: -1
+From: 1 To: 6 Cost: 20 Flags: 0 ID: -1
+From: 1 To: 7 Cost: 20 Flags: 0 ID: -1
+From: 1 To: 11 Cost: 28.2843 Flags: 0 ID: -1
+From: 1 To: 12 Cost: 28.2843 Flags: 0 ID: -1
+From: 2 To: 0 Cost: 20 Flags: 0 ID: -1
+From: 2 To: 3 Cost: 28.2843 Flags: 0 ID: -1
+From: 2 To: 4 Cost: 28.2843 Flags: 0 ID: -1
+From: 2 To: 8 Cost: 20 Flags: 0 ID: -1
+From: 2 To: 9 Cost: 20 Flags: 0 ID: -1
+From: 2 To: 10 Cost: 20 Flags: 0 ID: -1
+From: 2 To: 16 Cost: 28.2843 Flags: 0 ID: -1
+From: 2 To: 17 Cost: 28.2843 Flags: 0 ID: -1
+From: 3 To: 0 Cost: 20 Flags: 0 ID: -1
+From: 3 To: 1 Cost: 28.2843 Flags: 0 ID: -1
+From: 3 To: 2 Cost: 28.2843 Flags: 0 ID: -1
+From: 3 To: 6 Cost: 20 Flags: 0 ID: -1
+From: 3 To: 9 Cost: 20 Flags: 0 ID: -1
+From: 3 To: 18 Cost: 28.2843 Flags: 0 ID: -1
+From: 4 To: 0 Cost: 20 Flags: 0 ID: -1
+From: 4 To: 1 Cost: 28.2843 Flags: 0 ID: -1
+From: 4 To: 2 Cost: 28.2843 Flags: 0 ID: -1
+From: 4 To: 7 Cost: 20 Flags: 0 ID: -1
+From: 4 To: 10 Cost: 20 Flags: 0 ID: -1
+From: 4 To: 19 Cost: 28.2843 Flags: 0 ID: -1
+From: 5 To: 1 Cost: 20 Flags: 0 ID: -1
+From: 5 To: 6 Cost: 28.2843 Flags: 0 ID: -1
+From: 5 To: 7 Cost: 28.2843 Flags: 0 ID: -1
+From: 5 To: 11 Cost: 20 Flags: 0 ID: -1
+From: 5 To: 12 Cost: 20 Flags: 0 ID: -1
+From: 6 To: 0 Cost: 28.2843 Flags: 0 ID: -1
+From: 6 To: 1 Cost: 20 Flags: 0 ID: -1
+From: 6 To: 3 Cost: 20 Flags: 0 ID: -1
+From: 6 To: 5 Cost: 28.2843 Flags: 0 ID: -1
+From: 6 To: 11 Cost: 20 Flags: 0 ID: -1
+From: 6 To: 13 Cost: 20 Flags: 0 ID: -1
+From: 6 To: 20 Cost: 28.2843 Flags: 0 ID: -1
+From: 7 To: 0 Cost: 28.2843 Flags: 0 ID: -1
+From: 7 To: 1 Cost: 20 Flags: 0 ID: -1
+From: 7 To: 4 Cost: 20 Flags: 0 ID: -1
+From: 7 To: 5 Cost: 28.2843 Flags: 0 ID: -1
+From: 7 To: 12 Cost: 20 Flags: 0 ID: -1
+From: 7 To: 14 Cost: 20 Flags: 0 ID: -1
+From: 7 To: 21 Cost: 28.2843 Flags: 0 ID: -1
+From: 8 To: 2 Cost: 20 Flags: 0 ID: -1
+From: 8 To: 9 Cost: 28.2843 Flags: 0 ID: -1
+From: 8 To: 10 Cost: 28.2843 Flags: 0 ID: -1
+From: 8 To: 15 Cost: 20 Flags: 0 ID: -1
+From: 8 To: 16 Cost: 20 Flags: 0 ID: -1
+From: 8 To: 17 Cost: 20 Flags: 0 ID: -1
+From: 8 To: 25 Cost: 28.2843 Flags: 0 ID: -1
+From: 8 To: 26 Cost: 28.2843 Flags: 0 ID: -1
+From: 9 To: 0 Cost: 28.2843 Flags: 0 ID: -1
+From: 9 To: 2 Cost: 20 Flags: 0 ID: -1
+From: 9 To: 3 Cost: 20 Flags: 0 ID: -1
+From: 9 To: 8 Cost: 28.2843 Flags: 0 ID: -1
+From: 9 To: 16 Cost: 20 Flags: 0 ID: -1
+From: 9 To: 18 Cost: 20 Flags: 0 ID: -1
+From: 9 To: 27 Cost: 28.2843 Flags: 0 ID: -1
+From: 10 To: 0 Cost: 28.2843 Flags: 0 ID: -1
+From: 10 To: 2 Cost: 20 Flags: 0 ID: -1
+From: 10 To: 4 Cost: 20 Flags: 0 ID: -1
+From: 10 To: 8 Cost: 28.2843 Flags: 0 ID: -1
+From: 10 To: 17 Cost: 20 Flags: 0 ID: -1
+From: 10 To: 19 Cost: 20 Flags: 0 ID: -1
+From: 10 To: 28 Cost: 28.2843 Flags: 0 ID: -1
+From: 11 To: 1 Cost: 28.2843 Flags: 0 ID: -1
+From: 11 To: 5 Cost: 20 Flags: 0 ID: -1
+From: 11 To: 6 Cost: 20 Flags: 0 ID: -1
+From: 11 To: 13 Cost: 28.2843 Flags: 0 ID: -1
+From: 11 To: 20 Cost: 20 Flags: 0 ID: -1
+From: 11 To: 31 Cost: 28.2843 Flags: 0 ID: -1
+From: 12 To: 1 Cost: 28.2843 Flags: 0 ID: -1
+From: 12 To: 5 Cost: 20 Flags: 0 ID: -1
+From: 12 To: 7 Cost: 20 Flags: 0 ID: -1
+From: 12 To: 14 Cost: 28.2843 Flags: 0 ID: -1
+From: 12 To: 21 Cost: 20 Flags: 0 ID: -1
+From: 13 To: 6 Cost: 20 Flags: 0 ID: -1
+From: 13 To: 11 Cost: 28.2843 Flags: 0 ID: -1
+From: 13 To: 20 Cost: 20 Flags: 0 ID: -1
+From: 13 To: 22 Cost: 20 Flags: 0 ID: -1
+From: 13 To: 32 Cost: 28.2843 Flags: 0 ID: -1
+From: 14 To: 7 Cost: 20 Flags: 0 ID: -1
+From: 14 To: 12 Cost: 28.2843 Flags: 0 ID: -1
+From: 14 To: 21 Cost: 20 Flags: 0 ID: -1
+From: 14 To: 23 Cost: 20 Flags: 0 ID: -1
+From: 14 To: 34 Cost: 28.2843 Flags: 0 ID: -1
+From: 15 To: 8 Cost: 20 Flags: 0 ID: -1
+From: 15 To: 16 Cost: 28.2843 Flags: 0 ID: -1
+From: 15 To: 17 Cost: 28.2843 Flags: 0 ID: -1
+From: 15 To: 24 Cost: 20 Flags: 0 ID: -1
+From: 15 To: 25 Cost: 20 Flags: 0 ID: -1
+From: 15 To: 26 Cost: 20 Flags: 0 ID: -1
+From: 15 To: 36 Cost: 28.2843 Flags: 0 ID: -1
+From: 15 To: 37 Cost: 28.2843 Flags: 0 ID: -1
+From: 16 To: 2 Cost: 28.2843 Flags: 0 ID: -1
+From: 16 To: 8 Cost: 20 Flags: 0 ID: -1
+From: 16 To: 9 Cost: 20 Flags: 0 ID: -1
+From: 16 To: 15 Cost: 28.2843 Flags: 0 ID: -1
+From: 16 To: 18 Cost: 28.2843 Flags: 0 ID: -1
+From: 16 To: 25 Cost: 20 Flags: 0 ID: -1
+From: 16 To: 27 Cost: 20 Flags: 0 ID: -1
+From: 16 To: 38 Cost: 28.2843 Flags: 0 ID: -1
+From: 17 To: 2 Cost: 28.2843 Flags: 0 ID: -1
+From: 17 To: 8 Cost: 20 Flags: 0 ID: -1
+From: 17 To: 10 Cost: 20 Flags: 0 ID: -1
+From: 17 To: 15 Cost: 28.2843 Flags: 0 ID: -1
+From: 17 To: 19 Cost: 28.2843 Flags: 0 ID: -1
+From: 17 To: 26 Cost: 20 Flags: 0 ID: -1
+From: 17 To: 28 Cost: 20 Flags: 0 ID: -1
+From: 17 To: 39 Cost: 28.2843 Flags: 0 ID: -1
+From: 18 To: 3 Cost: 28.2843 Flags: 0 ID: -1
+From: 18 To: 9 Cost: 20 Flags: 0 ID: -1
+From: 18 To: 16 Cost: 28.2843 Flags: 0 ID: -1
+From: 18 To: 27 Cost: 20 Flags: 0 ID: -1
+From: 18 To: 29 Cost: 20 Flags: 0 ID: -1
+From: 18 To: 40 Cost: 28.2843 Flags: 0 ID: -1
+From: 19 To: 4 Cost: 28.2843 Flags: 0 ID: -1
+From: 19 To: 10 Cost: 20 Flags: 0 ID: -1
+From: 19 To: 17 Cost: 28.2843 Flags: 0 ID: -1
+From: 19 To: 28 Cost: 20 Flags: 0 ID: -1
+From: 19 To: 30 Cost: 20 Flags: 0 ID: -1
+From: 19 To: 41 Cost: 28.2843 Flags: 0 ID: -1
+From: 20 To: 6 Cost: 28.2843 Flags: 0 ID: -1
+From: 20 To: 11 Cost: 20 Flags: 0 ID: -1
+From: 20 To: 13 Cost: 20 Flags: 0 ID: -1
+From: 20 To: 22 Cost: 28.2843 Flags: 0 ID: -1
+From: 20 To: 31 Cost: 20 Flags: 0 ID: -1
+From: 20 To: 32 Cost: 20 Flags: 0 ID: -1
+From: 20 To: 45 Cost: 28.2843 Flags: 0 ID: -1
+From: 21 To: 7 Cost: 28.2843 Flags: 0 ID: -1
+From: 21 To: 12 Cost: 20 Flags: 0 ID: -1
+From: 21 To: 14 Cost: 20 Flags: 0 ID: -1
+From: 21 To: 23 Cost: 28.2843 Flags: 0 ID: -1
+From: 21 To: 33 Cost: 20 Flags: 0 ID: -1
+From: 21 To: 34 Cost: 20 Flags: 0 ID: -1
+From: 21 To: 47 Cost: 28.2843 Flags: 0 ID: -1
+From: 22 To: 13 Cost: 20 Flags: 0 ID: -1
+From: 22 To: 20 Cost: 28.2843 Flags: 0 ID: -1
+From: 22 To: 32 Cost: 20 Flags: 0 ID: -1
+From: 23 To: 14 Cost: 20 Flags: 0 ID: -1
+From: 23 To: 21 Cost: 28.2843 Flags: 0 ID: -1
+From: 23 To: 34 Cost: 20 Flags: 0 ID: -1
+From: 24 To: 15 Cost: 20 Flags: 0 ID: -1
+From: 24 To: 25 Cost: 28.2843 Flags: 0 ID: -1
+From: 24 To: 26 Cost: 28.2843 Flags: 0 ID: -1
+From: 24 To: 35 Cost: 20 Flags: 0 ID: -1
+From: 24 To: 36 Cost: 20 Flags: 0 ID: -1
+From: 24 To: 37 Cost: 20 Flags: 0 ID: -1
+From: 24 To: 49 Cost: 28.2843 Flags: 0 ID: -1
+From: 24 To: 50 Cost: 28.2843 Flags: 0 ID: -1
+From: 25 To: 8 Cost: 28.2843 Flags: 0 ID: -1
+From: 25 To: 15 Cost: 20 Flags: 0 ID: -1
+From: 25 To: 16 Cost: 20 Flags: 0 ID: -1
+From: 25 To: 24 Cost: 28.2843 Flags: 0 ID: -1
+From: 25 To: 27 Cost: 28.2843 Flags: 0 ID: -1
+From: 25 To: 36 Cost: 20 Flags: 0 ID: -1
+From: 25 To: 38 Cost: 20 Flags: 0 ID: -1
+From: 25 To: 51 Cost: 28.2843 Flags: 0 ID: -1
+From: 26 To: 8 Cost: 28.2843 Flags: 0 ID: -1
+From: 26 To: 15 Cost: 20 Flags: 0 ID: -1
+From: 26 To: 17 Cost: 20 Flags: 0 ID: -1
+From: 26 To: 24 Cost: 28.2843 Flags: 0 ID: -1
+From: 26 To: 28 Cost: 28.2843 Flags: 0 ID: -1
+From: 26 To: 37 Cost: 20 Flags: 0 ID: -1
+From: 26 To: 39 Cost: 20 Flags: 0 ID: -1
+From: 26 To: 52 Cost: 28.2843 Flags: 0 ID: -1
+From: 27 To: 9 Cost: 28.2843 Flags: 0 ID: -1
+From: 27 To: 16 Cost: 20 Flags: 0 ID: -1
+From: 27 To: 18 Cost: 20 Flags: 0 ID: -1
+From: 27 To: 25 Cost: 28.2843 Flags: 0 ID: -1
+From: 27 To: 29 Cost: 28.2843 Flags: 0 ID: -1
+From: 27 To: 38 Cost: 20 Flags: 0 ID: -1
+From: 27 To: 40 Cost: 20 Flags: 0 ID: -1
+From: 27 To: 53 Cost: 28.2843 Flags: 0 ID: -1
+From: 28 To: 10 Cost: 28.2843 Flags: 0 ID: -1
+From: 28 To: 17 Cost: 20 Flags: 0 ID: -1
+From: 28 To: 19 Cost: 20 Flags: 0 ID: -1
+From: 28 To: 26 Cost: 28.2843 Flags: 0 ID: -1
+From: 28 To: 30 Cost: 28.2843 Flags: 0 ID: -1
+From: 28 To: 39 Cost: 20 Flags: 0 ID: -1
+From: 28 To: 41 Cost: 20 Flags: 0 ID: -1
+From: 28 To: 54 Cost: 28.2843 Flags: 0 ID: -1
+From: 29 To: 18 Cost: 20 Flags: 0 ID: -1
+From: 29 To: 27 Cost: 28.2843 Flags: 0 ID: -1
+From: 29 To: 40 Cost: 20 Flags: 0 ID: -1
+From: 29 To: 42 Cost: 20 Flags: 0 ID: -1
+From: 29 To: 55 Cost: 28.2843 Flags: 0 ID: -1
+From: 30 To: 19 Cost: 20 Flags: 0 ID: -1
+From: 30 To: 28 Cost: 28.2843 Flags: 0 ID: -1
+From: 30 To: 41 Cost: 20 Flags: 0 ID: -1
+From: 30 To: 43 Cost: 20 Flags: 0 ID: -1
+From: 30 To: 56 Cost: 28.2843 Flags: 0 ID: -1
+From: 30 To: 334 Cost: 31.6228 Flags: 0 ID: -1
+From: 31 To: 11 Cost: 28.2843 Flags: 0 ID: -1
+From: 31 To: 20 Cost: 20 Flags: 0 ID: -1
+From: 31 To: 32 Cost: 28.2843 Flags: 0 ID: -1
+From: 31 To: 44 Cost: 20 Flags: 0 ID: -1
+From: 31 To: 45 Cost: 20 Flags: 0 ID: -1
+From: 31 To: 60 Cost: 28.2843 Flags: 0 ID: -1
+From: 32 To: 13 Cost: 28.2843 Flags: 0 ID: -1
+From: 32 To: 20 Cost: 20 Flags: 0 ID: -1
+From: 32 To: 22 Cost: 20 Flags: 0 ID: -1
+From: 32 To: 31 Cost: 28.2843 Flags: 0 ID: -1
+From: 32 To: 45 Cost: 20 Flags: 0 ID: -1
+From: 33 To: 21 Cost: 20 Flags: 0 ID: -1
+From: 33 To: 34 Cost: 28.2843 Flags: 0 ID: -1
+From: 33 To: 46 Cost: 20 Flags: 0 ID: -1
+From: 33 To: 47 Cost: 20 Flags: 0 ID: -1
+From: 33 To: 62 Cost: 28.2843 Flags: 0 ID: -1
+From: 34 To: 14 Cost: 28.2843 Flags: 0 ID: -1
+From: 34 To: 21 Cost: 20 Flags: 0 ID: -1
+From: 34 To: 23 Cost: 20 Flags: 0 ID: -1
+From: 34 To: 33 Cost: 28.2843 Flags: 0 ID: -1
+From: 34 To: 47 Cost: 20 Flags: 0 ID: -1
+From: 35 To: 24 Cost: 20 Flags: 0 ID: -1
+From: 35 To: 36 Cost: 28.2843 Flags: 0 ID: -1
+From: 35 To: 37 Cost: 28.2843 Flags: 0 ID: -1
+From: 35 To: 48 Cost: 20 Flags: 0 ID: -1
+From: 35 To: 49 Cost: 20 Flags: 0 ID: -1
+From: 35 To: 50 Cost: 20 Flags: 0 ID: -1
+From: 35 To: 64 Cost: 28.2843 Flags: 0 ID: -1
+From: 35 To: 65 Cost: 28.2843 Flags: 0 ID: -1
+From: 36 To: 15 Cost: 28.2843 Flags: 0 ID: -1
+From: 36 To: 24 Cost: 20 Flags: 0 ID: -1
+From: 36 To: 25 Cost: 20 Flags: 0 ID: -1
+From: 36 To: 35 Cost: 28.2843 Flags: 0 ID: -1
+From: 36 To: 38 Cost: 28.2843 Flags: 0 ID: -1
+From: 36 To: 49 Cost: 20 Flags: 0 ID: -1
+From: 36 To: 51 Cost: 20 Flags: 0 ID: -1
+From: 36 To: 66 Cost: 28.2843 Flags: 0 ID: -1
+From: 37 To: 15 Cost: 28.2843 Flags: 0 ID: -1
+From: 37 To: 24 Cost: 20 Flags: 0 ID: -1
+From: 37 To: 26 Cost: 20 Flags: 0 ID: -1
+From: 37 To: 35 Cost: 28.2843 Flags: 0 ID: -1
+From: 37 To: 39 Cost: 28.2843 Flags: 0 ID: -1
+From: 37 To: 50 Cost: 20 Flags: 0 ID: -1
+From: 37 To: 52 Cost: 20 Flags: 0 ID: -1
+From: 37 To: 67 Cost: 28.2843 Flags: 0 ID: -1
+From: 38 To: 16 Cost: 28.2843 Flags: 0 ID: -1
+From: 38 To: 25 Cost: 20 Flags: 0 ID: -1
+From: 38 To: 27 Cost: 20 Flags: 0 ID: -1
+From: 38 To: 36 Cost: 28.2843 Flags: 0 ID: -1
+From: 38 To: 40 Cost: 28.2843 Flags: 0 ID: -1
+From: 38 To: 51 Cost: 20 Flags: 0 ID: -1
+From: 38 To: 53 Cost: 20 Flags: 0 ID: -1
+From: 38 To: 68 Cost: 28.2843 Flags: 0 ID: -1
+From: 39 To: 17 Cost: 28.2843 Flags: 0 ID: -1
+From: 39 To: 26 Cost: 20 Flags: 0 ID: -1
+From: 39 To: 28 Cost: 20 Flags: 0 ID: -1
+From: 39 To: 37 Cost: 28.2843 Flags: 0 ID: -1
+From: 39 To: 41 Cost: 28.2843 Flags: 0 ID: -1
+From: 39 To: 52 Cost: 20 Flags: 0 ID: -1
+From: 39 To: 54 Cost: 20 Flags: 0 ID: -1
+From: 39 To: 69 Cost: 28.2843 Flags: 0 ID: -1
+From: 40 To: 18 Cost: 28.2843 Flags: 0 ID: -1
+From: 40 To: 27 Cost: 20 Flags: 0 ID: -1
+From: 40 To: 29 Cost: 20 Flags: 0 ID: -1
+From: 40 To: 38 Cost: 28.2843 Flags: 0 ID: -1
+From: 40 To: 42 Cost: 28.2843 Flags: 0 ID: -1
+From: 40 To: 53 Cost: 20 Flags: 0 ID: -1
+From: 40 To: 55 Cost: 20 Flags: 0 ID: -1
+From: 40 To: 70 Cost: 28.2843 Flags: 0 ID: -1
+From: 41 To: 19 Cost: 28.2843 Flags: 0 ID: -1
+From: 41 To: 28 Cost: 20 Flags: 0 ID: -1
+From: 41 To: 30 Cost: 20 Flags: 0 ID: -1
+From: 41 To: 39 Cost: 28.2843 Flags: 0 ID: -1
+From: 41 To: 43 Cost: 28.2843 Flags: 0 ID: -1
+From: 41 To: 54 Cost: 20 Flags: 0 ID: -1
+From: 41 To: 56 Cost: 20 Flags: 0 ID: -1
+From: 41 To: 71 Cost: 28.2843 Flags: 0 ID: -1
+From: 41 To: 334 Cost: 31.6228 Flags: 0 ID: -1
+From: 42 To: 29 Cost: 20 Flags: 0 ID: -1
+From: 42 To: 40 Cost: 28.2843 Flags: 0 ID: -1
+From: 42 To: 55 Cost: 20 Flags: 0 ID: -1
+From: 42 To: 57 Cost: 20 Flags: 0 ID: -1
+From: 42 To: 72 Cost: 28.2843 Flags: 0 ID: -1
+From: 43 To: 30 Cost: 20 Flags: 0 ID: -1
+From: 43 To: 41 Cost: 28.2843 Flags: 0 ID: -1
+From: 43 To: 56 Cost: 20 Flags: 0 ID: -1
+From: 43 To: 58 Cost: 20 Flags: 0 ID: -1
+From: 43 To: 73 Cost: 28.2843 Flags: 0 ID: -1
+From: 43 To: 334 Cost: 14.1421 Flags: 0 ID: -1
+From: 44 To: 31 Cost: 20 Flags: 0 ID: -1
+From: 44 To: 45 Cost: 28.2843 Flags: 0 ID: -1
+From: 44 To: 59 Cost: 20 Flags: 0 ID: -1
+From: 44 To: 60 Cost: 20 Flags: 0 ID: -1
+From: 44 To: 76 Cost: 28.2843 Flags: 0 ID: -1
+From: 45 To: 20 Cost: 28.2843 Flags: 0 ID: -1
+From: 45 To: 31 Cost: 20 Flags: 0 ID: -1
+From: 45 To: 32 Cost: 20 Flags: 0 ID: -1
+From: 45 To: 44 Cost: 28.2843 Flags: 0 ID: -1
+From: 45 To: 60 Cost: 20 Flags: 0 ID: -1
+From: 46 To: 33 Cost: 20 Flags: 0 ID: -1
+From: 46 To: 47 Cost: 28.2843 Flags: 0 ID: -1
+From: 46 To: 61 Cost: 20 Flags: 0 ID: -1
+From: 46 To: 62 Cost: 20 Flags: 0 ID: -1
+From: 46 To: 78 Cost: 28.2843 Flags: 0 ID: -1
+From: 47 To: 21 Cost: 28.2843 Flags: 0 ID: -1
+From: 47 To: 33 Cost: 20 Flags: 0 ID: -1
+From: 47 To: 34 Cost: 20 Flags: 0 ID: -1
+From: 47 To: 46 Cost: 28.2843 Flags: 0 ID: -1
+From: 47 To: 62 Cost: 20 Flags: 0 ID: -1
+From: 48 To: 35 Cost: 20 Flags: 0 ID: -1
+From: 48 To: 49 Cost: 28.2843 Flags: 0 ID: -1
+From: 48 To: 50 Cost: 28.2843 Flags: 0 ID: -1
+From: 48 To: 63 Cost: 20 Flags: 0 ID: -1
+From: 48 To: 64 Cost: 20 Flags: 0 ID: -1
+From: 48 To: 65 Cost: 20 Flags: 0 ID: -1
+From: 48 To: 80 Cost: 28.2843 Flags: 0 ID: -1
+From: 48 To: 81 Cost: 28.2843 Flags: 0 ID: -1
+From: 49 To: 24 Cost: 28.2843 Flags: 0 ID: -1
+From: 49 To: 35 Cost: 20 Flags: 0 ID: -1
+From: 49 To: 36 Cost: 20 Flags: 0 ID: -1
+From: 49 To: 48 Cost: 28.2843 Flags: 0 ID: -1
+From: 49 To: 51 Cost: 28.2843 Flags: 0 ID: -1
+From: 49 To: 64 Cost: 20 Flags: 0 ID: -1
+From: 49 To: 66 Cost: 20 Flags: 0 ID: -1
+From: 49 To: 82 Cost: 28.2843 Flags: 0 ID: -1
+From: 50 To: 24 Cost: 28.2843 Flags: 0 ID: -1
+From: 50 To: 35 Cost: 20 Flags: 0 ID: -1
+From: 50 To: 37 Cost: 20 Flags: 0 ID: -1
+From: 50 To: 48 Cost: 28.2843 Flags: 0 ID: -1
+From: 50 To: 52 Cost: 28.2843 Flags: 0 ID: -1
+From: 50 To: 65 Cost: 20 Flags: 0 ID: -1
+From: 50 To: 67 Cost: 20 Flags: 0 ID: -1
+From: 50 To: 83 Cost: 28.2843 Flags: 0 ID: -1
+From: 51 To: 25 Cost: 28.2843 Flags: 0 ID: -1
+From: 51 To: 36 Cost: 20 Flags: 0 ID: -1
+From: 51 To: 38 Cost: 20 Flags: 0 ID: -1
+From: 51 To: 49 Cost: 28.2843 Flags: 0 ID: -1
+From: 51 To: 53 Cost: 28.2843 Flags: 0 ID: -1
+From: 51 To: 66 Cost: 20 Flags: 0 ID: -1
+From: 51 To: 68 Cost: 20 Flags: 0 ID: -1
+From: 51 To: 84 Cost: 28.2843 Flags: 0 ID: -1
+From: 52 To: 26 Cost: 28.2843 Flags: 0 ID: -1
+From: 52 To: 37 Cost: 20 Flags: 0 ID: -1
+From: 52 To: 39 Cost: 20 Flags: 0 ID: -1
+From: 52 To: 50 Cost: 28.2843 Flags: 0 ID: -1
+From: 52 To: 54 Cost: 28.2843 Flags: 0 ID: -1
+From: 52 To: 67 Cost: 20 Flags: 0 ID: -1
+From: 52 To: 69 Cost: 20 Flags: 0 ID: -1
+From: 52 To: 85 Cost: 28.2843 Flags: 0 ID: -1
+From: 53 To: 27 Cost: 28.2843 Flags: 0 ID: -1
+From: 53 To: 38 Cost: 20 Flags: 0 ID: -1
+From: 53 To: 40 Cost: 20 Flags: 0 ID: -1
+From: 53 To: 51 Cost: 28.2843 Flags: 0 ID: -1
+From: 53 To: 55 Cost: 28.2843 Flags: 0 ID: -1
+From: 53 To: 68 Cost: 20 Flags: 0 ID: -1
+From: 53 To: 70 Cost: 20 Flags: 0 ID: -1
+From: 53 To: 86 Cost: 28.2843 Flags: 0 ID: -1
+From: 54 To: 28 Cost: 28.2843 Flags: 0 ID: -1
+From: 54 To: 39 Cost: 20 Flags: 0 ID: -1
+From: 54 To: 41 Cost: 20 Flags: 0 ID: -1
+From: 54 To: 52 Cost: 28.2843 Flags: 0 ID: -1
+From: 54 To: 56 Cost: 28.2843 Flags: 0 ID: -1
+From: 54 To: 69 Cost: 20 Flags: 0 ID: -1
+From: 54 To: 71 Cost: 20 Flags: 0 ID: -1
+From: 54 To: 87 Cost: 28.2843 Flags: 0 ID: -1
+From: 55 To: 29 Cost: 28.2843 Flags: 0 ID: -1
+From: 55 To: 40 Cost: 20 Flags: 0 ID: -1
+From: 55 To: 42 Cost: 20 Flags: 0 ID: -1
+From: 55 To: 53 Cost: 28.2843 Flags: 0 ID: -1
+From: 55 To: 57 Cost: 28.2843 Flags: 0 ID: -1
+From: 55 To: 70 Cost: 20 Flags: 0 ID: -1
+From: 55 To: 72 Cost: 20 Flags: 0 ID: -1
+From: 55 To: 88 Cost: 28.2843 Flags: 0 ID: -1
+From: 56 To: 30 Cost: 28.2843 Flags: 0 ID: -1
+From: 56 To: 41 Cost: 20 Flags: 0 ID: -1
+From: 56 To: 43 Cost: 20 Flags: 0 ID: -1
+From: 56 To: 54 Cost: 28.2843 Flags: 0 ID: -1
+From: 56 To: 58 Cost: 28.2843 Flags: 0 ID: -1
+From: 56 To: 71 Cost: 20 Flags: 0 ID: -1
+From: 56 To: 73 Cost: 20 Flags: 0 ID: -1
+From: 56 To: 89 Cost: 28.2843 Flags: 0 ID: -1
+From: 56 To: 334 Cost: 14.1421 Flags: 0 ID: -1
+From: 57 To: 42 Cost: 20 Flags: 0 ID: -1
+From: 57 To: 55 Cost: 28.2843 Flags: 0 ID: -1
+From: 57 To: 72 Cost: 20 Flags: 0 ID: -1
+From: 57 To: 74 Cost: 20 Flags: 0 ID: -1
+From: 57 To: 90 Cost: 28.2843 Flags: 0 ID: -1
+From: 58 To: 43 Cost: 20 Flags: 0 ID: -1
+From: 58 To: 56 Cost: 28.2843 Flags: 0 ID: -1
+From: 58 To: 73 Cost: 20 Flags: 0 ID: -1
+From: 58 To: 334 Cost: 14.1421 Flags: 0 ID: -1
+From: 59 To: 44 Cost: 20 Flags: 0 ID: -1
+From: 59 To: 60 Cost: 28.2843 Flags: 0 ID: -1
+From: 59 To: 75 Cost: 20 Flags: 0 ID: -1
+From: 59 To: 76 Cost: 20 Flags: 0 ID: -1
+From: 59 To: 92 Cost: 28.2843 Flags: 0 ID: -1
+From: 60 To: 31 Cost: 28.2843 Flags: 0 ID: -1
+From: 60 To: 44 Cost: 20 Flags: 0 ID: -1
+From: 60 To: 45 Cost: 20 Flags: 0 ID: -1
+From: 60 To: 59 Cost: 28.2843 Flags: 0 ID: -1
+From: 60 To: 76 Cost: 20 Flags: 0 ID: -1
+From: 60 To: 93 Cost: 28.2843 Flags: 0 ID: -1
+From: 61 To: 46 Cost: 20 Flags: 0 ID: -1
+From: 61 To: 62 Cost: 28.2843 Flags: 0 ID: -1
+From: 61 To: 77 Cost: 20 Flags: 0 ID: -1
+From: 61 To: 78 Cost: 20 Flags: 0 ID: -1
+From: 61 To: 95 Cost: 28.2843 Flags: 0 ID: -1
+From: 62 To: 33 Cost: 28.2843 Flags: 0 ID: -1
+From: 62 To: 46 Cost: 20 Flags: 0 ID: -1
+From: 62 To: 47 Cost: 20 Flags: 0 ID: -1
+From: 62 To: 61 Cost: 28.2843 Flags: 0 ID: -1
+From: 62 To: 78 Cost: 20 Flags: 0 ID: -1
+From: 63 To: 48 Cost: 20 Flags: 0 ID: -1
+From: 63 To: 64 Cost: 28.2843 Flags: 0 ID: -1
+From: 63 To: 65 Cost: 28.2843 Flags: 0 ID: -1
+From: 63 To: 79 Cost: 20 Flags: 0 ID: -1
+From: 63 To: 80 Cost: 20 Flags: 0 ID: -1
+From: 63 To: 81 Cost: 20 Flags: 0 ID: -1
+From: 63 To: 97 Cost: 28.2843 Flags: 0 ID: -1
+From: 64 To: 35 Cost: 28.2843 Flags: 0 ID: -1
+From: 64 To: 48 Cost: 20 Flags: 0 ID: -1
+From: 64 To: 49 Cost: 20 Flags: 0 ID: -1
+From: 64 To: 63 Cost: 28.2843 Flags: 0 ID: -1
+From: 64 To: 66 Cost: 28.2843 Flags: 0 ID: -1
+From: 64 To: 80 Cost: 20 Flags: 0 ID: -1
+From: 64 To: 82 Cost: 20 Flags: 0 ID: -1
+From: 64 To: 98 Cost: 28.2843 Flags: 0 ID: -1
+From: 65 To: 35 Cost: 28.2843 Flags: 0 ID: -1
+From: 65 To: 48 Cost: 20 Flags: 0 ID: -1
+From: 65 To: 50 Cost: 20 Flags: 0 ID: -1
+From: 65 To: 63 Cost: 28.2843 Flags: 0 ID: -1
+From: 65 To: 67 Cost: 28.2843 Flags: 0 ID: -1
+From: 65 To: 81 Cost: 20 Flags: 0 ID: -1
+From: 65 To: 83 Cost: 20 Flags: 0 ID: -1
+From: 65 To: 99 Cost: 28.2843 Flags: 0 ID: -1
+From: 66 To: 36 Cost: 28.2843 Flags: 0 ID: -1
+From: 66 To: 49 Cost: 20 Flags: 0 ID: -1
+From: 66 To: 51 Cost: 20 Flags: 0 ID: -1
+From: 66 To: 64 Cost: 28.2843 Flags: 0 ID: -1
+From: 66 To: 68 Cost: 28.2843 Flags: 0 ID: -1
+From: 66 To: 82 Cost: 20 Flags: 0 ID: -1
+From: 66 To: 84 Cost: 20 Flags: 0 ID: -1
+From: 66 To: 100 Cost: 28.2843 Flags: 0 ID: -1
+From: 67 To: 37 Cost: 28.2843 Flags: 0 ID: -1
+From: 67 To: 50 Cost: 20 Flags: 0 ID: -1
+From: 67 To: 52 Cost: 20 Flags: 0 ID: -1
+From: 67 To: 65 Cost: 28.2843 Flags: 0 ID: -1
+From: 67 To: 69 Cost: 28.2843 Flags: 0 ID: -1
+From: 67 To: 83 Cost: 20 Flags: 0 ID: -1
+From: 67 To: 85 Cost: 20 Flags: 0 ID: -1
+From: 67 To: 101 Cost: 28.2843 Flags: 0 ID: -1
+From: 68 To: 38 Cost: 28.2843 Flags: 0 ID: -1
+From: 68 To: 51 Cost: 20 Flags: 0 ID: -1
+From: 68 To: 53 Cost: 20 Flags: 0 ID: -1
+From: 68 To: 66 Cost: 28.2843 Flags: 0 ID: -1
+From: 68 To: 70 Cost: 28.2843 Flags: 0 ID: -1
+From: 68 To: 84 Cost: 20 Flags: 0 ID: -1
+From: 68 To: 86 Cost: 20 Flags: 0 ID: -1
+From: 68 To: 102 Cost: 28.2843 Flags: 0 ID: -1
+From: 69 To: 39 Cost: 28.2843 Flags: 0 ID: -1
+From: 69 To: 52 Cost: 20 Flags: 0 ID: -1
+From: 69 To: 54 Cost: 20 Flags: 0 ID: -1
+From: 69 To: 67 Cost: 28.2843 Flags: 0 ID: -1
+From: 69 To: 71 Cost: 28.2843 Flags: 0 ID: -1
+From: 69 To: 85 Cost: 20 Flags: 0 ID: -1
+From: 69 To: 87 Cost: 20 Flags: 0 ID: -1
+From: 69 To: 103 Cost: 28.2843 Flags: 0 ID: -1
+From: 70 To: 40 Cost: 28.2843 Flags: 0 ID: -1
+From: 70 To: 53 Cost: 20 Flags: 0 ID: -1
+From: 70 To: 55 Cost: 20 Flags: 0 ID: -1
+From: 70 To: 68 Cost: 28.2843 Flags: 0 ID: -1
+From: 70 To: 72 Cost: 28.2843 Flags: 0 ID: -1
+From: 70 To: 86 Cost: 20 Flags: 0 ID: -1
+From: 70 To: 88 Cost: 20 Flags: 0 ID: -1
+From: 70 To: 104 Cost: 28.2843 Flags: 0 ID: -1
+From: 71 To: 41 Cost: 28.2843 Flags: 0 ID: -1
+From: 71 To: 54 Cost: 20 Flags: 0 ID: -1
+From: 71 To: 56 Cost: 20 Flags: 0 ID: -1
+From: 71 To: 69 Cost: 28.2843 Flags: 0 ID: -1
+From: 71 To: 73 Cost: 28.2843 Flags: 0 ID: -1
+From: 71 To: 87 Cost: 20 Flags: 0 ID: -1
+From: 71 To: 89 Cost: 20 Flags: 0 ID: -1
+From: 71 To: 105 Cost: 28.2843 Flags: 0 ID: -1
+From: 71 To: 334 Cost: 31.6228 Flags: 0 ID: -1
+From: 72 To: 42 Cost: 28.2843 Flags: 0 ID: -1
+From: 72 To: 55 Cost: 20 Flags: 0 ID: -1
+From: 72 To: 57 Cost: 20 Flags: 0 ID: -1
+From: 72 To: 70 Cost: 28.2843 Flags: 0 ID: -1
+From: 72 To: 74 Cost: 28.2843 Flags: 0 ID: -1
+From: 72 To: 88 Cost: 20 Flags: 0 ID: -1
+From: 72 To: 90 Cost: 20 Flags: 0 ID: -1
+From: 72 To: 106 Cost: 28.2843 Flags: 0 ID: -1
+From: 73 To: 43 Cost: 28.2843 Flags: 0 ID: -1
+From: 73 To: 56 Cost: 20 Flags: 0 ID: -1
+From: 73 To: 58 Cost: 20 Flags: 0 ID: -1
+From: 73 To: 71 Cost: 28.2843 Flags: 0 ID: -1
+From: 73 To: 89 Cost: 20 Flags: 0 ID: -1
+From: 73 To: 334 Cost: 14.1421 Flags: 0 ID: -1
+From: 74 To: 57 Cost: 20 Flags: 0 ID: -1
+From: 74 To: 72 Cost: 28.2843 Flags: 0 ID: -1
+From: 74 To: 90 Cost: 20 Flags: 0 ID: -1
+From: 75 To: 59 Cost: 20 Flags: 0 ID: -1
+From: 75 To: 76 Cost: 28.2843 Flags: 0 ID: -1
+From: 75 To: 91 Cost: 20 Flags: 0 ID: -1
+From: 75 To: 92 Cost: 20 Flags: 0 ID: -1
+From: 75 To: 108 Cost: 28.2843 Flags: 0 ID: -1
+From: 75 To: 109 Cost: 28.2843 Flags: 0 ID: -1
+From: 76 To: 44 Cost: 28.2843 Flags: 0 ID: -1
+From: 76 To: 59 Cost: 20 Flags: 0 ID: -1
+From: 76 To: 60 Cost: 20 Flags: 0 ID: -1
+From: 76 To: 75 Cost: 28.2843 Flags: 0 ID: -1
+From: 76 To: 92 Cost: 20 Flags: 0 ID: -1
+From: 76 To: 93 Cost: 20 Flags: 0 ID: -1
+From: 76 To: 110 Cost: 28.2843 Flags: 0 ID: -1
+From: 77 To: 61 Cost: 20 Flags: 0 ID: -1
+From: 77 To: 78 Cost: 28.2843 Flags: 0 ID: -1
+From: 77 To: 94 Cost: 20 Flags: 0 ID: -1
+From: 77 To: 95 Cost: 20 Flags: 0 ID: -1
+From: 77 To: 114 Cost: 28.2843 Flags: 0 ID: -1
+From: 78 To: 46 Cost: 28.2843 Flags: 0 ID: -1
+From: 78 To: 61 Cost: 20 Flags: 0 ID: -1
+From: 78 To: 62 Cost: 20 Flags: 0 ID: -1
+From: 78 To: 77 Cost: 28.2843 Flags: 0 ID: -1
+From: 78 To: 95 Cost: 20 Flags: 0 ID: -1
+From: 78 To: 115 Cost: 28.2843 Flags: 0 ID: -1
+From: 79 To: 63 Cost: 20 Flags: 0 ID: -1
+From: 79 To: 80 Cost: 28.2843 Flags: 0 ID: -1
+From: 79 To: 96 Cost: 20 Flags: 0 ID: -1
+From: 79 To: 97 Cost: 20 Flags: 0 ID: -1
+From: 79 To: 117 Cost: 28.2843 Flags: 0 ID: -1
+From: 80 To: 48 Cost: 28.2843 Flags: 0 ID: -1
+From: 80 To: 63 Cost: 20 Flags: 0 ID: -1
+From: 80 To: 64 Cost: 20 Flags: 0 ID: -1
+From: 80 To: 79 Cost: 28.2843 Flags: 0 ID: -1
+From: 80 To: 82 Cost: 28.2843 Flags: 0 ID: -1
+From: 80 To: 97 Cost: 20 Flags: 0 ID: -1
+From: 80 To: 98 Cost: 20 Flags: 0 ID: -1
+From: 80 To: 119 Cost: 28.2843 Flags: 0 ID: -1
+From: 81 To: 48 Cost: 28.2843 Flags: 0 ID: -1
+From: 81 To: 63 Cost: 20 Flags: 0 ID: -1
+From: 81 To: 65 Cost: 20 Flags: 0 ID: -1
+From: 81 To: 83 Cost: 28.2843 Flags: 0 ID: -1
+From: 81 To: 99 Cost: 20 Flags: 0 ID: -1
+From: 82 To: 49 Cost: 28.2843 Flags: 0 ID: -1
+From: 82 To: 64 Cost: 20 Flags: 0 ID: -1
+From: 82 To: 66 Cost: 20 Flags: 0 ID: -1
+From: 82 To: 80 Cost: 28.2843 Flags: 0 ID: -1
+From: 82 To: 84 Cost: 28.2843 Flags: 0 ID: -1
+From: 82 To: 98 Cost: 20 Flags: 0 ID: -1
+From: 82 To: 100 Cost: 20 Flags: 0 ID: -1
+From: 82 To: 120 Cost: 28.2843 Flags: 0 ID: -1
+From: 83 To: 50 Cost: 28.2843 Flags: 0 ID: -1
+From: 83 To: 65 Cost: 20 Flags: 0 ID: -1
+From: 83 To: 67 Cost: 20 Flags: 0 ID: -1
+From: 83 To: 81 Cost: 28.2843 Flags: 0 ID: -1
+From: 83 To: 85 Cost: 28.2843 Flags: 0 ID: -1
+From: 83 To: 99 Cost: 20 Flags: 0 ID: -1
+From: 83 To: 101 Cost: 20 Flags: 0 ID: -1
+From: 83 To: 121 Cost: 28.2843 Flags: 0 ID: -1
+From: 84 To: 51 Cost: 28.2843 Flags: 0 ID: -1
+From: 84 To: 66 Cost: 20 Flags: 0 ID: -1
+From: 84 To: 68 Cost: 20 Flags: 0 ID: -1
+From: 84 To: 82 Cost: 28.2843 Flags: 0 ID: -1
+From: 84 To: 86 Cost: 28.2843 Flags: 0 ID: -1
+From: 84 To: 100 Cost: 20 Flags: 0 ID: -1
+From: 84 To: 102 Cost: 20 Flags: 0 ID: -1
+From: 84 To: 122 Cost: 28.2843 Flags: 0 ID: -1
+From: 85 To: 52 Cost: 28.2843 Flags: 0 ID: -1
+From: 85 To: 67 Cost: 20 Flags: 0 ID: -1
+From: 85 To: 69 Cost: 20 Flags: 0 ID: -1
+From: 85 To: 83 Cost: 28.2843 Flags: 0 ID: -1
+From: 85 To: 87 Cost: 28.2843 Flags: 0 ID: -1
+From: 85 To: 101 Cost: 20 Flags: 0 ID: -1
+From: 85 To: 103 Cost: 20 Flags: 0 ID: -1
+From: 85 To: 123 Cost: 28.2843 Flags: 0 ID: -1
+From: 86 To: 53 Cost: 28.2843 Flags: 0 ID: -1
+From: 86 To: 68 Cost: 20 Flags: 0 ID: -1
+From: 86 To: 70 Cost: 20 Flags: 0 ID: -1
+From: 86 To: 84 Cost: 28.2843 Flags: 0 ID: -1
+From: 86 To: 88 Cost: 28.2843 Flags: 0 ID: -1
+From: 86 To: 102 Cost: 20 Flags: 0 ID: -1
+From: 86 To: 104 Cost: 20 Flags: 0 ID: -1
+From: 86 To: 124 Cost: 28.2843 Flags: 0 ID: -1
+From: 87 To: 54 Cost: 28.2843 Flags: 0 ID: -1
+From: 87 To: 69 Cost: 20 Flags: 0 ID: -1
+From: 87 To: 71 Cost: 20 Flags: 0 ID: -1
+From: 87 To: 85 Cost: 28.2843 Flags: 0 ID: -1
+From: 87 To: 89 Cost: 28.2843 Flags: 0 ID: -1
+From: 87 To: 103 Cost: 20 Flags: 0 ID: -1
+From: 87 To: 105 Cost: 20 Flags: 0 ID: -1
+From: 87 To: 125 Cost: 28.2843 Flags: 0 ID: -1
+From: 88 To: 55 Cost: 28.2843 Flags: 0 ID: -1
+From: 88 To: 70 Cost: 20 Flags: 0 ID: -1
+From: 88 To: 72 Cost: 20 Flags: 0 ID: -1
+From: 88 To: 86 Cost: 28.2843 Flags: 0 ID: -1
+From: 88 To: 90 Cost: 28.2843 Flags: 0 ID: -1
+From: 88 To: 104 Cost: 20 Flags: 0 ID: -1
+From: 88 To: 106 Cost: 20 Flags: 0 ID: -1
+From: 88 To: 126 Cost: 28.2843 Flags: 0 ID: -1
+From: 89 To: 56 Cost: 28.2843 Flags: 0 ID: -1
+From: 89 To: 71 Cost: 20 Flags: 0 ID: -1
+From: 89 To: 73 Cost: 20 Flags: 0 ID: -1
+From: 89 To: 87 Cost: 28.2843 Flags: 0 ID: -1
+From: 89 To: 105 Cost: 20 Flags: 0 ID: -1
+From: 89 To: 334 Cost: 31.6228 Flags: 0 ID: -1
+From: 90 To: 57 Cost: 28.2843 Flags: 0 ID: -1
+From: 90 To: 72 Cost: 20 Flags: 0 ID: -1
+From: 90 To: 74 Cost: 20 Flags: 0 ID: -1
+From: 90 To: 88 Cost: 28.2843 Flags: 0 ID: -1
+From: 90 To: 106 Cost: 20 Flags: 0 ID: -1
+From: 90 To: 127 Cost: 28.2843 Flags: 0 ID: -1
+From: 91 To: 75 Cost: 20 Flags: 0 ID: -1
+From: 91 To: 92 Cost: 28.2843 Flags: 0 ID: -1
+From: 91 To: 107 Cost: 20 Flags: 0 ID: -1
+From: 91 To: 108 Cost: 20 Flags: 0 ID: -1
+From: 91 To: 109 Cost: 20 Flags: 0 ID: -1
+From: 91 To: 129 Cost: 28.2843 Flags: 0 ID: -1
+From: 91 To: 130 Cost: 28.2843 Flags: 0 ID: -1
+From: 92 To: 59 Cost: 28.2843 Flags: 0 ID: -1
+From: 92 To: 75 Cost: 20 Flags: 0 ID: -1
+From: 92 To: 76 Cost: 20 Flags: 0 ID: -1
+From: 92 To: 91 Cost: 28.2843 Flags: 0 ID: -1
+From: 92 To: 93 Cost: 28.2843 Flags: 0 ID: -1
+From: 92 To: 108 Cost: 20 Flags: 0 ID: -1
+From: 92 To: 110 Cost: 20 Flags: 0 ID: -1
+From: 93 To: 60 Cost: 28.2843 Flags: 0 ID: -1
+From: 93 To: 76 Cost: 20 Flags: 0 ID: -1
+From: 93 To: 92 Cost: 28.2843 Flags: 0 ID: -1
+From: 93 To: 110 Cost: 20 Flags: 0 ID: -1
+From: 93 To: 111 Cost: 20 Flags: 0 ID: -1
+From: 93 To: 132 Cost: 28.2843 Flags: 0 ID: -1
+From: 93 To: 133 Cost: 28.2843 Flags: 0 ID: -1
+From: 94 To: 77 Cost: 20 Flags: 0 ID: -1
+From: 94 To: 95 Cost: 28.2843 Flags: 0 ID: -1
+From: 94 To: 112 Cost: 20 Flags: 0 ID: -1
+From: 94 To: 113 Cost: 20 Flags: 0 ID: -1
+From: 94 To: 114 Cost: 20 Flags: 0 ID: -1
+From: 94 To: 136 Cost: 28.2843 Flags: 0 ID: -1
+From: 94 To: 137 Cost: 28.2843 Flags: 0 ID: -1
+From: 94 To: 335 Cost: 31.6228 Flags: 0 ID: -1
+From: 95 To: 61 Cost: 28.2843 Flags: 0 ID: -1
+From: 95 To: 77 Cost: 20 Flags: 0 ID: -1
+From: 95 To: 78 Cost: 20 Flags: 0 ID: -1
+From: 95 To: 94 Cost: 28.2843 Flags: 0 ID: -1
+From: 95 To: 114 Cost: 20 Flags: 0 ID: -1
+From: 95 To: 115 Cost: 20 Flags: 0 ID: -1
+From: 96 To: 79 Cost: 20 Flags: 0 ID: -1
+From: 96 To: 97 Cost: 28.2843 Flags: 0 ID: -1
+From: 96 To: 116 Cost: 20 Flags: 0 ID: -1
+From: 96 To: 117 Cost: 20 Flags: 0 ID: -1
+From: 96 To: 118 Cost: 20 Flags: 0 ID: -1
+From: 96 To: 139 Cost: 28.2843 Flags: 0 ID: -1
+From: 96 To: 140 Cost: 28.2843 Flags: 0 ID: -1
+From: 97 To: 63 Cost: 28.2843 Flags: 0 ID: -1
+From: 97 To: 79 Cost: 20 Flags: 0 ID: -1
+From: 97 To: 80 Cost: 20 Flags: 0 ID: -1
+From: 97 To: 96 Cost: 28.2843 Flags: 0 ID: -1
+From: 97 To: 98 Cost: 28.2843 Flags: 0 ID: -1
+From: 97 To: 117 Cost: 20 Flags: 0 ID: -1
+From: 97 To: 119 Cost: 20 Flags: 0 ID: -1
+From: 97 To: 141 Cost: 28.2843 Flags: 0 ID: -1
+From: 98 To: 64 Cost: 28.2843 Flags: 0 ID: -1
+From: 98 To: 80 Cost: 20 Flags: 0 ID: -1
+From: 98 To: 82 Cost: 20 Flags: 0 ID: -1
+From: 98 To: 97 Cost: 28.2843 Flags: 0 ID: -1
+From: 98 To: 100 Cost: 28.2843 Flags: 0 ID: -1
+From: 98 To: 119 Cost: 20 Flags: 0 ID: -1
+From: 98 To: 120 Cost: 20 Flags: 0 ID: -1
+From: 99 To: 65 Cost: 28.2843 Flags: 0 ID: -1
+From: 99 To: 81 Cost: 20 Flags: 0 ID: -1
+From: 99 To: 83 Cost: 20 Flags: 0 ID: -1
+From: 99 To: 101 Cost: 28.2843 Flags: 0 ID: -1
+From: 99 To: 121 Cost: 20 Flags: 0 ID: -1
+From: 100 To: 66 Cost: 28.2843 Flags: 0 ID: -1
+From: 100 To: 82 Cost: 20 Flags: 0 ID: -1
+From: 100 To: 84 Cost: 20 Flags: 0 ID: -1
+From: 100 To: 98 Cost: 28.2843 Flags: 0 ID: -1
+From: 100 To: 102 Cost: 28.2843 Flags: 0 ID: -1
+From: 100 To: 120 Cost: 20 Flags: 0 ID: -1
+From: 100 To: 122 Cost: 20 Flags: 0 ID: -1
+From: 100 To: 143 Cost: 28.2843 Flags: 0 ID: -1
+From: 101 To: 67 Cost: 28.2843 Flags: 0 ID: -1
+From: 101 To: 83 Cost: 20 Flags: 0 ID: -1
+From: 101 To: 85 Cost: 20 Flags: 0 ID: -1
+From: 101 To: 99 Cost: 28.2843 Flags: 0 ID: -1
+From: 101 To: 103 Cost: 28.2843 Flags: 0 ID: -1
+From: 101 To: 121 Cost: 20 Flags: 0 ID: -1
+From: 101 To: 123 Cost: 20 Flags: 0 ID: -1
+From: 101 To: 144 Cost: 28.2843 Flags: 0 ID: -1
+From: 102 To: 68 Cost: 28.2843 Flags: 0 ID: -1
+From: 102 To: 84 Cost: 20 Flags: 0 ID: -1
+From: 102 To: 86 Cost: 20 Flags: 0 ID: -1
+From: 102 To: 100 Cost: 28.2843 Flags: 0 ID: -1
+From: 102 To: 104 Cost: 28.2843 Flags: 0 ID: -1
+From: 102 To: 122 Cost: 20 Flags: 0 ID: -1
+From: 102 To: 124 Cost: 20 Flags: 0 ID: -1
+From: 102 To: 145 Cost: 28.2843 Flags: 0 ID: -1
+From: 103 To: 69 Cost: 28.2843 Flags: 0 ID: -1
+From: 103 To: 85 Cost: 20 Flags: 0 ID: -1
+From: 103 To: 87 Cost: 20 Flags: 0 ID: -1
+From: 103 To: 101 Cost: 28.2843 Flags: 0 ID: -1
+From: 103 To: 105 Cost: 28.2843 Flags: 0 ID: -1
+From: 103 To: 123 Cost: 20 Flags: 0 ID: -1
+From: 103 To: 125 Cost: 20 Flags: 0 ID: -1
+From: 103 To: 146 Cost: 28.2843 Flags: 0 ID: -1
+From: 104 To: 70 Cost: 28.2843 Flags: 0 ID: -1
+From: 104 To: 86 Cost: 20 Flags: 0 ID: -1
+From: 104 To: 88 Cost: 20 Flags: 0 ID: -1
+From: 104 To: 102 Cost: 28.2843 Flags: 0 ID: -1
+From: 104 To: 106 Cost: 28.2843 Flags: 0 ID: -1
+From: 104 To: 124 Cost: 20 Flags: 0 ID: -1
+From: 104 To: 126 Cost: 20 Flags: 0 ID: -1
+From: 104 To: 147 Cost: 28.2843 Flags: 0 ID: -1
+From: 105 To: 71 Cost: 28.2843 Flags: 0 ID: -1
+From: 105 To: 87 Cost: 20 Flags: 0 ID: -1
+From: 105 To: 89 Cost: 20 Flags: 0 ID: -1
+From: 105 To: 103 Cost: 28.2843 Flags: 0 ID: -1
+From: 105 To: 125 Cost: 20 Flags: 0 ID: -1
+From: 106 To: 72 Cost: 28.2843 Flags: 0 ID: -1
+From: 106 To: 88 Cost: 20 Flags: 0 ID: -1
+From: 106 To: 90 Cost: 20 Flags: 0 ID: -1
+From: 106 To: 104 Cost: 28.2843 Flags: 0 ID: -1
+From: 106 To: 126 Cost: 20 Flags: 0 ID: -1
+From: 106 To: 127 Cost: 20 Flags: 0 ID: -1
+From: 106 To: 148 Cost: 28.2843 Flags: 0 ID: -1
+From: 107 To: 91 Cost: 20 Flags: 0 ID: -1
+From: 107 To: 108 Cost: 28.2843 Flags: 0 ID: -1
+From: 107 To: 109 Cost: 28.2843 Flags: 0 ID: -1
+From: 107 To: 128 Cost: 20 Flags: 0 ID: -1
+From: 107 To: 129 Cost: 20 Flags: 0 ID: -1
+From: 107 To: 130 Cost: 20 Flags: 0 ID: -1
+From: 107 To: 150 Cost: 28.2843 Flags: 0 ID: -1
+From: 107 To: 151 Cost: 28.2843 Flags: 0 ID: -1
+From: 108 To: 75 Cost: 28.2843 Flags: 0 ID: -1
+From: 108 To: 91 Cost: 20 Flags: 0 ID: -1
+From: 108 To: 92 Cost: 20 Flags: 0 ID: -1
+From: 108 To: 107 Cost: 28.2843 Flags: 0 ID: -1
+From: 108 To: 110 Cost: 28.2843 Flags: 0 ID: -1
+From: 108 To: 129 Cost: 20 Flags: 0 ID: -1
+From: 109 To: 75 Cost: 28.2843 Flags: 0 ID: -1
+From: 109 To: 91 Cost: 20 Flags: 0 ID: -1
+From: 109 To: 107 Cost: 28.2843 Flags: 0 ID: -1
+From: 109 To: 130 Cost: 20 Flags: 0 ID: -1
+From: 109 To: 131 Cost: 20 Flags: 0 ID: -1
+From: 109 To: 152 Cost: 28.2843 Flags: 0 ID: -1
+From: 110 To: 76 Cost: 28.2843 Flags: 0 ID: -1
+From: 110 To: 92 Cost: 20 Flags: 0 ID: -1
+From: 110 To: 93 Cost: 20 Flags: 0 ID: -1
+From: 110 To: 108 Cost: 28.2843 Flags: 0 ID: -1
+From: 110 To: 111 Cost: 28.2843 Flags: 0 ID: -1
+From: 110 To: 132 Cost: 20 Flags: 0 ID: -1
+From: 110 To: 153 Cost: 28.2843 Flags: 0 ID: -1
+From: 111 To: 93 Cost: 20 Flags: 0 ID: -1
+From: 111 To: 110 Cost: 28.2843 Flags: 0 ID: -1
+From: 111 To: 132 Cost: 20 Flags: 0 ID: -1
+From: 111 To: 133 Cost: 20 Flags: 0 ID: -1
+From: 111 To: 134 Cost: 20 Flags: 0 ID: -1
+From: 111 To: 154 Cost: 28.2843 Flags: 0 ID: -1
+From: 111 To: 156 Cost: 28.2843 Flags: 0 ID: -1
+From: 112 To: 94 Cost: 20 Flags: 0 ID: -1
+From: 112 To: 113 Cost: 28.2843 Flags: 0 ID: -1
+From: 112 To: 114 Cost: 28.2843 Flags: 0 ID: -1
+From: 112 To: 135 Cost: 20 Flags: 0 ID: -1
+From: 112 To: 136 Cost: 20 Flags: 0 ID: -1
+From: 112 To: 137 Cost: 20 Flags: 0 ID: -1
+From: 112 To: 158 Cost: 28.2843 Flags: 0 ID: -1
+From: 112 To: 159 Cost: 28.2843 Flags: 0 ID: -1
+From: 112 To: 335 Cost: 14.1421 Flags: 0 ID: -1
+From: 113 To: 94 Cost: 20 Flags: 0 ID: -1
+From: 113 To: 112 Cost: 28.2843 Flags: 0 ID: -1
+From: 113 To: 131 Cost: 20 Flags: 0 ID: -1
+From: 113 To: 136 Cost: 20 Flags: 0 ID: -1
+From: 113 To: 152 Cost: 28.2843 Flags: 0 ID: -1
+From: 114 To: 77 Cost: 28.2843 Flags: 0 ID: -1
+From: 114 To: 94 Cost: 20 Flags: 0 ID: -1
+From: 114 To: 95 Cost: 20 Flags: 0 ID: -1
+From: 114 To: 112 Cost: 28.2843 Flags: 0 ID: -1
+From: 114 To: 115 Cost: 28.2843 Flags: 0 ID: -1
+From: 114 To: 137 Cost: 20 Flags: 0 ID: -1
+From: 114 To: 335 Cost: 31.6228 Flags: 0 ID: -1
+From: 115 To: 78 Cost: 28.2843 Flags: 0 ID: -1
+From: 115 To: 95 Cost: 20 Flags: 0 ID: -1
+From: 115 To: 114 Cost: 28.2843 Flags: 0 ID: -1
+From: 115 To: 138 Cost: 20 Flags: 0 ID: -1
+From: 115 To: 160 Cost: 28.2843 Flags: 0 ID: -1
+From: 115 To: 161 Cost: 28.2843 Flags: 0 ID: -1
+From: 116 To: 96 Cost: 20 Flags: 0 ID: -1
+From: 116 To: 117 Cost: 28.2843 Flags: 0 ID: -1
+From: 116 To: 118 Cost: 28.2843 Flags: 0 ID: -1
+From: 116 To: 139 Cost: 20 Flags: 0 ID: -1
+From: 116 To: 140 Cost: 20 Flags: 0 ID: -1
+From: 117 To: 79 Cost: 28.2843 Flags: 0 ID: -1
+From: 117 To: 96 Cost: 20 Flags: 0 ID: -1
+From: 117 To: 97 Cost: 20 Flags: 0 ID: -1
+From: 117 To: 116 Cost: 28.2843 Flags: 0 ID: -1
+From: 117 To: 119 Cost: 28.2843 Flags: 0 ID: -1
+From: 117 To: 139 Cost: 20 Flags: 0 ID: -1
+From: 117 To: 141 Cost: 20 Flags: 0 ID: -1
+From: 117 To: 163 Cost: 28.2843 Flags: 0 ID: -1
+From: 118 To: 96 Cost: 20 Flags: 0 ID: -1
+From: 118 To: 116 Cost: 28.2843 Flags: 0 ID: -1
+From: 118 To: 140 Cost: 20 Flags: 0 ID: -1
+From: 118 To: 142 Cost: 20 Flags: 0 ID: -1
+From: 118 To: 164 Cost: 28.2843 Flags: 0 ID: -1
+From: 119 To: 80 Cost: 28.2843 Flags: 0 ID: -1
+From: 119 To: 97 Cost: 20 Flags: 0 ID: -1
+From: 119 To: 98 Cost: 20 Flags: 0 ID: -1
+From: 119 To: 117 Cost: 28.2843 Flags: 0 ID: -1
+From: 119 To: 141 Cost: 20 Flags: 0 ID: -1
+From: 120 To: 82 Cost: 28.2843 Flags: 0 ID: -1
+From: 120 To: 98 Cost: 20 Flags: 0 ID: -1
+From: 120 To: 100 Cost: 20 Flags: 0 ID: -1
+From: 120 To: 122 Cost: 28.2843 Flags: 0 ID: -1
+From: 120 To: 143 Cost: 20 Flags: 0 ID: -1
+From: 121 To: 83 Cost: 28.2843 Flags: 0 ID: -1
+From: 121 To: 99 Cost: 20 Flags: 0 ID: -1
+From: 121 To: 101 Cost: 20 Flags: 0 ID: -1
+From: 121 To: 123 Cost: 28.2843 Flags: 0 ID: -1
+From: 121 To: 144 Cost: 20 Flags: 0 ID: -1
+From: 122 To: 84 Cost: 28.2843 Flags: 0 ID: -1
+From: 122 To: 100 Cost: 20 Flags: 0 ID: -1
+From: 122 To: 102 Cost: 20 Flags: 0 ID: -1
+From: 122 To: 120 Cost: 28.2843 Flags: 0 ID: -1
+From: 122 To: 124 Cost: 28.2843 Flags: 0 ID: -1
+From: 122 To: 143 Cost: 20 Flags: 0 ID: -1
+From: 122 To: 145 Cost: 20 Flags: 0 ID: -1
+From: 122 To: 167 Cost: 28.2843 Flags: 0 ID: -1
+From: 122 To: 338 Cost: 31.6228 Flags: 0 ID: -1
+From: 123 To: 85 Cost: 28.2843 Flags: 0 ID: -1
+From: 123 To: 101 Cost: 20 Flags: 0 ID: -1
+From: 123 To: 103 Cost: 20 Flags: 0 ID: -1
+From: 123 To: 121 Cost: 28.2843 Flags: 0 ID: -1
+From: 123 To: 125 Cost: 28.2843 Flags: 0 ID: -1
+From: 123 To: 144 Cost: 20 Flags: 0 ID: -1
+From: 123 To: 146 Cost: 20 Flags: 0 ID: -1
+From: 123 To: 168 Cost: 28.2843 Flags: 0 ID: -1
+From: 124 To: 86 Cost: 28.2843 Flags: 0 ID: -1
+From: 124 To: 102 Cost: 20 Flags: 0 ID: -1
+From: 124 To: 104 Cost: 20 Flags: 0 ID: -1
+From: 124 To: 122 Cost: 28.2843 Flags: 0 ID: -1
+From: 124 To: 126 Cost: 28.2843 Flags: 0 ID: -1
+From: 124 To: 145 Cost: 20 Flags: 0 ID: -1
+From: 124 To: 147 Cost: 20 Flags: 0 ID: -1
+From: 124 To: 169 Cost: 28.2843 Flags: 0 ID: -1
+From: 124 To: 338 Cost: 31.6228 Flags: 0 ID: -1
+From: 125 To: 87 Cost: 28.2843 Flags: 0 ID: -1
+From: 125 To: 103 Cost: 20 Flags: 0 ID: -1
+From: 125 To: 105 Cost: 20 Flags: 0 ID: -1
+From: 125 To: 123 Cost: 28.2843 Flags: 0 ID: -1
+From: 125 To: 146 Cost: 20 Flags: 0 ID: -1
+From: 126 To: 88 Cost: 28.2843 Flags: 0 ID: -1
+From: 126 To: 104 Cost: 20 Flags: 0 ID: -1
+From: 126 To: 106 Cost: 20 Flags: 0 ID: -1
+From: 126 To: 124 Cost: 28.2843 Flags: 0 ID: -1
+From: 126 To: 127 Cost: 28.2843 Flags: 0 ID: -1
+From: 126 To: 147 Cost: 20 Flags: 0 ID: -1
+From: 126 To: 148 Cost: 20 Flags: 0 ID: -1
+From: 127 To: 90 Cost: 28.2843 Flags: 0 ID: -1
+From: 127 To: 106 Cost: 20 Flags: 0 ID: -1
+From: 127 To: 126 Cost: 28.2843 Flags: 0 ID: -1
+From: 127 To: 148 Cost: 20 Flags: 0 ID: -1
+From: 127 To: 149 Cost: 20 Flags: 0 ID: -1
+From: 127 To: 170 Cost: 28.2843 Flags: 0 ID: -1
+From: 128 To: 107 Cost: 20 Flags: 0 ID: -1
+From: 128 To: 129 Cost: 28.2843 Flags: 0 ID: -1
+From: 128 To: 130 Cost: 28.2843 Flags: 0 ID: -1
+From: 128 To: 150 Cost: 20 Flags: 0 ID: -1
+From: 128 To: 151 Cost: 20 Flags: 0 ID: -1
+From: 129 To: 91 Cost: 28.2843 Flags: 0 ID: -1
+From: 129 To: 107 Cost: 20 Flags: 0 ID: -1
+From: 129 To: 108 Cost: 20 Flags: 0 ID: -1
+From: 129 To: 128 Cost: 28.2843 Flags: 0 ID: -1
+From: 129 To: 150 Cost: 20 Flags: 0 ID: -1
+From: 130 To: 91 Cost: 28.2843 Flags: 0 ID: -1
+From: 130 To: 107 Cost: 20 Flags: 0 ID: -1
+From: 130 To: 109 Cost: 20 Flags: 0 ID: -1
+From: 130 To: 128 Cost: 28.2843 Flags: 0 ID: -1
+From: 130 To: 131 Cost: 28.2843 Flags: 0 ID: -1
+From: 130 To: 151 Cost: 20 Flags: 0 ID: -1
+From: 130 To: 152 Cost: 20 Flags: 0 ID: -1
+From: 130 To: 172 Cost: 28.2843 Flags: 0 ID: -1
+From: 131 To: 109 Cost: 20 Flags: 0 ID: -1
+From: 131 To: 113 Cost: 20 Flags: 0 ID: -1
+From: 131 To: 130 Cost: 28.2843 Flags: 0 ID: -1
+From: 131 To: 136 Cost: 28.2843 Flags: 0 ID: -1
+From: 131 To: 152 Cost: 20 Flags: 0 ID: -1
+From: 132 To: 93 Cost: 28.2843 Flags: 0 ID: -1
+From: 132 To: 110 Cost: 20 Flags: 0 ID: -1
+From: 132 To: 111 Cost: 20 Flags: 0 ID: -1
+From: 132 To: 134 Cost: 28.2843 Flags: 0 ID: -1
+From: 132 To: 153 Cost: 20 Flags: 0 ID: -1
+From: 132 To: 154 Cost: 20 Flags: 0 ID: -1
+From: 132 To: 174 Cost: 28.2843 Flags: 0 ID: -1
+From: 133 To: 93 Cost: 28.2843 Flags: 0 ID: -1
+From: 133 To: 111 Cost: 20 Flags: 0 ID: -1
+From: 133 To: 134 Cost: 28.2843 Flags: 0 ID: -1
+From: 133 To: 155 Cost: 20 Flags: 0 ID: -1
+From: 133 To: 156 Cost: 20 Flags: 0 ID: -1
+From: 133 To: 176 Cost: 28.2843 Flags: 0 ID: -1
+From: 133 To: 332 Cost: 31.6228 Flags: 0 ID: -1
+From: 134 To: 111 Cost: 20 Flags: 0 ID: -1
+From: 134 To: 132 Cost: 28.2843 Flags: 0 ID: -1
+From: 134 To: 133 Cost: 28.2843 Flags: 0 ID: -1
+From: 134 To: 154 Cost: 20 Flags: 0 ID: -1
+From: 134 To: 156 Cost: 20 Flags: 0 ID: -1
+From: 134 To: 157 Cost: 20 Flags: 0 ID: -1
+From: 134 To: 175 Cost: 28.2843 Flags: 0 ID: -1
+From: 134 To: 177 Cost: 28.2843 Flags: 0 ID: -1
+From: 135 To: 112 Cost: 20 Flags: 0 ID: -1
+From: 135 To: 136 Cost: 28.2843 Flags: 0 ID: -1
+From: 135 To: 137 Cost: 28.2843 Flags: 0 ID: -1
+From: 135 To: 158 Cost: 20 Flags: 0 ID: -1
+From: 135 To: 159 Cost: 20 Flags: 0 ID: -1
+From: 135 To: 335 Cost: 14.1421 Flags: 0 ID: -1
+From: 136 To: 94 Cost: 28.2843 Flags: 0 ID: -1
+From: 136 To: 112 Cost: 20 Flags: 0 ID: -1
+From: 136 To: 113 Cost: 20 Flags: 0 ID: -1
+From: 136 To: 131 Cost: 28.2843 Flags: 0 ID: -1
+From: 136 To: 135 Cost: 28.2843 Flags: 0 ID: -1
+From: 136 To: 152 Cost: 20 Flags: 0 ID: -1
+From: 136 To: 158 Cost: 20 Flags: 0 ID: -1
+From: 136 To: 172 Cost: 28.2843 Flags: 0 ID: -1
+From: 136 To: 335 Cost: 31.6228 Flags: 0 ID: -1
+From: 137 To: 94 Cost: 28.2843 Flags: 0 ID: -1
+From: 137 To: 112 Cost: 20 Flags: 0 ID: -1
+From: 137 To: 114 Cost: 20 Flags: 0 ID: -1
+From: 137 To: 135 Cost: 28.2843 Flags: 0 ID: -1
+From: 137 To: 159 Cost: 20 Flags: 0 ID: -1
+From: 137 To: 335 Cost: 14.1421 Flags: 0 ID: -1
+From: 138 To: 115 Cost: 20 Flags: 0 ID: -1
+From: 138 To: 160 Cost: 20 Flags: 0 ID: -1
+From: 138 To: 161 Cost: 20 Flags: 0 ID: -1
+From: 138 To: 162 Cost: 20 Flags: 0 ID: -1
+From: 138 To: 180 Cost: 28.2843 Flags: 0 ID: -1
+From: 138 To: 182 Cost: 28.2843 Flags: 0 ID: -1
+From: 139 To: 96 Cost: 28.2843 Flags: 0 ID: -1
+From: 139 To: 116 Cost: 20 Flags: 0 ID: -1
+From: 139 To: 117 Cost: 20 Flags: 0 ID: -1
+From: 139 To: 141 Cost: 28.2843 Flags: 0 ID: -1
+From: 139 To: 163 Cost: 20 Flags: 0 ID: -1
+From: 140 To: 96 Cost: 28.2843 Flags: 0 ID: -1
+From: 140 To: 116 Cost: 20 Flags: 0 ID: -1
+From: 140 To: 118 Cost: 20 Flags: 0 ID: -1
+From: 140 To: 142 Cost: 28.2843 Flags: 0 ID: -1
+From: 140 To: 164 Cost: 20 Flags: 0 ID: -1
+From: 141 To: 97 Cost: 28.2843 Flags: 0 ID: -1
+From: 141 To: 117 Cost: 20 Flags: 0 ID: -1
+From: 141 To: 119 Cost: 20 Flags: 0 ID: -1
+From: 141 To: 139 Cost: 28.2843 Flags: 0 ID: -1
+From: 141 To: 163 Cost: 20 Flags: 0 ID: -1
+From: 141 To: 165 Cost: 20 Flags: 0 ID: -1
+From: 141 To: 184 Cost: 28.2843 Flags: 0 ID: -1
+From: 142 To: 118 Cost: 20 Flags: 0 ID: -1
+From: 142 To: 140 Cost: 28.2843 Flags: 0 ID: -1
+From: 142 To: 164 Cost: 20 Flags: 0 ID: -1
+From: 142 To: 166 Cost: 20 Flags: 0 ID: -1
+From: 142 To: 185 Cost: 28.2843 Flags: 0 ID: -1
+From: 143 To: 100 Cost: 28.2843 Flags: 0 ID: -1
+From: 143 To: 120 Cost: 20 Flags: 0 ID: -1
+From: 143 To: 122 Cost: 20 Flags: 0 ID: -1
+From: 143 To: 145 Cost: 28.2843 Flags: 0 ID: -1
+From: 143 To: 167 Cost: 20 Flags: 0 ID: -1
+From: 143 To: 338 Cost: 31.6228 Flags: 0 ID: -1
+From: 144 To: 101 Cost: 28.2843 Flags: 0 ID: -1
+From: 144 To: 121 Cost: 20 Flags: 0 ID: -1
+From: 144 To: 123 Cost: 20 Flags: 0 ID: -1
+From: 144 To: 146 Cost: 28.2843 Flags: 0 ID: -1
+From: 144 To: 168 Cost: 20 Flags: 0 ID: -1
+From: 144 To: 189 Cost: 28.2843 Flags: 0 ID: -1
+From: 145 To: 102 Cost: 28.2843 Flags: 0 ID: -1
+From: 145 To: 122 Cost: 20 Flags: 0 ID: -1
+From: 145 To: 124 Cost: 20 Flags: 0 ID: -1
+From: 145 To: 143 Cost: 28.2843 Flags: 0 ID: -1
+From: 145 To: 147 Cost: 28.2843 Flags: 0 ID: -1
+From: 145 To: 167 Cost: 20 Flags: 0 ID: -1
+From: 145 To: 169 Cost: 20 Flags: 0 ID: -1
+From: 145 To: 188 Cost: 28.2843 Flags: 0 ID: -1
+From: 145 To: 338 Cost: 14.1421 Flags: 0 ID: -1
+From: 146 To: 103 Cost: 28.2843 Flags: 0 ID: -1
+From: 146 To: 123 Cost: 20 Flags: 0 ID: -1
+From: 146 To: 125 Cost: 20 Flags: 0 ID: -1
+From: 146 To: 144 Cost: 28.2843 Flags: 0 ID: -1
+From: 146 To: 168 Cost: 20 Flags: 0 ID: -1
+From: 147 To: 104 Cost: 28.2843 Flags: 0 ID: -1
+From: 147 To: 124 Cost: 20 Flags: 0 ID: -1
+From: 147 To: 126 Cost: 20 Flags: 0 ID: -1
+From: 147 To: 145 Cost: 28.2843 Flags: 0 ID: -1
+From: 147 To: 148 Cost: 28.2843 Flags: 0 ID: -1
+From: 147 To: 169 Cost: 20 Flags: 0 ID: -1
+From: 147 To: 338 Cost: 31.6228 Flags: 0 ID: -1
+From: 148 To: 106 Cost: 28.2843 Flags: 0 ID: -1
+From: 148 To: 126 Cost: 20 Flags: 0 ID: -1
+From: 148 To: 127 Cost: 20 Flags: 0 ID: -1
+From: 148 To: 147 Cost: 28.2843 Flags: 0 ID: -1
+From: 148 To: 149 Cost: 28.2843 Flags: 0 ID: -1
+From: 148 To: 170 Cost: 20 Flags: 0 ID: -1
+From: 149 To: 127 Cost: 20 Flags: 0 ID: -1
+From: 149 To: 148 Cost: 28.2843 Flags: 0 ID: -1
+From: 149 To: 170 Cost: 20 Flags: 0 ID: -1
+From: 149 To: 171 Cost: 20 Flags: 0 ID: -1
+From: 149 To: 191 Cost: 28.2843 Flags: 0 ID: -1
+From: 149 To: 192 Cost: 28.2843 Flags: 0 ID: -1
+From: 150 To: 107 Cost: 28.2843 Flags: 0 ID: -1
+From: 150 To: 128 Cost: 20 Flags: 0 ID: -1
+From: 150 To: 129 Cost: 20 Flags: 0 ID: -1
+From: 151 To: 107 Cost: 28.2843 Flags: 0 ID: -1
+From: 151 To: 128 Cost: 20 Flags: 0 ID: -1
+From: 151 To: 130 Cost: 20 Flags: 0 ID: -1
+From: 151 To: 152 Cost: 28.2843 Flags: 0 ID: -1
+From: 151 To: 172 Cost: 20 Flags: 0 ID: -1
+From: 152 To: 109 Cost: 28.2843 Flags: 0 ID: -1
+From: 152 To: 113 Cost: 28.2843 Flags: 0 ID: -1
+From: 152 To: 130 Cost: 20 Flags: 0 ID: -1
+From: 152 To: 131 Cost: 20 Flags: 0 ID: -1
+From: 152 To: 136 Cost: 20 Flags: 0 ID: -1
+From: 152 To: 151 Cost: 28.2843 Flags: 0 ID: -1
+From: 152 To: 158 Cost: 28.2843 Flags: 0 ID: -1
+From: 152 To: 172 Cost: 20 Flags: 0 ID: -1
+From: 153 To: 110 Cost: 28.2843 Flags: 0 ID: -1
+From: 153 To: 132 Cost: 20 Flags: 0 ID: -1
+From: 153 To: 154 Cost: 28.2843 Flags: 0 ID: -1
+From: 153 To: 173 Cost: 20 Flags: 0 ID: -1
+From: 153 To: 174 Cost: 20 Flags: 0 ID: -1
+From: 153 To: 194 Cost: 28.2843 Flags: 0 ID: -1
+From: 154 To: 111 Cost: 28.2843 Flags: 0 ID: -1
+From: 154 To: 132 Cost: 20 Flags: 0 ID: -1
+From: 154 To: 134 Cost: 20 Flags: 0 ID: -1
+From: 154 To: 153 Cost: 28.2843 Flags: 0 ID: -1
+From: 154 To: 157 Cost: 28.2843 Flags: 0 ID: -1
+From: 154 To: 174 Cost: 20 Flags: 0 ID: -1
+From: 154 To: 175 Cost: 20 Flags: 0 ID: -1
+From: 154 To: 195 Cost: 28.2843 Flags: 0 ID: -1
+From: 155 To: 133 Cost: 20 Flags: 0 ID: -1
+From: 155 To: 156 Cost: 28.2843 Flags: 0 ID: -1
+From: 155 To: 176 Cost: 20 Flags: 0 ID: -1
+From: 155 To: 332 Cost: 14.1421 Flags: 0 ID: -1
+From: 156 To: 111 Cost: 28.2843 Flags: 0 ID: -1
+From: 156 To: 133 Cost: 20 Flags: 0 ID: -1
+From: 156 To: 134 Cost: 20 Flags: 0 ID: -1
+From: 156 To: 155 Cost: 28.2843 Flags: 0 ID: -1
+From: 156 To: 157 Cost: 28.2843 Flags: 0 ID: -1
+From: 156 To: 176 Cost: 20 Flags: 0 ID: -1
+From: 156 To: 177 Cost: 20 Flags: 0 ID: -1
+From: 156 To: 332 Cost: 31.6228 Flags: 0 ID: -1
+From: 157 To: 134 Cost: 20 Flags: 0 ID: -1
+From: 157 To: 154 Cost: 28.2843 Flags: 0 ID: -1
+From: 157 To: 156 Cost: 28.2843 Flags: 0 ID: -1
+From: 157 To: 175 Cost: 20 Flags: 0 ID: -1
+From: 157 To: 177 Cost: 20 Flags: 0 ID: -1
+From: 157 To: 178 Cost: 20 Flags: 0 ID: -1
+From: 157 To: 196 Cost: 28.2843 Flags: 0 ID: -1
+From: 157 To: 197 Cost: 28.2843 Flags: 0 ID: -1
+From: 158 To: 112 Cost: 28.2843 Flags: 0 ID: -1
+From: 158 To: 135 Cost: 20 Flags: 0 ID: -1
+From: 158 To: 136 Cost: 20 Flags: 0 ID: -1
+From: 158 To: 152 Cost: 28.2843 Flags: 0 ID: -1
+From: 158 To: 172 Cost: 20 Flags: 0 ID: -1
+From: 158 To: 335 Cost: 31.6228 Flags: 0 ID: -1
+From: 159 To: 112 Cost: 28.2843 Flags: 0 ID: -1
+From: 159 To: 135 Cost: 20 Flags: 0 ID: -1
+From: 159 To: 137 Cost: 20 Flags: 0 ID: -1
+From: 159 To: 335 Cost: 14.1421 Flags: 0 ID: -1
+From: 160 To: 115 Cost: 28.2843 Flags: 0 ID: -1
+From: 160 To: 138 Cost: 20 Flags: 0 ID: -1
+From: 160 To: 162 Cost: 28.2843 Flags: 0 ID: -1
+From: 160 To: 179 Cost: 20 Flags: 0 ID: -1
+From: 160 To: 180 Cost: 20 Flags: 0 ID: -1
+From: 160 To: 200 Cost: 28.2843 Flags: 0 ID: -1
+From: 161 To: 115 Cost: 28.2843 Flags: 0 ID: -1
+From: 161 To: 138 Cost: 20 Flags: 0 ID: -1
+From: 161 To: 162 Cost: 28.2843 Flags: 0 ID: -1
+From: 161 To: 181 Cost: 20 Flags: 0 ID: -1
+From: 161 To: 182 Cost: 20 Flags: 0 ID: -1
+From: 161 To: 202 Cost: 28.2843 Flags: 0 ID: -1
+From: 162 To: 138 Cost: 20 Flags: 0 ID: -1
+From: 162 To: 160 Cost: 28.2843 Flags: 0 ID: -1
+From: 162 To: 161 Cost: 28.2843 Flags: 0 ID: -1
+From: 162 To: 180 Cost: 20 Flags: 0 ID: -1
+From: 162 To: 182 Cost: 20 Flags: 0 ID: -1
+From: 162 To: 183 Cost: 20 Flags: 0 ID: -1
+From: 162 To: 201 Cost: 28.2843 Flags: 0 ID: -1
+From: 162 To: 203 Cost: 28.2843 Flags: 0 ID: -1
+From: 163 To: 117 Cost: 28.2843 Flags: 0 ID: -1
+From: 163 To: 139 Cost: 20 Flags: 0 ID: -1
+From: 163 To: 141 Cost: 20 Flags: 0 ID: -1
+From: 163 To: 165 Cost: 28.2843 Flags: 0 ID: -1
+From: 163 To: 184 Cost: 20 Flags: 0 ID: -1
+From: 164 To: 118 Cost: 28.2843 Flags: 0 ID: -1
+From: 164 To: 140 Cost: 20 Flags: 0 ID: -1
+From: 164 To: 142 Cost: 20 Flags: 0 ID: -1
+From: 164 To: 166 Cost: 28.2843 Flags: 0 ID: -1
+From: 164 To: 185 Cost: 20 Flags: 0 ID: -1
+From: 165 To: 141 Cost: 20 Flags: 0 ID: -1
+From: 165 To: 163 Cost: 28.2843 Flags: 0 ID: -1
+From: 165 To: 184 Cost: 20 Flags: 0 ID: -1
+From: 165 To: 186 Cost: 20 Flags: 0 ID: -1
+From: 165 To: 205 Cost: 28.2843 Flags: 0 ID: -1
+From: 166 To: 142 Cost: 20 Flags: 0 ID: -1
+From: 166 To: 164 Cost: 28.2843 Flags: 0 ID: -1
+From: 166 To: 185 Cost: 20 Flags: 0 ID: -1
+From: 166 To: 187 Cost: 20 Flags: 0 ID: -1
+From: 166 To: 206 Cost: 28.2843 Flags: 0 ID: -1
+From: 167 To: 122 Cost: 28.2843 Flags: 0 ID: -1
+From: 167 To: 143 Cost: 20 Flags: 0 ID: -1
+From: 167 To: 145 Cost: 20 Flags: 0 ID: -1
+From: 167 To: 169 Cost: 28.2843 Flags: 0 ID: -1
+From: 167 To: 188 Cost: 20 Flags: 0 ID: -1
+From: 167 To: 338 Cost: 14.1421 Flags: 0 ID: -1
+From: 168 To: 123 Cost: 28.2843 Flags: 0 ID: -1
+From: 168 To: 144 Cost: 20 Flags: 0 ID: -1
+From: 168 To: 146 Cost: 20 Flags: 0 ID: -1
+From: 168 To: 189 Cost: 20 Flags: 0 ID: -1
+From: 168 To: 190 Cost: 20 Flags: 0 ID: -1
+From: 168 To: 209 Cost: 28.2843 Flags: 0 ID: -1
+From: 169 To: 124 Cost: 28.2843 Flags: 0 ID: -1
+From: 169 To: 145 Cost: 20 Flags: 0 ID: -1
+From: 169 To: 147 Cost: 20 Flags: 0 ID: -1
+From: 169 To: 167 Cost: 28.2843 Flags: 0 ID: -1
+From: 169 To: 188 Cost: 20 Flags: 0 ID: -1
+From: 169 To: 338 Cost: 14.1421 Flags: 0 ID: -1
+From: 170 To: 127 Cost: 28.2843 Flags: 0 ID: -1
+From: 170 To: 148 Cost: 20 Flags: 0 ID: -1
+From: 170 To: 149 Cost: 20 Flags: 0 ID: -1
+From: 170 To: 171 Cost: 28.2843 Flags: 0 ID: -1
+From: 170 To: 191 Cost: 20 Flags: 0 ID: -1
+From: 170 To: 211 Cost: 28.2843 Flags: 0 ID: -1
+From: 171 To: 149 Cost: 20 Flags: 0 ID: -1
+From: 171 To: 170 Cost: 28.2843 Flags: 0 ID: -1
+From: 171 To: 191 Cost: 20 Flags: 0 ID: -1
+From: 171 To: 192 Cost: 20 Flags: 0 ID: -1
+From: 171 To: 193 Cost: 20 Flags: 0 ID: -1
+From: 171 To: 212 Cost: 28.2843 Flags: 0 ID: -1
+From: 171 To: 214 Cost: 28.2843 Flags: 0 ID: -1
+From: 172 To: 130 Cost: 28.2843 Flags: 0 ID: -1
+From: 172 To: 136 Cost: 28.2843 Flags: 0 ID: -1
+From: 172 To: 151 Cost: 20 Flags: 0 ID: -1
+From: 172 To: 152 Cost: 20 Flags: 0 ID: -1
+From: 172 To: 158 Cost: 20 Flags: 0 ID: -1
+From: 173 To: 153 Cost: 20 Flags: 0 ID: -1
+From: 173 To: 174 Cost: 28.2843 Flags: 0 ID: -1
+From: 173 To: 194 Cost: 20 Flags: 0 ID: -1
+From: 174 To: 132 Cost: 28.2843 Flags: 0 ID: -1
+From: 174 To: 153 Cost: 20 Flags: 0 ID: -1
+From: 174 To: 154 Cost: 20 Flags: 0 ID: -1
+From: 174 To: 173 Cost: 28.2843 Flags: 0 ID: -1
+From: 174 To: 175 Cost: 28.2843 Flags: 0 ID: -1
+From: 174 To: 194 Cost: 20 Flags: 0 ID: -1
+From: 174 To: 195 Cost: 20 Flags: 0 ID: -1
+From: 174 To: 215 Cost: 28.2843 Flags: 0 ID: -1
+From: 175 To: 134 Cost: 28.2843 Flags: 0 ID: -1
+From: 175 To: 154 Cost: 20 Flags: 0 ID: -1
+From: 175 To: 157 Cost: 20 Flags: 0 ID: -1
+From: 175 To: 174 Cost: 28.2843 Flags: 0 ID: -1
+From: 175 To: 178 Cost: 28.2843 Flags: 0 ID: -1
+From: 175 To: 195 Cost: 20 Flags: 0 ID: -1
+From: 175 To: 196 Cost: 20 Flags: 0 ID: -1
+From: 175 To: 216 Cost: 28.2843 Flags: 0 ID: -1
+From: 176 To: 133 Cost: 28.2843 Flags: 0 ID: -1
+From: 176 To: 155 Cost: 20 Flags: 0 ID: -1
+From: 176 To: 156 Cost: 20 Flags: 0 ID: -1
+From: 176 To: 177 Cost: 28.2843 Flags: 0 ID: -1
+From: 176 To: 332 Cost: 14.1421 Flags: 0 ID: -1
+From: 177 To: 134 Cost: 28.2843 Flags: 0 ID: -1
+From: 177 To: 156 Cost: 20 Flags: 0 ID: -1
+From: 177 To: 157 Cost: 20 Flags: 0 ID: -1
+From: 177 To: 176 Cost: 28.2843 Flags: 0 ID: -1
+From: 177 To: 178 Cost: 28.2843 Flags: 0 ID: -1
+From: 177 To: 197 Cost: 20 Flags: 0 ID: -1
+From: 178 To: 157 Cost: 20 Flags: 0 ID: -1
+From: 178 To: 175 Cost: 28.2843 Flags: 0 ID: -1
+From: 178 To: 177 Cost: 28.2843 Flags: 0 ID: -1
+From: 178 To: 196 Cost: 20 Flags: 0 ID: -1
+From: 178 To: 197 Cost: 20 Flags: 0 ID: -1
+From: 178 To: 198 Cost: 20 Flags: 0 ID: -1
+From: 178 To: 217 Cost: 28.2843 Flags: 0 ID: -1
+From: 178 To: 218 Cost: 28.2843 Flags: 0 ID: -1
+From: 179 To: 160 Cost: 20 Flags: 0 ID: -1
+From: 179 To: 180 Cost: 28.2843 Flags: 0 ID: -1
+From: 179 To: 199 Cost: 20 Flags: 0 ID: -1
+From: 179 To: 200 Cost: 20 Flags: 0 ID: -1
+From: 179 To: 220 Cost: 28.2843 Flags: 0 ID: -1
+From: 180 To: 138 Cost: 28.2843 Flags: 0 ID: -1
+From: 180 To: 160 Cost: 20 Flags: 0 ID: -1
+From: 180 To: 162 Cost: 20 Flags: 0 ID: -1
+From: 180 To: 179 Cost: 28.2843 Flags: 0 ID: -1
+From: 180 To: 183 Cost: 28.2843 Flags: 0 ID: -1
+From: 180 To: 200 Cost: 20 Flags: 0 ID: -1
+From: 180 To: 201 Cost: 20 Flags: 0 ID: -1
+From: 180 To: 221 Cost: 28.2843 Flags: 0 ID: -1
+From: 181 To: 161 Cost: 20 Flags: 0 ID: -1
+From: 181 To: 182 Cost: 28.2843 Flags: 0 ID: -1
+From: 181 To: 202 Cost: 20 Flags: 0 ID: -1
+From: 182 To: 138 Cost: 28.2843 Flags: 0 ID: -1
+From: 182 To: 161 Cost: 20 Flags: 0 ID: -1
+From: 182 To: 162 Cost: 20 Flags: 0 ID: -1
+From: 182 To: 181 Cost: 28.2843 Flags: 0 ID: -1
+From: 182 To: 183 Cost: 28.2843 Flags: 0 ID: -1
+From: 182 To: 202 Cost: 20 Flags: 0 ID: -1
+From: 182 To: 203 Cost: 20 Flags: 0 ID: -1
+From: 182 To: 223 Cost: 28.2843 Flags: 0 ID: -1
+From: 183 To: 162 Cost: 20 Flags: 0 ID: -1
+From: 183 To: 180 Cost: 28.2843 Flags: 0 ID: -1
+From: 183 To: 182 Cost: 28.2843 Flags: 0 ID: -1
+From: 183 To: 201 Cost: 20 Flags: 0 ID: -1
+From: 183 To: 203 Cost: 20 Flags: 0 ID: -1
+From: 183 To: 204 Cost: 20 Flags: 0 ID: -1
+From: 183 To: 222 Cost: 28.2843 Flags: 0 ID: -1
+From: 183 To: 224 Cost: 28.2843 Flags: 0 ID: -1
+From: 184 To: 141 Cost: 28.2843 Flags: 0 ID: -1
+From: 184 To: 163 Cost: 20 Flags: 0 ID: -1
+From: 184 To: 165 Cost: 20 Flags: 0 ID: -1
+From: 184 To: 186 Cost: 28.2843 Flags: 0 ID: -1
+From: 184 To: 205 Cost: 20 Flags: 0 ID: -1
+From: 185 To: 142 Cost: 28.2843 Flags: 0 ID: -1
+From: 185 To: 164 Cost: 20 Flags: 0 ID: -1
+From: 185 To: 166 Cost: 20 Flags: 0 ID: -1
+From: 185 To: 187 Cost: 28.2843 Flags: 0 ID: -1
+From: 185 To: 206 Cost: 20 Flags: 0 ID: -1
+From: 186 To: 165 Cost: 20 Flags: 0 ID: -1
+From: 186 To: 184 Cost: 28.2843 Flags: 0 ID: -1
+From: 186 To: 205 Cost: 20 Flags: 0 ID: -1
+From: 186 To: 207 Cost: 20 Flags: 0 ID: -1
+From: 186 To: 226 Cost: 28.2843 Flags: 0 ID: -1
+From: 187 To: 166 Cost: 20 Flags: 0 ID: -1
+From: 187 To: 185 Cost: 28.2843 Flags: 0 ID: -1
+From: 187 To: 189 Cost: 28.2843 Flags: 0 ID: -1
+From: 187 To: 206 Cost: 20 Flags: 0 ID: -1
+From: 187 To: 208 Cost: 20 Flags: 0 ID: -1
+From: 187 To: 227 Cost: 28.2843 Flags: 0 ID: -1
+From: 188 To: 145 Cost: 28.2843 Flags: 0 ID: -1
+From: 188 To: 167 Cost: 20 Flags: 0 ID: -1
+From: 188 To: 169 Cost: 20 Flags: 0 ID: -1
+From: 188 To: 338 Cost: 14.1421 Flags: 0 ID: -1
+From: 189 To: 144 Cost: 28.2843 Flags: 0 ID: -1
+From: 189 To: 168 Cost: 20 Flags: 0 ID: -1
+From: 189 To: 187 Cost: 28.2843 Flags: 0 ID: -1
+From: 189 To: 190 Cost: 28.2843 Flags: 0 ID: -1
+From: 189 To: 208 Cost: 20 Flags: 0 ID: -1
+From: 189 To: 209 Cost: 20 Flags: 0 ID: -1
+From: 189 To: 229 Cost: 28.2843 Flags: 0 ID: -1
+From: 190 To: 168 Cost: 20 Flags: 0 ID: -1
+From: 190 To: 189 Cost: 28.2843 Flags: 0 ID: -1
+From: 190 To: 209 Cost: 20 Flags: 0 ID: -1
+From: 190 To: 210 Cost: 20 Flags: 0 ID: -1
+From: 190 To: 230 Cost: 28.2843 Flags: 0 ID: -1
+From: 191 To: 149 Cost: 28.2843 Flags: 0 ID: -1
+From: 191 To: 170 Cost: 20 Flags: 0 ID: -1
+From: 191 To: 171 Cost: 20 Flags: 0 ID: -1
+From: 191 To: 193 Cost: 28.2843 Flags: 0 ID: -1
+From: 191 To: 211 Cost: 20 Flags: 0 ID: -1
+From: 191 To: 212 Cost: 20 Flags: 0 ID: -1
+From: 191 To: 233 Cost: 28.2843 Flags: 0 ID: -1
+From: 192 To: 149 Cost: 28.2843 Flags: 0 ID: -1
+From: 192 To: 171 Cost: 20 Flags: 0 ID: -1
+From: 192 To: 193 Cost: 28.2843 Flags: 0 ID: -1
+From: 192 To: 213 Cost: 20 Flags: 0 ID: -1
+From: 192 To: 214 Cost: 20 Flags: 0 ID: -1
+From: 192 To: 235 Cost: 28.2843 Flags: 0 ID: -1
+From: 193 To: 171 Cost: 20 Flags: 0 ID: -1
+From: 193 To: 191 Cost: 28.2843 Flags: 0 ID: -1
+From: 193 To: 192 Cost: 28.2843 Flags: 0 ID: -1
+From: 193 To: 212 Cost: 20 Flags: 0 ID: -1
+From: 193 To: 214 Cost: 20 Flags: 0 ID: -1
+From: 194 To: 153 Cost: 28.2843 Flags: 0 ID: -1
+From: 194 To: 173 Cost: 20 Flags: 0 ID: -1
+From: 194 To: 174 Cost: 20 Flags: 0 ID: -1
+From: 194 To: 195 Cost: 28.2843 Flags: 0 ID: -1
+From: 194 To: 215 Cost: 20 Flags: 0 ID: -1
+From: 195 To: 154 Cost: 28.2843 Flags: 0 ID: -1
+From: 195 To: 174 Cost: 20 Flags: 0 ID: -1
+From: 195 To: 175 Cost: 20 Flags: 0 ID: -1
+From: 195 To: 194 Cost: 28.2843 Flags: 0 ID: -1
+From: 195 To: 196 Cost: 28.2843 Flags: 0 ID: -1
+From: 195 To: 215 Cost: 20 Flags: 0 ID: -1
+From: 195 To: 216 Cost: 20 Flags: 0 ID: -1
+From: 195 To: 236 Cost: 28.2843 Flags: 0 ID: -1
+From: 196 To: 157 Cost: 28.2843 Flags: 0 ID: -1
+From: 196 To: 175 Cost: 20 Flags: 0 ID: -1
+From: 196 To: 178 Cost: 20 Flags: 0 ID: -1
+From: 196 To: 195 Cost: 28.2843 Flags: 0 ID: -1
+From: 196 To: 198 Cost: 28.2843 Flags: 0 ID: -1
+From: 196 To: 216 Cost: 20 Flags: 0 ID: -1
+From: 196 To: 217 Cost: 20 Flags: 0 ID: -1
+From: 196 To: 237 Cost: 28.2843 Flags: 0 ID: -1
+From: 197 To: 157 Cost: 28.2843 Flags: 0 ID: -1
+From: 197 To: 177 Cost: 20 Flags: 0 ID: -1
+From: 197 To: 178 Cost: 20 Flags: 0 ID: -1
+From: 197 To: 198 Cost: 28.2843 Flags: 0 ID: -1
+From: 197 To: 218 Cost: 20 Flags: 0 ID: -1
+From: 197 To: 239 Cost: 28.2843 Flags: 0 ID: -1
+From: 198 To: 178 Cost: 20 Flags: 0 ID: -1
+From: 198 To: 196 Cost: 28.2843 Flags: 0 ID: -1
+From: 198 To: 197 Cost: 28.2843 Flags: 0 ID: -1
+From: 198 To: 217 Cost: 20 Flags: 0 ID: -1
+From: 198 To: 218 Cost: 20 Flags: 0 ID: -1
+From: 198 To: 219 Cost: 20 Flags: 0 ID: -1
+From: 198 To: 238 Cost: 28.2843 Flags: 0 ID: -1
+From: 198 To: 240 Cost: 28.2843 Flags: 0 ID: -1
+From: 199 To: 179 Cost: 20 Flags: 0 ID: -1
+From: 199 To: 200 Cost: 28.2843 Flags: 0 ID: -1
+From: 199 To: 220 Cost: 20 Flags: 0 ID: -1
+From: 200 To: 160 Cost: 28.2843 Flags: 0 ID: -1
+From: 200 To: 179 Cost: 20 Flags: 0 ID: -1
+From: 200 To: 180 Cost: 20 Flags: 0 ID: -1
+From: 200 To: 199 Cost: 28.2843 Flags: 0 ID: -1
+From: 200 To: 201 Cost: 28.2843 Flags: 0 ID: -1
+From: 200 To: 220 Cost: 20 Flags: 0 ID: -1
+From: 200 To: 221 Cost: 20 Flags: 0 ID: -1
+From: 200 To: 242 Cost: 28.2843 Flags: 0 ID: -1
+From: 201 To: 162 Cost: 28.2843 Flags: 0 ID: -1
+From: 201 To: 180 Cost: 20 Flags: 0 ID: -1
+From: 201 To: 183 Cost: 20 Flags: 0 ID: -1
+From: 201 To: 200 Cost: 28.2843 Flags: 0 ID: -1
+From: 201 To: 204 Cost: 28.2843 Flags: 0 ID: -1
+From: 201 To: 221 Cost: 20 Flags: 0 ID: -1
+From: 201 To: 222 Cost: 20 Flags: 0 ID: -1
+From: 201 To: 243 Cost: 28.2843 Flags: 0 ID: -1
+From: 202 To: 161 Cost: 28.2843 Flags: 0 ID: -1
+From: 202 To: 181 Cost: 20 Flags: 0 ID: -1
+From: 202 To: 182 Cost: 20 Flags: 0 ID: -1
+From: 202 To: 203 Cost: 28.2843 Flags: 0 ID: -1
+From: 202 To: 223 Cost: 20 Flags: 0 ID: -1
+From: 203 To: 162 Cost: 28.2843 Flags: 0 ID: -1
+From: 203 To: 182 Cost: 20 Flags: 0 ID: -1
+From: 203 To: 183 Cost: 20 Flags: 0 ID: -1
+From: 203 To: 202 Cost: 28.2843 Flags: 0 ID: -1
+From: 203 To: 204 Cost: 28.2843 Flags: 0 ID: -1
+From: 203 To: 223 Cost: 20 Flags: 0 ID: -1
+From: 203 To: 224 Cost: 20 Flags: 0 ID: -1
+From: 203 To: 245 Cost: 28.2843 Flags: 0 ID: -1
+From: 204 To: 183 Cost: 20 Flags: 0 ID: -1
+From: 204 To: 201 Cost: 28.2843 Flags: 0 ID: -1
+From: 204 To: 203 Cost: 28.2843 Flags: 0 ID: -1
+From: 204 To: 222 Cost: 20 Flags: 0 ID: -1
+From: 204 To: 224 Cost: 20 Flags: 0 ID: -1
+From: 204 To: 225 Cost: 20 Flags: 0 ID: -1
+From: 204 To: 244 Cost: 28.2843 Flags: 0 ID: -1
+From: 204 To: 246 Cost: 28.2843 Flags: 0 ID: -1
+From: 205 To: 165 Cost: 28.2843 Flags: 0 ID: -1
+From: 205 To: 184 Cost: 20 Flags: 0 ID: -1
+From: 205 To: 186 Cost: 20 Flags: 0 ID: -1
+From: 205 To: 207 Cost: 28.2843 Flags: 0 ID: -1
+From: 205 To: 226 Cost: 20 Flags: 0 ID: -1
+From: 206 To: 166 Cost: 28.2843 Flags: 0 ID: -1
+From: 206 To: 185 Cost: 20 Flags: 0 ID: -1
+From: 206 To: 187 Cost: 20 Flags: 0 ID: -1
+From: 206 To: 208 Cost: 28.2843 Flags: 0 ID: -1
+From: 206 To: 227 Cost: 20 Flags: 0 ID: -1
+From: 207 To: 186 Cost: 20 Flags: 0 ID: -1
+From: 207 To: 205 Cost: 28.2843 Flags: 0 ID: -1
+From: 207 To: 226 Cost: 20 Flags: 0 ID: -1
+From: 207 To: 228 Cost: 20 Flags: 0 ID: -1
+From: 207 To: 248 Cost: 28.2843 Flags: 0 ID: -1
+From: 208 To: 187 Cost: 20 Flags: 0 ID: -1
+From: 208 To: 189 Cost: 20 Flags: 0 ID: -1
+From: 208 To: 206 Cost: 28.2843 Flags: 0 ID: -1
+From: 208 To: 209 Cost: 28.2843 Flags: 0 ID: -1
+From: 208 To: 227 Cost: 20 Flags: 0 ID: -1
+From: 208 To: 229 Cost: 20 Flags: 0 ID: -1
+From: 208 To: 249 Cost: 28.2843 Flags: 0 ID: -1
+From: 209 To: 168 Cost: 28.2843 Flags: 0 ID: -1
+From: 209 To: 189 Cost: 20 Flags: 0 ID: -1
+From: 209 To: 190 Cost: 20 Flags: 0 ID: -1
+From: 209 To: 208 Cost: 28.2843 Flags: 0 ID: -1
+From: 209 To: 210 Cost: 28.2843 Flags: 0 ID: -1
+From: 209 To: 229 Cost: 20 Flags: 0 ID: -1
+From: 209 To: 230 Cost: 20 Flags: 0 ID: -1
+From: 209 To: 251 Cost: 28.2843 Flags: 0 ID: -1
+From: 209 To: 339 Cost: 28.2843 Flags: 0 ID: -1
+From: 210 To: 190 Cost: 20 Flags: 0 ID: -1
+From: 210 To: 209 Cost: 28.2843 Flags: 0 ID: -1
+From: 210 To: 230 Cost: 20 Flags: 0 ID: -1
+From: 210 To: 231 Cost: 20 Flags: 0 ID: -1
+From: 210 To: 252 Cost: 28.2843 Flags: 0 ID: -1
+From: 211 To: 170 Cost: 28.2843 Flags: 0 ID: -1
+From: 211 To: 191 Cost: 20 Flags: 0 ID: -1
+From: 211 To: 212 Cost: 28.2843 Flags: 0 ID: -1
+From: 211 To: 232 Cost: 20 Flags: 0 ID: -1
+From: 211 To: 233 Cost: 20 Flags: 0 ID: -1
+From: 211 To: 255 Cost: 28.2843 Flags: 0 ID: -1
+From: 212 To: 171 Cost: 28.2843 Flags: 0 ID: -1
+From: 212 To: 191 Cost: 20 Flags: 0 ID: -1
+From: 212 To: 193 Cost: 20 Flags: 0 ID: -1
+From: 212 To: 211 Cost: 28.2843 Flags: 0 ID: -1
+From: 212 To: 233 Cost: 20 Flags: 0 ID: -1
+From: 213 To: 192 Cost: 20 Flags: 0 ID: -1
+From: 213 To: 214 Cost: 28.2843 Flags: 0 ID: -1
+From: 213 To: 234 Cost: 20 Flags: 0 ID: -1
+From: 213 To: 235 Cost: 20 Flags: 0 ID: -1
+From: 213 To: 257 Cost: 28.2843 Flags: 0 ID: -1
+From: 214 To: 171 Cost: 28.2843 Flags: 0 ID: -1
+From: 214 To: 192 Cost: 20 Flags: 0 ID: -1
+From: 214 To: 193 Cost: 20 Flags: 0 ID: -1
+From: 214 To: 213 Cost: 28.2843 Flags: 0 ID: -1
+From: 214 To: 235 Cost: 20 Flags: 0 ID: -1
+From: 215 To: 174 Cost: 28.2843 Flags: 0 ID: -1
+From: 215 To: 194 Cost: 20 Flags: 0 ID: -1
+From: 215 To: 195 Cost: 20 Flags: 0 ID: -1
+From: 215 To: 216 Cost: 28.2843 Flags: 0 ID: -1
+From: 215 To: 236 Cost: 20 Flags: 0 ID: -1
+From: 216 To: 175 Cost: 28.2843 Flags: 0 ID: -1
+From: 216 To: 195 Cost: 20 Flags: 0 ID: -1
+From: 216 To: 196 Cost: 20 Flags: 0 ID: -1
+From: 216 To: 215 Cost: 28.2843 Flags: 0 ID: -1
+From: 216 To: 217 Cost: 28.2843 Flags: 0 ID: -1
+From: 216 To: 236 Cost: 20 Flags: 0 ID: -1
+From: 216 To: 237 Cost: 20 Flags: 0 ID: -1
+From: 216 To: 258 Cost: 28.2843 Flags: 0 ID: -1
+From: 217 To: 178 Cost: 28.2843 Flags: 0 ID: -1
+From: 217 To: 196 Cost: 20 Flags: 0 ID: -1
+From: 217 To: 198 Cost: 20 Flags: 0 ID: -1
+From: 217 To: 216 Cost: 28.2843 Flags: 0 ID: -1
+From: 217 To: 219 Cost: 28.2843 Flags: 0 ID: -1
+From: 217 To: 237 Cost: 20 Flags: 0 ID: -1
+From: 217 To: 238 Cost: 20 Flags: 0 ID: -1
+From: 217 To: 259 Cost: 28.2843 Flags: 0 ID: -1
+From: 217 To: 337 Cost: 28.2843 Flags: 0 ID: -1
+From: 218 To: 178 Cost: 28.2843 Flags: 0 ID: -1
+From: 218 To: 197 Cost: 20 Flags: 0 ID: -1
+From: 218 To: 198 Cost: 20 Flags: 0 ID: -1
+From: 218 To: 219 Cost: 28.2843 Flags: 0 ID: -1
+From: 218 To: 239 Cost: 20 Flags: 0 ID: -1
+From: 218 To: 240 Cost: 20 Flags: 0 ID: -1
+From: 218 To: 262 Cost: 28.2843 Flags: 0 ID: -1
+From: 219 To: 198 Cost: 20 Flags: 0 ID: -1
+From: 219 To: 217 Cost: 28.2843 Flags: 0 ID: -1
+From: 219 To: 218 Cost: 28.2843 Flags: 0 ID: -1
+From: 219 To: 238 Cost: 20 Flags: 0 ID: -1
+From: 219 To: 240 Cost: 20 Flags: 0 ID: -1
+From: 219 To: 241 Cost: 20 Flags: 0 ID: -1
+From: 219 To: 260 Cost: 28.2843 Flags: 0 ID: -1
+From: 219 To: 263 Cost: 28.2843 Flags: 0 ID: -1
+From: 220 To: 179 Cost: 28.2843 Flags: 0 ID: -1
+From: 220 To: 199 Cost: 20 Flags: 0 ID: -1
+From: 220 To: 200 Cost: 20 Flags: 0 ID: -1
+From: 220 To: 221 Cost: 28.2843 Flags: 0 ID: -1
+From: 220 To: 242 Cost: 20 Flags: 0 ID: -1
+From: 221 To: 180 Cost: 28.2843 Flags: 0 ID: -1
+From: 221 To: 200 Cost: 20 Flags: 0 ID: -1
+From: 221 To: 201 Cost: 20 Flags: 0 ID: -1
+From: 221 To: 220 Cost: 28.2843 Flags: 0 ID: -1
+From: 221 To: 222 Cost: 28.2843 Flags: 0 ID: -1
+From: 221 To: 242 Cost: 20 Flags: 0 ID: -1
+From: 221 To: 243 Cost: 20 Flags: 0 ID: -1
+From: 221 To: 264 Cost: 28.2843 Flags: 0 ID: -1
+From: 222 To: 183 Cost: 28.2843 Flags: 0 ID: -1
+From: 222 To: 201 Cost: 20 Flags: 0 ID: -1
+From: 222 To: 204 Cost: 20 Flags: 0 ID: -1
+From: 222 To: 221 Cost: 28.2843 Flags: 0 ID: -1
+From: 222 To: 225 Cost: 28.2843 Flags: 0 ID: -1
+From: 222 To: 243 Cost: 20 Flags: 0 ID: -1
+From: 222 To: 244 Cost: 20 Flags: 0 ID: -1
+From: 222 To: 265 Cost: 28.2843 Flags: 0 ID: -1
+From: 223 To: 182 Cost: 28.2843 Flags: 0 ID: -1
+From: 223 To: 202 Cost: 20 Flags: 0 ID: -1
+From: 223 To: 203 Cost: 20 Flags: 0 ID: -1
+From: 223 To: 224 Cost: 28.2843 Flags: 0 ID: -1
+From: 223 To: 245 Cost: 20 Flags: 0 ID: -1
+From: 223 To: 267 Cost: 28.2843 Flags: 0 ID: -1
+From: 224 To: 183 Cost: 28.2843 Flags: 0 ID: -1
+From: 224 To: 203 Cost: 20 Flags: 0 ID: -1
+From: 224 To: 204 Cost: 20 Flags: 0 ID: -1
+From: 224 To: 223 Cost: 28.2843 Flags: 0 ID: -1
+From: 224 To: 225 Cost: 28.2843 Flags: 0 ID: -1
+From: 224 To: 245 Cost: 20 Flags: 0 ID: -1
+From: 224 To: 246 Cost: 20 Flags: 0 ID: -1
+From: 224 To: 268 Cost: 28.2843 Flags: 0 ID: -1
+From: 225 To: 204 Cost: 20 Flags: 0 ID: -1
+From: 225 To: 222 Cost: 28.2843 Flags: 0 ID: -1
+From: 225 To: 224 Cost: 28.2843 Flags: 0 ID: -1
+From: 225 To: 244 Cost: 20 Flags: 0 ID: -1
+From: 225 To: 246 Cost: 20 Flags: 0 ID: -1
+From: 225 To: 247 Cost: 20 Flags: 0 ID: -1
+From: 225 To: 266 Cost: 28.2843 Flags: 0 ID: -1
+From: 225 To: 269 Cost: 28.2843 Flags: 0 ID: -1
+From: 226 To: 186 Cost: 28.2843 Flags: 0 ID: -1
+From: 226 To: 205 Cost: 20 Flags: 0 ID: -1
+From: 226 To: 207 Cost: 20 Flags: 0 ID: -1
+From: 226 To: 228 Cost: 28.2843 Flags: 0 ID: -1
+From: 226 To: 248 Cost: 20 Flags: 0 ID: -1
+From: 227 To: 187 Cost: 28.2843 Flags: 0 ID: -1
+From: 227 To: 206 Cost: 20 Flags: 0 ID: -1
+From: 227 To: 208 Cost: 20 Flags: 0 ID: -1
+From: 227 To: 229 Cost: 28.2843 Flags: 0 ID: -1
+From: 227 To: 249 Cost: 20 Flags: 0 ID: -1
+From: 228 To: 207 Cost: 20 Flags: 0 ID: -1
+From: 228 To: 226 Cost: 28.2843 Flags: 0 ID: -1
+From: 228 To: 248 Cost: 20 Flags: 0 ID: -1
+From: 228 To: 250 Cost: 20 Flags: 0 ID: -1
+From: 228 To: 271 Cost: 28.2843 Flags: 0 ID: -1
+From: 229 To: 189 Cost: 28.2843 Flags: 0 ID: -1
+From: 229 To: 208 Cost: 20 Flags: 0 ID: -1
+From: 229 To: 209 Cost: 20 Flags: 0 ID: -1
+From: 229 To: 227 Cost: 28.2843 Flags: 0 ID: -1
+From: 229 To: 230 Cost: 28.2843 Flags: 0 ID: -1
+From: 229 To: 249 Cost: 20 Flags: 0 ID: -1
+From: 229 To: 251 Cost: 20 Flags: 0 ID: -1
+From: 229 To: 272 Cost: 28.2843 Flags: 0 ID: -1
+From: 229 To: 339 Cost: 20 Flags: 0 ID: -1
+From: 230 To: 190 Cost: 28.2843 Flags: 0 ID: -1
+From: 230 To: 209 Cost: 20 Flags: 0 ID: -1
+From: 230 To: 210 Cost: 20 Flags: 0 ID: -1
+From: 230 To: 229 Cost: 28.2843 Flags: 0 ID: -1
+From: 230 To: 231 Cost: 28.2843 Flags: 0 ID: -1
+From: 230 To: 251 Cost: 20 Flags: 0 ID: -1
+From: 230 To: 252 Cost: 20 Flags: 0 ID: -1
+From: 230 To: 274 Cost: 28.2843 Flags: 0 ID: -1
+From: 230 To: 339 Cost: 20 Flags: 0 ID: -1
+From: 231 To: 210 Cost: 20 Flags: 0 ID: -1
+From: 231 To: 230 Cost: 28.2843 Flags: 0 ID: -1
+From: 231 To: 252 Cost: 20 Flags: 0 ID: -1
+From: 231 To: 253 Cost: 20 Flags: 0 ID: -1
+From: 231 To: 275 Cost: 28.2843 Flags: 0 ID: -1
+From: 232 To: 211 Cost: 20 Flags: 0 ID: -1
+From: 232 To: 233 Cost: 28.2843 Flags: 0 ID: -1
+From: 232 To: 254 Cost: 20 Flags: 0 ID: -1
+From: 232 To: 255 Cost: 20 Flags: 0 ID: -1
+From: 232 To: 278 Cost: 28.2843 Flags: 0 ID: -1
+From: 233 To: 191 Cost: 28.2843 Flags: 0 ID: -1
+From: 233 To: 211 Cost: 20 Flags: 0 ID: -1
+From: 233 To: 212 Cost: 20 Flags: 0 ID: -1
+From: 233 To: 232 Cost: 28.2843 Flags: 0 ID: -1
+From: 233 To: 255 Cost: 20 Flags: 0 ID: -1
+From: 234 To: 213 Cost: 20 Flags: 0 ID: -1
+From: 234 To: 235 Cost: 28.2843 Flags: 0 ID: -1
+From: 234 To: 256 Cost: 20 Flags: 0 ID: -1
+From: 234 To: 257 Cost: 20 Flags: 0 ID: -1
+From: 234 To: 279 Cost: 28.2843 Flags: 0 ID: -1
+From: 235 To: 192 Cost: 28.2843 Flags: 0 ID: -1
+From: 235 To: 213 Cost: 20 Flags: 0 ID: -1
+From: 235 To: 214 Cost: 20 Flags: 0 ID: -1
+From: 235 To: 234 Cost: 28.2843 Flags: 0 ID: -1
+From: 235 To: 257 Cost: 20 Flags: 0 ID: -1
+From: 236 To: 195 Cost: 28.2843 Flags: 0 ID: -1
+From: 236 To: 215 Cost: 20 Flags: 0 ID: -1
+From: 236 To: 216 Cost: 20 Flags: 0 ID: -1
+From: 236 To: 237 Cost: 28.2843 Flags: 0 ID: -1
+From: 236 To: 258 Cost: 20 Flags: 0 ID: -1
+From: 237 To: 196 Cost: 28.2843 Flags: 0 ID: -1
+From: 237 To: 216 Cost: 20 Flags: 0 ID: -1
+From: 237 To: 217 Cost: 20 Flags: 0 ID: -1
+From: 237 To: 236 Cost: 28.2843 Flags: 0 ID: -1
+From: 237 To: 238 Cost: 28.2843 Flags: 0 ID: -1
+From: 237 To: 258 Cost: 20 Flags: 0 ID: -1
+From: 237 To: 259 Cost: 20 Flags: 0 ID: -1
+From: 237 To: 280 Cost: 28.2843 Flags: 0 ID: -1
+From: 237 To: 337 Cost: 20 Flags: 0 ID: -1
+From: 238 To: 198 Cost: 28.2843 Flags: 0 ID: -1
+From: 238 To: 217 Cost: 20 Flags: 0 ID: -1
+From: 238 To: 219 Cost: 20 Flags: 0 ID: -1
+From: 238 To: 237 Cost: 28.2843 Flags: 0 ID: -1
+From: 238 To: 241 Cost: 28.2843 Flags: 0 ID: -1
+From: 238 To: 259 Cost: 20 Flags: 0 ID: -1
+From: 238 To: 260 Cost: 20 Flags: 0 ID: -1
+From: 238 To: 281 Cost: 28.2843 Flags: 0 ID: -1
+From: 238 To: 337 Cost: 20 Flags: 0 ID: -1
+From: 239 To: 197 Cost: 28.2843 Flags: 0 ID: -1
+From: 239 To: 218 Cost: 20 Flags: 0 ID: -1
+From: 239 To: 240 Cost: 28.2843 Flags: 0 ID: -1
+From: 239 To: 261 Cost: 20 Flags: 0 ID: -1
+From: 239 To: 262 Cost: 20 Flags: 0 ID: -1
+From: 239 To: 282 Cost: 28.2843 Flags: 0 ID: -1
+From: 240 To: 198 Cost: 28.2843 Flags: 0 ID: -1
+From: 240 To: 218 Cost: 20 Flags: 0 ID: -1
+From: 240 To: 219 Cost: 20 Flags: 0 ID: -1
+From: 240 To: 239 Cost: 28.2843 Flags: 0 ID: -1
+From: 240 To: 241 Cost: 28.2843 Flags: 0 ID: -1
+From: 240 To: 262 Cost: 20 Flags: 0 ID: -1
+From: 240 To: 263 Cost: 20 Flags: 0 ID: -1
+From: 240 To: 283 Cost: 28.2843 Flags: 0 ID: -1
+From: 241 To: 219 Cost: 20 Flags: 0 ID: -1
+From: 241 To: 238 Cost: 28.2843 Flags: 0 ID: -1
+From: 241 To: 240 Cost: 28.2843 Flags: 0 ID: -1
+From: 241 To: 260 Cost: 20 Flags: 0 ID: -1
+From: 241 To: 263 Cost: 20 Flags: 0 ID: -1
+From: 242 To: 200 Cost: 28.2843 Flags: 0 ID: -1
+From: 242 To: 220 Cost: 20 Flags: 0 ID: -1
+From: 242 To: 221 Cost: 20 Flags: 0 ID: -1
+From: 242 To: 243 Cost: 28.2843 Flags: 0 ID: -1
+From: 242 To: 264 Cost: 20 Flags: 0 ID: -1
+From: 243 To: 201 Cost: 28.2843 Flags: 0 ID: -1
+From: 243 To: 221 Cost: 20 Flags: 0 ID: -1
+From: 243 To: 222 Cost: 20 Flags: 0 ID: -1
+From: 243 To: 242 Cost: 28.2843 Flags: 0 ID: -1
+From: 243 To: 244 Cost: 28.2843 Flags: 0 ID: -1
+From: 243 To: 264 Cost: 20 Flags: 0 ID: -1
+From: 243 To: 265 Cost: 20 Flags: 0 ID: -1
+From: 243 To: 284 Cost: 28.2843 Flags: 0 ID: -1
+From: 244 To: 204 Cost: 28.2843 Flags: 0 ID: -1
+From: 244 To: 222 Cost: 20 Flags: 0 ID: -1
+From: 244 To: 225 Cost: 20 Flags: 0 ID: -1
+From: 244 To: 243 Cost: 28.2843 Flags: 0 ID: -1
+From: 244 To: 247 Cost: 28.2843 Flags: 0 ID: -1
+From: 244 To: 265 Cost: 20 Flags: 0 ID: -1
+From: 244 To: 266 Cost: 20 Flags: 0 ID: -1
+From: 244 To: 285 Cost: 28.2843 Flags: 0 ID: -1
+From: 245 To: 203 Cost: 28.2843 Flags: 0 ID: -1
+From: 245 To: 223 Cost: 20 Flags: 0 ID: -1
+From: 245 To: 224 Cost: 20 Flags: 0 ID: -1
+From: 245 To: 246 Cost: 28.2843 Flags: 0 ID: -1
+From: 245 To: 267 Cost: 20 Flags: 0 ID: -1
+From: 245 To: 268 Cost: 20 Flags: 0 ID: -1
+From: 246 To: 204 Cost: 28.2843 Flags: 0 ID: -1
+From: 246 To: 224 Cost: 20 Flags: 0 ID: -1
+From: 246 To: 225 Cost: 20 Flags: 0 ID: -1
+From: 246 To: 245 Cost: 28.2843 Flags: 0 ID: -1
+From: 246 To: 247 Cost: 28.2843 Flags: 0 ID: -1
+From: 246 To: 268 Cost: 20 Flags: 0 ID: -1
+From: 246 To: 269 Cost: 20 Flags: 0 ID: -1
+From: 246 To: 288 Cost: 28.2843 Flags: 0 ID: -1
+From: 247 To: 225 Cost: 20 Flags: 0 ID: -1
+From: 247 To: 244 Cost: 28.2843 Flags: 0 ID: -1
+From: 247 To: 246 Cost: 28.2843 Flags: 0 ID: -1
+From: 247 To: 266 Cost: 20 Flags: 0 ID: -1
+From: 247 To: 269 Cost: 20 Flags: 0 ID: -1
+From: 247 To: 270 Cost: 20 Flags: 0 ID: -1
+From: 247 To: 286 Cost: 28.2843 Flags: 0 ID: -1
+From: 247 To: 289 Cost: 28.2843 Flags: 0 ID: -1
+From: 248 To: 207 Cost: 28.2843 Flags: 0 ID: -1
+From: 248 To: 226 Cost: 20 Flags: 0 ID: -1
+From: 248 To: 228 Cost: 20 Flags: 0 ID: -1
+From: 248 To: 250 Cost: 28.2843 Flags: 0 ID: -1
+From: 248 To: 271 Cost: 20 Flags: 0 ID: -1
+From: 249 To: 208 Cost: 28.2843 Flags: 0 ID: -1
+From: 249 To: 227 Cost: 20 Flags: 0 ID: -1
+From: 249 To: 229 Cost: 20 Flags: 0 ID: -1
+From: 249 To: 251 Cost: 28.2843 Flags: 0 ID: -1
+From: 249 To: 272 Cost: 20 Flags: 0 ID: -1
+From: 249 To: 339 Cost: 28.2843 Flags: 0 ID: -1
+From: 250 To: 228 Cost: 20 Flags: 0 ID: -1
+From: 250 To: 248 Cost: 28.2843 Flags: 0 ID: -1
+From: 250 To: 271 Cost: 20 Flags: 0 ID: -1
+From: 250 To: 273 Cost: 20 Flags: 0 ID: -1
+From: 250 To: 290 Cost: 28.2843 Flags: 0 ID: -1
+From: 251 To: 209 Cost: 28.2843 Flags: 0 ID: -1
+From: 251 To: 229 Cost: 20 Flags: 0 ID: -1
+From: 251 To: 230 Cost: 20 Flags: 0 ID: -1
+From: 251 To: 249 Cost: 28.2843 Flags: 0 ID: -1
+From: 251 To: 252 Cost: 28.2843 Flags: 0 ID: -1
+From: 251 To: 272 Cost: 20 Flags: 0 ID: -1
+From: 251 To: 274 Cost: 20 Flags: 0 ID: -1
+From: 251 To: 291 Cost: 28.2843 Flags: 0 ID: -1
+From: 251 To: 339 Cost: 0 Flags: 0 ID: -1
+From: 252 To: 210 Cost: 28.2843 Flags: 0 ID: -1
+From: 252 To: 230 Cost: 20 Flags: 0 ID: -1
+From: 252 To: 231 Cost: 20 Flags: 0 ID: -1
+From: 252 To: 251 Cost: 28.2843 Flags: 0 ID: -1
+From: 252 To: 253 Cost: 28.2843 Flags: 0 ID: -1
+From: 252 To: 274 Cost: 20 Flags: 0 ID: -1
+From: 252 To: 275 Cost: 20 Flags: 0 ID: -1
+From: 252 To: 293 Cost: 28.2843 Flags: 0 ID: -1
+From: 252 To: 339 Cost: 28.2843 Flags: 0 ID: -1
+From: 253 To: 231 Cost: 20 Flags: 0 ID: -1
+From: 253 To: 252 Cost: 28.2843 Flags: 0 ID: -1
+From: 253 To: 275 Cost: 20 Flags: 0 ID: -1
+From: 253 To: 276 Cost: 20 Flags: 0 ID: -1
+From: 253 To: 294 Cost: 28.2843 Flags: 0 ID: -1
+From: 254 To: 232 Cost: 20 Flags: 0 ID: -1
+From: 254 To: 255 Cost: 28.2843 Flags: 0 ID: -1
+From: 254 To: 277 Cost: 20 Flags: 0 ID: -1
+From: 254 To: 278 Cost: 20 Flags: 0 ID: -1
+From: 254 To: 296 Cost: 28.2843 Flags: 0 ID: -1
+From: 255 To: 211 Cost: 28.2843 Flags: 0 ID: -1
+From: 255 To: 232 Cost: 20 Flags: 0 ID: -1
+From: 255 To: 233 Cost: 20 Flags: 0 ID: -1
+From: 255 To: 254 Cost: 28.2843 Flags: 0 ID: -1
+From: 255 To: 278 Cost: 20 Flags: 0 ID: -1
+From: 256 To: 234 Cost: 20 Flags: 0 ID: -1
+From: 256 To: 257 Cost: 28.2843 Flags: 0 ID: -1
+From: 256 To: 261 Cost: 20 Flags: 0 ID: -1
+From: 256 To: 279 Cost: 20 Flags: 0 ID: -1
+From: 256 To: 282 Cost: 28.2843 Flags: 0 ID: -1
+From: 257 To: 213 Cost: 28.2843 Flags: 0 ID: -1
+From: 257 To: 234 Cost: 20 Flags: 0 ID: -1
+From: 257 To: 235 Cost: 20 Flags: 0 ID: -1
+From: 257 To: 256 Cost: 28.2843 Flags: 0 ID: -1
+From: 257 To: 279 Cost: 20 Flags: 0 ID: -1
+From: 258 To: 216 Cost: 28.2843 Flags: 0 ID: -1
+From: 258 To: 236 Cost: 20 Flags: 0 ID: -1
+From: 258 To: 237 Cost: 20 Flags: 0 ID: -1
+From: 258 To: 259 Cost: 28.2843 Flags: 0 ID: -1
+From: 258 To: 280 Cost: 20 Flags: 0 ID: -1
+From: 258 To: 337 Cost: 28.2843 Flags: 0 ID: -1
+From: 259 To: 217 Cost: 28.2843 Flags: 0 ID: -1
+From: 259 To: 237 Cost: 20 Flags: 0 ID: -1
+From: 259 To: 238 Cost: 20 Flags: 0 ID: -1
+From: 259 To: 258 Cost: 28.2843 Flags: 0 ID: -1
+From: 259 To: 260 Cost: 28.2843 Flags: 0 ID: -1
+From: 259 To: 280 Cost: 20 Flags: 0 ID: -1
+From: 259 To: 281 Cost: 20 Flags: 0 ID: -1
+From: 259 To: 298 Cost: 28.2843 Flags: 0 ID: -1
+From: 259 To: 337 Cost: 0 Flags: 0 ID: -1
+From: 260 To: 219 Cost: 28.2843 Flags: 0 ID: -1
+From: 260 To: 238 Cost: 20 Flags: 0 ID: -1
+From: 260 To: 241 Cost: 20 Flags: 0 ID: -1
+From: 260 To: 259 Cost: 28.2843 Flags: 0 ID: -1
+From: 260 To: 281 Cost: 20 Flags: 0 ID: -1
+From: 260 To: 337 Cost: 28.2843 Flags: 0 ID: -1
+From: 261 To: 239 Cost: 20 Flags: 0 ID: -1
+From: 261 To: 256 Cost: 20 Flags: 0 ID: -1
+From: 261 To: 262 Cost: 28.2843 Flags: 0 ID: -1
+From: 261 To: 279 Cost: 28.2843 Flags: 0 ID: -1
+From: 261 To: 282 Cost: 20 Flags: 0 ID: -1
+From: 262 To: 218 Cost: 28.2843 Flags: 0 ID: -1
+From: 262 To: 239 Cost: 20 Flags: 0 ID: -1
+From: 262 To: 240 Cost: 20 Flags: 0 ID: -1
+From: 262 To: 261 Cost: 28.2843 Flags: 0 ID: -1
+From: 262 To: 263 Cost: 28.2843 Flags: 0 ID: -1
+From: 262 To: 282 Cost: 20 Flags: 0 ID: -1
+From: 262 To: 283 Cost: 20 Flags: 0 ID: -1
+From: 262 To: 299 Cost: 28.2843 Flags: 0 ID: -1
+From: 263 To: 219 Cost: 28.2843 Flags: 0 ID: -1
+From: 263 To: 240 Cost: 20 Flags: 0 ID: -1
+From: 263 To: 241 Cost: 20 Flags: 0 ID: -1
+From: 263 To: 262 Cost: 28.2843 Flags: 0 ID: -1
+From: 263 To: 283 Cost: 20 Flags: 0 ID: -1
+From: 264 To: 221 Cost: 28.2843 Flags: 0 ID: -1
+From: 264 To: 242 Cost: 20 Flags: 0 ID: -1
+From: 264 To: 243 Cost: 20 Flags: 0 ID: -1
+From: 264 To: 265 Cost: 28.2843 Flags: 0 ID: -1
+From: 264 To: 284 Cost: 20 Flags: 0 ID: -1
+From: 265 To: 222 Cost: 28.2843 Flags: 0 ID: -1
+From: 265 To: 243 Cost: 20 Flags: 0 ID: -1
+From: 265 To: 244 Cost: 20 Flags: 0 ID: -1
+From: 265 To: 264 Cost: 28.2843 Flags: 0 ID: -1
+From: 265 To: 266 Cost: 28.2843 Flags: 0 ID: -1
+From: 265 To: 284 Cost: 20 Flags: 0 ID: -1
+From: 265 To: 285 Cost: 20 Flags: 0 ID: -1
+From: 265 To: 300 Cost: 28.2843 Flags: 0 ID: -1
+From: 266 To: 225 Cost: 28.2843 Flags: 0 ID: -1
+From: 266 To: 244 Cost: 20 Flags: 0 ID: -1
+From: 266 To: 247 Cost: 20 Flags: 0 ID: -1
+From: 266 To: 265 Cost: 28.2843 Flags: 0 ID: -1
+From: 266 To: 270 Cost: 28.2843 Flags: 0 ID: -1
+From: 266 To: 285 Cost: 20 Flags: 0 ID: -1
+From: 266 To: 286 Cost: 20 Flags: 0 ID: -1
+From: 266 To: 301 Cost: 28.2843 Flags: 0 ID: -1
+From: 267 To: 223 Cost: 28.2843 Flags: 0 ID: -1
+From: 267 To: 245 Cost: 20 Flags: 0 ID: -1
+From: 267 To: 268 Cost: 28.2843 Flags: 0 ID: -1
+From: 267 To: 287 Cost: 20 Flags: 0 ID: -1
+From: 268 To: 224 Cost: 28.2843 Flags: 0 ID: -1
+From: 268 To: 245 Cost: 20 Flags: 0 ID: -1
+From: 268 To: 246 Cost: 20 Flags: 0 ID: -1
+From: 268 To: 267 Cost: 28.2843 Flags: 0 ID: -1
+From: 268 To: 269 Cost: 28.2843 Flags: 0 ID: -1
+From: 268 To: 288 Cost: 20 Flags: 0 ID: -1
+From: 269 To: 225 Cost: 28.2843 Flags: 0 ID: -1
+From: 269 To: 246 Cost: 20 Flags: 0 ID: -1
+From: 269 To: 247 Cost: 20 Flags: 0 ID: -1
+From: 269 To: 268 Cost: 28.2843 Flags: 0 ID: -1
+From: 269 To: 270 Cost: 28.2843 Flags: 0 ID: -1
+From: 269 To: 288 Cost: 20 Flags: 0 ID: -1
+From: 269 To: 289 Cost: 20 Flags: 0 ID: -1
+From: 269 To: 303 Cost: 28.2843 Flags: 0 ID: -1
+From: 270 To: 247 Cost: 20 Flags: 0 ID: -1
+From: 270 To: 266 Cost: 28.2843 Flags: 0 ID: -1
+From: 270 To: 269 Cost: 28.2843 Flags: 0 ID: -1
+From: 270 To: 286 Cost: 20 Flags: 0 ID: -1
+From: 270 To: 289 Cost: 20 Flags: 0 ID: -1
+From: 271 To: 228 Cost: 28.2843 Flags: 0 ID: -1
+From: 271 To: 248 Cost: 20 Flags: 0 ID: -1
+From: 271 To: 250 Cost: 20 Flags: 0 ID: -1
+From: 271 To: 273 Cost: 28.2843 Flags: 0 ID: -1
+From: 271 To: 290 Cost: 20 Flags: 0 ID: -1
+From: 272 To: 229 Cost: 28.2843 Flags: 0 ID: -1
+From: 272 To: 249 Cost: 20 Flags: 0 ID: -1
+From: 272 To: 251 Cost: 20 Flags: 0 ID: -1
+From: 272 To: 274 Cost: 28.2843 Flags: 0 ID: -1
+From: 272 To: 291 Cost: 20 Flags: 0 ID: -1
+From: 272 To: 339 Cost: 20 Flags: 0 ID: -1
+From: 273 To: 250 Cost: 20 Flags: 0 ID: -1
+From: 273 To: 271 Cost: 28.2843 Flags: 0 ID: -1
+From: 273 To: 277 Cost: 28.2843 Flags: 0 ID: -1
+From: 273 To: 290 Cost: 20 Flags: 0 ID: -1
+From: 273 To: 292 Cost: 20 Flags: 0 ID: -1
+From: 273 To: 304 Cost: 28.2843 Flags: 0 ID: -1
+From: 274 To: 230 Cost: 28.2843 Flags: 0 ID: -1
+From: 274 To: 251 Cost: 20 Flags: 0 ID: -1
+From: 274 To: 252 Cost: 20 Flags: 0 ID: -1
+From: 274 To: 272 Cost: 28.2843 Flags: 0 ID: -1
+From: 274 To: 275 Cost: 28.2843 Flags: 0 ID: -1
+From: 274 To: 291 Cost: 20 Flags: 0 ID: -1
+From: 274 To: 293 Cost: 20 Flags: 0 ID: -1
+From: 274 To: 305 Cost: 28.2843 Flags: 0 ID: -1
+From: 274 To: 339 Cost: 20 Flags: 0 ID: -1
+From: 275 To: 231 Cost: 28.2843 Flags: 0 ID: -1
+From: 275 To: 252 Cost: 20 Flags: 0 ID: -1
+From: 275 To: 253 Cost: 20 Flags: 0 ID: -1
+From: 275 To: 274 Cost: 28.2843 Flags: 0 ID: -1
+From: 275 To: 276 Cost: 28.2843 Flags: 0 ID: -1
+From: 275 To: 293 Cost: 20 Flags: 0 ID: -1
+From: 275 To: 294 Cost: 20 Flags: 0 ID: -1
+From: 275 To: 307 Cost: 28.2843 Flags: 0 ID: -1
+From: 276 To: 253 Cost: 20 Flags: 0 ID: -1
+From: 276 To: 275 Cost: 28.2843 Flags: 0 ID: -1
+From: 276 To: 294 Cost: 20 Flags: 0 ID: -1
+From: 276 To: 295 Cost: 20 Flags: 0 ID: -1
+From: 276 To: 308 Cost: 28.2843 Flags: 0 ID: -1
+From: 276 To: 309 Cost: 28.2843 Flags: 0 ID: -1
+From: 277 To: 254 Cost: 20 Flags: 0 ID: -1
+From: 277 To: 273 Cost: 28.2843 Flags: 0 ID: -1
+From: 277 To: 278 Cost: 28.2843 Flags: 0 ID: -1
+From: 277 To: 292 Cost: 20 Flags: 0 ID: -1
+From: 277 To: 296 Cost: 20 Flags: 0 ID: -1
+From: 277 To: 306 Cost: 28.2843 Flags: 0 ID: -1
+From: 278 To: 232 Cost: 28.2843 Flags: 0 ID: -1
+From: 278 To: 254 Cost: 20 Flags: 0 ID: -1
+From: 278 To: 255 Cost: 20 Flags: 0 ID: -1
+From: 278 To: 277 Cost: 28.2843 Flags: 0 ID: -1
+From: 278 To: 296 Cost: 20 Flags: 0 ID: -1
+From: 279 To: 234 Cost: 28.2843 Flags: 0 ID: -1
+From: 279 To: 256 Cost: 20 Flags: 0 ID: -1
+From: 279 To: 257 Cost: 20 Flags: 0 ID: -1
+From: 279 To: 261 Cost: 28.2843 Flags: 0 ID: -1
+From: 279 To: 282 Cost: 20 Flags: 0 ID: -1
+From: 279 To: 297 Cost: 20 Flags: 0 ID: -1
+From: 279 To: 299 Cost: 28.2843 Flags: 0 ID: -1
+From: 280 To: 237 Cost: 28.2843 Flags: 0 ID: -1
+From: 280 To: 258 Cost: 20 Flags: 0 ID: -1
+From: 280 To: 259 Cost: 20 Flags: 0 ID: -1
+From: 280 To: 281 Cost: 28.2843 Flags: 0 ID: -1
+From: 280 To: 298 Cost: 20 Flags: 0 ID: -1
+From: 280 To: 337 Cost: 20 Flags: 0 ID: -1
+From: 281 To: 238 Cost: 28.2843 Flags: 0 ID: -1
+From: 281 To: 259 Cost: 20 Flags: 0 ID: -1
+From: 281 To: 260 Cost: 20 Flags: 0 ID: -1
+From: 281 To: 280 Cost: 28.2843 Flags: 0 ID: -1
+From: 281 To: 298 Cost: 20 Flags: 0 ID: -1
+From: 281 To: 337 Cost: 20 Flags: 0 ID: -1
+From: 282 To: 239 Cost: 28.2843 Flags: 0 ID: -1
+From: 282 To: 256 Cost: 28.2843 Flags: 0 ID: -1
+From: 282 To: 261 Cost: 20 Flags: 0 ID: -1
+From: 282 To: 262 Cost: 20 Flags: 0 ID: -1
+From: 282 To: 279 Cost: 20 Flags: 0 ID: -1
+From: 282 To: 283 Cost: 28.2843 Flags: 0 ID: -1
+From: 282 To: 297 Cost: 28.2843 Flags: 0 ID: -1
+From: 282 To: 299 Cost: 20 Flags: 0 ID: -1
+From: 283 To: 240 Cost: 28.2843 Flags: 0 ID: -1
+From: 283 To: 262 Cost: 20 Flags: 0 ID: -1
+From: 283 To: 263 Cost: 20 Flags: 0 ID: -1
+From: 283 To: 282 Cost: 28.2843 Flags: 0 ID: -1
+From: 283 To: 299 Cost: 20 Flags: 0 ID: -1
+From: 284 To: 243 Cost: 28.2843 Flags: 0 ID: -1
+From: 284 To: 264 Cost: 20 Flags: 0 ID: -1
+From: 284 To: 265 Cost: 20 Flags: 0 ID: -1
+From: 284 To: 285 Cost: 28.2843 Flags: 0 ID: -1
+From: 284 To: 300 Cost: 20 Flags: 0 ID: -1
+From: 285 To: 244 Cost: 28.2843 Flags: 0 ID: -1
+From: 285 To: 265 Cost: 20 Flags: 0 ID: -1
+From: 285 To: 266 Cost: 20 Flags: 0 ID: -1
+From: 285 To: 284 Cost: 28.2843 Flags: 0 ID: -1
+From: 285 To: 286 Cost: 28.2843 Flags: 0 ID: -1
+From: 285 To: 300 Cost: 20 Flags: 0 ID: -1
+From: 285 To: 301 Cost: 20 Flags: 0 ID: -1
+From: 285 To: 310 Cost: 28.2843 Flags: 0 ID: -1
+From: 286 To: 247 Cost: 28.2843 Flags: 0 ID: -1
+From: 286 To: 266 Cost: 20 Flags: 0 ID: -1
+From: 286 To: 270 Cost: 20 Flags: 0 ID: -1
+From: 286 To: 285 Cost: 28.2843 Flags: 0 ID: -1
+From: 286 To: 301 Cost: 20 Flags: 0 ID: -1
+From: 287 To: 267 Cost: 20 Flags: 0 ID: -1
+From: 287 To: 302 Cost: 20 Flags: 0 ID: -1
+From: 288 To: 246 Cost: 28.2843 Flags: 0 ID: -1
+From: 288 To: 268 Cost: 20 Flags: 0 ID: -1
+From: 288 To: 269 Cost: 20 Flags: 0 ID: -1
+From: 288 To: 289 Cost: 28.2843 Flags: 0 ID: -1
+From: 288 To: 303 Cost: 20 Flags: 0 ID: -1
+From: 289 To: 247 Cost: 28.2843 Flags: 0 ID: -1
+From: 289 To: 269 Cost: 20 Flags: 0 ID: -1
+From: 289 To: 270 Cost: 20 Flags: 0 ID: -1
+From: 289 To: 288 Cost: 28.2843 Flags: 0 ID: -1
+From: 289 To: 303 Cost: 20 Flags: 0 ID: -1
+From: 290 To: 250 Cost: 28.2843 Flags: 0 ID: -1
+From: 290 To: 271 Cost: 20 Flags: 0 ID: -1
+From: 290 To: 273 Cost: 20 Flags: 0 ID: -1
+From: 290 To: 292 Cost: 28.2843 Flags: 0 ID: -1
+From: 290 To: 304 Cost: 20 Flags: 0 ID: -1
+From: 291 To: 251 Cost: 28.2843 Flags: 0 ID: -1
+From: 291 To: 272 Cost: 20 Flags: 0 ID: -1
+From: 291 To: 274 Cost: 20 Flags: 0 ID: -1
+From: 291 To: 293 Cost: 28.2843 Flags: 0 ID: -1
+From: 291 To: 305 Cost: 20 Flags: 0 ID: -1
+From: 291 To: 339 Cost: 28.2843 Flags: 0 ID: -1
+From: 292 To: 273 Cost: 20 Flags: 0 ID: -1
+From: 292 To: 277 Cost: 20 Flags: 0 ID: -1
+From: 292 To: 290 Cost: 28.2843 Flags: 0 ID: -1
+From: 292 To: 296 Cost: 28.2843 Flags: 0 ID: -1
+From: 292 To: 304 Cost: 20 Flags: 0 ID: -1
+From: 292 To: 306 Cost: 20 Flags: 0 ID: -1
+From: 292 To: 312 Cost: 28.2843 Flags: 0 ID: -1
+From: 293 To: 252 Cost: 28.2843 Flags: 0 ID: -1
+From: 293 To: 274 Cost: 20 Flags: 0 ID: -1
+From: 293 To: 275 Cost: 20 Flags: 0 ID: -1
+From: 293 To: 291 Cost: 28.2843 Flags: 0 ID: -1
+From: 293 To: 294 Cost: 28.2843 Flags: 0 ID: -1
+From: 293 To: 305 Cost: 20 Flags: 0 ID: -1
+From: 293 To: 307 Cost: 20 Flags: 0 ID: -1
+From: 293 To: 313 Cost: 28.2843 Flags: 0 ID: -1
+From: 294 To: 253 Cost: 28.2843 Flags: 0 ID: -1
+From: 294 To: 275 Cost: 20 Flags: 0 ID: -1
+From: 294 To: 276 Cost: 20 Flags: 0 ID: -1
+From: 294 To: 293 Cost: 28.2843 Flags: 0 ID: -1
+From: 294 To: 295 Cost: 28.2843 Flags: 0 ID: -1
+From: 294 To: 307 Cost: 20 Flags: 0 ID: -1
+From: 294 To: 308 Cost: 20 Flags: 0 ID: -1
+From: 294 To: 314 Cost: 28.2843 Flags: 0 ID: -1
+From: 295 To: 276 Cost: 20 Flags: 0 ID: -1
+From: 295 To: 294 Cost: 28.2843 Flags: 0 ID: -1
+From: 295 To: 308 Cost: 20 Flags: 0 ID: -1
+From: 295 To: 309 Cost: 20 Flags: 0 ID: -1
+From: 296 To: 254 Cost: 28.2843 Flags: 0 ID: -1
+From: 296 To: 277 Cost: 20 Flags: 0 ID: -1
+From: 296 To: 278 Cost: 20 Flags: 0 ID: -1
+From: 296 To: 292 Cost: 28.2843 Flags: 0 ID: -1
+From: 296 To: 306 Cost: 20 Flags: 0 ID: -1
+From: 297 To: 279 Cost: 20 Flags: 0 ID: -1
+From: 297 To: 282 Cost: 28.2843 Flags: 0 ID: -1
+From: 297 To: 299 Cost: 20 Flags: 0 ID: -1
+From: 298 To: 259 Cost: 28.2843 Flags: 0 ID: -1
+From: 298 To: 280 Cost: 20 Flags: 0 ID: -1
+From: 298 To: 281 Cost: 20 Flags: 0 ID: -1
+From: 298 To: 337 Cost: 28.2843 Flags: 0 ID: -1
+From: 299 To: 262 Cost: 28.2843 Flags: 0 ID: -1
+From: 299 To: 279 Cost: 28.2843 Flags: 0 ID: -1
+From: 299 To: 282 Cost: 20 Flags: 0 ID: -1
+From: 299 To: 283 Cost: 20 Flags: 0 ID: -1
+From: 299 To: 297 Cost: 20 Flags: 0 ID: -1
+From: 300 To: 265 Cost: 28.2843 Flags: 0 ID: -1
+From: 300 To: 284 Cost: 20 Flags: 0 ID: -1
+From: 300 To: 285 Cost: 20 Flags: 0 ID: -1
+From: 300 To: 301 Cost: 28.2843 Flags: 0 ID: -1
+From: 300 To: 310 Cost: 20 Flags: 0 ID: -1
+From: 301 To: 266 Cost: 28.2843 Flags: 0 ID: -1
+From: 301 To: 285 Cost: 20 Flags: 0 ID: -1
+From: 301 To: 286 Cost: 20 Flags: 0 ID: -1
+From: 301 To: 300 Cost: 28.2843 Flags: 0 ID: -1
+From: 301 To: 310 Cost: 20 Flags: 0 ID: -1
+From: 302 To: 287 Cost: 20 Flags: 0 ID: -1
+From: 302 To: 311 Cost: 20 Flags: 0 ID: -1
+From: 302 To: 317 Cost: 28.2843 Flags: 0 ID: -1
+From: 303 To: 269 Cost: 28.2843 Flags: 0 ID: -1
+From: 303 To: 288 Cost: 20 Flags: 0 ID: -1
+From: 303 To: 289 Cost: 20 Flags: 0 ID: -1
+From: 304 To: 273 Cost: 28.2843 Flags: 0 ID: -1
+From: 304 To: 290 Cost: 20 Flags: 0 ID: -1
+From: 304 To: 292 Cost: 20 Flags: 0 ID: -1
+From: 304 To: 306 Cost: 28.2843 Flags: 0 ID: -1
+From: 304 To: 312 Cost: 20 Flags: 0 ID: -1
+From: 305 To: 274 Cost: 28.2843 Flags: 0 ID: -1
+From: 305 To: 291 Cost: 20 Flags: 0 ID: -1
+From: 305 To: 293 Cost: 20 Flags: 0 ID: -1
+From: 305 To: 307 Cost: 28.2843 Flags: 0 ID: -1
+From: 305 To: 313 Cost: 20 Flags: 0 ID: -1
+From: 306 To: 277 Cost: 28.2843 Flags: 0 ID: -1
+From: 306 To: 292 Cost: 20 Flags: 0 ID: -1
+From: 306 To: 296 Cost: 20 Flags: 0 ID: -1
+From: 306 To: 304 Cost: 28.2843 Flags: 0 ID: -1
+From: 306 To: 312 Cost: 20 Flags: 0 ID: -1
+From: 307 To: 275 Cost: 28.2843 Flags: 0 ID: -1
+From: 307 To: 293 Cost: 20 Flags: 0 ID: -1
+From: 307 To: 294 Cost: 20 Flags: 0 ID: -1
+From: 307 To: 305 Cost: 28.2843 Flags: 0 ID: -1
+From: 307 To: 308 Cost: 28.2843 Flags: 0 ID: -1
+From: 307 To: 313 Cost: 20 Flags: 0 ID: -1
+From: 307 To: 314 Cost: 20 Flags: 0 ID: -1
+From: 307 To: 318 Cost: 28.2843 Flags: 0 ID: -1
+From: 308 To: 276 Cost: 28.2843 Flags: 0 ID: -1
+From: 308 To: 294 Cost: 20 Flags: 0 ID: -1
+From: 308 To: 295 Cost: 20 Flags: 0 ID: -1
+From: 308 To: 307 Cost: 28.2843 Flags: 0 ID: -1
+From: 308 To: 314 Cost: 20 Flags: 0 ID: -1
+From: 309 To: 276 Cost: 28.2843 Flags: 0 ID: -1
+From: 309 To: 295 Cost: 20 Flags: 0 ID: -1
+From: 309 To: 315 Cost: 20 Flags: 0 ID: -1
+From: 310 To: 285 Cost: 28.2843 Flags: 0 ID: -1
+From: 310 To: 300 Cost: 20 Flags: 0 ID: -1
+From: 310 To: 301 Cost: 20 Flags: 0 ID: -1
+From: 311 To: 302 Cost: 20 Flags: 0 ID: -1
+From: 311 To: 316 Cost: 20 Flags: 0 ID: -1
+From: 311 To: 317 Cost: 20 Flags: 0 ID: -1
+From: 311 To: 320 Cost: 28.2843 Flags: 0 ID: -1
+From: 312 To: 292 Cost: 28.2843 Flags: 0 ID: -1
+From: 312 To: 304 Cost: 20 Flags: 0 ID: -1
+From: 312 To: 306 Cost: 20 Flags: 0 ID: -1
+From: 313 To: 293 Cost: 28.2843 Flags: 0 ID: -1
+From: 313 To: 305 Cost: 20 Flags: 0 ID: -1
+From: 313 To: 307 Cost: 20 Flags: 0 ID: -1
+From: 313 To: 314 Cost: 28.2843 Flags: 0 ID: -1
+From: 313 To: 318 Cost: 20 Flags: 0 ID: -1
+From: 314 To: 294 Cost: 28.2843 Flags: 0 ID: -1
+From: 314 To: 307 Cost: 20 Flags: 0 ID: -1
+From: 314 To: 308 Cost: 20 Flags: 0 ID: -1
+From: 314 To: 313 Cost: 28.2843 Flags: 0 ID: -1
+From: 314 To: 318 Cost: 20 Flags: 0 ID: -1
+From: 315 To: 309 Cost: 20 Flags: 0 ID: -1
+From: 315 To: 319 Cost: 20 Flags: 0 ID: -1
+From: 315 To: 323 Cost: 28.2843 Flags: 0 ID: -1
+From: 316 To: 311 Cost: 20 Flags: 0 ID: -1
+From: 316 To: 317 Cost: 28.2843 Flags: 0 ID: -1
+From: 316 To: 320 Cost: 20 Flags: 0 ID: -1
+From: 316 To: 324 Cost: 28.2843 Flags: 0 ID: -1
+From: 317 To: 302 Cost: 28.2843 Flags: 0 ID: -1
+From: 317 To: 311 Cost: 20 Flags: 0 ID: -1
+From: 317 To: 316 Cost: 28.2843 Flags: 0 ID: -1
+From: 317 To: 320 Cost: 20 Flags: 0 ID: -1
+From: 317 To: 321 Cost: 20 Flags: 0 ID: -1
+From: 317 To: 325 Cost: 28.2843 Flags: 0 ID: -1
+From: 318 To: 307 Cost: 28.2843 Flags: 0 ID: -1
+From: 318 To: 313 Cost: 20 Flags: 0 ID: -1
+From: 318 To: 314 Cost: 20 Flags: 0 ID: -1
+From: 319 To: 315 Cost: 20 Flags: 0 ID: -1
+From: 319 To: 322 Cost: 20 Flags: 0 ID: -1
+From: 319 To: 323 Cost: 20 Flags: 0 ID: -1
+From: 319 To: 328 Cost: 28.2843 Flags: 0 ID: -1
+From: 320 To: 311 Cost: 28.2843 Flags: 0 ID: -1
+From: 320 To: 316 Cost: 20 Flags: 0 ID: -1
+From: 320 To: 317 Cost: 20 Flags: 0 ID: -1
+From: 320 To: 321 Cost: 28.2843 Flags: 0 ID: -1
+From: 320 To: 324 Cost: 20 Flags: 0 ID: -1
+From: 320 To: 325 Cost: 20 Flags: 0 ID: -1
+From: 320 To: 330 Cost: 28.2843 Flags: 0 ID: -1
+From: 321 To: 317 Cost: 20 Flags: 0 ID: -1
+From: 321 To: 320 Cost: 28.2843 Flags: 0 ID: -1
+From: 321 To: 325 Cost: 20 Flags: 0 ID: -1
+From: 321 To: 326 Cost: 20 Flags: 0 ID: -1
+From: 321 To: 331 Cost: 28.2843 Flags: 0 ID: -1
+From: 321 To: 333 Cost: 31.6228 Flags: 0 ID: -1
+From: 322 To: 319 Cost: 20 Flags: 0 ID: -1
+From: 322 To: 323 Cost: 28.2843 Flags: 0 ID: -1
+From: 322 To: 327 Cost: 20 Flags: 0 ID: -1
+From: 322 To: 328 Cost: 20 Flags: 0 ID: -1
+From: 322 To: 330 Cost: 28.2843 Flags: 0 ID: -1
+From: 323 To: 315 Cost: 28.2843 Flags: 0 ID: -1
+From: 323 To: 319 Cost: 20 Flags: 0 ID: -1
+From: 323 To: 322 Cost: 28.2843 Flags: 0 ID: -1
+From: 323 To: 328 Cost: 20 Flags: 0 ID: -1
+From: 323 To: 329 Cost: 28.2843 Flags: 0 ID: -1
+From: 323 To: 336 Cost: 28.2843 Flags: 0 ID: -1
+From: 324 To: 316 Cost: 28.2843 Flags: 0 ID: -1
+From: 324 To: 320 Cost: 20 Flags: 0 ID: -1
+From: 324 To: 325 Cost: 28.2843 Flags: 0 ID: -1
+From: 324 To: 328 Cost: 28.2843 Flags: 0 ID: -1
+From: 324 To: 329 Cost: 20 Flags: 0 ID: -1
+From: 324 To: 330 Cost: 20 Flags: 0 ID: -1
+From: 324 To: 336 Cost: 20 Flags: 0 ID: -1
+From: 325 To: 317 Cost: 28.2843 Flags: 0 ID: -1
+From: 325 To: 320 Cost: 20 Flags: 0 ID: -1
+From: 325 To: 321 Cost: 20 Flags: 0 ID: -1
+From: 325 To: 324 Cost: 28.2843 Flags: 0 ID: -1
+From: 325 To: 326 Cost: 28.2843 Flags: 0 ID: -1
+From: 325 To: 327 Cost: 28.2843 Flags: 0 ID: -1
+From: 325 To: 330 Cost: 20 Flags: 0 ID: -1
+From: 325 To: 331 Cost: 20 Flags: 0 ID: -1
+From: 326 To: 321 Cost: 20 Flags: 0 ID: -1
+From: 326 To: 325 Cost: 28.2843 Flags: 0 ID: -1
+From: 326 To: 331 Cost: 20 Flags: 0 ID: -1
+From: 326 To: 333 Cost: 14.1421 Flags: 0 ID: -1
+From: 327 To: 322 Cost: 20 Flags: 0 ID: -1
+From: 327 To: 325 Cost: 28.2843 Flags: 0 ID: -1
+From: 327 To: 328 Cost: 28.2843 Flags: 0 ID: -1
+From: 327 To: 330 Cost: 20 Flags: 0 ID: -1
+From: 327 To: 331 Cost: 20 Flags: 0 ID: -1
+From: 328 To: 319 Cost: 28.2843 Flags: 0 ID: -1
+From: 328 To: 322 Cost: 20 Flags: 0 ID: -1
+From: 328 To: 323 Cost: 20 Flags: 0 ID: -1
+From: 328 To: 324 Cost: 28.2843 Flags: 0 ID: -1
+From: 328 To: 327 Cost: 28.2843 Flags: 0 ID: -1
+From: 328 To: 329 Cost: 20 Flags: 0 ID: -1
+From: 328 To: 330 Cost: 20 Flags: 0 ID: -1
+From: 328 To: 336 Cost: 20 Flags: 0 ID: -1
+From: 329 To: 323 Cost: 28.2843 Flags: 0 ID: -1
+From: 329 To: 324 Cost: 20 Flags: 0 ID: -1
+From: 329 To: 328 Cost: 20 Flags: 0 ID: -1
+From: 329 To: 330 Cost: 28.2843 Flags: 0 ID: -1
+From: 329 To: 336 Cost: 0 Flags: 0 ID: -1
+From: 330 To: 320 Cost: 28.2843 Flags: 0 ID: -1
+From: 330 To: 322 Cost: 28.2843 Flags: 0 ID: -1
+From: 330 To: 324 Cost: 20 Flags: 0 ID: -1
+From: 330 To: 325 Cost: 20 Flags: 0 ID: -1
+From: 330 To: 327 Cost: 20 Flags: 0 ID: -1
+From: 330 To: 328 Cost: 20 Flags: 0 ID: -1
+From: 330 To: 329 Cost: 28.2843 Flags: 0 ID: -1
+From: 330 To: 331 Cost: 28.2843 Flags: 0 ID: -1
+From: 330 To: 336 Cost: 28.2843 Flags: 0 ID: -1
+From: 331 To: 321 Cost: 28.2843 Flags: 0 ID: -1
+From: 331 To: 325 Cost: 20 Flags: 0 ID: -1
+From: 331 To: 326 Cost: 20 Flags: 0 ID: -1
+From: 331 To: 327 Cost: 20 Flags: 0 ID: -1
+From: 331 To: 330 Cost: 28.2843 Flags: 0 ID: -1
+From: 331 To: 333 Cost: 31.6228 Flags: 0 ID: -1
+From: 332 To: 133 Cost: 31.6228 Flags: 0 ID: -1
+From: 332 To: 155 Cost: 14.1421 Flags: 0 ID: -1
+From: 332 To: 156 Cost: 31.6228 Flags: 0 ID: -1
+From: 332 To: 176 Cost: 14.1421 Flags: 0 ID: -1
+From: 333 To: 321 Cost: 31.6228 Flags: 0 ID: -1
+From: 333 To: 326 Cost: 14.1421 Flags: 0 ID: -1
+From: 333 To: 331 Cost: 31.6228 Flags: 0 ID: -1
+From: 334 To: 30 Cost: 31.6228 Flags: 0 ID: -1
+From: 334 To: 41 Cost: 31.6228 Flags: 0 ID: -1
+From: 334 To: 43 Cost: 14.1421 Flags: 0 ID: -1
+From: 334 To: 56 Cost: 14.1421 Flags: 0 ID: -1
+From: 334 To: 58 Cost: 14.1421 Flags: 0 ID: -1
+From: 334 To: 71 Cost: 31.6228 Flags: 0 ID: -1
+From: 334 To: 73 Cost: 14.1421 Flags: 0 ID: -1
+From: 334 To: 89 Cost: 31.6228 Flags: 0 ID: -1
+From: 335 To: 94 Cost: 31.6228 Flags: 0 ID: -1
+From: 335 To: 112 Cost: 14.1421 Flags: 0 ID: -1
+From: 335 To: 114 Cost: 31.6228 Flags: 0 ID: -1
+From: 335 To: 135 Cost: 14.1421 Flags: 0 ID: -1
+From: 335 To: 136 Cost: 31.6228 Flags: 0 ID: -1
+From: 335 To: 137 Cost: 14.1421 Flags: 0 ID: -1
+From: 335 To: 158 Cost: 31.6228 Flags: 0 ID: -1
+From: 335 To: 159 Cost: 14.1421 Flags: 0 ID: -1
+From: 336 To: 323 Cost: 28.2843 Flags: 0 ID: -1
+From: 336 To: 324 Cost: 20 Flags: 0 ID: -1
+From: 336 To: 328 Cost: 20 Flags: 0 ID: -1
+From: 336 To: 329 Cost: 0 Flags: 0 ID: -1
+From: 336 To: 330 Cost: 28.2843 Flags: 0 ID: -1
+From: 337 To: 217 Cost: 28.2843 Flags: 0 ID: -1
+From: 337 To: 237 Cost: 20 Flags: 0 ID: -1
+From: 337 To: 238 Cost: 20 Flags: 0 ID: -1
+From: 337 To: 258 Cost: 28.2843 Flags: 0 ID: -1
+From: 337 To: 259 Cost: 0 Flags: 0 ID: -1
+From: 337 To: 260 Cost: 28.2843 Flags: 0 ID: -1
+From: 337 To: 280 Cost: 20 Flags: 0 ID: -1
+From: 337 To: 281 Cost: 20 Flags: 0 ID: -1
+From: 337 To: 298 Cost: 28.2843 Flags: 0 ID: -1
+From: 338 To: 122 Cost: 31.6228 Flags: 0 ID: -1
+From: 338 To: 124 Cost: 31.6228 Flags: 0 ID: -1
+From: 338 To: 143 Cost: 31.6228 Flags: 0 ID: -1
+From: 338 To: 145 Cost: 14.1421 Flags: 0 ID: -1
+From: 338 To: 147 Cost: 31.6228 Flags: 0 ID: -1
+From: 338 To: 167 Cost: 14.1421 Flags: 0 ID: -1
+From: 338 To: 169 Cost: 14.1421 Flags: 0 ID: -1
+From: 338 To: 188 Cost: 14.1421 Flags: 0 ID: -1
+From: 339 To: 209 Cost: 28.2843 Flags: 0 ID: -1
+From: 339 To: 229 Cost: 20 Flags: 0 ID: -1
+From: 339 To: 230 Cost: 20 Flags: 0 ID: -1
+From: 339 To: 249 Cost: 28.2843 Flags: 0 ID: -1
+From: 339 To: 251 Cost: 0 Flags: 0 ID: -1
+From: 339 To: 252 Cost: 28.2843 Flags: 0 ID: -1
+From: 339 To: 272 Cost: 20 Flags: 0 ID: -1
+From: 339 To: 274 Cost: 20 Flags: 0 ID: -1
+From: 339 To: 291 Cost: 28.2843 Flags: 0 ID: -1
+488 442
+0  20 130  20 10  1 0
+0  20 10  160 10  0 1
+0  160 10  160 60  -1 0
+0  160 60  170 60  0 1
+0  170 60  170 10  1 0
+0  170 10  320 10  0 1
+0  170 100  160 100  0 -1
+0  70 130  20 130  0 -1
+0  160 130  110 130  0 -1
+0  70 180  70 130  1 0
+0  10 180  70 180  0 1
+0  110 130  110 210  -1 0
+0  70 300  50 300  0 -1
+0  10 410  10 180  1 0
+0  50 300  50 330  -1 0
+0  320 10  320 60  -1 0
+0  320 60  330 60  0 1
+0  330 60  330 30  1 0
+0  330 30  480 30  0 1
+0  480 30  480 190  -1 0
+0  480 190  460 190  0 -1
+0  460 190  460 410  -1 0
+0  410 370  410 300  1 0
+0  410 130  390 130  0 -1
+0  390 130  390 160  -1 0
+0  390 160  330 160  0 -1
+0  330 120  320 120  0 -1
+0  320 190  280 190  0 -1
+0  280 190  280 200  -1 0
+0  280 200  390 200  0 1
+0  390 240  410 240  0 1
+0  220 190  170 190  0 -1
+0  220 200  220 190  1 0
+0  140 200  220 200  0 1
+0  140 330  140 200  1 0
+0  410 300  390 300  0 -1
+0  390 300  390 350  -1 0
+0  300 370  410 370  0 1
+0  300 350  300 370  -1 0
+0  390 350  300 350  0 -1
+0  460 410  10 410  0 -1
+0  240 350  170 350  0 -1
+0  270 70  220 70  0 -1
+0  220 70  220 150  -1 0
+0  220 150  270 150  0 1
+0  270 150  270 70  1 0
+0  -1.07374e+008 -1.07374e+008  -1.07374e+008 -1.07374e+008  -1.07374e+008 -1.07374e+008
+0  50 330  140 330  0 1
+0  110 210  70 300  -0.913812 -0.406138
+0  160 100  160 130  -1 0
+0  170 190  170 100  1 0
+0  330 160  330 120  1 0
+0  320 120  320 190  -1 0
+0  390 200  390 240  -1 0
+0  410 240  410 130  1 0
+0  240 370  240 350  1 0
+0  170 350  170 370  -1 0
+0  170 370  240 370  0 1
+5 390  350 240 7  -1
+5 391  50 380 7  -1
+5 392  50 40 7  -1
+4 393  360 150 7 50 332
+4 394  20 190 7 50 333
+4 395  160 230 7 50 334
+7 396  200 30 7  335
+6 397  70 260 7  336
+8 398  450 60 7  337
+8 399  360 330 7  338
+7 400  110 380 7  339

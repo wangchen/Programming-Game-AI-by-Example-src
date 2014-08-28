@@ -1,0 +1,540 @@
+# Microsoft Developer Studio Generated Dependency File, included by SimpleSoccer.mak
+
+.\FieldPlayer.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityFunctionTemplates.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayer.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\FieldPlayerStates.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayer.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\MessageDispatcher.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerMessages.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\Goalkeeper.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityFunctionTemplates.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\Goalkeeper.h"\
+	".\GoalKeeperStates.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\GoalKeeperStates.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayer.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\Goalkeeper.h"\
+	".\GoalKeeperStates.h"\
+	".\MessageDispatcher.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerMessages.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\ParamLoader.h"\
+	".\SoccerPitch.h"\
+	
+
+.\MessageDispatcher.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\common\framecounter.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityManager.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\MessageDispatcher.h"\
+	".\SoccerMessages.h"\
+	
+
+.\PlayerBase.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\PlayerSteeringBehaviors.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\SoccerBall.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\ParamLoader.h"\
+	".\SoccerBall.h"\
+	
+
+.\SoccerPitch.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\common\framecounter.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityManager.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayer.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	".\TeamStates.h"\
+	
+
+.\SoccerTeam.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityManager.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayer.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\Goalkeeper.h"\
+	".\GoalKeeperStates.h"\
+	".\MessageDispatcher.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerMessages.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	".\TeamStates.h"\
+	
+
+.\SweetSpotCalculator.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	
+
+.\TeamStates.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\State.h"\
+	"..\Common\AI\StateMachine.h"\
+	"..\Common\AI\Telegram.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Region.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\FieldPlayerStates.h"\
+	".\Goal.h"\
+	".\MessageDispatcher.h"\
+	".\ParamLoader.h"\
+	".\PlayerBase.h"\
+	".\PlayerSteeringBehaviors.h"\
+	".\SoccerBall.h"\
+	".\SoccerMessages.h"\
+	".\SoccerPitch.h"\
+	".\SoccerTeam.h"\
+	".\SweetSpotCalculator.h"\
+	".\TeamStates.h"\
+	
+
+..\Common\Debug\DebugConsole.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\Cgdi.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\Game\EntityManager.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\EntityManager.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\iniFileLoaderBase.cpp : \
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\Time\PrecisionTimer.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	
+
+..\Common\misc\WindowUtils.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\utils.h"\
+	

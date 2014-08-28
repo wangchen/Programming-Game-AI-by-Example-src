@@ -1,0 +1,74 @@
+# Microsoft Developer Studio Generated Dependency File, included by WestWorldWithMessaging.mak
+
+.\EntityManager.cpp : \
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\Common\Patterns\Singleton.h"\
+	".\Entity.h"\
+	".\EntityManager.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\Common\AI\State.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\Common\ConsoleUtils.h"\
+	"..\..\Common\Patterns\Singleton.h"\
+	"..\..\Common\utils.h"\
+	".\Entity.h"\
+	".\EntityManager.h"\
+	".\Locations.h"\
+	".\MessageDispatcher.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\MinersWife.h"\
+	".\MinersWifeOwnedStates.h"\
+	
+
+.\MessageDispatcher.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\Common\ConsoleUtils.h"\
+	"..\..\Common\Patterns\Singleton.h"\
+	"..\..\Common\Time\CrudeTimer.h"\
+	".\Entity.h"\
+	".\EntityManager.h"\
+	".\Locations.h"\
+	".\MessageDispatcher.h"\
+	".\MessageTypes.h"\
+	
+
+.\MinerOwnedStates.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\Common\AI\State.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\Common\ConsoleUtils.h"\
+	"..\..\Common\Patterns\Singleton.h"\
+	"..\..\Common\Time\CrudeTimer.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\MessageDispatcher.h"\
+	".\MessageTypes.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	
+
+.\MinersWifeOwnedStates.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\Common\AI\State.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\Common\ConsoleUtils.h"\
+	"..\..\Common\Patterns\Singleton.h"\
+	"..\..\Common\Time\CrudeTimer.h"\
+	"..\..\Common\utils.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\MessageDispatcher.h"\
+	".\MessageTypes.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\MinersWife.h"\
+	".\MinersWifeOwnedStates.h"\
+	

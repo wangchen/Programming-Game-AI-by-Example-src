@@ -1,0 +1,61 @@
+# Microsoft Developer Studio Generated Dependency File, included by WestWorldWithWomen.mak
+
+.\main.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\common\ai\state.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\common\consoleutils.h"\
+	"..\..\common\patterns\singleton.h"\
+	"..\..\common\utils.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\MinersWife.h"\
+	".\MinersWifeOwnedStates.h"\
+	".\State.h"\
+	
+
+.\Miner.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\common\ai\state.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\common\consoleutils.h"\
+	"..\..\common\patterns\singleton.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\State.h"\
+	
+
+.\MinerOwnedStates.cpp : \
+	"..\..\common\ai\state.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\common\patterns\singleton.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\State.h"\
+	
+
+.\MinersWifeOwnedStates.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\common\ai\state.h"\
+	"..\..\Common\AI\StateMachine.h"\
+	"..\..\Common\AI\Telegram.h"\
+	"..\..\common\consoleutils.h"\
+	"..\..\common\patterns\singleton.h"\
+	"..\..\common\utils.h"\
+	".\Entity.h"\
+	".\Locations.h"\
+	".\Miner.h"\
+	".\MinerOwnedStates.h"\
+	".\MinersWife.h"\
+	".\MinersWifeOwnedStates.h"\
+	".\State.h"\
+	

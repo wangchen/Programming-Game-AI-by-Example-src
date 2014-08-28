@@ -1,0 +1,173 @@
+# Microsoft Developer Studio Generated Dependency File, included by Raven.mak
+
+.\main.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\ParamLoader.h"\
+	".\raven.h"\
+	
+
+.\raven.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\Map.h"\
+	"..\Common\Graph\SparseGraph.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	".\raven.h"\
+	
+
+..\Common\source\DebugConsole.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\Cgdi.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\source\EditorCommands.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\common\editor\gridnsnap.h"\
+	"..\Common\editor\Map.h"\
+	"..\common\editor\mapeditor.h"\
+	"..\Common\editor\WalkOverObject.h"\
+	"..\Common\editor\WallObject.h"\
+	"..\Common\Graph\SparseGraph.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\iniFileLoaderBase.cpp : \
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\source\Map.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\Common\editor\Map.h"\
+	"..\Common\editor\ObstacleObject.h"\
+	"..\Common\editor\WalkOverObject.h"\
+	"..\Common\editor\WallObject.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\Obstacle.h"\
+	"..\Common\Graph\HandyGraphFunctions.h"\
+	"..\Common\Graph\SparseGraph.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\MenuItems.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\Common\editor\Map.h"\
+	"..\common\editor\menuitems.h"\
+	"..\Common\Graph\SparseGraph.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\ObstacleObject.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\Common\editor\ObstacleObject.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\Obstacle.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\PrecisionTimer.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\Time\PrecisionTimer.h"\
+	
+
+..\Common\source\WalkOverObject.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\Common\editor\WalkOverObject.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\WallObject.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\editor\EditorCommandInterface.h"\
+	"..\Common\editor\EditorCommands.h"\
+	"..\Common\editor\EditorObjectBase.h"\
+	"..\Common\editor\WallObject.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\WindowUtils.cpp : \
+	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\utils.h"\
+	

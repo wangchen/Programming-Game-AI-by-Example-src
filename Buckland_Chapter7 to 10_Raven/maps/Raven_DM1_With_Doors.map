@@ -1,0 +1,197 @@
+31
+Index: 0 PosX: 270 PosY: 390
+Index: 1 PosX: 270 PosY: 330
+Index: 2 PosX: 370 PosY: 270
+Index: 3 PosX: 430 PosY: 270
+Index: 4 PosX: 430 PosY: 90
+Index: 5 PosX: 360 PosY: 130
+Index: 6 PosX: 320 PosY: 90
+Index: 7 PosX: 240 PosY: 30
+Index: 8 PosX: 160 PosY: 80
+Index: 9 PosX: 50 PosY: 40
+Index: 10 PosX: 90 PosY: 130
+Index: 11 PosX: 80 PosY: 210
+Index: 12 PosX: 30 PosY: 290
+Index: 13 PosX: 30 PosY: 380
+Index: 14 PosX: 150 PosY: 340
+Index: 15 PosX: 150 PosY: 390
+Index: 16 PosX: 250 PosY: 230
+Index: 17 PosX: 250 PosY: 180
+Index: 18 PosX: 190 PosY: 160
+Index: 19 PosX: 290 PosY: 160
+Index: 20 PosX: 170 PosY: 240
+Index: 21 PosX: 360 PosY: 220
+Index: 22 PosX: 360 PosY: 330
+Index: 23 PosX: 430 PosY: 390
+Index: 24 PosX: 360 PosY: 390
+Index: 25 PosX: 440 PosY: 180
+Index: 26 PosX: 200 PosY: 100
+Index: -1 PosX: 60 PosY: 190
+Index: -1 PosX: 60 PosY: 120
+Index: 29 PosX: 56 PosY: 106
+Index: 30 PosX: 59 PosY: 200
+92
+m_iFrom: 0 m_iTo: 1 m_fCost: 60 m_iFlags: 64 ID: 88
+m_iFrom: 0 m_iTo: 15 m_fCost: 120 m_iFlags: 0 ID: 0
+m_iFrom: 0 m_iTo: 24 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 1 m_iTo: 0 m_fCost: 60 m_iFlags: 64 ID: 88
+m_iFrom: 1 m_iTo: 2 m_fCost: 116.619 m_iFlags: 0 ID: 0
+m_iFrom: 1 m_iTo: 14 m_fCost: 120.416 m_iFlags: 0 ID: 0
+m_iFrom: 1 m_iTo: 16 m_fCost: 101.98 m_iFlags: 0 ID: 0
+m_iFrom: 1 m_iTo: 20 m_fCost: 134.536 m_iFlags: 0 ID: 0
+m_iFrom: 1 m_iTo: 22 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 2 m_iTo: 1 m_fCost: 116.619 m_iFlags: 0 ID: 0
+m_iFrom: 2 m_iTo: 3 m_fCost: 60 m_iFlags: 64 ID: 85
+m_iFrom: 2 m_iTo: 16 m_fCost: 126.491 m_iFlags: 0 ID: 0
+m_iFrom: 2 m_iTo: 21 m_fCost: 50.9902 m_iFlags: 0 ID: 0
+m_iFrom: 2 m_iTo: 22 m_fCost: 60.8276 m_iFlags: 0 ID: 0
+m_iFrom: 3 m_iTo: 2 m_fCost: 60 m_iFlags: 64 ID: 85
+m_iFrom: 3 m_iTo: 23 m_fCost: 120 m_iFlags: 0 ID: 0
+m_iFrom: 3 m_iTo: 25 m_fCost: 90.5538 m_iFlags: 0 ID: 0
+m_iFrom: 4 m_iTo: 5 m_fCost: 80.6226 m_iFlags: 0 ID: 0
+m_iFrom: 4 m_iTo: 6 m_fCost: 110 m_iFlags: 0 ID: 0
+m_iFrom: 4 m_iTo: 25 m_fCost: 90.5538 m_iFlags: 0 ID: 0
+m_iFrom: 5 m_iTo: 4 m_fCost: 80.6226 m_iFlags: 0 ID: 0
+m_iFrom: 5 m_iTo: 6 m_fCost: 56.5685 m_iFlags: 0 ID: 0
+m_iFrom: 6 m_iTo: 4 m_fCost: 110 m_iFlags: 0 ID: 0
+m_iFrom: 6 m_iTo: 5 m_fCost: 56.5685 m_iFlags: 0 ID: 0
+m_iFrom: 6 m_iTo: 7 m_fCost: 100 m_iFlags: 0 ID: 0
+m_iFrom: 6 m_iTo: 19 m_fCost: 76.1577 m_iFlags: 0 ID: 0
+m_iFrom: 7 m_iTo: 6 m_fCost: 100 m_iFlags: 0 ID: 0
+m_iFrom: 7 m_iTo: 8 m_fCost: 94.3398 m_iFlags: 0 ID: 0
+m_iFrom: 8 m_iTo: 7 m_fCost: 94.3398 m_iFlags: 0 ID: 0
+m_iFrom: 8 m_iTo: 9 m_fCost: 117.047 m_iFlags: 0 ID: 0
+m_iFrom: 8 m_iTo: 10 m_fCost: 86.0233 m_iFlags: 0 ID: 0
+m_iFrom: 8 m_iTo: 26 m_fCost: 44.7214 m_iFlags: 0 ID: 0
+m_iFrom: 8 m_iTo: 29 m_fCost: 107.201 m_iFlags: 0 ID: -1
+m_iFrom: 9 m_iTo: 8 m_fCost: 117.047 m_iFlags: 0 ID: 0
+m_iFrom: 9 m_iTo: 10 m_fCost: 98.4886 m_iFlags: 0 ID: 0
+m_iFrom: 9 m_iTo: 29 m_fCost: 66.2722 m_iFlags: 0 ID: -1
+m_iFrom: 10 m_iTo: 8 m_fCost: 86.0233 m_iFlags: 0 ID: 0
+m_iFrom: 10 m_iTo: 9 m_fCost: 98.4886 m_iFlags: 0 ID: 0
+m_iFrom: 10 m_iTo: 11 m_fCost: 80.6226 m_iFlags: 64 ID: 149
+m_iFrom: 10 m_iTo: 29 m_fCost: 41.6173 m_iFlags: 0 ID: -1
+m_iFrom: 11 m_iTo: 10 m_fCost: 80.6226 m_iFlags: 64 ID: 149
+m_iFrom: 11 m_iTo: 12 m_fCost: 94.3398 m_iFlags: 0 ID: 0
+m_iFrom: 11 m_iTo: 30 m_fCost: 23.2594 m_iFlags: 0 ID: -1
+m_iFrom: 12 m_iTo: 11 m_fCost: 94.3398 m_iFlags: 0 ID: 0
+m_iFrom: 12 m_iTo: 13 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 12 m_iTo: 30 m_fCost: 94.5569 m_iFlags: 0 ID: -1
+m_iFrom: 13 m_iTo: 12 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 13 m_iTo: 14 m_fCost: 126.491 m_iFlags: 0 ID: 0
+m_iFrom: 13 m_iTo: 15 m_fCost: 120.416 m_iFlags: 0 ID: 0
+m_iFrom: 14 m_iTo: 1 m_fCost: 120.416 m_iFlags: 0 ID: 0
+m_iFrom: 14 m_iTo: 13 m_fCost: 126.491 m_iFlags: 0 ID: 0
+m_iFrom: 14 m_iTo: 15 m_fCost: 50 m_iFlags: 0 ID: 0
+m_iFrom: 14 m_iTo: 20 m_fCost: 101.98 m_iFlags: 0 ID: 0
+m_iFrom: 15 m_iTo: 0 m_fCost: 120 m_iFlags: 0 ID: 0
+m_iFrom: 15 m_iTo: 13 m_fCost: 120.416 m_iFlags: 0 ID: 0
+m_iFrom: 15 m_iTo: 14 m_fCost: 50 m_iFlags: 0 ID: 0
+m_iFrom: 16 m_iTo: 1 m_fCost: 101.98 m_iFlags: 0 ID: 0
+m_iFrom: 16 m_iTo: 2 m_fCost: 126.491 m_iFlags: 0 ID: 0
+m_iFrom: 16 m_iTo: 17 m_fCost: 50 m_iFlags: 0 ID: 0
+m_iFrom: 16 m_iTo: 20 m_fCost: 80.6226 m_iFlags: 0 ID: 0
+m_iFrom: 16 m_iTo: 21 m_fCost: 110.454 m_iFlags: 0 ID: 0
+m_iFrom: 17 m_iTo: 16 m_fCost: 50 m_iFlags: 0 ID: 0
+m_iFrom: 17 m_iTo: 18 m_fCost: 63.2456 m_iFlags: 0 ID: 0
+m_iFrom: 17 m_iTo: 19 m_fCost: 44.7214 m_iFlags: 0 ID: 0
+m_iFrom: 18 m_iTo: 17 m_fCost: 63.2456 m_iFlags: 0 ID: 0
+m_iFrom: 18 m_iTo: 19 m_fCost: 100 m_iFlags: 0 ID: 0
+m_iFrom: 18 m_iTo: 26 m_fCost: 60.8276 m_iFlags: 0 ID: 0
+m_iFrom: 19 m_iTo: 6 m_fCost: 76.1577 m_iFlags: 0 ID: 0
+m_iFrom: 19 m_iTo: 17 m_fCost: 44.7214 m_iFlags: 0 ID: 0
+m_iFrom: 19 m_iTo: 18 m_fCost: 100 m_iFlags: 0 ID: 0
+m_iFrom: 20 m_iTo: 1 m_fCost: 134.536 m_iFlags: 0 ID: 0
+m_iFrom: 20 m_iTo: 14 m_fCost: 101.98 m_iFlags: 0 ID: 0
+m_iFrom: 20 m_iTo: 16 m_fCost: 80.6226 m_iFlags: 0 ID: 0
+m_iFrom: 21 m_iTo: 2 m_fCost: 50.9902 m_iFlags: 0 ID: 0
+m_iFrom: 21 m_iTo: 16 m_fCost: 110.454 m_iFlags: 0 ID: 0
+m_iFrom: 21 m_iTo: 22 m_fCost: 110 m_iFlags: 0 ID: 0
+m_iFrom: 22 m_iTo: 1 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 22 m_iTo: 2 m_fCost: 60.8276 m_iFlags: 0 ID: 0
+m_iFrom: 22 m_iTo: 21 m_fCost: 110 m_iFlags: 0 ID: 0
+m_iFrom: 23 m_iTo: 3 m_fCost: 120 m_iFlags: 0 ID: 0
+m_iFrom: 23 m_iTo: 24 m_fCost: 70 m_iFlags: 0 ID: 0
+m_iFrom: 24 m_iTo: 0 m_fCost: 90 m_iFlags: 0 ID: 0
+m_iFrom: 24 m_iTo: 23 m_fCost: 70 m_iFlags: 0 ID: 0
+m_iFrom: 25 m_iTo: 3 m_fCost: 90.5538 m_iFlags: 0 ID: 0
+m_iFrom: 25 m_iTo: 4 m_fCost: 90.5538 m_iFlags: 0 ID: 0
+m_iFrom: 26 m_iTo: 8 m_fCost: 44.7214 m_iFlags: 0 ID: 0
+m_iFrom: 26 m_iTo: 18 m_fCost: 60.8276 m_iFlags: 0 ID: 0
+m_iFrom: 29 m_iTo: 8 m_fCost: 107.201 m_iFlags: 0 ID: -1
+m_iFrom: 29 m_iTo: 9 m_fCost: 66.2722 m_iFlags: 0 ID: -1
+m_iFrom: 29 m_iTo: 10 m_fCost: 41.6173 m_iFlags: 0 ID: -1
+m_iFrom: 30 m_iTo: 11 m_fCost: 23.2594 m_iFlags: 0 ID: -1
+m_iFrom: 30 m_iTo: 12 m_fCost: 94.5569 m_iFlags: 0 ID: -1
+
+491 471
+0  20 130  20 10  1 0
+0  20 10  160 10  0 1
+0  160 10  160 60  -1 0
+0  160 60  170 60  0 1
+0  170 60  170 10  1 0
+0  170 10  320 10  0 1
+0  170 100  160 100  0 -1
+0  70 130  20 130  0 -1
+0  160 130  110 130  0 -1
+0  70 180  70 130  1 0
+0  10 180  70 180  0 1
+0  110 130  110 210  -1 0
+0  70 300  50 300  0 -1
+0  10 410  10 180  1 0
+0  50 300  50 330  -1 0
+0  320 10  320 60  -1 0
+0  320 60  330 60  0 1
+0  330 60  330 30  1 0
+0  330 30  480 30  0 1
+0  480 30  480 190  -1 0
+0  480 190  460 190  0 -1
+0  460 190  460 410  -1 0
+0  410 370  410 300  1 0
+0  410 130  390 130  0 -1
+0  390 130  390 160  -1 0
+0  390 160  330 160  0 -1
+0  330 120  320 120  0 -1
+0  320 190  280 190  0 -1
+0  280 190  280 200  -1 0
+0  280 200  390 200  0 1
+0  390 240  410 240  0 1
+0  220 190  170 190  0 -1
+0  220 200  220 190  1 0
+0  140 200  220 200  0 1
+0  140 330  140 200  1 0
+0  410 300  390 300  0 -1
+0  390 300  390 350  -1 0
+0  300 370  410 370  0 1
+0  300 350  300 370  -1 0
+0  390 350  300 350  0 -1
+0  460 410  10 410  0 -1
+0  240 350  170 350  0 -1
+0  270 70  220 70  0 -1
+0  220 70  220 150  -1 0
+0  220 150  270 150  0 1
+0  270 150  270 70  1 0
+0  -1.07374e+008 -1.07374e+008  -1.07374e+008 -1.07374e+008  -1.07374e+008 -1.07374e+008
+0  50 330  140 330  0 1
+0  110 210  70 300  -0.913812 -0.406138
+0  160 100  160 130  -1 0
+0  170 190  170 100  1 0
+0  330 160  330 120  1 0
+0  320 120  320 190  -1 0
+0  390 200  390 240  -1 0
+0  410 240  410 130  1 0
+0  240 370  240 350  1 0
+0  170 350  170 370  -1 0
+0  170 370  240 370  0 1
+11 85  400 240  400 300 2 86 87
+12 86 85 6  380 230 4
+12 87 85 6  420 310 4
+11 88  240 360  300 360 2 89 90
+12 89 88 6  308 379 4
+12 90 88 6  233 341 4
+5 118  340 220 7  -1
+5 119  80 60 7  -1
+5 120  50 360 7  -1
+11 149  70 160  110 160 2 150 151
+12 150 149 6  57 187 4
+12 151 149 6  56 123 4

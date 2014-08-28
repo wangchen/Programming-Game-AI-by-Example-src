@@ -1,0 +1,142 @@
+# Microsoft Developer Studio Generated Dependency File, included by Pathfinder.mak
+
+.\CController.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Graph\AdjacencyGraph.h"\
+	"..\Common\Graph\GraphAlgorithms.h"\
+	"..\Common\Graph\GraphBase.h"\
+	"..\Common\Graph\GraphEditor.h"\
+	"..\Common\Graph\HandyGraphFunctions.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\PriorityQueue.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\CController.h"\
+	".\constants.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Graph\AdjacencyGraph.h"\
+	"..\Common\Graph\GraphAlgorithms.h"\
+	"..\Common\Graph\GraphBase.h"\
+	"..\Common\Graph\GraphEditor.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\PriorityQueue.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\CController.h"\
+	".\constants.h"\
+	
+
+.\toolbar.rc : \
+	".\toolbar1.bmp"\
+	
+
+..\Common\source\DebugConsole.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\Cgdi.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\source\PrecisionTimer.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	
+
+..\Common\source\AdjacencyGraph.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Graph\AdjacencyGraph.h"\
+	"..\Common\Graph\GraphBase.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\GraphEditor.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Graph\AdjacencyGraph.h"\
+	"..\Common\Graph\GraphBase.h"\
+	"..\Common\Graph\GraphEditor.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\source\HandyGraphFunctions.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\common\2d\vector2d.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Graph\AdjacencyGraph.h"\
+	"..\Common\Graph\GraphBase.h"\
+	"..\Common\Graph\HandyGraphFunctions.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	

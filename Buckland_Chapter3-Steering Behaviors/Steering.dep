@@ -1,0 +1,234 @@
+# Microsoft Developer Studio Generated Dependency File, included by Steering.mak
+
+.\GameWorld.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\CellSpacePartition.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\Path.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\Game\Obstacle.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\Regulator.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Smoother.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\GameWorld.h"\
+	".\ParamLoader.h"\
+	".\RenderObj.h"\
+	".\SteeringBehaviors.h"\
+	".\Vehicle.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\CellSpacePartition.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\Regulator.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Smoother.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\GameWorld.h"\
+	".\ParamLoader.h"\
+	".\RenderObj.h"\
+	".\Vehicle.h"\
+	
+
+.\RenderObj.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\AI\Path.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\Regulator.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Smoother.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\ParamLoader.h"\
+	".\RenderObj.h"\
+	".\SteeringBehaviors.h"\
+	".\Vehicle.h"\
+	
+
+.\SteeringBehaviors.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\CellSpacePartition.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\2D\Wall2D.h"\
+	"..\Common\AI\Path.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\Regulator.h"\
+	"..\Common\Patterns\autolist.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Smoother.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\GameWorld.h"\
+	".\ParamLoader.h"\
+	".\RenderObj.h"\
+	".\SteeringBehaviors.h"\
+	".\Vehicle.h"\
+	
+
+.\Vehicle.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\CellSpacePartition.h"\
+	"..\Common\2D\geometry.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\AI\Path.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Game\BaseGameEntity.h"\
+	"..\Common\Game\MovingEntity.h"\
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\misc\Regulator.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\Smoother.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	"..\Common\utils.h"\
+	".\constants.h"\
+	".\GameWorld.h"\
+	".\ParamLoader.h"\
+	".\RenderObj.h"\
+	".\SteeringBehaviors.h"\
+	".\Vehicle.h"\
+	
+
+..\Common\Debug\DebugConsole.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Debug\DebugConsole.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\Cgdi.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\iniFileLoaderBase.cpp : \
+	"..\Common\iniFileLoaderBase.h"\
+	"..\Common\Patterns\Singleton.h"\
+	
+
+..\Common\AI\Path.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\C2DMatrix.h"\
+	"..\Common\2D\Transformations.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\AI\Path.h"\
+	"..\Common\Cgdi.h"\
+	"..\Common\Patterns\Singleton.h"\
+	"..\Common\utils.h"\
+	
+
+..\Common\Time\PrecisionTimer.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\Time\PrecisionTimer.h"\
+	
+
+..\Common\misc\WindowUtils.cpp : \
+	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\Common\2D\Vector2D.h"\
+	"..\Common\misc\WindowUtils.h"\
+	"..\Common\utils.h"\
+	

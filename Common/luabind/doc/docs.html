@@ -1,0 +1,2145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+	<title>luabind beta documentation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>This library is currently in public beta phase. This documentation should be considered beta as well.
+Please report any grammatical corrections/spelling corrections.</p>
+
+<h1>Table of contents</h1>
+
+<ol>
+	<li><a href="#intro">Introduction</a> 
+	<ul>
+		<li><a href="#features">features</a> 
+		<li><a href="#compilers">tested compilers</a>
+	</ul>
+	<li><a href="#build">Building luabind</a> 
+	<li><a href="#basic">Basic usage</a> 
+	<li><a href="#scopes">Scopes</a> 
+	<li><a href="#fun">Binding functions to lua</a> 
+	<ul>
+		<li><a href="#fun_overload">overloaded functions</a> 
+		<li><a href="#fun_sigmatch">signature matching</a>
+		<li><a href="#lua_fun">calling lua functions</a> 
+	</ul>
+	<li><a href="#bind_classes">Binding classes to lua</a> 
+	<ul>
+		<li><a href="#class_property">properties</a> 
+		<li><a href="#class_enum">enums</a>
+		<li><a href="#class_operator">operators</a>
+		<li><a href="#class_derived">derived classes</a> 
+		<li><a href="#class_smart_pointers">smart_pointers</a> 
+	</ul>
+	<li><a href="#object">Object</a>
+	<ul>
+		<li><a href="#object_iterators">iterators</a>
+		<li><a href="#object_functions">related functions</a>
+		<li><a href="#functor">functor</a>
+	</ul>
+	<li><a href="#class_lua" >Defining classes in lua</a> 
+	<ul>
+		<li><a href="#class_lua_derive">deriving in lua</a>
+		<li><a href="#class_lua_operators">overloading operators</a>
+		<li><a href="#class_lua_finalizers">finalizers</a>
+	</ul>
+	<li><a href="#exceptions">Exceptions</a>
+	<li><a href="#policies" >Parameter policies</a> 
+	<ul>
+		<li><a href="#policies_copy">copy</a> 
+		<li><a href="#policies_adopt">adopt</a>
+		<li><a href="#policies_dependency">dependency</a>
+		<li><a href="#policies_return_ref">return_reference_to</a>
+		<li><a href="#policies_out">out_value</a>
+		<li><a href="#policies_pure_out">pure_out_value</a>
+		<li><a href="#policies_discard_result">discard_result</a>
+		<li><a href="#policies_return_stl_iterator">return_stl_iterator</a>
+		<li><a href="#policies_yield">yield</a>
+		<li><a href="#policies_custom">custom</a>
+		<li><a href="#policies_user_converter">user defined converter</a>
+	</ul>
+	<li><a href="#config">Configuration</a>
+	<li><a href="#implementation_notes">Implementation notes</a>
+	<li><a href="#error_messages">Error messages</a> 
+	<li><a href="#faq">FAQ</a>
+	<li><a href="#future">Future additions</a> 
+	<li><a href="#issues">Known issues</a> 
+	<li><a href="#acknowledgments">Acknowledgments</a> 
+</ol>
+
+<h1><a name="intro"></a>Introduction</h1>
+
+<p>Luabind is a library that helps you create bindings 
+between C++ and <a href="http://www.lua.org">lua</a>. It 
+has the ability to expose functions and classes, written in C++, to lua. It will 
+also supply the functionality to define classes in lua and let them derive from 
+other lua classes or C++ classes. Lua classes can override virtual functions 
+from their C++ base classes. It is written towards lua 5.0, and does not work 
+with lua 4.</p>
+
+<p>It is implemented utilizing template meta programming. 
+That means that you don't need an extra preprocess pass to compile your project 
+(it is done by the compiler). It also means you don't (usually) have to know the 
+exact signature of each function you register, since the library will generate 
+code depending on the compile-time type of the function (which includes the 
+signature). The main drawback of this approach is that the compilation time will 
+increase for the file that does the registration, it is therefore recommended 
+that you register everything in the same cpp-file.</p>
+
+<p>luabind is released under the terms of the
+<a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>.</p>
+
+<p>We are very interested in hearing about projects that use luabind, please let
+us know about your project.</p>
+
+<h2><a name="features"></a>features</h2>
+
+<p>Luabind supports:</p>
+<ul>
+	<li>overloaded free functions 
+	<li>C++ classes in lua 
+	<ul>
+		<li>overloaded member functions 
+		<li>operators 
+		<li>properties 
+		<li>enums
+	</ul>
+	<li>lua functions in C++ 
+	<li>lua classes in C++ 
+	<li>lua classes (single inheritance) 
+	<ul>
+		<li>derives from lua or C++ classes 
+		<li>override virtual functions from C++ classes
+	</ul>
+	<li>implicit casts between registered types 
+	<li>best match signature matching 
+	<li>return value policies and parameter policies
+</ul>
+
+<h2><a name="compilers"></a>tested compilers</h2>
+
+<p>Luabind has been tested to work on the following 
+compilers:</p>
+
+<ul>
+	<li>Visual Studio 7.1
+	<li>Visual Studio 7.0 
+	<li>Visual Studio 6.0 (sp 5) 
+	<li>Intel C++ 6.0 (Windows)
+	<li>GCC 2.95.3 (cygwin) 
+	<li>GCC 3.0.4 (Debian/Linux) 
+	<li>GCC 3.1 (SunOS 5.8) 
+	<li>GCC 3.2 (cygwin) 
+</ul>
+
+<p>It has been confirmed not to work with:</p>
+
+<ul>
+	<li>GCC 2.95.2 (SunOS 5.8)
+</ul>
+
+<p>Metrowerks 8.3 (Windows) compiles but fails the const-test. This means that const member
+functions are treated as non-const member functions.</p>
+
+<p>If you have tried luabind with a compiler not listed here, let us know
+your result with it.</p>
+
+<h1><a name="build"></a>Building luabind</h1>
+
+<p>To keep down the compilation-time luabind is built as a library. This means you
+have to either build it and lika against it, or include its source files in your project.
+You also have to make sure the <tt>luabind</tt> directory is somewhere in your compiler's
+include path. It requires <a href="http://www.boost.org">boost</a> 1.30.0 to be installed
+(only boost headers). It also requires that lua is installed.</p>
+
+<p>There is a makefile in the root-directory that will build the library and the test program.
+If you are using a UNIX-system (or cygwin) they will make it easy to build luabind as a static
+library. If you are using Visual Studio it may be easier to include the files in the <tt>src</tt>
+directory in your project.</p>
+
+<p>When building luabind you have several options that may streamline the library to better suit
+your needs. It is extremely important that your application has the same settings as the library
+was built with. The available options are found in the <a href="#config">Configuration</a> section.</p>
+
+<p>If you want to change the settings to differ from the default, it's recommended that you define
+the settings on the commandline of all your files (in the project settings in visual studio).</p>
+
+<h1><a name="basic"></a>Basic usage</h1>
+
+<p>To use luabind, you must include <tt>lua.h</tt> and luabind's main header file.</p>
+
+<pre>
+extern "C"
+{
+#include "lua.h"
+}
+
+#include &lt;luabind/luabind.hpp&gt;
+</pre>
+
+<p>This includes support for both registering classes and functions. If you just want to
+have support for functions or classes you can include <tt>&lt;luabind/function.hpp&gt;</tt>
+and <tt>&lt;luabind/class.hpp&gt;</tt> separately.</p>
+
+<pre>
+#include &lt;luabind/function.hpp&gt;
+#include &lt;luabind/class.hpp&gt;
+</pre>
+
+<p>The first thing you need to do is to call <tt>luabind::open(lua_State*)</tt> which will
+register the functions to create classes from lua, and initialize some state-global
+structures used by luabind. If you don't call this function you will hit asserts later in
+the library. There is no corresponding close function because once a class has been registered
+in lua, there really isn't any good way to remove it. Partly because any remaining instances
+of that class relies on the class being there. Everything will be cleaned up when the state
+is closed though.</p>
+
+<p>Note that no luabind header will include <tt>"lua.h"</tt>, this is up to you. You have to include
+it before any luabind header is included.</p>
+
+
+<h1><a name="scopes"></a>Scopes</h1>
+
+<p>Everything that gets registered in lua is registered in a namespace (lua tables) or in the global
+scope (called module). All registrations must be surrounded by its scope. To define a module, the
+<tt>luabind::module</tt> class is used. It is used like this:</p>
+
+<pre>
+module(L)
+[
+	// declarations
+];
+</pre>
+
+<p>This will register all declared functions or classes in the global namespace in lua. If you want
+to have a namespace for your module (like the standard libraries) you can give a name to the constructor,
+like this:</p>
+
+<pre>
+module(L, "my_library")
+[
+	// declarations
+];
+</pre>
+
+<p>Here all declarations will be put in the <tt>my_library</tt> table.</p>
+
+<p>If you want nested namespaces you can use the <tt>luabind::namespace_</tt> class. It works exactly
+as <tt>luabind::module</tt> except that it doesn't take a <tt>lua_State*</tt> in it's constructor.
+An example of its usage could look like this:</p>
+
+<pre>
+module(L, "my_library")
+[
+
+// declarations
+
+	namespace_("detail")
+	[
+		// library-private declarations
+	]
+
+];
+</pre>
+
+<p>As you might have figured out, the following declarations are equivalent:</p>
+
+<pre>
+module(L)
+[
+	namespace_("my_library")
+	[
+		// declarations
+	]
+
+];
+</pre>
+
+<pre>
+module(L, "my_library")
+[
+	// declarations
+];
+</pre>
+
+<p>Each declaration must be separated by a comma, like this:</p>
+
+<pre>
+module(L)
+[
+	def("f", &amp;f),
+	def("g", &amp;g),
+	class_&lt;A&gt;("A")
+		.def(construcor&lt;int, int&gt;),
+	def("h", &amp;h)
+];
+</pre>
+
+<p>More about the actual declarations in the <a href="#fun">Binding functions to lua</a> and
+<a href="#bind_classes" >Binding classes to lua</a> sections.</p>
+
+<p>A word of caution, if you are in <b>really</b> bad need for performance, putting your functions
+in tables will increase the lookup time.</p>
+
+<h1><a name="fun"></a>Binding functions to lua</h1>
+
+<p>To bind functions to lua you use the function <tt>luabind::def()</tt>. It has the following 
+synopsis:</p>
+
+<pre>
+template&lt;class F, class policies&gt;
+void def(const char* name, F f, const Policies&amp;);
+</pre>
+
+<ul>
+	<li>name is the name the function will have within lua. 
+	<li>F is the function pointer you want to register. 
+	<li>The Policies parameter is used to describe how 
+	parameters and return values are treated by the function, this is an optional 
+	parameter. More on this in <a href="#policies" >parameter policies</a>.
+</ul>
+
+<p>An example usage could be if you want to register the 
+function <tt>float std::sin(float)</tt>:</p>
+
+<pre>
+module(L)
+[
+	def("sin", &amp;std::sin)
+];
+</pre>
+
+<h2><a name="fun_overload"></a>overloaded functions</h2>
+
+<p>If you have more than one function with the same name, 
+and want to register them in lua, you have to explicitly give the signature. 
+This is to let C++ know which function you refer to. For example, if you have 
+two functions, <tt>int&nbsp;f(const&nbsp;char*)</tt> and <tt>void&nbsp;f(int)</tt>.</p>
+
+<pre>
+module(L)
+[
+	def("f", (int(*)(const char*)) &amp;f),
+	def(L, "f", (void(*)(int)) &amp;f)
+];
+</pre>
+
+<h2><a name="fun_sigmatch"></a>signature matching</h2>
+
+<p>luabind will generate code that checks the lua stack to 
+see if the values there can match your functions' signatures. It will handle 
+implicit typecasts between derived classes, and it will prefer matches with the 
+least number of implicit casts. In a function call, if the function is 
+overloaded and there's no overload that match the parameters better than the 
+other, you have an ambiguity. This will spawn a run-time error, stating that the 
+function call is ambiguous. A simple example of this is to register one function 
+that takes an <tt>int</tt> and one that takes a <tt>float</tt>. Since lua don't distinguish between floats and 
+integers, both will always match.</p>
+
+<p>Since all overloads are tested, it will always find the 
+best match (not the first match). This also means that it can handle situations 
+where the only difference in the signature is that one member function is const 
+and the other isn't. For example, if the following function and class is 
+registered:</p>
+
+<pre>
+struct A
+{
+	void f();
+	void f() const;
+};
+
+const A* create_a();
+
+struct B: A {};
+struct C: B {};
+
+void g(A*);
+void g(B*);
+</pre>
+
+<p>(note that <tt>create_a()</tt> would need an <a href="#policies_adopt" >adopt return value policy</a>. How to register classes is 
+described in <a href="#bind_classes" >Binding classes to lua</a>).</p>
+
+<p>And the following lua code is executed:</p>
+
+<pre>
+a1 = create_a()
+a1:f() -- the const version is called
+
+a2 = A()
+a2:f() -- the non-const version is called
+
+a = A()
+b = B()
+c = C()
+
+g(a) -- calls g(A*)
+g(b) -- calls g(B*)
+g(c) -- calls g(B*)
+</pre>
+
+<h2><a name="lua_fun"></a>calling lua functions</h2>
+
+<p>To call a lua function, you can either use <tt>call_function()</tt>, <tt>call_member()</tt>, an
+<a href="#object"><tt>object</tt></a> or <a href="#functor"><tt>functor</tt></a>.</p>
+
+<h3><tt>template&lt;class Ret&gt;<br>
+Ret call_function(lua_State* L, const char* name, ...)</tt></h3>
+<p>This calls the global function called <tt>name</tt>. This function can only call global lua functions. The
+... represents a variable number of parameters that are sent to the lua function. This function call may
+throw <tt>luabind::error</tt> if the function call fails.</p>
+
+<p>The return value isn't actually <tt>Ret</tt> (the template parameter), but a proxy object that will do
+the function call. This enables you to give policies to the call. You do this with the operator[]. You
+give the policies within the brackets, like this:</p>
+
+<pre>
+int ret = call_function&lt;int&gt;(L, "a_lua_function", new complex_class())[ adopt(_1) ];
+</pre>
+
+<h3><tt>template&lt;class Ret&gt;<br>
+Ret call_member(object&amp;, const char* name, ...)</tt></h3>
+<p>This treats the given <tt>object</tt> as an instance of a class. The given name is the name of a member
+function to call. The ... represents a variable number of parameters given to the function. This function may
+throw <tt>luabind::error</tt> if the function call fails.</p>
+
+<p>You can give policies to a member function call the same way as you do with <tt>call_function</tt>.</p>
+
+<h1><a name="bind_classes"></a>Binding classes to lua</h1>
+
+<p>To register classes you use a class called <tt>class_</tt>. Its name is supposed to resemble the C++ 
+keyword, to make it look more intuitive. It has an overloaded member function 
+<tt>def()</tt> that is used to register member functions, 
+operators, constructors, enums and properties on the class. It will return its 
+this-pointer, to let you register more members directly.</p>
+
+<p>Let's start with a simple example. Consider the 
+following C++ class:</p>
+
+<pre>
+class testclass
+{
+public:
+	testclass(const std::string&amp; s): m_string(s) {}
+	void print_string() { std::cout &lt;&lt; m_string &lt;&lt; "\n"; }
+private:
+	std::string m_string;
+};
+</pre>
+
+<p>To register it with a lua environment, write as follows 
+(assuming you are <tt>using namespace luabind</tt>):</p>
+
+<pre>
+module(L)
+[
+	class_&lt;testclass&gt;("testclass")
+		.def(constructor&lt;const std::string&amp;&gt;())
+		.def("print_string", &amp;testclass::print_string)
+];
+</pre>
+
+<p>This will register the class with the name <tt>testclass</tt> and constructor that takes a string as 
+argument and one member function with the name <tt>print_string</tt>.</p>
+
+<pre>
+-- instantiate the class
+a = testclass('a string')
+
+-- call the member function print_string on it
+-- this will print 'a string' on stdout
+a:print_string()
+</pre>
+
+<p>It is also possible to register free functions as member 
+functions. The requirement on the function is that it takes a pointer, const 
+pointer, reference or const reference to the class type as the first parameter. 
+The rest of the parameters are the ones that are visible in lua, while the 
+object pointer is given as the first parameter. If we have the following C++ 
+code:</p>
+
+<pre>
+struct A
+{
+	int a;
+};
+
+int plus(A* o, int v) { return o-&gt;a + v; }
+</pre>
+
+<p>You can register the plus, function as if it was a 
+member function on <tt>A</tt> like this:</p>
+
+<pre>
+class_&lt;A&gt;("A")
+	.def("plus", &amp;plus)
+</pre>
+
+<p><tt>plus</tt> can now be called as 
+a member function on A with one parameter, <tt>int</tt>. If 
+the object pointer parameter is const, the function will act as if it was a 
+const member function (it can be called on const objects).</p>
+
+<h2><a name="class_property"></a>properties</h2>
+
+<p>To register a global data member with a class is easily 
+done. Consider the following class:</p>
+
+<pre>
+struct A
+{
+	int a;
+};
+</pre>
+
+<p>This class is registered like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.def_readwrite("a", &amp;A::a)
+];
+</pre>
+
+<p>Then it's both readable and writable. You can 
+also register attributes as read-only.</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+	.def_readonly("a", &amp;A::a)
+];
+</pre>
+
+<p>You can also register getter and setter functions and 
+make them look as if they were a public data member. Consider the following 
+class:</p>
+
+<pre>
+class A
+{
+	void set_a(int x) { a_ = x; }
+	int get_a() const { return a_; }
+private:
+	int a_;
+};
+</pre>
+
+<p>It can be registered as if it had a public data member 
+<tt>a</tt> like this:</p>
+
+<pre>
+class_&lt;A&gt;("A")
+	.property("a", &amp;A::get_a, &amp;A::set_a)
+</pre>
+
+<p>This way the <tt>get_a()</tt> and 
+<tt>set_a()</tt> functions will be called instead of just 
+writing to the data member. If you want to make it read only you can just omit 
+the last parameter.</p>
+
+<h2><a name="class_enum"></a>enums</h2>
+
+<p>If your class contains enumerated constants (enums), you 
+can register them as well to make them available in lua. Note that they will not 
+be type safe, all enums are integers in lua, and all functions that takes an 
+enum, will accept any integer. You register them like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.enum_("constants")
+		[
+			value("my_enum", 4),
+			value("my_2nd_enum", 7),
+			value("another_enum", 6)
+		]
+];
+</pre>
+
+<p>In lua they are reached like any data member, except 
+that they are read-only and reached on the class itself rather than on an 
+instance of the class.</p>
+
+<pre>
+print(A.my_enum)
+print(A.another_enum)
+</pre>
+
+<p>In this example the numbers 4 and 6 are printed.</p>
+
+<h2><a name="class_operator"></a>operators</h2>
+
+<p>The mechanism for registering operators on your class is 
+pretty simple. You use a global name <tt>luabind::self</tt> 
+to refer to the class itself and then you just write the operator expression 
+inside the <tt>def()</tt> call. This class:</p>
+
+<pre>
+struct vec
+{
+	vec operator+(int s);
+};
+</pre>
+
+<p>Is registered like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;vec&gt;("vec")
+		.def(self + int())
+];
+</pre>
+
+<p>This will work regardless if your plus operator is 
+defined inside your class or as a free function.</p>
+
+<p>If you operator is <tt>const</tt> (or, when defined as a free function,
+takes a const reference to the class itself) you have to use <tt>const_self</tt>
+instead of <tt>self</tt>. Like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;vec&gt;("vec")
+		.def(const_self + int())
+];
+</pre>
+
+<p>The operators supported are those available in lua:</p>
+
+<ul>
+	<li>+ 
+	<li>- 
+	<li>* 
+	<li>/ 
+	<li>^
+	<li>&lt;
+	<li>&lt;=
+	<li>==
+	<li>unary -
+	<li>operator()
+</ul>
+
+<p>This means, no in-place operators. The equality operator (==) has a little
+hatch, it will not be called if the references are equal. This means that
+the == operator has to do pretty much what's it's expected to do.</p>
+
+<p>In the above example the other operand type is 
+instantiated by writing <tt>int()</tt>. If the operand type 
+is a complex type that cannot easily be instantiated you can wrap the type in a 
+class called <tt>other</tt>. For example:</p>
+
+<p>To register this class, we don't want to instantiate a 
+string just to register the operator.</p>
+
+<pre>
+struct vec
+{
+	vec operator+(std::string);
+};
+</pre>
+
+<p>Instead we use the <tt>other</tt> 
+wrapper like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;vec&gt;("vec")
+		.def(self + other&lt;std::string&gt;())
+];
+</pre>
+
+<p>To register an application operator:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;vec&gt;("vec")
+		.def( self(int()) )
+];
+</pre>
+
+<p>There's one special operator. In lua it's called <tt>__tostring</tt>,
+it's not really an operator. It is used for converting objects to strings
+in a standard way in lua. If you register this functionality, you will
+be able to use the lua standard function <tt>tostring()</tt> for converting
+you object to a string.</p>
+
+<p>To implement this operator in C++ you should supply an
+operator<tt>&lt;&lt;</tt> for <tt>ostream</tt>. Like this example:</p>
+
+<pre>
+class number {};
+
+std::ostream&amp; operator&lt;&lt;(ostream&amp;, number&amp;);
+</pre>
+
+<pre>
+module(L)
+[
+	class_&lt;number&gt;("number")
+		.def(tostring(self))
+];
+</pre>
+
+
+<h2><a name="class_derived"></a>derived classes</h2>
+
+<p>If you want to register classes that derives from other 
+classes, you can specify a template parameter <tt>bases&lt;&gt;</tt> to
+the <tt>class_</tt> instantiation. The following hierarchy:</p>
+
+<pre>
+struct A {};
+struct B: A{};
+</pre>
+
+<p>Would be registered like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A"),
+	class_&lt;B, A&gt;("B")
+];
+</pre>
+
+<p>If you have multiple inheritance you can specify more 
+than one base. If <tt>B</tt> would also derive from a class 
+<tt>C</tt>, it would be registered like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;B, bases&lt;A, C&gt; &gt;("B")
+];
+</pre>
+
+<p>Note that you can omit <tt>bases&lt;..&gt;</tt> when using single inheritance.</p>
+
+<p>If you don't specify that classes derive from each 
+other, luabind will not be able to implicitly cast pointers between the types. 
+If for example, you forget to tell that <tt>B</tt> derives 
+from <tt>A</tt> and we have a function with the following 
+signature:</p>
+
+<pre>
+void f(A*);
+</pre>
+
+<p>The following code will not run:</p>
+
+<pre>
+b = B()
+f(b) -- error, no function 'f' matches the arguments (B)
+</pre>
+
+<p>Because luabind doesn't know that a <tt>B*</tt> can be cast to an <tt>A*</tt>.</p>
+
+<h2><a name="class_smart_pointers"></a>smart_pointers</h2> 
+
+<p>When you register a class you can tell luabind that all instances of that class should be held
+by some kind of smart pointer (<tt>boost::shared_ptr</tt> for instance). You do this by giving
+the holder type as an extra template-parameter to the <tt>class_</tt> your constructing, like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A, boost::shared_ptr&lt;A&gt; &gt;("A");
+];
+</pre>
+
+<p>You also have to supply two functions for your smart pointer. One that returns the type of const
+version of the smart pointer type (<tt>boost::shared_ptr&lt;const A&gt;</tt> in this case). And one
+function that extracts the raw pointer from the smart pointer. The first function is needed because
+luabind has to allow the non-const&nbsp;-&gt;&nbsp;conversion when passing values from lua to C++. The second
+function is needed when lua calls member functions on held types, the this pointer must be a raw
+pointer, it is also needed to allow the smart_pointer&nbsp;-&gt;&nbsp;raw_pointer conversion from
+lua to C++. They look like this:</p>
+
+<pre>
+namespace luabind
+{
+	template&lt;class T&gt;
+	T* get_pointer(boost::shared_ptr&lt;T&gt;&amp; p) { return p.get(); }
+
+	template&lt;class A&gt;
+	boost::shared_ptr&lt;const A&gt;* get_const_holder(boost::shared_ptr&lt;A&gt;*)
+	{
+		return 0;
+	}
+}
+</pre>
+
+<p>The conversion that works are (given that B is a base class of A):</p>
+
+<table>
+	<tr>
+		<td colspan="2"><h3>from lua to C++</h3></td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>A*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>B*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>const A*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>const B*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>holder_type&lt;A&gt;</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>holder_type&lt;const A&gt;</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;const A&gt;</td>
+		<td>const A*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;const A&gt;</td>
+		<td>const B*</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;const A&gt;</td>
+		<td>holder_type&lt;const A&gt;</td>
+	</tr>
+	<tr>
+		<td colspan="2"><h3>from C++ to lua</h3></td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;A&gt;</td>
+		<td>holder_type&lt;A&gt;</td>
+	</tr>
+	<tr>
+		<td>holder_type&lt;const A&gt;</td>
+		<td>holder_type&lt;const A&gt;</td>
+	</tr>
+	<tr>
+		<td>const holder_type&lt;A&gt;&amp;</td>
+		<td>holder_type&lt;A&gt;</td>
+	</tr>
+	<tr>
+		<td>const holder_type&lt;const A&gt;&amp;</td>
+		<td>holder_type&lt;const A&gt;</td>
+	</tr>
+
+</table>
+
+<p>When using a holder type, it can be useful to know if the pointer is valid. For example when using
+std::auto_ptr, the holder will be invalidated when passed as a parameter to a function. 
+For this purpose there is a member of all object instances in luabind: <tt>__ok</tt>.<p>
+
+<pre>
+
+struct test {};
+void f(std::auto_ptr&lt;test&gt;);
+
+module(L)
+[
+	class_&lt;test&gt;("test")
+		.def(constructor&lt;&gt;()),
+
+	def("f", &amp;f)
+];
+
+a = test()
+f(a)
+print a.__ok -- prints false
+
+</pre>
+
+<h1><a name="object"></a>Object</h1>
+
+<p>Since functions have to be able to take lua values (of variable type) we need a wrapper
+around them. This wrapper is called <tt>luabind::object</tt>. If the function you register
+takes an <tt>object</tt>, it will match any lua value. To use it, you need to include
+<tt>&lt;luabind/object.hpp&gt;</tt>. The <tt>object</tt> class has the following synopsis:</p>
+
+<pre>
+class object
+{
+public:
+	class iterator;
+	class raw_iterator;
+	class array_iterator;
+
+	template&lt;class T&gt;
+	object(lua_State*, const T&amp; value);
+	object(const object&amp;);
+	object(lua_State*);
+	object();
+
+	~object();
+	
+	iterator begin() const;
+	iterator end() const;
+	raw_iterator raw_begin() const;
+	raw_iterator raw_end() const;
+	array_iterator abegin() const;
+	array_iterator aend() const;
+
+	void set();
+	lua_State* lua_state() const;
+	void pushvalue() const;
+	bool is_valid() const;
+	operator bool() const;
+	
+	template&lt;class Key&gt;
+	<i>&lt;implementation-defined&gt;</i> operator[](const Key&amp;);
+
+	template&lt;class Key&gt;
+	object at(const Key&amp;) const;
+
+	template&lt;class Key&gt;
+	object raw_at(const Key&amp;) const;
+
+	template&lt;class T&gt;
+	object&amp; operator=(const T&amp;);
+	object&amp; operator=(const object&amp;);
+
+	template&lt;class T&gt;
+	bool operator==(const T&amp;) const;
+	bool operator==(const object&amp;) const;
+	bool operator&lt;(const object&amp;) const;
+	bool operator&lt;=(const object&amp;) const;
+	bool operator&gt;(const object&amp;) const;
+	bool operator&gt;=(const object&amp;) const;
+	bool operator!=(const object&amp;) const;
+
+	void swap(object&amp;);
+	int type() const;
+
+	<i>&lt;implementation-defined&gt;</i> operator()();
+	
+	template&lt;class A0&gt;
+	<i>&lt;implementation-defined&gt;</i> operator()(const A0&amp; a0);
+
+	template&lt;class A0, class A1&gt;
+	<i>&lt;implementation-defined&gt;</i> operator()(const A0&amp; a0, const A1&amp; a1);
+
+	/* ... */
+	
+};
+</pre>
+
+<p>When you have a lua object, you can assign it a new value with the assignment operator (=). When
+you do this, the <tt>default_policy</tt> will be used to make the conversion from C++ value to lua.
+If your <tt>luabind::object</tt> is a table you can access its members through the operator[] or
+the iterators. The value returned from the operator[] is a proxy object that can be used both
+for reading and writing values into the table (using operator=). Note that it is impossible
+to know if a lua value is indexable or not (lua_gettable doesn't fail, it succeeds or crashes).
+This means that if you're trying to index something that cannot be indexed, you're on your own. Lua
+will call its <tt>panic()</tt> function (you can define your own panic function using
+<tt>lua_setpanicf</tt>). The <tt>at()</tt> and <tt>raw_at()</tt> functions returns the value
+at the given table position (like operator[] but only for reading).<p>
+
+<p>The ordinary <tt>object::iterator</tt> uses <tt>lua_gettable</tt> to extract the values from
+the table, the standard way that will invoke metamethods if any. The <tt>object::raw_iterator</tt>
+uses <tt>lua_rawget</tt> and <tt>object::array_iterator</tt> uses <tt>lua_rawgeti</tt>. The latter
+will only iterate over numberical keys starting at 1 and continue until the first nil value.</p>
+
+<p>The <tt>lua_state()</tt> function returns the lua state where this object is stored. If you want
+to manipulate the object with lua functions directly you can push it onto the lua stack by calling
+<tt>pushvalue()</tt>. And set the object's value by calling <tt>set()</tt>, which will pop the top
+value from the lua stack and assign it to the object.</p>
+
+<p>The operator== will run <tt>lua_equal()</tt>
+on the operands and return its result.</p>
+
+<p>The <tt>int type()</tt> member function will return the lua type of the object. It will return
+the same values as <tt>lua_type()</tt>.</p>
+
+<p>The <tt>is_valid</tt> function tells you whether the object has been initialized or not. When created
+with its default constructor, objects are invalid. To make an object valid, you can assign it a value. If
+you want to invalidate an object you can simply assign it an invalid object.</p>
+
+<p>The <tt>operator bool()</tt>
+isn't really an implicit cast to bool, but an implicit cast to a member pointer, since member pointers
+don't have any arithmetic operators on them (which can cause hard to find errors). The functionality of
+the cast-operator is equivalent to <tt>is_valid()</tt>. This means that:</p>
+
+<pre>
+object o;
+// ...
+if (o.is_valid())
+{
+	// ...
+}
+</pre>
+
+<p>is equivalent to:</p>
+
+<pre>
+object o;
+// ...
+if (o)
+{
+	// ...
+}
+</pre>
+
+<p>The application operator will call the value as if it was a function. You can give it any number
+of parameters (currently the <tt>default_policy</tt> will be used for the conversion). The returned
+object refers to the return value (currently only one return value is supported). This operator may
+throw <tt>luabind::error</tt> if the function call fails. If you want to specify
+<a href="#policies">policies</a> to your function call, you can use index-operator (operator[]) on
+the function call, and give the policies within the [ and ]. Like this:</p>
+
+<pre>
+my_function_object(2, 8, new my_complex_structure(6)) [ adopt(_3) ];
+</pre>
+
+<p>This tells luabind to make lua adopt the ownership and responsibility for the pointer passed in
+to the lua-function.</p>
+
+<p>It's important that all instances of <tt>object</tt> have been destructed by the time the lua state
+is closed. The object will keep a pointer to the lua state and release its lua object in its
+destructor.</p>
+
+<p>Here's an example of how a function can use a table.</p>
+
+<pre>
+void my_function(const object&amp; table)
+{
+	if (table.type() == LUA_TTABLE)
+	{
+		table["time"] = std::clock();
+		table["name"] = std::rand() &lt; 500 ? "unusual" : "usual";
+
+		std::cout &lt;&lt; object_cast&lt;std::string&gt;(table[5]) &lt;&lt; "\n";
+	}
+}
+</pre>
+
+<p>If you take a <tt>luabind::object</tt> as a parameter to a function, any lua value will match that parameter.
+That's why we have to make sure it's a table before we index into it.</p>
+
+<h2><a name="object_iterators"></a>iterators</h2>
+
+<p>The iterators, that are returned by the <tt>begin()</tt> and <tt>end()</tt> (and their variants) are (almost)
+models of the <a href="http://www.sgi.com/tech/stl/ForwardIterator.html">
+ForwardIterator</a> concept. The exceptions are that operator-&gt; and post increment doesn't exist on
+them.</p>
+
+<p>They look like this:</p>
+
+<pre>
+class object::iterator
+{
+	iterator();
+	iterator(const iterator&amp;);
+	
+	iterator&amp; operator++();
+	bool operator!=(const iterator&amp;) const;
+	iterator&amp; operator=(const iterator&amp;);
+
+	object key() const;
+
+	<i>implementation-defined</i> operator*();
+};
+</pre>
+
+<p>The implementation defined return value from the dereference operator is a proxy object that can be used as if it was
+an <tt>object</tt>, it can also be used to assign the specific table entry with a new value. If you want to assign a
+value to an entry pointed to by an iterator, just use the assignment operator on the dereferenced iterator:</p>
+
+<pre>
+*iter = 5;
+</pre>
+
+<p>The <tt>key()</tt> member returns the key used by the iterator when indexing the associated lua table.</p>
+
+<h2><a name="object_functions"></a>related functions</h2>
+
+<p>
+There are a couple of functions related to objects and tables.
+</p>
+
+<h3><tt>T object_cast&lt;<i>Type</i>&gt;(const&nbsp;object&amp;);</tt><br>
+<tt>T object_cast&lt;<i>Type</i>&gt;(const&nbsp;object&amp;, const&nbsp;Policies&amp;);</tt><br>
+<tt>boost::optional&lt;T&gt; object_cast_nothrow&lt;<i>Type</i>&gt;(const&nbsp;object&amp;);</tt><br>
+<tt>boost::optional&lt;T&gt; object_cast_nothrow&lt;<i>Type</i>&gt;(const&nbsp;object&amp;, const&nbsp;Policies&amp;);</tt></h3>
+<p>The <tt>object_cast</tt> function casts the value of an <tt>object</tt> to a C++ value. You
+can supply a policy to handle the conversion from lua to C++. If the cast cannot be made a
+<tt>cast_failed</tt> exception will be thrown. If you have defined <tt>LUABIND_NO_ERROR_CHECKING</tt>
+(see <a href="#config">configuration</a>) no checking will occur, and if the cast is invalid the
+application may very well crash. The nothrow versions will return an uninitialized <tt>boost::optional&lt;T&gt;</tt>
+object, to indicate that the cast could not be performed.</p>
+
+<h3><tt>object get_globals(lua_State*);</tt><br>
+<tt>object get_registry(lua_State*);</tt></h3>
+<p>These functions return the global environment table and the registry table respectively.</p>
+
+<h3><tt>object newtable(lua_State*);</tt></h3>
+<p>This function creates a new table and returns an object to it.</p>
+
+<h2><a name="functor"></a>functor</h2>
+
+<p>The <tt>functor</tt> class is similar to <tt>object</tt>, with the exception that it can
+only be used to store functions. If you take it as a parameter, it will only match functions.</p>
+
+<p>To use it you need to include its header:</p>
+
+<pre>
+#include &lt;luabind/functor.hpp&gt;
+</pre>
+
+<p>It takes one template parameter, the return value of the lua function it represents.
+Currently the functor can have at most one return value (unlike lua functions). It has the
+following synopsis:</p>
+
+<pre>
+template&lt;class Ret&gt;
+class functor
+{
+public:
+
+	functor(lua_State*, const char* name);
+	functor(const functor&amp;);
+
+	~functor();
+	
+	bool is_valid() const;
+	operator bool() const;
+
+	lua_State* lua_state() const;
+	void pushvalue() const;
+	
+	bool operator==(const functor&lt;Ret&gt;&amp;);
+	bool operator!=(const functor&lt;Ret&gt;&amp;);
+	
+	<i>&lt;implementation-defined&gt;</i> operator()() const;
+	
+	template&lt;class A0&gt;
+	<i>&lt;implementation-defined&gt;</i> operator()(const A0&amp;) const;
+
+	template&lt;class A0, class A1&gt;
+	<i>&lt;implementation-defined&gt;</i> operator()(const A0&amp;, const A1&amp;) const;
+
+	/* ... */
+};
+</pre>
+
+<p>The application operator takes any parameters. The parameters are converted into lua and the 
+function is called. The return value will act as if it was the type <tt>Ret</tt>, with the exception that you can use the
+return value to give policies to the call. You do this the same way as you do with <a href="#object">objects</a>,
+using the operator[], and giving the policies inside the brackets.</p>
+
+<p>The <tt>is_valid()</tt> function works just like the one on <a href="#object"><tt>object</tt></a>, it tells you if
+the functor has been assigned with a valid lua function. The <tt>operator bool()</tt> is an alias for this member function
+and also works just as the one found in <a href="#object"><tt>object</tt></a>.</p>
+
+<p>For example, if you have the following lua function:</p>
+
+<pre>
+function f(a, b)
+	return a + b
+end
+</pre>
+
+<p>You can expose it to C++ like this:</p>
+
+<pre>
+functor&lt;int&gt; f(L, "f");
+
+std::cout &lt;&lt; f(3, 5) &lt;&lt; "\n";
+</pre>
+
+<p>This will print out the sum of 3 and 5. Note that you can pass any parameters to the
+application operator of <a href="#functor"><tt>luabind::functor</tt></a>, this is because lua doesn't have 
+signatures for its functions. All lua functions take any number of parameters 
+of any type.</p>
+
+<p>If we have a C++ function that takes a <a href="#functor"><tt>luabind::functor</tt></a> and registers it, it will accept lua 
+functions passed to it. This enables us to expose APIs that requires you to 
+register callbacks. For example, if your C++ API looks like this:</p>
+
+<pre>
+void set_callback(void(*)(int, int));
+</pre>
+	
+<pre>
+object o;
+// ...
+if (o.is_valid())
+{
+	// ...
+}
+</pre>
+
+
+<p>And you want to expose it to lua, you have to wrap the 
+call to the lua function inside a real C++ function, like this:</p>
+
+<pre>
+functor&lt;void&gt; lua_callback;
+
+void callback_wrapper(int a, int b)
+{
+	lua_callback(a, b);
+}
+
+void set_callback_wrapper(const functor&lt;void&gt;&amp; f)
+{
+	lua_callback = f;
+	set_callback(&amp;callback_wrapper);
+}
+</pre>
+
+<p>And then register <tt>set_callback_wrapper</tt> instead of registering <tt>set_callback</tt>.
+This will have the effect that when one tries to register the callback from lua, your
+<tt>set_callback_wrapper</tt> will be called instead and first set the lua functor to the given function.
+It will then call the real <tt>set_callback</tt> with the <tt>callback_wrapper</tt>. The
+<tt>callback_wrapper</tt> will be called whenever the callback should be called, and it will simply
+call the lua function that we registered.</p>
+
+<p>You can also use <a href="#object_functions"><tt>object_cast</tt></a> to cast an object to a <a href="#functor"><tt>functor</tt></a>.</p>
+
+<h1><a name="class_lua"></a>Defining classes in lua</h1>
+
+<p>In addition to binding C++ functions and classes with 
+lua, luabind also provide an oo-system in lua.</p>
+
+<pre>
+class 'lua_testclass'
+
+function lua_testclass:__init(name)
+	self.name = name
+end
+
+function lua_testclass:print()
+	print(self.name)
+end
+
+a = lua_testclass('example')
+a:print()
+</pre>
+
+<p>Inheritance can be used between lua-classes:</p>
+
+<pre>
+class 'derived' (lua_testclass)
+
+function derived:__init() super('derived name')
+end
+
+function derived:print()
+	print('Derived:print() -&gt; ')
+	lua_testclass.print(self)
+end
+</pre>
+
+<p>Here the <tt>super</tt> keyword is 
+used in the constructor to initialize the base class. The user is required to 
+call <tt>super</tt> first in the constructor.</p>
+
+<p>As you can see in this example, you can call the 
+base class' member functions. You can find all member functions in the base class, 
+but you will have to give the this-pointer (<tt>self</tt>) as first argument.</p>
+
+<h2><a name="class_lua_derive"></a>deriving in lua</h2>
+
+<p>It is also possible to derive lua classes from C++ 
+classes, and override virtual functions with lua functions. To do this we have 
+to create a wrapper class for our C++ base class. This is the class that will 
+hold the lua object when we instantiate a lua class.</p>
+
+<p>The wrapper class has to provide the same constructors 
+as the base class, with the addition of one extra parameter: <tt>luabind::object</tt>.
+This is the reference to the lua object that should be held by the wrapper, and should
+be stored in a member variable as done in the sample below.</p>
+
+<pre>
+class base class
+{
+public:
+	baseclass(const char* s)	{ std::cout &lt;&lt; s &lt;&lt; "\n"; }
+	virtual void f(int a) { std::cout &lt;&lt; "f(" &lt;&lt; a &lt;&lt; ")\n"; }
+};
+
+struct baseclass_wrapper: baseclass
+{
+	luabind::object m_l;
+	baseclass_wrapper(luabind::object l, const char* s): baseclass(s), m_l(l) {}
+
+	virtual void f(int a) { call_member&lt;void&gt;(m_l, "f", a); }
+	static void f_static(baseclass* ptr, int a)
+	{
+		return ptr-&gt;baseclass::f(a);
+	}
+};
+</pre>
+<pre>
+module(L)
+[
+	class_&lt;baseclass, baseclass_wrapper&gt;("baseclass")
+		.def(constructor&lt;const char*&gt;())
+		.def("f", &amp;baseclass_wrapper::f_static)
+];	
+</pre>
+
+<p>Note that if you have both base classes and a base class 
+wrapper, you must give both <tt>bases</tt> and the 
+base class wrapper type as template parameter to <tt>class_</tt>. The order
+in which you specify them is not important.</p>
+
+<p>If we didn't have a class wrapper, it would not be possible to pass a lua class
+back to C++. Since the entry points of the virtual functions would still point to
+the C++ base class, and not to the functions defined in lua. That's why we need
+one function that calls the base class' real function (used if the lua class
+doesn't redefine it) and one virtual function that dispatches the call into luabind,
+to allow it to select if a lua function should be called, or if the original
+function should be called. If you don't intend to derive from a C++ class, or if
+it doesn't have any virtual member functions, you can register it without a
+class wrapper.</p>
+
+<p>You don't need to have a class wrapper in order to derive from a class,
+but if it has virtual functions you may have silent errors. The rule of thumb is:
+If your class has virtual functions, create a wrapper type, if it doesn't don't create
+a wrapper type.</p>
+
+<h2><a name="class_lua_operators"></a>overloading operators</h2>
+
+<p>You can overload most operators in lua for your classes. You do this by simply declaring
+a member function with the same name as an operator (the name of the metamethods in lua). The operators
+you can overload are:</p>
+
+<ul>
+	<li><tt>__add</tt>
+	<li><tt>__sub</tt>
+	<li><tt>__mul</tt>
+	<li><tt>__div</tt>
+	<li><tt>__pow</tt>
+	<li><tt>__lt</tt>
+	<li><tt>__le</tt>
+	<li><tt>__eq</tt>
+	<li><tt>__call</tt>
+	<li><tt>__unm</tt>
+	<li><tt>__tostring</tt>
+</ul>
+
+<p><tt>__tostring</tt> isn't really an operator, but it's the metamethod that is called by the standard
+library's <tt>tostring()</tt> function. There's one strange behavior regarding binary operators. You are not
+guaranteed that the self pointer you get actually refers to an instance of your class. This is because
+lua doesn't distinguish the two cases where you get the other operand as left hand value or right hand value.
+Consider the following examples:</p>
+
+<pre>
+class 'my_class'
+
+function my_class:__init(v)
+	self.val = v
+end
+	
+function my_class:__sub(v)
+	return my_class(self.val - v.val)
+end
+
+function my_class:__tostring()
+	return self.val
+end
+</pre>
+
+<p>This will work well as long as you only subtracts instances of <tt>my_class</tt> with each other. But
+If you want to be able to subtract ordinary numbers from your class too, you have to manually check the type
+of <b>both</b> operands, including the self object.</p>
+
+<pre>
+function my_class:__sub(v)
+	if (type(self) == 'number') then
+		return my_class(self - v.val)
+
+	elseif (type(v) == 'number') then
+		return my_class(self.val - v)
+	
+	else
+		-- assume both operands are instances of my_class
+		return my_class(self.val - v.val)
+
+	end
+end
+</pre>
+
+<p>The reason why <tt>__sub</tt> is used as an example is because subtraction is not commutative (the
+order of the operands matter). That's why luabind cannot change order of the operands to make the
+self reference always refer to the actual class instance.</p>
+
+<p>If you have two different lua classes with an overloaded operator, the operator of the right hand
+side type will be called. If the other operand is a C++ class with the same operator overloaded, it
+will be prioritized over the lua class' operator. If none of the C++ overloads matches, the lua
+class' operator will be called.</p>
+
+<h2><a name="class_lua_finalizers"></a>finalizers</h2>
+
+<p>If an object needs to perform actions when it's collected we provide
+a <tt>__finalize</tt> function that can be overridden in lua-classes.
+The __finalize functions will be called on all classes in the inheritance
+chain, starting with the most derived type.</p>
+
+<pre>
+...
+
+function lua_testclass:__finalize()
+	-- called when the an object is collected
+end
+</pre>
+
+<h1><a name="exceptions"></a>Exceptions</h1>
+<p>If any of the functions you register throws an exception when called, that exception will be caught
+by luabind and converted to an error string and <tt>lua_error</tt> will be invoked. If the exception
+is a <tt>std::exception</tt> or a <tt>const&nbsp;char*</tt> the string that is pushed on the lua stack,
+as error message, will be the <tt>what()</tt> or the string itself respectively. If the exception
+is unknown, a generic string saying that the function threw an exception will be pushed.</p>
+
+<p>Exceptions thrown from user defined functions have to be caught by luabind. If they weren't they
+would be thrown through lua itself, which is usually compiled as C code and doesn't support the
+stack-unwinding that exceptions imply.</p>
+
+<p>Any function that invokes lua code may throw <tt>luabind::error</tt>. This exception means that a lua
+run-time error occurred. The error message is found on top of the lua stack. The reason why the
+exception doesn't contain the error string itself is because it would then require heap allocation
+which may fail. If an exception class throws an exception while it is being thrown itself, the
+application will be terminated.</p>
+
+<p>Error's synopsis is:</p>
+
+<pre>
+class error: std::exception
+{
+public:
+	error(lua_State*);
+	lua_State* state() const throw();
+	virtual const char* what() const throw();
+};
+</pre>
+
+<p>The state function returns a pointer to the lua state in which the error was thrown. This pointer
+may be invalid if you catch this exception after the lua state is destructed. If the lua state is
+valid you can use it to retrieve the error message from the top of the lua stack.</p>
+
+<p>An example of where the lua state pointer may point to an invalid state follows:</p>
+
+<pre>
+struct lua_state
+{
+	lua_state(lua_State* L): m_L(L) {}
+	~lua_state() { lua_close(m_L); }
+	operator lua_State*() { return m_L; }
+	lua_State* m_L;
+};
+
+int main()
+{
+	try
+	{
+		lua_state L = lua_open();
+		/* ... */
+	}
+	catch(luabind::error&amp; e)
+	{
+		lua_State* L = e.state();
+		// L will now point to the destructed
+		// lua state and be invalid
+		/* ... */
+	}
+}
+</pre>
+
+<p>There's another exception that luabind may throw. <tt>luabind::cast_failed</tt>, this exception
+is thrown from <a href="#lua_fun"><tt>call_function</tt></a>, <a href="#lua_fun"><tt>call_member</tt></a> or when <a href="#functor"><tt>functor</tt></a> is invoked.
+It means that the return value from the lua function couldn't be converted to a C++ value. It is
+also thrown from <a href="#object_functions"><tt>object_cast</tt></a> if the cast cannot be made.</p>
+
+<p>The synopsis for <tt>luabind::cast_failed</tt> is:</p>
+
+<pre>
+class cast_failed: std::exception
+{
+public:
+	cast_failed(lua_State*);
+	lua_State* state() const throw();
+	LUABIND_TYPE_INFO info() const throw();
+	virtual const char* what() const throw();
+};
+</pre>
+
+<p>Again, the <tt>state</tt> member function returns a pointer to the lua state where the error occurred.
+See the example above to see where this pointer may be invalid.</p>
+
+<p>The <tt>info</tt> member function returns the user defined <a href="#luabind_type_info"><tt>LUABIND_TYPE_INFO</tt></a>, which
+defaults to a <tt>const&nbsp;std::type_info*</tt>. This type info describes the type that we tried
+to cast a lua value to.</p>
+
+<p>If you have defined <a href="#luabind_no_exceptions"><tt>LUABIND_NO_EXCEPTIONS</tt></a> none of these exceptions will be thrown,
+instead you can set two callback functions that are called instead. These two functions are only defined if <a href="#luabind_no_exceptions"><tt>LUABIND_NO_EXCEPTIONS</tt></a> are defined.</p>
+
+<h3><a name="set_error_callback"></a><tt>luabind::set_error_callback(void(*)(lua_State*))</tt></h3>
+<p>The function you set will be called when a runtime-error occur in lua code. You can find an
+error message on top of the lua stack. This function is not expected to return, if it does
+luabind will call <tt>std::terminate()</tt>.</p>
+
+<h3><a name="set_cast_failed_callback"></a><tt>luabind::set_cast_failed_callback(void(*)(lua_State*, LUABIND_TYPE_INFO))</tt></h3>
+
+<p>The function you set is called instead of throwing <tt>cast_failed</tt>. This function is not expected to return, if it does luabind will call <tt>std::terminate()</tt>.</p>
+
+
+<h1><a name="policies"></a>Parameter policies</h1>
+
+<p>Sometimes it is necessary to control how luabind passes 
+arguments and return value, to do this we have policies. These are the 
+policies that can be used:</p>
+
+<h2><a name="policies_copy"></a>copy</h2>
+
+<p>This will make a copy of the parameter. This is the 
+default behavior when passing parameters by-value. Note that this can only be 
+used when passing from C++ to lua. This policy requires that the parameter
+type has a copy constructor.</p>
+
+<p>To use this policy you need to include <tt>&lt;luabind/copy_policy.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_adopt"></a>adopt</h2>
+
+<p>This will transfer ownership of the parameter.</p>
+<p>Consider making a factory function in C++ and exposing 
+it to lua:</p><pre>base* create_base()
+{
+	return new base();
+}
+</pre>
+
+<pre>
+module(L)
+[
+	def("create_base", create_base)
+];
+</pre>
+
+<p>Here we need to make sure lua understands that it should 
+adopt the pointer returned by the factory-function. This can be done using the 
+adopt-policy.</p>
+
+<pre>
+module(L)
+[
+	def(L, "create_base", adopt(return_value))
+];
+</pre>
+
+<p>To specify multiple policies we just separate them with '+'.</p>
+
+<pre>
+base* set_and_get_new(base* ptr)
+{
+	base_ptrs.push_back(ptr);
+	return new base();
+}
+</pre>
+
+<pre>
+module(L)
+[
+	def(L, "set_and_get_new", &amp;set_and_get_new, adopt(return_value) + adopt(_1))
+];
+</pre>
+
+<p>When lua adopts a pointer, it will call <tt>delete</tt> on it. This means that it cannot adopt pointers allocated with
+another allocator than <tt>new</tt> (no <tt>malloc</tt> for example).</p>
+
+<p>To use this policy you need to include <tt>&lt;luabind/adopt_policy.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_dependency"></a>dependency</h2>
+
+<p>The dependency policy is used to create life-time dependencies between values. Consider the following example:</p>
+
+<pre>
+struct A
+{
+	B m_member;
+
+	const B&amp; get_member()
+	{
+		return m_member;
+	}
+};
+</pre>
+
+<p>When wrapping this class, we would do something like:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.def(constructor&lt;&gt;())
+		.def("get_member", &amp;A::get_member)
+];
+</pre>
+
+<p>However, since the return value of get_member is a reference to a member of A, this will create
+some life-time issues. For example:</p>
+
+<pre>
+a = A()
+b = a:get_member() -- b points to a member of a
+a = nil
+collectgarbage(0)  -- since there are no references left to a, it is removed
+                   -- at this point, b is pointing into a removed object
+</pre>
+
+<p>When using the dependency-policy, it is possible to tell luabind to tie the lifetime of one
+object to another, like this:</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.def(constructor&lt;&gt;())
+		.def("get_member", &amp;A::get_member, dependency(result, self))
+];
+</pre>
+
+<p>This will create a dependency between the return-value of the function, and the self-object. This means
+that the self-object will be kept alive as long as the result is still alive.</p>
+
+<pre>
+a = A()
+b = a:get_member() -- b points to a member of a
+a = nil
+collectgarbage(0)  -- a is dependent on b, so it isn't removed
+b = nil
+collectgarbage(0)  -- all dependencies to a gone, a is removed
+</pre>
+
+<p>To use this policy you need to include <tt>&lt;luabind/dependency_policy.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_return_ref"></a>return_reference_to</h2>
+
+<p>It is very common to return references to arguments or the this-pointer to allow for chaining in C++.</p>
+<pre>
+struct A
+{
+	float m_val;
+
+	A&amp; set(float v)
+	{
+		m_val = v;
+		return *this;
+	}
+};
+</pre>
+
+<p>When luabind generates code for this, it will create a new object for the return-value, pointing to the self-object. This
+isn't a problem, but could be a bit inefficient. When using the return_reference_to-policy we have the ability to tell
+luabind that the return-value is already on the lua stack.</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.def(constructor&lt;&gt;())
+		.def("set", &amp;A::set, return_reference_to(self))
+];	
+</pre>
+
+<p>Instead of creating a new object, luabind will just copy the object that is already on the stack.</p>
+<p>NOTE! This policy ignores all type information and should be used only it situations where the parameter type
+is a perfect match to the return-type (such as in the example).</p>
+
+<p>To use this policy you need to include <tt>&lt;luabind/return_reference_to_policy.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_out"></a>out_value</h2>
+
+<p>This policy makes it possible to wrap functions that take non const references as its parameters with the intention to write return values to them.</p>
+
+<pre>
+void f(float&amp; val) { val = val + 10.f; }
+</pre>
+or
+<pre>
+void f(float* val) { *val = *val + 10.f; }
+</pre>
+
+<p>Can be wrapped by doing:</p>
+
+<pre>
+module(L)
+[
+	def("f", &amp;f, out_value(_1))
+];
+</pre>
+
+<p>When invoking this function from lua it will return the value assigned to its parameter.</p>
+
+<pre>
+a = f(10) -- a is now 20
+</pre>
+		
+<p>When this policy is used in conjunction with user define types we often need to do ownership transfers.</p>
+		
+<pre>
+struct A
+{
+};
+
+void f(A*&amp; obj) { obj = new A(); }
+or
+void f(A** obj) { *obj = new A(); }
+</pre>
+
+<p>Here we need to make sure luabind takes control over object returned, for this we use the <tt>adopt</tt> policy</p>
+
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A"),
+
+	def("f", &amp;f, out_value(_1, adopt(_2)))
+];
+</pre>
+
+<p>Here we are using <tt>adopt</tt> as an internal policy to <tt>out_value</tt>. The index specified, <tt>_2</tt>, means adopt will be used to convert the value back to lua. Using <tt>_1</tt> means the policy will be used when converting from lua to C++.</p>
+
+<p>To use this policy you need to include <tt>&lt;luabind/out_value_policy.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_pure_out"></a>pure_out_value</h2>
+
+<p>This policy works in exactly the same way as <tt>out_value</tt>, except that it replaces the parameters with default-constructed
+objects.</p>
+
+<pre>
+void get(float&amp; x, float&amp; y)
+{
+	x = 3.f;
+	y = 4.f;
+}
+</pre>
+<pre>
+module(L)
+[
+	def("get", &amp;get, pure_out_value(_1) + pure_out_value(_2))
+];
+</pre>
+<pre>
+x,y = get()
+print(x,y)  -- prints '3   4'
+</pre>
+
+<p>Like out_value, it is possible to specify an internal policy used then converting the values back to lua.</p>
+
+<pre>
+void get(test_class*&amp; obj)
+{
+	obj = new test_class();
+}
+</pre>
+<pre>
+module(L)
+[
+	def("get", &amp;get, pure_out_value(_1, adopt(_1)))
+];
+</pre>
+
+<h2><a name="policies_discard_result"></a>discard_result</h2>
+		
+<p>This is a very simple policy which makes it possible to throw away the value returned by a C++ function, instead of converting it to lua. This example makes sure the <tt>this</tt> reference never gets converted to lua</p>
+		
+<pre>
+struct simple
+{
+	simple&amp; set_name(const std::string&amp; n)
+	{
+		name = n;
+		return *this;
+	}
+
+	std::string name;
+};
+</pre>
+<pre>
+module(L)
+[
+	class_&lt;simple&gt;("simple")
+		.def("set_name", &amp;simple::set_name, discard_result)
+];
+</pre>
+		
+<p>To use this policy you need to include <tt>&lt;luabind/discard_result.hpp&gt;</tt>.</p>
+
+<h2><a name="policies_return_stl_iterator"></a>return_stl_iterator</h2>
+
+<p>This policy converts an STL container to a generator function that can be used in lua to
+iterate over the container. It works on any container that defines <tt>begin()</tt> and <tt>end()</tt>
+member functions (they have to return iterators). It can be used like this:</p>
+
+<pre>
+struct A
+{
+	std::vector&lt;std::string&gt; names;
+};
+</pre>
+<pre>
+module(L)
+[
+	class_&lt;A&gt;("A")
+		.def_readwrite("names", &amp;A::names, return_stl_iterator)
+];
+</pre>
+
+<p>The lua code to iterate over the container:</p>
+
+<pre>
+a = A()
+
+for name in a.names do
+  print(name)
+end
+</pre>
+
+<p>To use this policy you need to include <tt>&lt;luabind/iterator_policy.hpp&gt;</tt></p>
+
+<h2><a name="policies_yield"></a>yield</h2>
+
+<p>This policy will cause the function to always yield the current
+thread when returning. See the lua manual for restrictions on yield.</p>
+
+<pre>
+module(L)
+[
+	def("f", &amp;f, yield)
+];
+</pre>
+
+<h2><a name="policies_custom"></a>custom</h2>
+
+<p>The policies don't have a stable API yet. See the examples directory.</p>
+
+<h2><a name="policies_user_converter"></a>user defined converter</h2>
+
+<p>The policies don't have a stable API yet. See the examples directory.</p>
+
+<h1><a name="config"></a>Configuration</h1>
+
+<p>There are a number of configuration options available when building luabind. It is very important
+that your project has the exact same conmfiguration options as the ones given when the library was build!
+The exceptions are the <tt>LUABIND_MAX_ARITY</tt> and <tt>LUABIND_MAX_BASES</tt> which are template-based
+options and only matters when you use the library (which means they can differ from the settings of the
+library).</p>
+
+<p>The default settings can be found in <tt>luabind/config.hpp</tt> they will be used if no other settings
+are given.</p>
+
+<p>If you want to change the settings of the library, you can modify the config-file. It is included and used
+by all make-files. You can change paths to lua and boost in there as well.</p>
+
+<h3><tt>LUABIND_MAX_ARITY</tt></h3>
+			<p>Controls the maximum arity of functions that are registered
+			with luabind. You can't register functions that takes more
+			parameters than the number this macro is set to. It defaults
+			to 5, so, if your functions have greater arity you have to
+			redefine it. A high limit will increase compilation time.</p>
+<h3><tt>LUABIND_MAX_BASES</tt></h3>
+			<p>Controls the maximum number of classes one class can derive from
+			in luabind (the number of classes specified within
+			<tt>bases&lt;&gt;</tt>). <tt>LUABIND_MAX_BASES</tt> defaults to 4.
+			A high limit will increase compilation time.</p>
+<h3><tt>LUABIND_NO_ERROR_CHECKING</tt></h3>
+			<p>If this macro is defined, all the lua code is expected only to make
+			legal calls. If illegal function calls are made (e.g. giving parameters
+			that doesn't match the function signature) they will not be detected
+			by luabind and the application will probably crash. Error checking
+			could be disabled when shipping a release build (given that no end-user
+			has access to write custom lua code). Note that function parameter
+			matching will be done if a function is overloaded, since otherwise it's
+			impossible to know which one was called. Functions will still be able
+			to throw exceptions when error checking is disabled.</p>
+
+			<p>Functions will still be able to throw exceptions, they will be
+			caught by luabind and propagated with <tt>lua_error()</tt>.</p>
+
+			
+<h3><tt>LUABIND_DONT_COPY_STRINGS</tt></h3>
+			<p>If this macro is defined, luabind will expect that all strings given
+			to the def() methods are static constant strings (given as string
+			constants for example). luabind will not copy the strings if you
+			enable this setting, but just keep the char pointers. This may be
+			especially useful for embedded systems or consoles where heap
+			allocations should be minimized.</p>
+
+			
+<a name="luabind_no_exceptions"></a><h3><tt>LUABIND_NO_EXCEPTIONS</tt></h3>
+			<p>This define will disable all usage of try, catch and throw in
+			luabind. This will in many cases disable run-time errors, when
+			performing invalid casts or calling lua-functions that fails or
+			returns values that cannot be converted by the given policy.
+			luabind requires that no function called directly or indirectly
+			by luabind throws an exception (throwing exceptions through
+			lua has undefined behavior).</p>
+
+			<p>Where exceptions are the only way to get an error report from
+			luabind, they will be replaced with calls to the callback
+			functions set byt <a href="#set_error_callback"><tt>set_error_callback()</tt></a>
+			and <a href="#set_cast_failed_callback"><tt>set_cast_failed_callback()</tt></a>.</p>
+			
+<a name="luabind_type_info"></a><h3><tt>LUABIND_TYPE_INFO</tt><br>
+<tt>LUABIND_TYPE_INFO_EQUAL(i1,i2)</tt><br>
+<tt>LUABIND_TYPEID(t)</tt><br>
+<tt>LUABIND_INVALID_TYPE_INFO</tt></h3>
+
+			<p>If you don't want to use the RTTI supplied by C++
+			you can supply your own type-info structure with the
+			LUABIND_TYPE_INFO define. Your type-info structure must
+			be copyable and must be able to compare itself against
+			other type-info structures. You supply the compare
+			function through the LUABIND_TYPE_INFO_EQUAL()
+			define. It should compare the two type-info structures
+			it is given and return true if they represent the same type
+			and false otherwise. You also have to supply a function
+			to generate your type-info structure. You do this through
+			the LUABIND_TYPEID() define. It should return your type-info
+			structure and it takes a type as its parameter. That is,
+			a compile time parameter. LUABIND_INVALID_TYPE_INFO macro
+			should be defined to an invalid type. No other type should
+			be able to produce this type info. To use it you probably
+			have to make a traits class with specializations for all
+			classes that you have type-info for. Like this:</p>
+			
+			<pre>
+class A;
+class B;
+class C;
+
+template&lt;class T&gt; struct typeinfo_trait;
+
+template&lt;&gt; struct typeinfo_trait&lt;A&gt; { enum { type_id = 0 }; };
+template&lt;&gt; struct typeinfo_trait&lt;B&gt; { enum { type_id = 1 }; };
+template&lt;&gt; struct typeinfo_trait&lt;C&gt; { enum { type_id = 2 }; };
+			</pre>
+			
+			<p>If you have set up your own RTTI system like this (by using integers to identify types)
+			you can have luabind use it with the following defines</p>
+			
+			<pre>
+#define LUABIND_TYPE_INFO int
+#define LUABIND_TYPE_INFO_EQUAL(i1, i2) i1 == i2
+#define LUABIND_TYPEID(t) typeinfo_trait&lt;t&gt;::type_id
+#define LUABIND_INVALID_TYPE_INFO -1
+			</pre>
+			
+			<p>The default behavior, if you don't define any of these three, is to use the built-in
+			RTTI support in C++.</p>
+			
+			<pre>
+#define LUABIND_TYPE_INFO const std::type_info*
+#define LUABIND_TYPEID(t) &amp;typeid(t)
+#define LUABIND_TYPE_INFO_EQUAL(i1, i2) *i1 == *i2
+#define LUABIND_INVALID_TYPE_INFO &amp;typeid(detail::null_type)
+			</pre>
+
+			<p>currently the type given through LUABIND_TYPE_INFO must be less-than comparable!</p>
+<h3><tt>NDEBUG</tt></h3>
+			<p>This define will disable all asserts and should be defined in a release build.</p>
+
+
+<h1><a name="implementation_notes"></a>Implementation notes</h1>
+
+<p>The classes and objects are implemented as user data in lua. To make sure that
+the user data really is the internal structure it is supposed to be, we tag their
+metatables. A user data who's metatable contains a boolean member named
+<tt>"__luabind_classrep"</tt> is expected to be a class exported by luabind.
+A user data who's metatable contains a boolean member named <tt>"__luabind_class"</tt>
+is expected to be an instantiation of a luabind class.</p>
+
+<p>This means that if you make your own user data and tags its metatable with the
+exact same names, you can very easily fool luabind and crash the application.</p>
+
+<p>In the lua registry, luabind keeps an entry called "<tt>__luabind_classes</tt>"
+and "<tt>__luabind_free_functions</tt>". These should not be removed or overwritten.</p>
+
+<p>In the global table, a variable called <tt>super</tt> is used every time a constructor
+in a lua-class is called. This is to make it easy for that constructor to call its base
+class' constructor. So, if you have a global variable named <tt>super</tt> it may very
+well be overwritten. This is probably not the best solution, and this restriction may very
+well be removed in the future.</p>
+
+<p>Inside the <tt>luabind</tt> namespace, there's another namespace called <tt>detail</tt>.
+This namespace contains non-public classes and are not supposed to be used directly.</p>
+
+<h1><a name="error_messages"></a>Error messages</h1>
+
+<ul>
+	<li>cannot set attribute '<i>&lt;class-name&gt;</i>.<i>&lt;attribute-name&gt;</i>'
+	<p>There is no data member named <i>&lt;attribute-name&gt;</i> in the class <i>&lt;class-name&gt;</i>, or
+	there's no setter-method registered on that property name. See the <a href="#class_property">properties</a> section.</p>
+
+	<li><i>&lt;class-name&gt;</i>() threw an exception
+	<li><i>&lt;class-name&gt;</i>:<i>&lt;function-name&gt;</i>() threw an exception
+	<p>The class' constructor or member function threw an unknown exception. Known exceptions are <tt>const&nbsp;char*</tt>,
+	<tt>std::exception</tt>. See the <a href="#exceptions">exceptions</a> section.</p>
+
+	<li>no overload of '<i>&lt;class-name&gt;</I>:<i>&lt;function-name&gt;</i>' matched the arguments (&lt;<i>parameter-types&gt;)</i>
+	<li>no match for function call '<i>&lt;function-name&gt;</i>' with the parameters (<i>&lt;parameter-types&gt;</i>)
+	<li>no constructor of <i>&lt;class-name&gt;</i> matched the arguments (<i>&lt;parameter-types&gt;</i>) 
+	<li>no operator <i>&lt;operator-name&gt;</i> matched the arguments (<i>&lt;parameter-types&gt;</i>)
+	<p>No function/operator with the given name takes the parameters you gave it. You have either misspelled the function name,
+	or given it incorrect parameters. This error is followed by a list of possible candidate functions to help you figure out what
+	parameter has the wrong type. If the candidate list is empty there's no function at all with that name. See the
+	<a href="#fun_sigmatch">signature matching</a> section.</p>
+	
+	<li>call of overloaded '<i>&lt;class-name&gt;</i>:<i>&lt;function-name&gt;</i>(&lt;<i>parameter-types&gt;</i>)' is ambiguous
+	<li>ambiguous match for function call '<i>&lt;function-name&gt;</i>' with the parameters (<i>&lt;parameter-types&gt;</i>)
+	<li>call of overloaded constructor '<i>&lt;class-name&gt;</i>(<i>&lt;parameter-types&gt;</i>)' is ambiguous 
+	<li>call of overloaded operator <i>&lt;operator-name&gt;</i> (<i>&lt;parameter-types&gt;</i>) is ambiguous
+	<p>This means that the function/operator you are trying to call has at least one other overload that matches the arguments
+	just as good as the first overload.</p>
+
+	<li>cannot derive from C++ class '<i>&lt;class-name&gt;</i>'. It does not have a wrapped type.
+	<p>You are trying to derive a lua class from a C++ class that doesn't have a wrapped type. You have to give
+	your C++ class a wrapped type when you register it with lua. See the <a href="#class_lua_derive">deriving in lua</a> section.</p>
+
+	<li>derived class must call super on base
+	<li>cannot set property '<i>&lt;class-name&gt;</i>.<i>&lt;attribute_name&gt;</i>' because it's read only
+	<p>The attribute you are trying to set is registered as read only. If you want it to be writeable you have to change your
+	class registration and use <tt>def_readwrite()</tt> instead of <tt>def_readonly()</tt>. Alternatively (if your attribute
+	is a property with getter and setter functions), you have to give a setter function when declaring your attribute. See
+	the <a href="#class_property">properties</a> section.</p>
+
+	<li>no static '<i>&lt;enum-name&gt;</i>' in class '<i>&lt;class-name&gt;</i>'
+	<p>You will get this error message if you are trying to access an enum that doesn't exist. Read about how to
+	<a href="#class_enum">declare enums</a>.</p>
+
+	<li>expected base class
+	<p>You have written a malformed <a href="#class_lua">class definition in lua</a>. The format is:
+	<tt>class&nbsp;'<i>&lt;class-name&gt;</i>'&nbsp;[<i>&lt;base-class&gt;</i>]</tt>. If you don't want to derive from
+	a base class, you have to break the line directly after the class declaration.</p>
+	
+	<li>invalid construct, expected class name
+	<p>You have written a malformed <a href="#class_lua">class definition in lua</a>. The <tt>class</tt> function expects
+	a string as argument. That string is the name of the lua class to define.</p>
+</ul>
+
+<h1><a name="faq"></a>FAQ</h1>
+<ul>
+	<li><h3>What's up with __cdecl and __stdcall?</h3>
+	
+	<p>If you're having problem with functions that cannot be converted from
+	<tt>'void&nbsp;(__stdcall&nbsp;*)(int,int)'</tt> to <tt>'void&nbsp;(__cdecl&nbsp;*)(int,int)'</tt>.
+	You can change the project settings to make the compiler generate functions with
+	<tt>__cdecl</tt> calling conventions. This is a problem in developer studio.</p>
+
+	<li><h3>What's wrong with functions taking variable number of arguments?</h3>
+	<p>You cannot register a function with ellipses in its signature. Since ellipses don't preserve
+	type safety, those should be avoided anyway.</p>
+
+	<li><h3>Internal structure overflow in VC</h3>
+	<p>If you, in visual studio,  get <tt>fatal error C1204: compiler limit : internal
+	structure overflow</tt>. You should try to split that compilation unit up
+	in smaller ones.</p>
+
+	<li><h3>What's wrong with precompiled headers in VC?</h3>
+	<p>Visual Studio doesn't like anonymous namespaces in its precompiled headers. If you encounter this
+	problem you can disable precompiled headers for the compilation unit (cpp-file) that uses luabind.</p>
+
+	<li><h3>error C1076: compiler limit - internal heap limit reached in VC</h3>
+	<p>In visual studio you will probably hit this error. To fix it you have to increase the internal heap
+	with a command-line option. We managed to compile the test suit with /Zm300, but you may need a larger
+	heap then that.</p>
+
+	<li><h3>error C1055: compiler limit : out of keys in VC</h3>
+	<p>It seems that this error occurs when too many <tt>assert()</tt> are used in a program, or more
+	specifically, the <tt>__LINE__</tt> macro. It seems to be fixed by changing /ZI (Program database
+	for edit and continue) to /Zi (Program database).</p>
+	
+	<li><h3>How come my executable is huge?</h3>
+	<p>If you're compiling in debug mode, you will probably have a lot of debug-info and symbols (luabind
+	consists of a lot of functions). Also, if built in debug mode, no optimizations were applied, luabind
+	relies on that the compiler is able to inline functions. If you built in release mode, try running
+	<tt>strip</tt> on your executable to remove export-symbols, this will trim down the size.</p>
+	<p>Our tests suggests that cygwin's gcc produces much bigger executables compared to gcc on other 
+	platforms and other compilers.</p>
+
+	<li><h3>Can I register template classes with luabind?</h3>
+	<p>Yes you can, but you can only register explicit instantiations of the class. Because there's no
+	lua counterpart to C++ templates. For example, you can register an explicit instantiation of
+	<tt>std::vector</tt> like this:</p>
+	<pre>
+module(L)
+[
+	class_&lt;std::vector&lt;int&gt;&nbsp;&gt;("vector")
+		.def(constructor&lt;int&gt;)
+		.def("push_back", &amp;std::vector&lt;int&gt;::push_back)
+];
+	</pre>
+	<p>Note that the space between the two &gt; is required by C++.</p>
+
+	<li><h3>Do I have to register destructors for my classes?</h3>
+	<p>No, the destructor of a class is always called by luabind when an object is collected. Note that
+	lua has to own the object to collect it. If you pass it to C++ and gives up ownership (with
+	<a href="#policy_adopt">adopt</a> policy) it will no longer be owned by lua, and not collected.</p>
+	<p>If you have a class hierarchy, you should make the destructor <tt>virtual</tt> if you want to
+	be sure that the correct destructor is called (this apply to C++ in general).</p>
+
+	<li><h3>Fatal Error C1063 compiler limit : compiler stack overflow in VC</h3>
+	<p>VC6.5 chokes on warnings, if you are getting alot of warnings from your code try suppressing them
+	with a pragma directive, this should solve the problem.</p>
+
+</ul>
+
+<h1><a name="future"></a>Future additions</h1>
+<ul>
+	<li>A mechanism for wrapping iterators with generators.
+</ul>
+
+<h1><a name="issues"></a>Known issues</h1>
+<ul>
+	<li>If one class registers two functions with the same name and the same signature,
+	there's currently no error. The last registered function will be the one that's used.
+	<li>In vc7, classes can not be called <tt>test</tt>.
+	<li>Visual studio have problems selecting the correct overload of <tt>std::swap()</tt> for <tt>luabind::object</tt>.
+</ul>
+
+<h1><a name="acknowledgments"></a>Acknowledgments</h1>
+
+<p>This library was written by <a href="mailto:dalwan01@student.umu.se">Daniel Wallin</a>
+and <a href="mailto:c99ang@cs.umu.se">Arvid Norberg</a>. &copy; Copyright 2003. All rights reserved.</p>
+
+<p>This library was inspired by Dave Abrahams'
+<a href="http://www.boost.org/libs/python/doc/index.html">Boost.Python</a> library which can be found in the
+<a href="http://www.boost.org">boost</a> library.</p>
+<p>
+	<a href="http://validator.w3.org/check/referer">
+	<img style="border:0;width:88px;height:31px"
+	src="http://www.w3.org/Icons/valid-html401"
+	alt="Valid HTML 4.01!"></a>
+
+	<a href="http://jigsaw.w3.org/css-validator/">
+	<img style="border:0;width:88px;height:31px"
+	src="http://jigsaw.w3.org/css-validator/images/vcss"
+	alt="Valid CSS!"></a>
+
+</p>
+
+</body></html>
+
