@@ -1,8 +1,9 @@
+#include <unistd.h>
+#include <iostream>
+
+#include "EntityNames.h"
 #include "Locations.h"
 #include "Miner.h"
-#include "misc/ConsoleUtils.h"
-#include "EntityNames.h"
-
 
 int main()
 {
@@ -10,15 +11,10 @@ int main()
   Miner miner(ent_Miner_Bob);
 
   //simply run the miner through a few Update calls
-  for (int i=0; i<20; ++i)
-  { 
+  for (int i = 0; i < 20; ++i) {
     miner.Update();
-
-    Sleep(800);
+    sleep(1);
   }
-
-  //wait for a keypress before exiting
-  PressAnyKeyToContinue();
 
   return 0;
 }

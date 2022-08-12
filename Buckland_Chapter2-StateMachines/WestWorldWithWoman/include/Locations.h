@@ -12,11 +12,4 @@ enum location_type
 
 
 
-
-//uncomment to send output to 'output.txt'
-//#define TEXTOUTPUT
-
-
-
-
 #endif

@@ -15,7 +15,6 @@
 
 #include "BaseGameEntity.h"
 #include "Locations.h"
-#include "misc/ConsoleUtils.h"
 #include "MinerOwnedStates.h"
 #include "fsm/StateMachine.h"
 
@@ -39,7 +38,7 @@ private:
 
   //an instance of the state machine class
   StateMachine<Miner>*  m_pStateMachine;
-  
+
   location_type         m_Location;
 
   //how many nuggets the miner has in his pockets
@@ -61,11 +60,11 @@ public:
                           m_iThirst(0),
                           m_iFatigue(0),
                           BaseGameEntity(id)
-                               
+
   {
     //set up state machine
     m_pStateMachine = new StateMachine<Miner>(this);
-    
+
     m_pStateMachine->SetCurrentState(GoHomeAndSleepTilRested::Instance());
 
     /* NOTE, A GLOBAL STATE HAS NOT BEEN IMPLEMENTED FOR THE MINER */
@@ -79,15 +78,15 @@ public:
   //so must this
   virtual bool  HandleMessage(const Telegram& msg);
 
-  
+
   StateMachine<Miner>* GetFSM()const{return m_pStateMachine;}
 
 
-  
+
   //-------------------------------------------------------------accessors
   location_type Location()const{return m_Location;}
   void          ChangeLocation(location_type loc){m_Location=loc;}
-    
+
   int           GoldCarried()const{return m_iGoldCarried;}
   void          SetGoldCarried(int val){m_iGoldCarried = val;}
   void          AddToGoldCarried(int val);
@@ -101,7 +100,7 @@ public:
   void          SetWealth(int val){m_iMoneyInBank = val;}
   void          AddToWealth(int val);
 
-  bool          Thirsty()const; 
+  bool          Thirsty()const;
   void          BuyAndDrinkAWhiskey(){m_iThirst = 0; m_iMoneyInBank-=2;}
 
 };

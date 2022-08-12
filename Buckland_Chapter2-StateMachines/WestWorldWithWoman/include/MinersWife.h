@@ -7,10 +7,9 @@
 #include "BaseGameEntity.h"
 #include "Locations.h"
 #include "MinersWifeOwnedStates.h"
-#include "misc/ConsoleUtils.h"
 #include "Miner.h"
 #include "StateMachine.h"
-#include "misc/Utils.h"
+#include "misc/utils.h"
 
 
 
@@ -28,7 +27,7 @@ public:
 
   MinersWife(int id):BaseGameEntity(id),
                      m_Location(shack)
-                                                                      
+
   {
     m_pStateMachine = new StateMachine<MinersWife>(this);
 
@@ -47,7 +46,7 @@ public:
   //----------------------------------------------------accessors
   location_type Location()const{return m_Location;}
   void          ChangeLocation(const location_type loc){m_Location=loc;}
-   
+
 };
 
 

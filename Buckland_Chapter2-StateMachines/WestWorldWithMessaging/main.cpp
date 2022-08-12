@@ -6,7 +6,6 @@
 #include "MinersWife.h"
 #include "EntityManager.h"
 #include "MessageDispatcher.h"
-#include "misc/ConsoleUtils.h"
 #include "EntityNames.h"
 
 
@@ -34,7 +33,7 @@ int main()
 
   //run Bob and Elsa through a few Update calls
   for (int i=0; i<30; ++i)
-  { 
+  {
     Bob->Update();
     Elsa->Update();
 
@@ -54,9 +53,3 @@ int main()
 
   return 0;
 }
-
-
-
-
-
-

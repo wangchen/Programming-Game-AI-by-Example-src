@@ -6,11 +6,6 @@
 #include <iostream>
 using std::cout;
 
-#ifdef TEXTOUTPUT
-#include <fstream>
-extern std::ofstream os;
-#define cout os
-#endif
 
 //-----------------------------------------------------------------------Global state
 WifesGlobalState* WifesGlobalState::Instance()
@@ -85,8 +80,8 @@ VisitBathroom* VisitBathroom::Instance()
 
 
 void VisitBathroom::Enter(MinersWife* wife)
-{  
-  cout << "\n" << GetNameOfEntity(wife->ID()) << ": Walkin' to the can. Need to powda mah pretty li'lle nose"; 
+{
+  cout << "\n" << GetNameOfEntity(wife->ID()) << ": Walkin' to the can. Need to powda mah pretty li'lle nose";
 }
 
 
