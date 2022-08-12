@@ -12,34 +12,27 @@
 
 #include <string>
 
-#include "fsm/State.h"
 #include "BaseGameEntity.h"
 #include "Locations.h"
-#include "MinersWifeOwnedStates.h"
 #include "Miner.h"
+#include "MinersWifeOwnedStates.h"
+#include "fsm/State.h"
 #include "fsm/StateMachine.h"
 #include "misc/Utils.h"
-
-
 
 class MinersWife : public BaseGameEntity
 {
 private:
-
   //an instance of the state machine class
-  StateMachine<MinersWife>* m_pStateMachine;
+  StateMachine<MinersWife> * m_pStateMachine;
 
-  location_type   m_Location;
+  location_type m_Location;
 
   //is she presently cooking?
-  bool            m_bCooking;
-
+  bool m_bCooking;
 
 public:
-
-  MinersWife(int id):m_Location(shack),
-                     m_bCooking(false),
-                     BaseGameEntity(id)
+  MinersWife(int id) : m_Location(shack), m_bCooking(false), BaseGameEntity(id)
 
   {
     //set up the state machine
@@ -50,24 +43,22 @@ public:
     m_pStateMachine->SetGlobalState(WifesGlobalState::Instance());
   }
 
-  ~MinersWife(){delete m_pStateMachine;}
-
+  ~MinersWife() { delete m_pStateMachine; }
 
   //this must be implemented
-  void          Update();
+  void Update();
 
   //so must this
-  virtual bool  HandleMessage(const Telegram& msg);
+  virtual bool HandleMessage(const Telegram & msg);
 
-  StateMachine<MinersWife>* GetFSM()const{return m_pStateMachine;}
+  StateMachine<MinersWife> * GetFSM() const { return m_pStateMachine; }
 
   //----------------------------------------------------accessors
-  location_type Location()const{return m_Location;}
-  void          ChangeLocation(location_type loc){m_Location=loc;}
+  location_type Location() const { return m_Location; }
+  void ChangeLocation(location_type loc) { m_Location = loc; }
 
-  bool          Cooking()const{return m_bCooking;}
-  void          SetCooking(bool val){m_bCooking = val;}
-
+  bool Cooking() const { return m_bCooking; }
+  void SetCooking(bool val) { m_bCooking = val; }
 };
 
 #endif

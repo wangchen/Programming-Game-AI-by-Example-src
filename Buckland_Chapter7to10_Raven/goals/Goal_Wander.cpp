@@ -1,13 +1,10 @@
 #include "Goal_Wander.h"
+
 #include "..\Raven_Bot.h"
 #include "..\Raven_SteeringBehaviors.h"
 
-
-
-
-
 //---------------------------- Initialize -------------------------------------
-//-----------------------------------------------------------------------------  
+//-----------------------------------------------------------------------------
 void Goal_Wander::Activate()
 {
   m_iStatus = active;
@@ -27,8 +24,4 @@ int Goal_Wander::Process()
 
 //---------------------------- Terminate --------------------------------------
 //-----------------------------------------------------------------------------
-void Goal_Wander::Terminate()
-{
-  m_pOwner->GetSteering()->WanderOff();
-}
-
+void Goal_Wander::Terminate() { m_pOwner->GetSteering()->WanderOff(); }

@@ -2,40 +2,30 @@
 #define LUA_HELPER_FUNCS
 
 //get rid of the annoying but unavoidable forcing int to bool warning
-#pragma warning (disable:4800)
+#pragma warning(disable : 4800)
 
-extern "C"
-{
-  #include <lua.h>
-  #include <lualib.h>
-  #include <lauxlib.h>
+extern "C" {
+#include <lauxlib.h>
+#include <lua.h>
+#include <lualib.h>
 }
 
-
 #include <string>
-#include "misc/utils.h"
+
 #include "misc/Stream_Utility_Functions.h"
-
-
-
-
+#include "misc/utils.h"
 
 struct LuaExceptionGuard
 {
-  lua_State*  pLua;
-  
-  LuaExceptionGuard(lua_State* L):pLua(L){}
-  
-  ~LuaExceptionGuard()
-  {
-    lua_close(pLua);
-  }
+  lua_State * pLua;
+
+  LuaExceptionGuard(lua_State * L) : pLua(L) {}
+
+  ~LuaExceptionGuard() { lua_close(pLua); }
 };
 
-
-
 //makes all the lua libraries available
-inline void OpenLuaLibraries(lua_State* pLua)
+inline void OpenLuaLibraries(lua_State * pLua)
 {
   //open the libraries
   luaopen_base(pLua);
@@ -49,11 +39,11 @@ inline void OpenLuaLibraries(lua_State* pLua)
 //
 //  runs a script file
 //-----------------------------------------------------------------------------
-inline void RunLuaScript(lua_State* L, const char* script_name)
+inline void RunLuaScript(lua_State * L, const char * script_name)
 {
-  if (int error = lua_dofile(L, script_name) != 0)
-  {
-    throw std::runtime_error("ERROR(" + ttos(error) + "): Problem with lua script file " + script_name);
+  if (int error = lua_dofile(L, script_name) != 0) {
+    throw std::runtime_error(
+      "ERROR(" + ttos(error) + "): Problem with lua script file " + script_name);
   }
 }
 
@@ -62,7 +52,7 @@ inline void RunLuaScript(lua_State* L, const char* script_name)
 //  a function template to retrieve a number from the lua stack
 //-----------------------------------------------------------------------------
 template <class T>
-inline T PopLuaNumber(lua_State* pL, const char* name)
+inline T PopLuaNumber(lua_State * pL, const char * name)
 {
   lua_settop(pL, 0);
 
@@ -70,8 +60,7 @@ inline T PopLuaNumber(lua_State* pL, const char* name)
 
   //check that the variable is the correct type. If it is not throw an
   //exception
-  if (!lua_isnumber(pL, 1))
-  {
+  if (!lua_isnumber(pL, 1)) {
     std::string err("<PopLuaNumber> Cannot retrieve: ");
 
     throw std::runtime_error(err + name);
@@ -86,10 +75,9 @@ inline T PopLuaNumber(lua_State* pL, const char* name)
   return val;
 }
 
-
 //--------------------------- PopLuaString ------------------------------------
 //-----------------------------------------------------------------------------
-inline std::string PopLuaString(lua_State* pL, const char* name)
+inline std::string PopLuaString(lua_State * pL, const char * name)
 {
   lua_settop(pL, 0);
 
@@ -97,8 +85,7 @@ inline std::string PopLuaString(lua_State* pL, const char* name)
 
   //check that the variable is the correct type. If it is not throw an
   //exception
-  if (!lua_isstring(pL, 1))
-  {
+  if (!lua_isstring(pL, 1)) {
     std::string err("<PopLuaString> Cannot retrieve: ");
 
     throw std::runtime_error(err + name);
@@ -115,7 +102,7 @@ inline std::string PopLuaString(lua_State* pL, const char* name)
 
 //--------------------------- PopLuaBool ------------------------------------
 //-----------------------------------------------------------------------------
-inline bool PopLuaBool(lua_State* pL, const char* name)
+inline bool PopLuaBool(lua_State * pL, const char * name)
 {
   lua_settop(pL, 0);
 
@@ -123,8 +110,7 @@ inline bool PopLuaBool(lua_State* pL, const char* name)
 
   //check that the variable is the correct type. If it is not throw an
   //exception
-  if (!lua_isstring(pL, 1))
-  {
+  if (!lua_isstring(pL, 1)) {
     std::string err("<PopLuaBool> Cannot retrieve: ");
 
     throw std::runtime_error(err + name);
@@ -141,9 +127,8 @@ inline bool PopLuaBool(lua_State* pL, const char* name)
 
 //------------------------- LuaPopStringFieldFromTable ------------------------
 //-----------------------------------------------------------------------------
-inline std::string LuaPopStringFieldFromTable(lua_State* L, const char* key)
+inline std::string LuaPopStringFieldFromTable(lua_State * L, const char * key)
 {
-
   //push the key onto the stack
   lua_pushstring(L, key);
 
@@ -153,8 +138,7 @@ inline std::string LuaPopStringFieldFromTable(lua_State* L, const char* key)
 
   //check that the variable is the correct type. If it is not throw an
   //exception
-  if (!lua_isstring(L, -1))
-  {
+  if (!lua_isstring(L, -1)) {
     std::string err("<LuaPopStringFieldFromTable> Cannot retrieve: ");
 
     throw std::runtime_error(err + key);
@@ -171,7 +155,7 @@ inline std::string LuaPopStringFieldFromTable(lua_State* L, const char* key)
 //----------------------------- LuaPopNumberFieldFromTable --------------------
 //-----------------------------------------------------------------------------
 template <class T>
-inline T LuaPopNumberFieldFromTable(lua_State* L, const char* key)
+inline T LuaPopNumberFieldFromTable(lua_State * L, const char * key)
 {
   //push the key onto the stack
   lua_pushstring(L, key);
@@ -182,8 +166,7 @@ inline T LuaPopNumberFieldFromTable(lua_State* L, const char* key)
 
   //check that the variable is the correct type. If it is not throw an
   //exception
-  if (!lua_isnumber(L, -1))
-  {
+  if (!lua_isnumber(L, -1)) {
     std::string err("<LuaPopNumberFieldFromTable> Cannot retrieve: ");
 
     throw std::runtime_error(err + key);
@@ -196,7 +179,5 @@ inline T LuaPopNumberFieldFromTable(lua_State* L, const char* key)
 
   return val;
 }
-
-
 
 #endif

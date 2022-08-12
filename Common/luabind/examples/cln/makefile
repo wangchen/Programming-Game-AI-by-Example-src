@@ -7,4 +7,3 @@ cln_test: cln_test.cpp
 
 clean:
 	rm -f cln_test.o
-

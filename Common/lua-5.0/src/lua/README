@@ -16,7 +16,7 @@ all standard libraries. For a minimal interpreter, see ../../etc/min.c.
 If your application simply exports new functions to Lua (which is common),
 then you can use this interpreter (almost) unmodified, as follows:
 
-* First, define a function 
+* First, define a function
 	 void myinit (lua_State *L)
   in your own code. In this function, you should do whatever initializations
   are needed by your application, typically exporting your functions to Lua.

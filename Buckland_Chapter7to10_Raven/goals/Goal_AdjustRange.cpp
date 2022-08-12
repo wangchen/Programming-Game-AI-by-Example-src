@@ -1,21 +1,19 @@
 #include "Goal_AdjustRange.h"
+
+#include "../armory/Raven_Weapon.h"
 #include "..\Raven_Bot.h"
 #include "..\Raven_SteeringBehaviors.h"
-#include "../armory/Raven_Weapon.h"
 
-
-
-Goal_AdjustRange::Goal_AdjustRange(Raven_Bot* pBot):Goal<Raven_Bot>(pBot, goal_adjust_range),
-                                                    m_dIdealRange(0)
-{}
+Goal_AdjustRange::Goal_AdjustRange(Raven_Bot * pBot)
+: Goal<Raven_Bot>(pBot, goal_adjust_range), m_dIdealRange(0)
+{
+}
 
 //---------------------------- Initialize -------------------------------------
-//-----------------------------------------------------------------------------  
+//-----------------------------------------------------------------------------
 void Goal_AdjustRange::Activate()
 {
   m_pOwner->GetSteering()->SetTarget(m_pOwner->GetTargetBot()->Pos());
-
-
 }
 
 //------------------------------ Process --------------------------------------
@@ -36,11 +34,4 @@ int Goal_AdjustRange::Process()
 
 //---------------------------- Terminate --------------------------------------
 //-----------------------------------------------------------------------------
-void Goal_AdjustRange::Terminate()
-{
-
-
-
-
-}
-
+void Goal_AdjustRange::Terminate() {}

@@ -31,80 +31,75 @@ namespace luabind
 
 #ifndef LUABIND_NO_EXCEPTIONS
 
-	// this exception usually means that the lua function you called
-	// from C++ failed with an error code. You will have to
-	// read the error code from the top of the lua stack
-	// the reason why this exception class doesn't contain
-	// the message itself is that std::string's copy constructor
-	// may throw, if the copy constructor of an exception that is
-	// being thrown throws another exception, terminate will be called
-	// and the entire application is killed.
-	class error : public std::exception
-	{
-	public:
-		error(lua_State* L): m_L(L) {}
-		lua_State* state() const throw() { return m_L; }
-		virtual const char* what() const throw()
-		{
-			return "lua runtime error";
-		}
-	private:
-		lua_State* m_L;
-	};
+// this exception usually means that the lua function you called
+// from C++ failed with an error code. You will have to
+// read the error code from the top of the lua stack
+// the reason why this exception class doesn't contain
+// the message itself is that std::string's copy constructor
+// may throw, if the copy constructor of an exception that is
+// being thrown throws another exception, terminate will be called
+// and the entire application is killed.
+class error : public std::exception
+{
+public:
+  error(lua_State * L) : m_L(L) {}
+  lua_State * state() const throw() { return m_L; }
+  virtual const char * what() const throw() { return "lua runtime error"; }
 
-	// if an object_cast<>() fails, this is thrown
-	// it is also thrown if the return value of
-	// a lua function cannot be converted
-	class cast_failed : public std::exception
-	{
-	public:
-		cast_failed(lua_State* L, LUABIND_TYPE_INFO i): m_L(L), m_info(i) {}
-		lua_State* state() const throw() { return m_L; }
-		LUABIND_TYPE_INFO info() const throw() { return m_info; }
-		virtual const char* what() const throw() { return "unable to make cast"; }
-	private:
-		lua_State* m_L;
-		LUABIND_TYPE_INFO m_info;
-	};
+private:
+  lua_State * m_L;
+};
+
+// if an object_cast<>() fails, this is thrown
+// it is also thrown if the return value of
+// a lua function cannot be converted
+class cast_failed : public std::exception
+{
+public:
+  cast_failed(lua_State * L, LUABIND_TYPE_INFO i) : m_L(L), m_info(i) {}
+  lua_State * state() const throw() { return m_L; }
+  LUABIND_TYPE_INFO info() const throw() { return m_info; }
+  virtual const char * what() const throw() { return "unable to make cast"; }
+
+private:
+  lua_State * m_L;
+  LUABIND_TYPE_INFO m_info;
+};
 
 #else
 
-	typedef void(*error_callback_fun)(lua_State*);
-	typedef void(*cast_failed_callback_fun)(lua_State*, LUABIND_TYPE_INFO);
+typedef void (*error_callback_fun)(lua_State *);
+typedef void (*cast_failed_callback_fun)(lua_State *, LUABIND_TYPE_INFO);
 
-	namespace detail
-	{
-		// we use a singleton instead of a global variable
-		// because we want luabind to be headers only
+namespace detail
+{
+// we use a singleton instead of a global variable
+// because we want luabind to be headers only
 
-		struct error_callback
-		{
-			error_callback_fun err;
-			cast_failed_callback_fun cast;			
-			
-			error_callback(): err(0), cast(0) {}
+struct error_callback
+{
+  error_callback_fun err;
+  cast_failed_callback_fun cast;
 
-			static error_callback& get()
-			{
-				static error_callback instance;
-				return instance;
-			}
-		};
-	}
+  error_callback() : err(0), cast(0) {}
 
-	inline void set_error_callback(error_callback_fun e)
-	{
-		detail::error_callback::get().err = e;
-	}
+  static error_callback & get()
+  {
+    static error_callback instance;
+    return instance;
+  }
+};
+}  // namespace detail
 
-	inline void set_cast_failed_callback(cast_failed_callback_fun c)
-	{
-		detail::error_callback::get().cast = c;
-	}
+inline void set_error_callback(error_callback_fun e) { detail::error_callback::get().err = e; }
+
+inline void set_cast_failed_callback(cast_failed_callback_fun c)
+{
+  detail::error_callback::get().cast = c;
+}
 
 #endif
 
-}
+}  // namespace luabind
 
-#endif // LUABIND_ERROR_HPP_INCLUDED
-
+#endif  // LUABIND_ERROR_HPP_INCLUDED

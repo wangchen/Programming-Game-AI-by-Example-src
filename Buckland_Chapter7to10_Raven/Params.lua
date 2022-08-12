@@ -178,6 +178,3 @@ Pellet_MaxForce    = 1000.0
 Pellet_Scale       = Bot_Scale
 Pellet_Persistance = 0.1
 Pellet_Damage      = 1
-
-
-  

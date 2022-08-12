@@ -8,5 +8,3 @@ while html_tag:search(src, regex.match_default) do
 end
 
 print('-------------')
-
-

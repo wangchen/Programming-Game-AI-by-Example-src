@@ -12,84 +12,79 @@
 #include "misc/iniFileLoaderBase.h"
 #include "misc/utils.h"
 
-
-
 #define Prm (*ParamLoader::Instance())
-
 
 class ParamLoader : public iniFileLoaderBase
 {
 private:
-  
-    ParamLoader():iniFileLoaderBase("params.ini")
+  ParamLoader() : iniFileLoaderBase("params.ini")
   {
-    NumAgents               = GetNextParameterInt();
-    NumObstacles            = GetNextParameterInt();
-    MinObstacleRadius       = GetNextParameterFloat();
-    MaxObstacleRadius       = GetNextParameterFloat();
+    NumAgents = GetNextParameterInt();
+    NumObstacles = GetNextParameterInt();
+    MinObstacleRadius = GetNextParameterFloat();
+    MaxObstacleRadius = GetNextParameterFloat();
 
-    NumCellsX               = GetNextParameterInt();
-    NumCellsY               = GetNextParameterInt();
+    NumCellsX = GetNextParameterInt();
+    NumCellsY = GetNextParameterInt();
 
-    NumSamplesForSmoothing  = GetNextParameterInt();
+    NumSamplesForSmoothing = GetNextParameterInt();
 
-    SteeringForceTweaker    = GetNextParameterFloat();
-    MaxSteeringForce        = GetNextParameterFloat() * SteeringForceTweaker;
-    MaxSpeed                = GetNextParameterFloat();
-    VehicleMass             = GetNextParameterFloat();
-    VehicleScale            = GetNextParameterFloat();
+    SteeringForceTweaker = GetNextParameterFloat();
+    MaxSteeringForce = GetNextParameterFloat() * SteeringForceTweaker;
+    MaxSpeed = GetNextParameterFloat();
+    VehicleMass = GetNextParameterFloat();
+    VehicleScale = GetNextParameterFloat();
 
-    SeparationWeight        = GetNextParameterFloat() * SteeringForceTweaker;
-    AlignmentWeight         = GetNextParameterFloat() * SteeringForceTweaker;
-    CohesionWeight          = GetNextParameterFloat() * SteeringForceTweaker;
+    SeparationWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    AlignmentWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    CohesionWeight = GetNextParameterFloat() * SteeringForceTweaker;
     ObstacleAvoidanceWeight = GetNextParameterFloat() * SteeringForceTweaker;
-    WallAvoidanceWeight     = GetNextParameterFloat() * SteeringForceTweaker;
-    WanderWeight            = GetNextParameterFloat() * SteeringForceTweaker;
-    SeekWeight              = GetNextParameterFloat() * SteeringForceTweaker;
-    FleeWeight              = GetNextParameterFloat() * SteeringForceTweaker;
-    ArriveWeight            = GetNextParameterFloat() * SteeringForceTweaker;
-    PursuitWeight           = GetNextParameterFloat() * SteeringForceTweaker;
-    OffsetPursuitWeight     = GetNextParameterFloat() * SteeringForceTweaker;
-    InterposeWeight         = GetNextParameterFloat() * SteeringForceTweaker;
-    HideWeight              = GetNextParameterFloat() * SteeringForceTweaker;
-    EvadeWeight             = GetNextParameterFloat() * SteeringForceTweaker;
-    FollowPathWeight        = GetNextParameterFloat() * SteeringForceTweaker;
+    WallAvoidanceWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    WanderWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    SeekWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    FleeWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    ArriveWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    PursuitWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    OffsetPursuitWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    InterposeWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    HideWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    EvadeWeight = GetNextParameterFloat() * SteeringForceTweaker;
+    FollowPathWeight = GetNextParameterFloat() * SteeringForceTweaker;
 
-    ViewDistance            = GetNextParameterFloat();
-    MinDetectionBoxLength   = GetNextParameterFloat();
-    WallDetectionFeelerLength=GetNextParameterFloat();
+    ViewDistance = GetNextParameterFloat();
+    MinDetectionBoxLength = GetNextParameterFloat();
+    WallDetectionFeelerLength = GetNextParameterFloat();
 
-    prWallAvoidance         = GetNextParameterFloat();
-    prObstacleAvoidance     = GetNextParameterFloat();  
-    prSeparation            = GetNextParameterFloat();
-    prAlignment             = GetNextParameterFloat();
-    prCohesion              = GetNextParameterFloat();
-    prWander                = GetNextParameterFloat();
-    prSeek                  = GetNextParameterFloat();
-    prFlee                  = GetNextParameterFloat();
-    prEvade                 = GetNextParameterFloat();
-    prHide                  = GetNextParameterFloat();
-    prArrive                = GetNextParameterFloat();
+    prWallAvoidance = GetNextParameterFloat();
+    prObstacleAvoidance = GetNextParameterFloat();
+    prSeparation = GetNextParameterFloat();
+    prAlignment = GetNextParameterFloat();
+    prCohesion = GetNextParameterFloat();
+    prWander = GetNextParameterFloat();
+    prSeek = GetNextParameterFloat();
+    prFlee = GetNextParameterFloat();
+    prEvade = GetNextParameterFloat();
+    prHide = GetNextParameterFloat();
+    prArrive = GetNextParameterFloat();
 
-    MaxTurnRatePerSecond    = Pi;
+    MaxTurnRatePerSecond = Pi;
   }
 
 public:
+  static ParamLoader * Instance();
 
-  static ParamLoader* Instance();
-
-  int	NumAgents;
-  int	NumObstacles;
+  int NumAgents;
+  int NumObstacles;
   double MinObstacleRadius;
   double MaxObstacleRadius;
 
   //number of horizontal cells used for spatial partitioning
-  int   NumCellsX;
+  int NumCellsX;
   //number of vertical cells used for spatial partitioning
-  int   NumCellsY;
+  int NumCellsY;
 
   //how many samples the smoother will use to average a value
-  int   NumSamplesForSmoothing;
+  int NumSamplesForSmoothing;
 
   //used to tweak the combined steering force (simply altering the MaxSteeringForce
   //will NOT work!This tweaker affects all the steering force multipliers
@@ -104,19 +99,19 @@ public:
   double MaxTurnRatePerSecond;
 
   double SeparationWeight;
-  double AlignmentWeight ;
-  double CohesionWeight  ;
+  double AlignmentWeight;
+  double CohesionWeight;
   double ObstacleAvoidanceWeight;
   double WallAvoidanceWeight;
-  double WanderWeight    ;
-  double SeekWeight      ;
-  double FleeWeight      ;
-  double ArriveWeight    ;
-  double PursuitWeight   ;
+  double WanderWeight;
+  double SeekWeight;
+  double FleeWeight;
+  double ArriveWeight;
+  double PursuitWeight;
   double OffsetPursuitWeight;
-  double InterposeWeight ;
-  double HideWeight      ;
-  double EvadeWeight     ;
+  double InterposeWeight;
+  double HideWeight;
+  double EvadeWeight;
   double FollowPathWeight;
 
   //how close a neighbour must be before an agent perceives it (considers it
@@ -142,11 +137,6 @@ public:
   double prEvade;
   double prHide;
   double prArrive;
-  
 };
-
-
-
-
 
 #endif

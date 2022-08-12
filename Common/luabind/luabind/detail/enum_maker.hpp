@@ -20,103 +20,92 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_ENUM_MAKER_HPP_INCLUDED
 #define LUABIND_ENUM_MAKER_HPP_INCLUDED
 
-#include <vector>
-#include <string>
-
 #include <luabind/config.hpp>
 #include <luabind/detail/class_rep.hpp>
+#include <string>
+#include <vector>
 
 namespace luabind
 {
-	struct value;
+struct value;
 
-	struct value_vector : public std::vector<value>
-	{
-		// a bug in intel's compiler forces us to declare these constructors explicitly.
-		value_vector();
-		virtual ~value_vector();
-		value_vector(const value_vector& v);
-		value_vector& operator,(const value& rhs);
-	};
+struct value_vector : public std::vector<value>
+{
+  // a bug in intel's compiler forces us to declare these constructors explicitly.
+  value_vector();
+  virtual ~value_vector();
+  value_vector(const value_vector & v);
+  value_vector & operator,(const value & rhs);
+};
 
-	struct value
-	{
-	friend class std::vector<value>;
-		template<class T>
-		value(const char* name, T v)
-			: name_(name)
-			, val_(v)
-		{}
+struct value
+{
+  friend class std::vector<value>;
+  template <class T>
+  value(const char * name, T v) : name_(name), val_(v)
+  {
+  }
 
-		// TODO: this doesn't really need to be a std::string, right? It could maintain the pointer
-		// until it's registered as a static data member
-//		std::string name_;
-		const char* name_;
-		int val_;
+  // TODO: this doesn't really need to be a std::string, right? It could maintain the pointer
+  // until it's registered as a static data member
+  //		std::string name_;
+  const char * name_;
+  int val_;
 
-		value_vector operator,(const value& rhs) const
-		{
-			value_vector v;
+  value_vector operator,(const value & rhs) const
+  {
+    value_vector v;
 
-			v.push_back(*this);
-			v.push_back(rhs);
+    v.push_back(*this);
+    v.push_back(rhs);
 
-			return v;
-		}
+    return v;
+  }
 
-	private: 
+private:
+  value() {}
+};
 
-		value() {}
-	};
+inline value_vector::value_vector() : std::vector<value>() {}
 
-	inline value_vector::value_vector()
-		: std::vector<value>()
-	{
-	}
+inline value_vector::~value_vector() {}
 
-	inline value_vector::~value_vector() {}
+inline value_vector::value_vector(const value_vector & rhs) : std::vector<value>(rhs) {}
 
-	inline value_vector::value_vector(const value_vector& rhs)
-		: std::vector<value>(rhs)
-	{
-	}
-
-	inline value_vector& value_vector::operator,(const value& rhs)
-	{
-		push_back(rhs);
-		return *this;
-	}
-
-	namespace detail
-	{
-		template<class From>
-		struct enum_maker
-		{
-			explicit enum_maker(From& from): from_(from) {}
-
-			From& operator[](const value& val)
-			{
-				from_.add_static_constant(val.name_, val.val_);
-				return from_;
-			}
-			
-			From& operator[](const value_vector& values)
-			{
-				for (value_vector::const_iterator i = values.begin(); i != values.end(); ++i)
-				{
-					from_.add_static_constant(i->name_, i->val_);
-				}
-
-				return from_;
-			}
-
-			From& from_;
-		};
-	}
+inline value_vector &value_vector::operator,(const value &rhs)
+{
+  push_back(rhs);
+  return *this;
 }
 
-#endif // LUABIND_ENUM_MAKER_HPP_INCLUDED
+namespace detail
+{
+template <class From>
+struct enum_maker
+{
+  explicit enum_maker(From & from) : from_(from) {}
+
+  From & operator[](const value & val)
+  {
+    from_.add_static_constant(val.name_, val.val_);
+    return from_;
+  }
+
+  From & operator[](const value_vector & values)
+  {
+    for (value_vector::const_iterator i = values.begin(); i != values.end(); ++i) {
+      from_.add_static_constant(i->name_, i->val_);
+    }
+
+    return from_;
+  }
+
+  From & from_;
+};
+}  // namespace detail
+}  // namespace luabind
+
+#endif  // LUABIND_ENUM_MAKER_HPP_INCLUDED

@@ -30,7 +30,7 @@ State_GoHome["Execute"] = function(miner)
 
 end
 
-  
+
 State_GoHome["Exit"] = function(miner)
 
   print ("[Lua]: Puttin' mah boots on n' gettin' ready for a day at the mine")
@@ -105,7 +105,7 @@ State_GoToMine["Execute"] = function(miner)
 
 
   if miner:GoldCarried() > 4 then
-  
+
     print ("[Lua]: Miner "..miner:Name().." decides to go home, with his pockets full of nuggets")
 
     miner:GetFSM():ChangeState(State_GoHome)
@@ -120,8 +120,3 @@ State_GoToMine["Exit"] = function(miner)
   print ("[Lua]: Miner "..miner:Name().." exits goldmine")
 
   end
-
-
-
-
- 

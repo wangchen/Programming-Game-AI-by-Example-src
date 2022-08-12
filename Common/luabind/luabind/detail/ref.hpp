@@ -20,64 +20,57 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_REF_HPP_INCLUDED
 #define LUABIND_REF_HPP_INCLUDED
 
 #include <luabind/config.hpp>
 
-namespace luabind { namespace detail
+namespace luabind
+{
+namespace detail
 {
 
-	// based on luaL_ref from lauxlib.c in lua distribution
-	inline int ref(lua_State *L)
-	{
-		int ref;
-		if (lua_isnil(L, -1))
-		{
-			lua_pop(L, 1);  /* remove from stack */
-			return LUA_REFNIL;  /* `nil' has a unique fixed reference */
-		}
+// based on luaL_ref from lauxlib.c in lua distribution
+inline int ref(lua_State * L)
+{
+  int ref;
+  if (lua_isnil(L, -1)) {
+    lua_pop(L, 1);     /* remove from stack */
+    return LUA_REFNIL; /* `nil' has a unique fixed reference */
+  }
 
-		lua_rawgeti(L, LUA_REGISTRYINDEX, 0);  /* get first free element */
-		ref = (int)lua_tonumber(L, -1);  /* ref = t[0] */
-		lua_pop(L, 1);  /* remove it from stack */
-		if (ref != 0)
-		{  /* any free element? */
-			lua_rawgeti(L, LUA_REGISTRYINDEX, ref);  /* remove it from list */
-			lua_rawseti(L, LUA_REGISTRYINDEX, 0);  /* (that is, t[0] = t[ref]) */
-		}
-		else
-		{  /* no free elements */
-			lua_pushliteral(L, "n");
-			lua_pushvalue(L, -1);
-			lua_rawget(L, LUA_REGISTRYINDEX);  /* get t.n */
-			ref = (int)lua_tonumber(L, -1) + 1;  /* ref = t.n + 1 */
-			lua_pop(L, 1);  /* pop t.n */
-			lua_pushnumber(L, ref);
-			lua_rawset(L, LUA_REGISTRYINDEX);  /* t.n = t.n + 1 */
-		}
-		lua_rawseti(L, LUA_REGISTRYINDEX, ref);
-		return ref;
-	}
+  lua_rawgeti(L, LUA_REGISTRYINDEX, 0);     /* get first free element */
+  ref = (int)lua_tonumber(L, -1);           /* ref = t[0] */
+  lua_pop(L, 1);                            /* remove it from stack */
+  if (ref != 0) {                           /* any free element? */
+    lua_rawgeti(L, LUA_REGISTRYINDEX, ref); /* remove it from list */
+    lua_rawseti(L, LUA_REGISTRYINDEX, 0);   /* (that is, t[0] = t[ref]) */
+  } else {                                  /* no free elements */
+    lua_pushliteral(L, "n");
+    lua_pushvalue(L, -1);
+    lua_rawget(L, LUA_REGISTRYINDEX);   /* get t.n */
+    ref = (int)lua_tonumber(L, -1) + 1; /* ref = t.n + 1 */
+    lua_pop(L, 1);                      /* pop t.n */
+    lua_pushnumber(L, ref);
+    lua_rawset(L, LUA_REGISTRYINDEX); /* t.n = t.n + 1 */
+  }
+  lua_rawseti(L, LUA_REGISTRYINDEX, ref);
+  return ref;
+}
 
-	inline void unref(lua_State *L, int ref)
-	{
-		if (ref >= 0)
-		{
-			lua_rawgeti(L, LUA_REGISTRYINDEX, 0);
-			lua_rawseti(L, LUA_REGISTRYINDEX, ref);  /* t[ref] = t[0] */
-			lua_pushnumber(L, ref);
-			lua_rawseti(L, LUA_REGISTRYINDEX, 0);  /* t[0] = ref */
-		}
-	}
+inline void unref(lua_State * L, int ref)
+{
+  if (ref >= 0) {
+    lua_rawgeti(L, LUA_REGISTRYINDEX, 0);
+    lua_rawseti(L, LUA_REGISTRYINDEX, ref); /* t[ref] = t[0] */
+    lua_pushnumber(L, ref);
+    lua_rawseti(L, LUA_REGISTRYINDEX, 0); /* t[0] = ref */
+  }
+}
 
-	inline void getref(lua_State* L, int r)
-	{
-		lua_rawgeti(L, LUA_REGISTRYINDEX, r);
-	}
+inline void getref(lua_State * L, int r) { lua_rawgeti(L, LUA_REGISTRYINDEX, r); }
 
-}}
+}  // namespace detail
+}  // namespace luabind
 
-#endif // LUABIND_REF_HPP_INCLUDED
-
+#endif  // LUABIND_REF_HPP_INCLUDED

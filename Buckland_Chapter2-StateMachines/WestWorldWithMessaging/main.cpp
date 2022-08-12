@@ -1,13 +1,13 @@
-#include <fstream>
 #include <time.h>
 
+#include <fstream>
+
+#include "EntityManager.h"
+#include "EntityNames.h"
 #include "Locations.h"
+#include "MessageDispatcher.h"
 #include "Miner.h"
 #include "MinersWife.h"
-#include "EntityManager.h"
-#include "MessageDispatcher.h"
-#include "EntityNames.h"
-
 
 std::ofstream os;
 
@@ -19,21 +19,20 @@ int main()
 #endif
 
   //seed random number generator
-  srand((unsigned) time(NULL));
+  srand((unsigned)time(NULL));
 
   //create a miner
-  Miner* Bob = new Miner(ent_Miner_Bob);
+  Miner * Bob = new Miner(ent_Miner_Bob);
 
   //create his wife
-  MinersWife* Elsa = new MinersWife(ent_Elsa);
+  MinersWife * Elsa = new MinersWife(ent_Elsa);
 
   //register them with the entity manager
   EntityMgr->RegisterEntity(Bob);
   EntityMgr->RegisterEntity(Elsa);
 
   //run Bob and Elsa through a few Update calls
-  for (int i=0; i<30; ++i)
-  {
+  for (int i = 0; i < 30; ++i) {
     Bob->Update();
     Elsa->Update();
 
@@ -49,7 +48,6 @@ int main()
 
   //wait for a keypress before exiting
   PressAnyKeyToContinue();
-
 
   return 0;
 }

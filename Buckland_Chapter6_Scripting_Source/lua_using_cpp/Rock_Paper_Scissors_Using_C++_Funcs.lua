@@ -33,12 +33,12 @@ while loop == true do
 
     --create a table to convert user input into a play string
     local possible_moves = {s = "scissors", r = "rock", p = "paper"};
-    
+
     if user_guess == "q" then
 
         loop = false;   --quit the game if user enters 'q'
 
-    elseif (user_guess == "r") or (user_guess == "p") or (user_guess == "s") then 
+    elseif (user_guess == "r") or (user_guess == "p") or (user_guess == "s") then
 
         comp_guess = cpp_GetAIMove();
 
@@ -52,11 +52,5 @@ while loop == true do
 
         print ("Invalid input, try again");
 
-    end   
+    end
 end;
-
-
-
-
-
-

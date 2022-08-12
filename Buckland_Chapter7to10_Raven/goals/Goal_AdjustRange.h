@@ -1,46 +1,34 @@
 #ifndef GOAL_ADJUST_RANGE_H
 #define GOAL_ADJUST_RANGE_H
-#pragma warning (disable:4786)
+#pragma warning(disable : 4786)
 //-----------------------------------------------------------------------------
 //
 //  Name:   Goal_AdjustRange.h
 //
 //  Author: Mat Buckland (ai-junkie.com)
 //
-//  Desc:   
+//  Desc:
 //
 //-----------------------------------------------------------------------------
-#include "goals/Goal.h"
-#include "Raven_Goal_Types.h"
 #include "../Raven_Bot.h"
-
-
-
-
+#include "Raven_Goal_Types.h"
+#include "goals/Goal.h"
 
 class Goal_AdjustRange : public Goal<Raven_Bot>
 {
 private:
+  Raven_Bot * m_pTarget;
 
-  Raven_Bot*  m_pTarget;
-
-  double       m_dIdealRange;
+  double m_dIdealRange;
 
 public:
-
-  Goal_AdjustRange(Raven_Bot* pBot);
+  Goal_AdjustRange(Raven_Bot * pBot);
 
   void Activate();
 
-  int  Process();
+  int Process();
 
   void Terminate();
- 
 };
-
-
-
-
-
 
 #endif

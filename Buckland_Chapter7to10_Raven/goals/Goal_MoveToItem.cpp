@@ -2,10 +2,7 @@
 
 #include "..\Raven_Bot.h"
 #include "..\Raven_NavModule.h"
-
 #include "Raven_GoalQ.h"
-
-
 
 void Goal_MoveToItem::Initialize()
 {
@@ -14,7 +11,7 @@ void Goal_MoveToItem::Initialize()
 
   //the bot may have to wait a few update cycles before a path is calculated
   //so for appearances sake it just moves forward a little
-  m_pOwner->GoalQ()->AddGoal_SeekToPosition(m_pOwner->Pos() + m_pOwner->Facing()*20);
+  m_pOwner->GoalQ()->AddGoal_SeekToPosition(m_pOwner->Pos() + m_pOwner->Facing() * 20);
 
   //this goal is now satisfied
   m_bSatisfied = true;

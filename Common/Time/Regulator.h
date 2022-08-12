@@ -6,54 +6,43 @@
 //
 //  Desc:   Use this class to regulate code flow (for an update function say)
 //          Instantiate the class with the frequency you would like your code
-//          section to flow (like 10 times per second) and then only allow 
+//          section to flow (like 10 times per second) and then only allow
 //          the program flow to continue if Ready() returns true
 //
 //  Author: Mat Buckland 2003 (fup@ai-junkie.com)
 //
 //------------------------------------------------------------------------
-#pragma comment(lib,"winmm.lib") //if you don't use MSVC make sure this library is included in your project
-#include "mmsystem.h" 
-
+#pragma comment( \
+  lib, "winmm.lib")  //if you don't use MSVC make sure this library is included in your project
 #include "misc/utils.h"
-
-
-
+#include "mmsystem.h"
 
 class Regulator
 {
 private:
-
-  //the time period between updates 
+  //the time period between updates
   double m_dUpdatePeriod;
 
   //the next time the regulator allows code flow
   DWORD m_dwNextUpdateTime;
 
-
 public:
-
-  
   Regulator(double NumUpdatesPerSecondRqd)
   {
-    m_dwNextUpdateTime = (DWORD)(timeGetTime()+RandFloat()*1000);
+    m_dwNextUpdateTime = (DWORD)(timeGetTime() + RandFloat() * 1000);
 
-    if (NumUpdatesPerSecondRqd > 0)
-    {
-      m_dUpdatePeriod = 1000.0 / NumUpdatesPerSecondRqd; 
+    if (NumUpdatesPerSecondRqd > 0) {
+      m_dUpdatePeriod = 1000.0 / NumUpdatesPerSecondRqd;
     }
 
-    else if (isEqual(0.0, NumUpdatesPerSecondRqd))
-    {
+    else if (isEqual(0.0, NumUpdatesPerSecondRqd)) {
       m_dUpdatePeriod = 0.0;
     }
 
-    else if (NumUpdatesPerSecondRqd < 0)
-    {
+    else if (NumUpdatesPerSecondRqd < 0) {
       m_dUpdatePeriod = -1;
     }
   }
-
 
   //returns true if the current time exceeds m_dwNextUpdateTime
   bool isReady()
@@ -73,9 +62,9 @@ public:
     //have their updates spread evenly
     static const double UpdatePeriodVariator = 10.0;
 
-    if (CurrentTime >= m_dwNextUpdateTime)
-    {
-      m_dwNextUpdateTime = (DWORD)(CurrentTime + m_dUpdatePeriod + RandInRange(-UpdatePeriodVariator, UpdatePeriodVariator));
+    if (CurrentTime >= m_dwNextUpdateTime) {
+      m_dwNextUpdateTime =
+        (DWORD)(CurrentTime + m_dUpdatePeriod + RandInRange(-UpdatePeriodVariator, UpdatePeriodVariator));
 
       return true;
     }
@@ -83,7 +72,5 @@ public:
     return false;
   }
 };
-
-
 
 #endif

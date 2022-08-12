@@ -1,15 +1,13 @@
 #include "Goal_Explore.h"
+
 #include "../Raven_Bot.h"
-#include "../navigation/Raven_PathPlanner.h"
 #include "../Raven_Game.h"
 #include "../Raven_Map.h"
-#include "Messaging/Telegram.h"
+#include "../navigation/Raven_PathPlanner.h"
 #include "..\Raven_Messages.h"
-
-#include "Goal_SeekToPosition.h"
 #include "Goal_FollowPath.h"
-
-
+#include "Goal_SeekToPosition.h"
+#include "Messaging/Telegram.h"
 
 //------------------------------ Activate -------------------------------------
 //-----------------------------------------------------------------------------
@@ -21,8 +19,7 @@ void Goal_Explore::Activate()
   //must be removed
   RemoveAllSubgoals();
 
-  if (!m_bDestinationIsSet)
-  {
+  if (!m_bDestinationIsSet) {
     //grab a random location
     m_CurrentDestination = m_pOwner->GetWorld()->GetMap()->GetRandomNodeLocation();
 
@@ -51,44 +48,36 @@ int Goal_Explore::Process()
   return m_iStatus;
 }
 
-
 //---------------------------- HandleMessage ----------------------------------
 //-----------------------------------------------------------------------------
-bool Goal_Explore::HandleMessage(const Telegram& msg)
+bool Goal_Explore::HandleMessage(const Telegram & msg)
 {
   //first, pass the message down the goal hierarchy
   bool bHandled = ForwardMessageToFrontMostSubgoal(msg);
 
   //if the msg was not handled, test to see if this goal can handle it
-  if (bHandled == false)
-  {
-    switch(msg.Msg)
-    {
-    case Msg_PathReady:
+  if (bHandled == false) {
+    switch (msg.Msg) {
+      case Msg_PathReady:
 
-      //clear any existing goals
-      RemoveAllSubgoals();
+        //clear any existing goals
+        RemoveAllSubgoals();
 
-      AddSubgoal(new Goal_FollowPath(m_pOwner,
-                                     m_pOwner->GetPathPlanner()->GetPath()));
+        AddSubgoal(new Goal_FollowPath(m_pOwner, m_pOwner->GetPathPlanner()->GetPath()));
 
-      return true; //msg handled
+        return true;  //msg handled
 
+      case Msg_NoPathAvailable:
 
-    case Msg_NoPathAvailable:
+        m_iStatus = failed;
 
-      m_iStatus = failed;
+        return true;  //msg handled
 
-      return true; //msg handled
-
-    default: return false;
+      default:
+        return false;
     }
   }
 
   //handled by subgoals
   return true;
 }
-
-
-
-

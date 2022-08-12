@@ -1,32 +1,30 @@
 #include "SoccerMessages.h"
 
-
 inline std::string MessageToString(int msg)
 {
-  switch (msg)
-  {
-  case Msg_ReceiveBall:
-    
-    return "Msg_ReceiveBall";
+  switch (msg) {
+    case Msg_ReceiveBall:
 
-  case Msg_PassToMe:
-    
-    return "Msg_PassToMe";
+      return "Msg_ReceiveBall";
 
-  case Msg_SupportAttacker:
+    case Msg_PassToMe:
 
-    return "Msg_SupportAttacker";
+      return "Msg_PassToMe";
 
-  case Msg_GoHome:
+    case Msg_SupportAttacker:
 
-    return "Msg_GoHome";
+      return "Msg_SupportAttacker";
 
-  case Msg_Wait:
+    case Msg_GoHome:
 
-    return "Msg_Wait";
+      return "Msg_GoHome";
 
-  default:
+    case Msg_Wait:
 
-    return "INVALID MESSAGE!!";
+      return "Msg_Wait";
+
+    default:
+
+      return "INVALID MESSAGE!!";
   }
 }

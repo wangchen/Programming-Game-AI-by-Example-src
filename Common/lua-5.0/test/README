@@ -24,4 +24,3 @@ Here is a one-line summary of each program:
    trace-globals.lua	trace assigments to global variables
    undefined.lua	catch "undefined" global variables
    xd.lua		hex dump
-

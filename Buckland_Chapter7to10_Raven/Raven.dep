@@ -12,7 +12,7 @@
 	".\constants.h"\
 	".\ParamLoader.h"\
 	".\raven.h"\
-	
+
 
 .\raven.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -23,7 +23,7 @@
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
 	".\raven.h"\
-	
+
 
 ..\Common\source\DebugConsole.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -31,14 +31,14 @@
 	"..\Common\Debug\DebugConsole.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\Cgdi.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
 	"..\Common\2D\Vector2D.h"\
 	"..\Common\Cgdi.h"\
 	"..\Common\Patterns\Singleton.h"\
-	
+
 
 ..\Common\source\EditorCommands.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -62,12 +62,12 @@
 	"..\Common\Patterns\autolist.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\iniFileLoaderBase.cpp : \
 	"..\Common\iniFileLoaderBase.h"\
 	"..\Common\Patterns\Singleton.h"\
-	
+
 
 ..\Common\source\Map.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -94,7 +94,7 @@
 	"..\Common\Patterns\autolist.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\MenuItems.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -109,7 +109,7 @@
 	"..\Common\misc\WindowUtils.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\ObstacleObject.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -127,12 +127,12 @@
 	"..\Common\Game\Obstacle.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\PrecisionTimer.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
 	"..\Common\Time\PrecisionTimer.h"\
-	
+
 
 ..\Common\source\WalkOverObject.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -145,7 +145,7 @@
 	"..\Common\editor\WalkOverObject.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\WallObject.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
@@ -163,11 +163,10 @@
 	"..\Common\Patterns\autolist.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\WindowUtils.cpp : \
 	"..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
 	"..\Common\2D\Vector2D.h"\
 	"..\Common\misc\WindowUtils.h"\
 	"..\Common\utils.h"\
-	

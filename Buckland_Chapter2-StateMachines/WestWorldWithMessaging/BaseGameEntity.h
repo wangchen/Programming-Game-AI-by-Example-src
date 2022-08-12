@@ -13,18 +13,15 @@
 
 #include "messaging/Telegram.h"
 
-
 class BaseGameEntity
 {
-
 private:
-
   //every entity must have a unique identifying number
-  int          m_ID;
+  int m_ID;
 
   //this is the next valid ID. Each time a BaseGameEntity is instantiated
   //this value is updated
-  static int  m_iNextValidID;
+  static int m_iNextValidID;
 
   //this must be called within the constructor to make sure the ID is set
   //correctly. It verifies that the value passed to the method is greater
@@ -33,26 +30,18 @@ private:
   void SetID(int val);
 
 public:
+  BaseGameEntity(int id) { SetID(id); }
 
-  BaseGameEntity(int id)
-  {
-    SetID(id);
-  }
-
-  virtual ~BaseGameEntity(){}
+  virtual ~BaseGameEntity() {}
 
   //all entities must implement an update function
-  virtual void  Update()=0;
+  virtual void Update() = 0;
 
   //all entities can communicate using messages. They are sent
   //using the MessageDispatcher singleton class
-  virtual bool  HandleMessage(const Telegram& msg)=0;
+  virtual bool HandleMessage(const Telegram & msg) = 0;
 
-  int           ID()const{return m_ID;}  
+  int ID() const { return m_ID; }
 };
 
-
-
 #endif
-
-

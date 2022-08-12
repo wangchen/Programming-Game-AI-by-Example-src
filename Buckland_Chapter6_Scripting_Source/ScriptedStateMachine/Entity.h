@@ -11,39 +11,31 @@
 //------------------------------------------------------------------------
 #include <string>
 
-
 class Entity
 {
-
 private:
+  int m_ID;
 
-  int          m_ID;
-
-  std::string  m_Name;
+  std::string m_Name;
 
   //used by the constructor to give each entity a unique ID
-  int NextValidID(){static int NextID = 0; return NextID++;}
+  int NextValidID()
+  {
+    static int NextID = 0;
+    return NextID++;
+  }
 
 public:
+  Entity(std::string name = "NoName") : m_ID(NextValidID()), m_Name(name) {}
 
-  Entity(std::string name = "NoName"):m_ID(NextValidID()), m_Name(name)
-  {}
-
-  virtual ~Entity()
-  {}
+  virtual ~Entity() {}
 
   //all entities must implement an update function
-  virtual void  Update()=0;
+  virtual void Update() = 0;
 
   //accessors
-  int         ID()const{return m_ID;}  
-  std::string Name()const{return m_Name;}
-
+  int ID() const { return m_ID; }
+  std::string Name() const { return m_Name; }
 };
 
-
-
-
 #endif
-
-

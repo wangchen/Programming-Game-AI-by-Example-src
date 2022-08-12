@@ -1,11 +1,10 @@
 #include "misc/Cgdi.h"
 
-
 //--------------------------- Instance ----------------------------------------
 //
 //   this class is a singleton
 //-----------------------------------------------------------------------------
-Cgdi* Cgdi::Instance()
+Cgdi * Cgdi::Instance()
 {
   static Cgdi instance;
   return &instance;
@@ -24,7 +23,7 @@ Cgdi::Cgdi()
   m_OrangePen = CreatePen(PS_SOLID, 1, colors[orange]);
   m_PurplePen = CreatePen(PS_SOLID, 1, colors[purple]);
   m_BrownPen = CreatePen(PS_SOLID, 1, colors[brown]);
-  
+
   m_DarkGreenPen = CreatePen(PS_SOLID, 1, colors[dark_green]);
 
   m_LightBluePen = CreatePen(PS_SOLID, 1, colors[light_blue]);
@@ -38,12 +37,12 @@ Cgdi::Cgdi()
   m_ThickBluePen = CreatePen(PS_SOLID, 2, colors[blue]);
 
   m_GreenBrush = CreateSolidBrush(colors[green]);
-  m_RedBrush   = CreateSolidBrush(colors[red]);
-  m_BlueBrush  = CreateSolidBrush(colors[blue]);
-  m_GreyBrush  = CreateSolidBrush(colors[grey]);
+  m_RedBrush = CreateSolidBrush(colors[red]);
+  m_BlueBrush = CreateSolidBrush(colors[blue]);
+  m_GreyBrush = CreateSolidBrush(colors[grey]);
   m_BrownBrush = CreateSolidBrush(colors[brown]);
   m_YellowBrush = CreateSolidBrush(colors[yellow]);
-  m_LightBlueBrush = CreateSolidBrush(RGB(0,255,255));
+  m_LightBlueBrush = CreateSolidBrush(RGB(0, 255, 255));
   m_DarkGreenBrush = CreateSolidBrush(colors[dark_green]);
   m_OrangeBrush = CreateSolidBrush(colors[orange]);
 
@@ -64,13 +63,13 @@ Cgdi::~Cgdi()
   DeleteObject(m_PurplePen);
   DeleteObject(m_BrownPen);
   DeleteObject(m_OldPen);
-  
+
   DeleteObject(m_DarkGreenPen);
 
   DeleteObject(m_LightBluePen);
   DeleteObject(m_LightGreyPen);
   DeleteObject(m_LightPinkPen);
-  
+
   DeleteObject(m_ThickBlackPen);
   DeleteObject(m_ThickWhitePen);
   DeleteObject(m_ThickRedPen);
@@ -87,6 +86,4 @@ Cgdi::~Cgdi()
   DeleteObject(m_YellowBrush);
   DeleteObject(m_DarkGreenBrush);
   DeleteObject(m_OrangeBrush);
-
 }
-

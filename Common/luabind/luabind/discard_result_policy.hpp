@@ -20,47 +20,52 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_DISCARD_RESULT_POLICY_HPP_INCLUDED
 #define LUABIND_DISCARD_RESULT_POLICY_HPP_INCLUDED
 
 #include <luabind/config.hpp>
 #include <luabind/detail/policy.hpp>
 
-namespace luabind { namespace detail 
+namespace luabind
 {
-	struct discard_converter
-	{
-		template<class T>
-		void apply(lua_State*, T) {}
-	};
+namespace detail
+{
+struct discard_converter
+{
+  template <class T>
+  void apply(lua_State *, T)
+  {
+  }
+};
 
-	struct discard_result_policy : conversion_policy<0>
-	{
-		static void precall(lua_State*, const index_map&) {}
-		static void postcall(lua_State*, const index_map&) {}
+struct discard_result_policy : conversion_policy<0>
+{
+  static void precall(lua_State *, const index_map &) {}
+  static void postcall(lua_State *, const index_map &) {}
 
-		struct can_only_convert_from_cpp_to_lua {};
+  struct can_only_convert_from_cpp_to_lua
+  {
+  };
 
-		template<class T, class Direction>
-		struct generate_converter
-		{
-			typedef typename boost::mpl::if_<boost::is_same<Direction, cpp_to_lua>
-				, discard_converter
-				, can_only_convert_from_cpp_to_lua
-			>::type type;
-		};
-	};
+  template <class T, class Direction>
+  struct generate_converter
+  {
+    typedef typename boost::mpl::if_<
+      boost::is_same<Direction, cpp_to_lua>, discard_converter,
+      can_only_convert_from_cpp_to_lua>::type type;
+  };
+};
 
-}}
+}  // namespace detail
+}  // namespace luabind
 
 namespace luabind
 {
-	namespace 
-	{
-		LUABIND_ANONYMOUS_FIX detail::policy_cons<detail::discard_result_policy, detail::null_type> discard_result;
-	}
+namespace
+{
+LUABIND_ANONYMOUS_FIX detail::policy_cons<detail::discard_result_policy, detail::null_type>
+  discard_result;
 }
+}  // namespace luabind
 
-#endif // LUABIND_DISCARD_RESULT_POLICY_HPP_INCLUDED
-
+#endif  // LUABIND_DISCARD_RESULT_POLICY_HPP_INCLUDED

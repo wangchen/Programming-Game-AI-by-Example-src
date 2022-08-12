@@ -5,7 +5,7 @@
 	"..\..\Common\Patterns\Singleton.h"\
 	".\Entity.h"\
 	".\EntityManager.h"\
-	
+
 
 .\main.cpp : \
 	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
@@ -23,7 +23,7 @@
 	".\MinerOwnedStates.h"\
 	".\MinersWife.h"\
 	".\MinersWifeOwnedStates.h"\
-	
+
 
 .\MessageDispatcher.cpp : \
 	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
@@ -36,7 +36,7 @@
 	".\Locations.h"\
 	".\MessageDispatcher.h"\
 	".\MessageTypes.h"\
-	
+
 
 .\MinerOwnedStates.cpp : \
 	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
@@ -52,7 +52,7 @@
 	".\MessageTypes.h"\
 	".\Miner.h"\
 	".\MinerOwnedStates.h"\
-	
+
 
 .\MinersWifeOwnedStates.cpp : \
 	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
@@ -71,4 +71,3 @@
 	".\MinerOwnedStates.h"\
 	".\MinersWife.h"\
 	".\MinersWifeOwnedStates.h"\
-	

@@ -128,8 +128,8 @@ LUALIB_API int   lua_dobuffer (lua_State *L, const char *buff, size_t sz,
 
 
 #define luaL_check_lstr 	luaL_checklstring
-#define luaL_opt_lstr 	luaL_optlstring 
-#define luaL_check_number 	luaL_checknumber 
+#define luaL_opt_lstr 	luaL_optlstring
+#define luaL_check_number 	luaL_checknumber
 #define luaL_opt_number	luaL_optnumber
 #define luaL_arg_check	luaL_argcheck
 #define luaL_check_string	luaL_checkstring
@@ -141,5 +141,3 @@ LUALIB_API int   lua_dobuffer (lua_State *L, const char *buff, size_t sz,
 
 
 #endif
-
-

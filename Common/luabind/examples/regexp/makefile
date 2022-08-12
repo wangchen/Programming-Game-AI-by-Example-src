@@ -7,4 +7,3 @@ regexp: regex_wrap.cpp
 
 clean:
 	rm -f regex_wrap.o
-

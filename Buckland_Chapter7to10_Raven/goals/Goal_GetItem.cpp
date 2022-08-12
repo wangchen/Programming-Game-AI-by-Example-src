@@ -1,38 +1,36 @@
 #include "Goal_GetItem.h"
-#include "../Raven_ObjectEnumerations.h"
+
 #include "../Raven_Bot.h"
+#include "../Raven_ObjectEnumerations.h"
 #include "../navigation/Raven_PathPlanner.h"
-
-#include "Messaging/Telegram.h"
 #include "..\Raven_Messages.h"
-
-#include "Goal_Wander.h"
 #include "Goal_FollowPath.h"
-
+#include "Goal_Wander.h"
+#include "Messaging/Telegram.h"
 
 int ItemTypeToGoalType(int gt)
 {
-  switch(gt)
-  {
-  case type_health:
+  switch (gt) {
+    case type_health:
 
-    return goal_get_health;
+      return goal_get_health;
 
-  case type_shotgun:
+    case type_shotgun:
 
-    return goal_get_shotgun;
+      return goal_get_shotgun;
 
-  case type_rail_gun:
+    case type_rail_gun:
 
-    return goal_get_railgun;
+      return goal_get_railgun;
 
-  case type_rocket_launcher:
+    case type_rocket_launcher:
 
-    return goal_get_rocket_launcher;
+      return goal_get_rocket_launcher;
 
-  default: throw std::runtime_error("Goal_GetItem cannot determine item type");
+    default:
+      throw std::runtime_error("Goal_GetItem cannot determine item type");
 
-  }//end switch
+  }  //end switch
 }
 
 //------------------------------- Activate ------------------------------------
@@ -40,16 +38,15 @@ int ItemTypeToGoalType(int gt)
 void Goal_GetItem::Activate()
 {
   m_iStatus = active;
-  
+
   m_pGiverTrigger = 0;
-  
+
   //request a path to the item
   m_pOwner->GetPathPlanner()->RequestPathToItem(m_iItemToGet);
 
   //the bot may have to wait a few update cycles before a path is calculated
   //so for appearances sake it just wanders
   AddSubgoal(new Goal_Wander(m_pOwner));
-
 }
 
 //-------------------------- Process ------------------------------------------
@@ -58,13 +55,11 @@ int Goal_GetItem::Process()
 {
   ActivateIfInactive();
 
-  if (hasItemBeenStolen())
-  {
+  if (hasItemBeenStolen()) {
     Terminate();
   }
 
-  else
-  {
+  else {
     //process the subgoals
     m_iStatus = ProcessSubgoals();
   }
@@ -73,37 +68,34 @@ int Goal_GetItem::Process()
 }
 //---------------------------- HandleMessage ----------------------------------
 //-----------------------------------------------------------------------------
-bool Goal_GetItem::HandleMessage(const Telegram& msg)
+bool Goal_GetItem::HandleMessage(const Telegram & msg)
 {
   //first, pass the message down the goal hierarchy
   bool bHandled = ForwardMessageToFrontMostSubgoal(msg);
 
   //if the msg was not handled, test to see if this goal can handle it
-  if (bHandled == false)
-  {
-    switch(msg.Msg)
-    {
-    case Msg_PathReady:
+  if (bHandled == false) {
+    switch (msg.Msg) {
+      case Msg_PathReady:
 
-      //clear any existing goals
-      RemoveAllSubgoals();
+        //clear any existing goals
+        RemoveAllSubgoals();
 
-      AddSubgoal(new Goal_FollowPath(m_pOwner,
-                                     m_pOwner->GetPathPlanner()->GetPath()));
+        AddSubgoal(new Goal_FollowPath(m_pOwner, m_pOwner->GetPathPlanner()->GetPath()));
 
-      //get the pointer to the item
-      m_pGiverTrigger = static_cast<Raven_Map::TriggerType*>(msg.ExtraInfo);
+        //get the pointer to the item
+        m_pGiverTrigger = static_cast<Raven_Map::TriggerType *>(msg.ExtraInfo);
 
-      return true; //msg handled
+        return true;  //msg handled
 
+      case Msg_NoPathAvailable:
 
-    case Msg_NoPathAvailable:
+        m_iStatus = failed;
 
-      m_iStatus = failed;
+        return true;  //msg handled
 
-      return true; //msg handled
-
-    default: return false;
+      default:
+        return false;
     }
   }
 
@@ -116,12 +108,10 @@ bool Goal_GetItem::HandleMessage(const Telegram& msg)
 //  returns true if the bot sees that the item it is heading for has been
 //  picked up by an opponent
 //-----------------------------------------------------------------------------
-bool Goal_GetItem::hasItemBeenStolen()const
+bool Goal_GetItem::hasItemBeenStolen() const
 {
-  if (m_pGiverTrigger &&
-      !m_pGiverTrigger->isActive() &&
-      m_pOwner->hasLOSto(m_pGiverTrigger->Pos()) )
-  {
+  if (
+    m_pGiverTrigger && !m_pGiverTrigger->isActive() && m_pOwner->hasLOSto(m_pGiverTrigger->Pos())) {
     return true;
   }
 

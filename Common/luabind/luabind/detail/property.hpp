@@ -20,134 +20,157 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_PROPERTY_HPP_INCLUDED
 #define LUABIND_PROPERTY_HPP_INCLUDED
 
 #include <luabind/config.hpp>
 
-namespace luabind { namespace detail
+namespace luabind
 {
-	class object_rep;
+namespace detail
+{
+class object_rep;
 
-	template<class R, class T, class Policies>
-	int get(R(T::*f)() const, T* obj, lua_State* L, Policies* policies)  { return returns<R>::call(f, obj, L, policies); }
+template <class R, class T, class Policies>
+int get(R (T::*f)() const, T * obj, lua_State * L, Policies * policies)
+{
+  return returns<R>::call(f, obj, L, policies);
+}
 
-	template<class R, class T, class Policies>
-	int get(R(*f)(const T*), T* obj, lua_State* L, Policies* policies) { return returns<R>::call(f, obj, L, policies); }
+template <class R, class T, class Policies>
+int get(R (*f)(const T *), T * obj, lua_State * L, Policies * policies)
+{
+  return returns<R>::call(f, obj, L, policies);
+}
 
-	template<class R, class T, class Policies>
-	int get(R(*f)(const T&), T* obj, lua_State* L, Policies* policies) { return returns<R>::call(f, obj, L, policies); }
+template <class R, class T, class Policies>
+int get(R (*f)(const T &), T * obj, lua_State * L, Policies * policies)
+{
+  return returns<R>::call(f, obj, L, policies);
+}
 
-	template<class T, class F, class Policies>
-	struct get_caller : Policies
-	{
-		get_caller() {}
-		get_caller(const Policies& p): Policies(p) {}
+template <class T, class F, class Policies>
+struct get_caller : Policies
+{
+  get_caller() {}
+  get_caller(const Policies & p) : Policies(p) {}
 
-		int operator()(lua_State* L, int pointer_offset, F f)
-		{
-			// parameters on the lua stack:
-			// 1. object_rep
-			// 2. key (property name)
+  int operator()(lua_State * L, int pointer_offset, F f)
+  {
+    // parameters on the lua stack:
+    // 1. object_rep
+    // 2. key (property name)
 
-			object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, 1));
-			return get(f, reinterpret_cast<T*>(static_cast<char*>(obj->ptr()) + pointer_offset), L, static_cast<Policies*>(this));
-		}
-	};
+    object_rep * obj = static_cast<object_rep *>(lua_touserdata(L, 1));
+    return get(
+      f, reinterpret_cast<T *>(static_cast<char *>(obj->ptr()) + pointer_offset), L,
+      static_cast<Policies *>(this));
+  }
+};
 
-	template<class T, class A1, class Policies>
-	int set(void(T::*f)(A1), T* obj, lua_State* L, Policies* policies)  { return returns<void>::call(f, obj, L, policies); }
+template <class T, class A1, class Policies>
+int set(void (T::*f)(A1), T * obj, lua_State * L, Policies * policies)
+{
+  return returns<void>::call(f, obj, L, policies);
+}
 
-	template<class R, class T, class A1, class Policies>
-	int set(void(*f)(T*, A1), T* obj, lua_State* L, Policies* policies) { return returns<void>::call(f, obj, L, policies); }
+template <class R, class T, class A1, class Policies>
+int set(void (*f)(T *, A1), T * obj, lua_State * L, Policies * policies)
+{
+  return returns<void>::call(f, obj, L, policies);
+}
 
-	template<class T, class A1, class Policies>
-	int set(void(*f)(T&, A1), T* obj, lua_State* L, Policies* policies) { return returns<void>::call(f, obj, L, policies); }
+template <class T, class A1, class Policies>
+int set(void (*f)(T &, A1), T * obj, lua_State * L, Policies * policies)
+{
+  return returns<void>::call(f, obj, L, policies);
+}
 
-	template<class T, class F, class Policies>
-	struct set_caller : Policies
-	{
-		int operator()(lua_State* L, int pointer_offset, F f)
-		{
-			// parameters on the lua stack:
-			// 1. object_rep
-			// 2. key (property name)
-			// 3. value
+template <class T, class F, class Policies>
+struct set_caller : Policies
+{
+  int operator()(lua_State * L, int pointer_offset, F f)
+  {
+    // parameters on the lua stack:
+    // 1. object_rep
+    // 2. key (property name)
+    // 3. value
 
-			// and since call() expects it's first
-			// parameter on index 2 we need to
-			// remove the key-parameter (parameter 2).
-			object_rep* obj = reinterpret_cast<object_rep*>(lua_touserdata(L, 1));
-			lua_remove(L, 2);
-			return set(f, reinterpret_cast<T*>(static_cast<char*>(obj->ptr()) + pointer_offset), L, static_cast<Policies*>(this));
-		}
-	};
+    // and since call() expects it's first
+    // parameter on index 2 we need to
+    // remove the key-parameter (parameter 2).
+    object_rep * obj = reinterpret_cast<object_rep *>(lua_touserdata(L, 1));
+    lua_remove(L, 2);
+    return set(
+      f, reinterpret_cast<T *>(static_cast<char *>(obj->ptr()) + pointer_offset), L,
+      static_cast<Policies *>(this));
+  }
+};
 
-	// TODO: add support for policies
-	template<class T, class D, class Policies>
-	struct auto_set : Policies
-	{
-		auto_set() {}
-		auto_set(const Policies& p): Policies(p) {}
+// TODO: add support for policies
+template <class T, class D, class Policies>
+struct auto_set : Policies
+{
+  auto_set() {}
+  auto_set(const Policies & p) : Policies(p) {}
 
-		int operator()(lua_State* L, int pointer_offset, D T::*member)
-		{
-			int nargs = lua_gettop(L);
+  int operator()(lua_State * L, int pointer_offset, D T::*member)
+  {
+    int nargs = lua_gettop(L);
 
-			// parameters on the lua stack:
-			// 1. object_rep
-			// 2. key (property name)
-			// 3. value
-			object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, 1));
-			T* ptr =  reinterpret_cast<T*>(static_cast<char*>(obj->ptr()) + pointer_offset);
+    // parameters on the lua stack:
+    // 1. object_rep
+    // 2. key (property name)
+    // 3. value
+    object_rep * obj = static_cast<object_rep *>(lua_touserdata(L, 1));
+    T * ptr = reinterpret_cast<T *>(static_cast<char *>(obj->ptr()) + pointer_offset);
 
-			typedef typename find_conversion_policy<1,Policies>::type converter_policy;
-			typename converter_policy::template generate_converter<D,lua_to_cpp>::type converter;
-			ptr->*member = converter.apply(L, LUABIND_DECORATE_TYPE(D), 3);
+    typedef typename find_conversion_policy<1, Policies>::type converter_policy;
+    typename converter_policy::template generate_converter<D, lua_to_cpp>::type converter;
+    ptr->*member = converter.apply(L, LUABIND_DECORATE_TYPE(D), 3);
 
-			int nret = lua_gettop(L) - nargs;
+    int nret = lua_gettop(L) - nargs;
 
-			const int indices[] = { 1, nargs + nret, 3 };
+    const int indices[] = {1, nargs + nret, 3};
 
-			policy_list_postcall<Policies>::apply(L, indices);
+    policy_list_postcall<Policies>::apply(L, indices);
 
-			return nret;
-		}
-	};
+    return nret;
+  }
+};
 
-	// TODO: add support for policies
-	template<class T, class D, class Policies>
-	struct auto_get : Policies
-	{
-		auto_get() {}
-		auto_get(const Policies& p): Policies(p) {}
+// TODO: add support for policies
+template <class T, class D, class Policies>
+struct auto_get : Policies
+{
+  auto_get() {}
+  auto_get(const Policies & p) : Policies(p) {}
 
-		int operator()(lua_State* L, int pointer_offset, D T::*member)
-		{
-			int nargs = lua_gettop(L);
+  int operator()(lua_State * L, int pointer_offset, D T::*member)
+  {
+    int nargs = lua_gettop(L);
 
-			// parameters on the lua stack:
-			// 1. object_rep
-			// 2. key (property name)
-			object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, 1));
-			T* ptr =  reinterpret_cast<T*>(static_cast<char*>(obj->ptr()) + pointer_offset);
+    // parameters on the lua stack:
+    // 1. object_rep
+    // 2. key (property name)
+    object_rep * obj = static_cast<object_rep *>(lua_touserdata(L, 1));
+    T * ptr = reinterpret_cast<T *>(static_cast<char *>(obj->ptr()) + pointer_offset);
 
-			typedef typename find_conversion_policy<0,Policies>::type converter_policy;
-			typename converter_policy::template generate_converter<D,cpp_to_lua>::type converter;
-			converter.apply(L, ptr->*member);
+    typedef typename find_conversion_policy<0, Policies>::type converter_policy;
+    typename converter_policy::template generate_converter<D, cpp_to_lua>::type converter;
+    converter.apply(L, ptr->*member);
 
-			int nret = lua_gettop(L) - nargs;
+    int nret = lua_gettop(L) - nargs;
 
-			const int indices[] = { 1, nargs + nret };
+    const int indices[] = {1, nargs + nret};
 
-			policy_list_postcall<Policies>::apply(L, indices);
+    policy_list_postcall<Policies>::apply(L, indices);
 
-			return nret;
-		}
-	};
+    return nret;
+  }
+};
 
-}}
+}  // namespace detail
+}  // namespace luabind
 
-#endif // LUABIND_PROPERTY_HPP_INCLUDED
-
+#endif  // LUABIND_PROPERTY_HPP_INCLUDED

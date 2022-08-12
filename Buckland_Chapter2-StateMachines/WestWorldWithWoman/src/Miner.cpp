@@ -1,6 +1,5 @@
 #include "Miner.h"
 
-
 //-----------------------------------------------------------------------------
 void Miner::Update()
 {
@@ -26,19 +25,19 @@ void Miner::AddToWealth(const int val)
 }
 
 //-----------------------------------------------------------------------------
-bool Miner::Thirsty()const
+bool Miner::Thirsty() const
 {
-  if (m_iThirst >= ThirstLevel){return true;}
+  if (m_iThirst >= ThirstLevel) {
+    return true;
+  }
 
   return false;
 }
 
-
 //-----------------------------------------------------------------------------
-bool Miner::Fatigued()const
+bool Miner::Fatigued() const
 {
-  if (m_iFatigue > TirednessThreshold)
-  {
+  if (m_iFatigue > TirednessThreshold) {
     return true;
   }
 

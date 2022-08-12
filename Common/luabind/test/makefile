@@ -40,4 +40,3 @@ relink:
 
 clean:
 	rm -f $(OBJECTS) $(TARGET) core
-

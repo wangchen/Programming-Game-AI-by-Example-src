@@ -1,21 +1,15 @@
 #include "Miner.h"
 
-bool Miner::HandleMessage(const Telegram& msg)
-{
-  return m_pStateMachine->HandleMessage(msg);
-}
-
+bool Miner::HandleMessage(const Telegram & msg) { return m_pStateMachine->HandleMessage(msg); }
 
 void Miner::Update()
 {
-  SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
+  SetTextColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
 
   m_iThirst += 1;
-  
+
   m_pStateMachine->Update();
 }
-
-
 
 void Miner::AddToGoldCarried(const int val)
 {
@@ -31,17 +25,18 @@ void Miner::AddToWealth(const int val)
   if (m_iMoneyInBank < 0) m_iMoneyInBank = 0;
 }
 
-bool Miner::Thirsty()const
+bool Miner::Thirsty() const
 {
-  if (m_iThirst >= ThirstLevel){return true;}
+  if (m_iThirst >= ThirstLevel) {
+    return true;
+  }
 
   return false;
 }
 
-bool Miner::Fatigued()const
+bool Miner::Fatigued() const
 {
-  if (m_iFatigue > TirednessThreshold)
-  {
+  if (m_iFatigue > TirednessThreshold) {
     return true;
   }
 

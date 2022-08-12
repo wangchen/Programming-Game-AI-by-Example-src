@@ -1,7 +1,3 @@
 #include "MinersWife.h"
 
-
-void MinersWife::Update()
-{
-  m_pStateMachine->Update();
-}
+void MinersWife::Update() { m_pStateMachine->Update(); }

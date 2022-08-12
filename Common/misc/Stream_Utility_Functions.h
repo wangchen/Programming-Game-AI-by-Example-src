@@ -8,17 +8,16 @@
 //
 //  Desc:   various useful functions that operate on or with streams
 //-----------------------------------------------------------------------------
+#include <iomanip>
 #include <sstream>
 #include <string>
-#include <iomanip>
-
 
 //------------------------------ ttos -----------------------------------------
 //
 //  convert a type to a string
 //-----------------------------------------------------------------------------
 template <class T>
-inline std::string ttos(const T& t, int precision = 2)
+inline std::string ttos(const T & t, int precision = 2)
 {
   std::ostringstream buffer;
 
@@ -42,20 +41,18 @@ inline std::string btos(bool b)
 //  grabs a value of the specified type from an input stream
 //-----------------------------------------------------------------------------
 template <typename T>
-inline T GetValueFromStream(std::ifstream& stream)
+inline T GetValueFromStream(std::ifstream & stream)
 {
   T val;
 
   stream >> val;
 
   //make sure it was the correct type
-  if (!stream)
-  {
+  if (!stream) {
     throw std::runtime_error("Attempting to retrieve wrong type from stream");
   }
 
   return val;
 }
-
 
 #endif

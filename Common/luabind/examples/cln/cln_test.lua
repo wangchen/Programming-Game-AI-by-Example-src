@@ -14,4 +14,3 @@ if c == b then print('equality operator test: ok') else print('equality operator
 -- a = fac(41) = 33452526613163807108170062053440751665152000000000
 -- b = fac(42) = 1405006117752879898543142606244511569936384000000000
 -- b / a = 42
-

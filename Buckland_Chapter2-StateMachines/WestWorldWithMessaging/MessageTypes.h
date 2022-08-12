@@ -3,28 +3,25 @@
 
 #include <string>
 
-enum message_type
-{
+enum message_type {
   Msg_HiHoneyImHome,
   Msg_StewReady,
 };
 
-
 inline std::string MsgToStr(int msg)
 {
-  switch (msg)
-  {
-  case 1:
-    
-    return "HiHoneyImHome"; 
+  switch (msg) {
+    case 1:
 
-  case 2:
-    
-    return "StewReady";
+      return "HiHoneyImHome";
 
-  default:
+    case 2:
 
-    return "Not recognized!";
+      return "StewReady";
+
+    default:
+
+      return "Not recognized!";
   }
 }
 

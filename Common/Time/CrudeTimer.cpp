@@ -1,7 +1,6 @@
 #include "CrudeTimer.h"
 
-
-CrudeTimer* CrudeTimer::Instance()
+CrudeTimer * CrudeTimer::Instance()
 {
   static CrudeTimer instance;
 

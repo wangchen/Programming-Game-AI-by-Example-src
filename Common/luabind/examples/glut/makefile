@@ -7,4 +7,3 @@ glut_test: glut_bind.cpp
 
 clean:
 	rm -f glut_bind.o
-

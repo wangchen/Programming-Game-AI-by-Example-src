@@ -14,10 +14,10 @@ simple_table = {name="Dan Dare", age=20};
 --a simple function to add two numbers
 
 function add(a,b)
-    
+
     return (a+b);
 
 end;
 
- 
+
 print("[lua]: Finished running script \"cpp_using_lua.lua\"");

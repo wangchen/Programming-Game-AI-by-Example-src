@@ -3,9 +3,7 @@
 
 #include <string>
 
-
-enum 
-{
+enum {
   type_wall,
   type_bot,
   type_unused,
@@ -21,74 +19,83 @@ enum
   type_door_trigger
 };
 
-
-
 inline std::string GetNameOfType(int w)
 {
   std::string s;
-  
-  switch (w)
-  {
-  case type_wall:
-    
-    s = "Wall"; break; 
-    
-  case type_waypoint:
-    
-    s = "Waypoint"; break;
 
-  case type_obstacle:
-    
-    s = "Obstacle"; break;
+  switch (w) {
+    case type_wall:
 
-  case type_health:
-    
-    s = "Health"; break;
+      s = "Wall";
+      break;
 
-  case type_spawn_point:
-    
-    s = "Spawn Point"; break;
+    case type_waypoint:
 
-  case type_rail_gun:
-    
-    s = "Railgun"; break;
+      s = "Waypoint";
+      break;
 
-  case type_blaster:
-    
-    s = "Blaster"; break;
+    case type_obstacle:
 
-  case type_rocket_launcher:
-    
-    s =  "rocket_launcher"; break;
+      s = "Obstacle";
+      break;
 
-  case type_shotgun:
-    
-    s =  "shotgun"; break;
+    case type_health:
 
-  case type_unused:
-    
-    s =  "knife"; break;
+      s = "Health";
+      break;
 
-  case type_bot:
-    
-    s =  "bot"; break;
+    case type_spawn_point:
 
-  case type_sliding_door:
-    
-    s =  "sliding_door"; break;
-    
-  case type_door_trigger:
-    
-    s =  "door_trigger"; break;
+      s = "Spawn Point";
+      break;
 
-  default:
+    case type_rail_gun:
 
-    s = "UNKNOWN OBJECT TYPE"; break;
+      s = "Railgun";
+      break;
 
+    case type_blaster:
+
+      s = "Blaster";
+      break;
+
+    case type_rocket_launcher:
+
+      s = "rocket_launcher";
+      break;
+
+    case type_shotgun:
+
+      s = "shotgun";
+      break;
+
+    case type_unused:
+
+      s = "knife";
+      break;
+
+    case type_bot:
+
+      s = "bot";
+      break;
+
+    case type_sliding_door:
+
+      s = "sliding_door";
+      break;
+
+    case type_door_trigger:
+
+      s = "door_trigger";
+      break;
+
+    default:
+
+      s = "UNKNOWN OBJECT TYPE";
+      break;
   }
 
   return s;
 }
-
 
 #endif

@@ -7,4 +7,3 @@ any_converter: any_converter.cpp
 
 clean:
 	rm -f any_converter.o
-

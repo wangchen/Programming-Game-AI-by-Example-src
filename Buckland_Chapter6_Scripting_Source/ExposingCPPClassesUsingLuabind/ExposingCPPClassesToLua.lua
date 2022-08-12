@@ -15,4 +15,4 @@ MyPet = Pet("Scooter", "Meow", 4);
 
 print ("\n[Lua]: My pet is called "..MyPet:GetName());
 
-MyPet:Speak(); 
+MyPet:Speak();

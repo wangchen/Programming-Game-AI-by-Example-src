@@ -55,18 +55,18 @@ IDR_TOOLBAR1            BITMAP  DISCARDABLE     "toolbar1.bmp"
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE DISCARDABLE
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE DISCARDABLE
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE DISCARDABLE
 BEGIN
     "\r\n"
     "\0"
@@ -80,7 +80,7 @@ END
 // Menu
 //
 
-IDR_MENU1 MENU DISCARDABLE 
+IDR_MENU1 MENU DISCARDABLE
 BEGIN
     POPUP "File"
     BEGIN
@@ -133,7 +133,7 @@ BEGIN
             VALUE "FileDescription", "Pathfinder\0"
             VALUE "FileVersion", "1, 0, 0, 1\0"
             VALUE "InternalName", "Pathfinder\0"
-            VALUE "LegalCopyright", "Copyright © 2004\0"
+            VALUE "LegalCopyright", "Copyright ï¿½ 2004\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "Pathfinder.exe\0"
             VALUE "PrivateBuild", "\0"
@@ -156,7 +156,7 @@ END
 // String Table
 //
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE DISCARDABLE
 BEGIN
     ID_BUTTON_STOP          "End"
     ID_BUTTON_START         "Start of Path"
@@ -185,4 +185,3 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
-

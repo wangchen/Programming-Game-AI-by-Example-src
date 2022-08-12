@@ -4,4 +4,3 @@
 	"..\..\common\lua-5.0\include\lauxlib.h"\
 	"..\..\common\lua-5.0\include\lua.h"\
 	"..\..\common\lua-5.0\include\lualib.h"\
-	

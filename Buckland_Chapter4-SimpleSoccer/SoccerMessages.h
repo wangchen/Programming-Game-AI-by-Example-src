@@ -3,17 +3,9 @@
 
 #include <string>
 
-enum MessageType
-{
-  Msg_ReceiveBall,
-  Msg_PassToMe,
-  Msg_SupportAttacker,
-  Msg_GoHome,
-  Msg_Wait
-};
+enum MessageType { Msg_ReceiveBall, Msg_PassToMe, Msg_SupportAttacker, Msg_GoHome, Msg_Wait };
 
 //converts an enumerated value to a string
 inline std::string MessageToString(int msg);
-
 
 #endif

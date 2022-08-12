@@ -20,67 +20,90 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_OPERATOR_ID_HPP_INCLUDED
 #define LUABIND_OPERATOR_ID_HPP_INCLUDED
 
 #include <luabind/config.hpp>
 
-namespace luabind { namespace detail {
+namespace luabind
+{
+namespace detail
+{
 
-	enum operator_id
-	{
-		op_add = 0,
-		op_sub,
-		op_mul,
-		op_div,
-		op_pow,
-		op_lt,
-		op_le,
-		op_eq,
-		op_call,
-		op_unm,
-		op_tostring,
+enum operator_id {
+  op_add = 0,
+  op_sub,
+  op_mul,
+  op_div,
+  op_pow,
+  op_lt,
+  op_le,
+  op_eq,
+  op_call,
+  op_unm,
+  op_tostring,
 
-		number_of_operators
-	};
+  number_of_operators
+};
 
-	struct op_add_tag {};
-	struct op_sub_tag {};
-	struct op_mul_tag {};
-	struct op_div_tag {};
-	struct op_pow_tag {};
-	struct op_lt_tag {};
-	struct op_le_tag {};
-	struct op_eq_tag {};
-	struct op_call_tag {};
-	struct op_unm_tag {};
-	struct op_tostring_tag {};
+struct op_add_tag
+{
+};
+struct op_sub_tag
+{
+};
+struct op_mul_tag
+{
+};
+struct op_div_tag
+{
+};
+struct op_pow_tag
+{
+};
+struct op_lt_tag
+{
+};
+struct op_le_tag
+{
+};
+struct op_eq_tag
+{
+};
+struct op_call_tag
+{
+};
+struct op_unm_tag
+{
+};
+struct op_tostring_tag
+{
+};
 
-	inline const char* get_operator_name(int i)
-	{
-		static const char* a[number_of_operators] =
-			{"__add", "__sub", "__mul", "__div", "__pow", "__lt", "__le", "__eq", "__call", "__unm", "__tostring" };
-		return a[i];
-	}
+inline const char * get_operator_name(int i)
+{
+  static const char * a[number_of_operators] = {"__add",  "__sub", "__mul",     "__div",
+                                                "__pow",  "__lt",  "__le",      "__eq",
+                                                "__call", "__unm", "__tostring"};
+  return a[i];
+}
 
-	inline const char* get_operator_symbol(int i)
-	{
-		static const char* a[number_of_operators] =
-			{"+", "-", "*", "/", "^", "<", "<=", "==", "()", "- (unary)", "tostring" };
-		return a[i];
-	}
+inline const char * get_operator_symbol(int i)
+{
+  static const char * a[number_of_operators] = {"+",  "-",  "*",  "/",         "^",       "<",
+                                                "<=", "==", "()", "- (unary)", "tostring"};
+  return a[i];
+}
 
-	inline bool is_unary(int i)
-	{
-		// the reason why unary minus is not considered a unary operator here is
-		// that it always is given two parameters, where the second parameter always
-		// is nil.
-		return i == op_tostring;
-	}
+inline bool is_unary(int i)
+{
+  // the reason why unary minus is not considered a unary operator here is
+  // that it always is given two parameters, where the second parameter always
+  // is nil.
+  return i == op_tostring;
+}
 
+}  // namespace detail
+}  // namespace luabind
 
-}}
-
-#endif // LUABIND_OPERATOR_ID_HPP_INCLUDED
-
+#endif  // LUABIND_OPERATOR_ID_HPP_INCLUDED

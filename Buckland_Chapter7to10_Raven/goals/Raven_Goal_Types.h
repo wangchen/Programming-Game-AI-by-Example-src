@@ -2,10 +2,10 @@
 #define GOAL_ENUMERATIONS_H
 
 #include <string>
+
 #include "misc/TypeToString.h"
 
-enum
-{
+enum {
   goal_think,
   goal_explore,
   goal_arrive_at_position,
@@ -24,18 +24,16 @@ enum
   goal_strafe,
   goal_adjust_range,
   goal_say_phrase
-  
+
 };
 
 class GoalTypeToString : public TypeToString
 {
-
-  GoalTypeToString(){}
+  GoalTypeToString() {}
 
 public:
+  static GoalTypeToString * Instance();
 
-  static GoalTypeToString* Instance();
-  
   std::string Convert(int gt);
 };
 

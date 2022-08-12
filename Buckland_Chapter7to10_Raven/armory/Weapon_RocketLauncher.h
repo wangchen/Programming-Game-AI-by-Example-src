@@ -1,6 +1,6 @@
 #ifndef ROCKETLAUNCHER_H
 #define ROCKETLAUNCHER_H
-#pragma warning (disable:4786)
+#pragma warning(disable : 4786)
 //-----------------------------------------------------------------------------
 //
 //  Name:   RocketLauncher
@@ -11,20 +11,15 @@
 //-----------------------------------------------------------------------------
 #include "Raven_Weapon.h"
 
-
-
-class  Raven_Bot;
+class Raven_Bot;
 
 class RocketLauncher : public Raven_Weapon
 {
 private:
-
-  void     InitializeFuzzyModule();
+  void InitializeFuzzyModule();
 
 public:
-
-  RocketLauncher(Raven_Bot* owner);
-
+  RocketLauncher(Raven_Bot * owner);
 
   void Render();
 
@@ -32,7 +27,5 @@ public:
 
   double GetDesirability(double DistToTarget);
 };
-
-
 
 #endif

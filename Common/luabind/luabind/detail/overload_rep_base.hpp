@@ -25,32 +25,38 @@
 
 #include <luabind/config.hpp>
 
-namespace luabind { namespace detail
+namespace luabind
 {
-	// this class represents a specific overload of a member-function.
-	struct overload_rep_base
-	{
-		typedef int(*match_ptr)(lua_State*);
-		typedef void(*get_sig_ptr)(lua_State*, std::string&);
+namespace detail
+{
+// this class represents a specific overload of a member-function.
+struct overload_rep_base
+{
+  typedef int (*match_ptr)(lua_State *);
+  typedef void (*get_sig_ptr)(lua_State *, std::string &);
 
-		inline int match(lua_State* L, int num_params) const { if (num_params != m_arity) return -1; return m_match_fun(L); }
-		inline void set_match_fun(match_ptr f) { m_match_fun = f; }
+  inline int match(lua_State * L, int num_params) const
+  {
+    if (num_params != m_arity) return -1;
+    return m_match_fun(L);
+  }
+  inline void set_match_fun(match_ptr f) { m_match_fun = f; }
 
 #ifndef LUABIND_NO_ERROR_CHECKING
-		inline void get_signature(lua_State* L, std::string& s) const { m_get_signature_fun(L, s); }
-		inline void set_sig_fun(get_sig_ptr f) { m_get_signature_fun = f; }
+  inline void get_signature(lua_State * L, std::string & s) const { m_get_signature_fun(L, s); }
+  inline void set_sig_fun(get_sig_ptr f) { m_get_signature_fun = f; }
 #endif
 
-	protected:
-
+protected:
 #ifndef LUABIND_NO_ERROR_CHECKING
-		get_sig_ptr m_get_signature_fun;
+  get_sig_ptr m_get_signature_fun;
 #endif
 
-		match_ptr m_match_fun;
-		int m_arity;
-	};
+  match_ptr m_match_fun;
+  int m_arity;
+};
 
-}} // namespace luabind::detail
+}  // namespace detail
+}  // namespace luabind
 
-#endif // LUABIND_OVERLOAD_REP_BASE_HPP_INCLUDED
+#endif  // LUABIND_OVERLOAD_REP_BASE_HPP_INCLUDED

@@ -1,8 +1,7 @@
- extern "C"
-{
-  #include <lua.h>
-  #include <lualib.h>
-  #include <lauxlib.h>
+extern "C" {
+#include <lauxlib.h>
+#include <lua.h>
+#include <lualib.h>
 }
 
 //include the lua libraries. If your compiler doesn't support this pragma
@@ -15,7 +14,7 @@
 int main()
 {
   //create a lua state
-  lua_State* pL = lua_open();
+  lua_State * pL = lua_open();
 
   //enable access to the standard libraries
   luaopen_base(pL);
@@ -23,9 +22,8 @@ int main()
   luaopen_table(pL);
   luaopen_math(pL);
   luaopen_io(pL);
-  
-  if (int error = lua_dofile(pL, "your_first_lua_script.lua") != 0)
-  {
+
+  if (int error = lua_dofile(pL, "your_first_lua_script.lua") != 0) {
     std::cout << "\n[C++]: ERROR(" << error << "): Problem with lua script file!\n\n" << std::endl;
 
     return 0;

@@ -25,30 +25,32 @@
 
 #include <string>
 
-namespace luabind { namespace detail
+namespace luabind
+{
+namespace detail
 {
 
-	template<class It>
-	std::string get_overload_signatures(lua_State* L, It start, It end, std::string name)
-	{
-		std::string s;
-		for (; start != end; ++start)
-		{
-			s += name;
-			start->get_signature(L, s);
-			s += "\n";
-		}
-		return s;
-	}
-
+template <class It>
+std::string get_overload_signatures(lua_State * L, It start, It end, std::string name)
+{
+  std::string s;
+  for (; start != end; ++start) {
+    s += name;
+    start->get_signature(L, s);
+    s += "\n";
+  }
+  return s;
+}
 
 #ifndef LUABIND_NO_ERROR_CHECKING
 
-	std::string get_overload_signatures_candidates(lua_State* L, std::vector<const overload_rep_base*>::iterator start, std::vector<const overload_rep_base*>::iterator end, std::string name);
+std::string get_overload_signatures_candidates(
+  lua_State * L, std::vector<const overload_rep_base *>::iterator start,
+  std::vector<const overload_rep_base *>::iterator end, std::string name);
 
 #endif
 
-}}
+}  // namespace detail
+}  // namespace luabind
 
-#endif // LUABIND_GET_OVERLOAD_SIGNATURE_HPP_INCLUDED
-
+#endif  // LUABIND_GET_OVERLOAD_SIGNATURE_HPP_INCLUDED

@@ -9,24 +9,20 @@
 //  Desc:   singleton class to control a number of menu options
 //-----------------------------------------------------------------------------
 
-
 #define UserOptions Raven_UserOptions::Instance()
 
 class Raven_UserOptions
 {
 private:
-
   Raven_UserOptions();
 
   //copy ctor and assignment should be private
-  Raven_UserOptions(const Raven_UserOptions&);
-  Raven_UserOptions& operator=(const Raven_UserOptions&);
-
+  Raven_UserOptions(const Raven_UserOptions &);
+  Raven_UserOptions & operator=(const Raven_UserOptions &);
 
 public:
+  static Raven_UserOptions * Instance();
 
-  static Raven_UserOptions* Instance();
-  
   bool m_bShowGraph;
 
   bool m_bShowNodeIndices;
@@ -54,6 +50,5 @@ public:
 
   bool m_bShowScore;
 };
-
 
 #endif

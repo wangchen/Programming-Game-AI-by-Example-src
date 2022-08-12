@@ -15,8 +15,7 @@
 class TypeToString
 {
 public:
-
-  virtual std::string Convert(int enumeration)=0;
+  virtual std::string Convert(int enumeration) = 0;
 };
 
 #endif

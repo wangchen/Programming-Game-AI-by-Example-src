@@ -1,6 +1,6 @@
 #ifndef RAVEN_ATTACK_GOAL_EVALUATOR
 #define RAVEN_ATTACK_GOAL_EVALUATOR
-#pragma warning (disable:4786)
+#pragma warning(disable : 4786)
 //-----------------------------------------------------------------------------
 //
 //  Name:   AttackTargetGoal_Evaluator.h
@@ -11,23 +11,19 @@
 //         current target is
 //-----------------------------------------------------------------------------
 
-#include "Goal_Evaluator.h"
 #include "../Raven_Bot.h"
-
+#include "Goal_Evaluator.h"
 
 class AttackTargetGoal_Evaluator : public Goal_Evaluator
-{ 
+{
 public:
+  AttackTargetGoal_Evaluator(double bias) : Goal_Evaluator(bias) {}
 
-  AttackTargetGoal_Evaluator(double bias):Goal_Evaluator(bias){}
-  
-  double CalculateDesirability(Raven_Bot* pBot);
+  double CalculateDesirability(Raven_Bot * pBot);
 
-  void  SetGoal(Raven_Bot* pEnt);
+  void SetGoal(Raven_Bot * pEnt);
 
-  void RenderInfo(Vector2D Position, Raven_Bot* pBot);
+  void RenderInfo(Vector2D Position, Raven_Bot * pBot);
 };
-
-
 
 #endif

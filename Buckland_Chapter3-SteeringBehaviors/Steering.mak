@@ -2,28 +2,28 @@
 !IF "$(CFG)" == ""
 CFG=Steering - Win32 Debug
 !MESSAGE No configuration specified. Defaulting to Steering - Win32 Debug.
-!ENDIF 
+!ENDIF
 
 !IF "$(CFG)" != "Steering - Win32 Release" && "$(CFG)" != "Steering - Win32 Debug"
 !MESSAGE Invalid configuration "$(CFG)" specified.
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
-!MESSAGE 
+!MESSAGE
 !MESSAGE NMAKE /f "Steering.mak" CFG="Steering - Win32 Debug"
-!MESSAGE 
+!MESSAGE
 !MESSAGE Possible choices for configuration are:
-!MESSAGE 
+!MESSAGE
 !MESSAGE "Steering - Win32 Release" (based on "Win32 (x86) Application")
 !MESSAGE "Steering - Win32 Debug" (based on "Win32 (x86) Application")
-!MESSAGE 
+!MESSAGE
 !ERROR An invalid configuration is specified.
-!ENDIF 
+!ENDIF
 
 !IF "$(OS)" == "Windows_NT"
 NULL=
-!ELSE 
+!ELSE
 NULL=nul
-!ENDIF 
+!ENDIF
 
 CPP=cl.exe
 MTL=midl.exe
@@ -71,11 +71,11 @@ CLEAN :
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
 
-CPP_PROJ=/nologo /ML /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"$(INTDIR)\\" /Fp"$(INTDIR)\Steering.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
-MTL_PROJ=/nologo /D "NDEBUG" /mktyplib203 /win32 
-RSC_PROJ=/l 0x809 /fo"$(INTDIR)\Script1.res" /d "NDEBUG" 
+CPP_PROJ=/nologo /ML /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"$(INTDIR)\\" /Fp"$(INTDIR)\Steering.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c
+MTL_PROJ=/nologo /D "NDEBUG" /mktyplib203 /win32
+RSC_PROJ=/l 0x809 /fo"$(INTDIR)\Script1.res" /d "NDEBUG"
 BSC32=bscmake.exe
-BSC32_FLAGS=/nologo /o"$(OUTDIR)\Steering.bsc" 
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\Steering.bsc"
 BSC32_SBRS= \
 	"$(INTDIR)\GameWorld.sbr" \
 	"$(INTDIR)\main.sbr" \
@@ -95,7 +95,7 @@ BSC32_SBRS= \
 <<
 
 LINK32=link.exe
-LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"$(OUTDIR)\Steering.pdb" /machine:I386 /out:"$(OUTDIR)\Steering.exe" 
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"$(OUTDIR)\Steering.pdb" /machine:I386 /out:"$(OUTDIR)\Steering.exe"
 LINK32_OBJS= \
 	"$(INTDIR)\GameWorld.obj" \
 	"$(INTDIR)\main.obj" \
@@ -160,11 +160,11 @@ CLEAN :
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
 
-CPP_PROJ=/nologo /MLd /W3 /Gm /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"$(INTDIR)\\" /Fp"$(INTDIR)\Steering.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /GZ /c 
-MTL_PROJ=/nologo /D "_DEBUG" /mktyplib203 /win32 
-RSC_PROJ=/l 0x809 /fo"$(INTDIR)\Script1.res" /d "_DEBUG" 
+CPP_PROJ=/nologo /MLd /W3 /Gm /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"$(INTDIR)\\" /Fp"$(INTDIR)\Steering.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /GZ /c
+MTL_PROJ=/nologo /D "_DEBUG" /mktyplib203 /win32
+RSC_PROJ=/l 0x809 /fo"$(INTDIR)\Script1.res" /d "_DEBUG"
 BSC32=bscmake.exe
-BSC32_FLAGS=/nologo /o"$(OUTDIR)\Steering.bsc" 
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\Steering.bsc"
 BSC32_SBRS= \
 	"$(INTDIR)\GameWorld.sbr" \
 	"$(INTDIR)\main.sbr" \
@@ -184,7 +184,7 @@ BSC32_SBRS= \
 <<
 
 LINK32=link.exe
-LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"$(OUTDIR)\Steering.pdb" /debug /machine:I386 /out:"$(OUTDIR)\Steering.exe" /pdbtype:sept 
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"$(OUTDIR)\Steering.pdb" /debug /machine:I386 /out:"$(OUTDIR)\Steering.exe" /pdbtype:sept
 LINK32_OBJS= \
 	"$(INTDIR)\GameWorld.obj" \
 	"$(INTDIR)\main.obj" \
@@ -204,46 +204,46 @@ LINK32_OBJS= \
   $(LINK32_FLAGS) $(LINK32_OBJS)
 <<
 
-!ENDIF 
+!ENDIF
 
 .c{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .c{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 
 !IF "$(NO_EXTERNAL_DEPS)" != "1"
 !IF EXISTS("Steering.dep")
 !INCLUDE "Steering.dep"
-!ELSE 
+!ELSE
 !MESSAGE Warning: cannot find "Steering.dep"
-!ENDIF 
-!ENDIF 
+!ENDIF
+!ENDIF
 
 
 !IF "$(CFG)" == "Steering - Win32 Release" || "$(CFG)" == "Steering - Win32 Debug"
@@ -313,5 +313,4 @@ SOURCE=.\Vehicle.cpp
 
 
 
-!ENDIF 
-
+!ENDIF

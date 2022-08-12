@@ -20,4 +20,3 @@
 LUA_LIB_PATH = -L/usr/local/lib
 
 CXX = g++
-

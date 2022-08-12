@@ -22,7 +22,7 @@
 	"..\Common\utils.h"\
 	".\CController.h"\
 	".\constants.h"\
-	
+
 
 .\main.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -45,11 +45,11 @@
 	"..\Common\utils.h"\
 	".\CController.h"\
 	".\constants.h"\
-	
+
 
 .\toolbar.rc : \
 	".\toolbar1.bmp"\
-	
+
 
 ..\Common\source\DebugConsole.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -63,7 +63,7 @@
 	"..\Common\Debug\DebugConsole.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\Cgdi.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -76,7 +76,7 @@
 	"..\common\2d\vector2d.h"\
 	"..\Common\Cgdi.h"\
 	"..\Common\Patterns\Singleton.h"\
-	
+
 
 ..\Common\source\PrecisionTimer.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -87,7 +87,7 @@
 	"..\..\..\program files\microsoft sdk\include\tvout.h"\
 	"..\..\..\program files\microsoft sdk\include\winefs.h"\
 	"..\Common\Time\PrecisionTimer.h"\
-	
+
 
 ..\Common\source\AdjacencyGraph.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -104,7 +104,7 @@
 	"..\Common\Graph\GraphBase.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\GraphEditor.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -122,7 +122,7 @@
 	"..\Common\Graph\GraphEditor.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	
+
 
 ..\Common\source\HandyGraphFunctions.cpp : \
 	"..\..\..\program files\microsoft sdk\include\basetsd.h"\
@@ -139,4 +139,3 @@
 	"..\Common\Graph\HandyGraphFunctions.h"\
 	"..\Common\Patterns\Singleton.h"\
 	"..\Common\utils.h"\
-	

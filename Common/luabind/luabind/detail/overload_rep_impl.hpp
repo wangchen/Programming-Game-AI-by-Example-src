@@ -25,22 +25,25 @@
 
 #include <luabind/detail/overload_rep.hpp>
 
-namespace luabind { namespace detail
+namespace luabind
 {
-	inline int overload_rep::call(lua_State* L, const object_rep& o) const 
-	{ 
-		const class_rep* crep = o.crep();
+namespace detail
+{
+inline int overload_rep::call(lua_State * L, const object_rep & o) const
+{
+  const class_rep * crep = o.crep();
 
-		void* ptr;
-		
-		if (crep->has_holder())
-			ptr = crep->extractor()(o.ptr());
-		else
-			ptr = o.ptr();
+  void * ptr;
 
-		return call_fun(L, static_cast<char*>(ptr) + m_pointer_offset);
-	}
+  if (crep->has_holder())
+    ptr = crep->extractor()(o.ptr());
+  else
+    ptr = o.ptr();
 
-}} // namespace luabind::detail
+  return call_fun(L, static_cast<char *>(ptr) + m_pointer_offset);
+}
 
-#endif // LUABIND_OVERLOAD_REP_IMPL_HPP_INCLUDED
+}  // namespace detail
+}  // namespace luabind
+
+#endif  // LUABIND_OVERLOAD_REP_IMPL_HPP_INCLUDED

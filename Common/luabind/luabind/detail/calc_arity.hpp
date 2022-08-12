@@ -25,35 +25,39 @@
 #ifndef LUABIND_CALC_ARITY_HPP_INCLUDED
 #define LUABIND_CALC_ARITY_HPP_INCLUDED
 
-#define LUABIND_FIND_CONV(z,n,text) typedef typename find_conversion_policy<n + 1, Policies>::type p##n;
-#define LUABIND_CALC_ARITY(z,n,text) + BOOST_PP_CAT(p,n)::has_arg
+#define LUABIND_FIND_CONV(z, n, text) \
+  typedef typename find_conversion_policy<n + 1, Policies>::type p##n;
+#define LUABIND_CALC_ARITY(z, n, text) +BOOST_PP_CAT(p, n)::has_arg
 
-namespace luabind { namespace detail
+namespace luabind
 {
-	template<int N> struct calc_arity;
+namespace detail
+{
+template <int N>
+struct calc_arity;
 
-	#define BOOST_PP_ITERATION_PARAMS_1 (4, (0, LUABIND_MAX_ARITY, <luabind/detail/calc_arity.hpp>, 1))
-	#include BOOST_PP_ITERATE()
-}}
+#define BOOST_PP_ITERATION_PARAMS_1 \
+  (4, (0, LUABIND_MAX_ARITY, <luabind / detail / calc_arity.hpp>, 1))
+#include BOOST_PP_ITERATE()
+}  // namespace detail
+}  // namespace luabind
 
 #undef LUABIND_CALC_ARITY
 #undef LUABIND_FIND_CONV
 
+#endif  // LUABIND_CALC_ARITY_HPP_INCLUDED
 
-#endif // LUABIND_CALC_ARITY_HPP_INCLUDED
+#else  // BOOST_PP_ITERATE
 
-#else // BOOST_PP_ITERATE
-
-	template<>
-	struct calc_arity<BOOST_PP_ITERATION()>
-	{
-		template<BOOST_PP_ENUM_PARAMS(LUABIND_MAX_ARITY, class A), class Policies>
-		static int apply(constructor<BOOST_PP_ENUM_PARAMS(LUABIND_MAX_ARITY, A)>, Policies*)
-		{
-			BOOST_PP_REPEAT(BOOST_PP_ITERATION(), LUABIND_FIND_CONV, _)
-			return 0 BOOST_PP_REPEAT(BOOST_PP_ITERATION(), LUABIND_CALC_ARITY, _);
-		}
-	};
+template <>
+struct calc_arity<BOOST_PP_ITERATION()>
+{
+  template <BOOST_PP_ENUM_PARAMS(LUABIND_MAX_ARITY, class A), class Policies>
+  static int apply(constructor<BOOST_PP_ENUM_PARAMS(LUABIND_MAX_ARITY, A)>, Policies *)
+  {
+    BOOST_PP_REPEAT(BOOST_PP_ITERATION(), LUABIND_FIND_CONV, _)
+    return 0 BOOST_PP_REPEAT(BOOST_PP_ITERATION(), LUABIND_CALC_ARITY, _);
+  }
+};
 
 #endif
-

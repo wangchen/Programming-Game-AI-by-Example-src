@@ -1,17 +1,16 @@
 //include the libraries
 #pragma comment(lib, "lua.lib")
 #pragma comment(lib, "lualib.lib")
-#pragma warning (disable : 4786)
+#pragma warning(disable : 4786)
 
-extern "C"
-{
-  #include <lua.h>
-  #include <lualib.h>
-  #include <lauxlib.h>
+extern "C" {
+#include <lauxlib.h>
+#include <lua.h>
+#include <lualib.h>
 }
 
-#include <string>
 #include <iostream>
+#include <string>
 using namespace std;
 
 //include the luabind headers. Make sure you have the paths set correctly
@@ -20,75 +19,61 @@ using namespace std;
 using namespace luabind;
 
 #include "Entity.h"
-#include "Miner.h"
 #include "LuaHelperFunctions.h"
+#include "Miner.h"
 #include "ScriptedStateMachine.h"
 
-
-void RegisterScriptedStateMachineWithLua(lua_State* pLua)
+void RegisterScriptedStateMachineWithLua(lua_State * pLua)
 {
-  luabind::module(pLua)
-    [
-      class_<ScriptedStateMachine<Miner> >("ScriptedStateMachine")
-    
-        .def("ChangeState", &ScriptedStateMachine<Miner>::ChangeState)
-        .def("CurrentState", &ScriptedStateMachine<Miner>::CurrentState)
-        .def("SetCurrentState", &ScriptedStateMachine<Miner>::SetCurrentState)
-    ];  
+  luabind::module(pLua)[class_<ScriptedStateMachine<Miner> >("ScriptedStateMachine")
+
+                          .def("ChangeState", &ScriptedStateMachine<Miner>::ChangeState)
+                          .def("CurrentState", &ScriptedStateMachine<Miner>::CurrentState)
+                          .def("SetCurrentState", &ScriptedStateMachine<Miner>::SetCurrentState)];
 }
 
-
-void RegisterEntityWithLua(lua_State* pLua)
+void RegisterEntityWithLua(lua_State * pLua)
 {
-  module(pLua)
-    [
-      class_<Entity>("Entity")
+  module(pLua)[class_<Entity>("Entity")
 
-        .def("Name", &Entity::Name)
-        .def("ID", &Entity::ID)   
-    ];  
+                 .def("Name", &Entity::Name)
+                 .def("ID", &Entity::ID)];
 }
 
-
-void RegisterMinerWithLua(lua_State* pLua)
+void RegisterMinerWithLua(lua_State * pLua)
 {
-  module(pLua)
-    [   
-      class_<Miner, bases<Entity> >("Miner")
+  module(pLua)[class_<Miner, bases<Entity> >("Miner")
 
-        .def("GoldCarried", &Miner::GoldCarried)
-        .def("SetGoldCarried", &Miner::SetGoldCarried)
-        .def("AddToGoldCarried", &Miner::AddToGoldCarried)
-        .def("Fatigued", &Miner::Fatigued)
-        .def("DecreaseFatigue", &Miner::DecreaseFatigue)
-        .def("IncreaseFatigue", &Miner::IncreaseFatigue) 
-        .def("GetFSM", &Miner::GetFSM)
-    ];  
+                 .def("GoldCarried", &Miner::GoldCarried)
+                 .def("SetGoldCarried", &Miner::SetGoldCarried)
+                 .def("AddToGoldCarried", &Miner::AddToGoldCarried)
+                 .def("Fatigued", &Miner::Fatigued)
+                 .def("DecreaseFatigue", &Miner::DecreaseFatigue)
+                 .def("IncreaseFatigue", &Miner::IncreaseFatigue)
+                 .def("GetFSM", &Miner::GetFSM)];
 }
-
-
 
 int main()
 {
   //create a lua state
-  lua_State* pLua = lua_open();
+  lua_State * pLua = lua_open();
 
   LuaExceptionGuard guard(pLua);
 
   //open the libraries
   OpenLuaLibraries(pLua);
-  
+
   //open luabind
   open(pLua);
-  
+
   //bind the relevant classes to Lua
   RegisterEntityWithLua(pLua);
   RegisterScriptedStateMachineWithLua(pLua);
   RegisterMinerWithLua(pLua);
- 
+
   //load and run the script
   RunLuaScript(pLua, "StateMachineScript.lua");
-  
+
   //create a miner
   Miner bob("bob");
 
@@ -101,12 +86,9 @@ int main()
   bob.GetFSM()->SetCurrentState(states["State_GoHome"]);
 
   //run him through a few update cycles
-  for (int i=0; i<10; ++i)
-  {
+  for (int i = 0; i < 10; ++i) {
     bob.Update();
   }
 
   return 0;
 }
-
-

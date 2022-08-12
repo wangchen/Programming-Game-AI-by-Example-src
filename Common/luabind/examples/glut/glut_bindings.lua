@@ -76,4 +76,3 @@ start_time = glutGet(glut.ELAPSED_TIME)
 frames = 0
 
 glutMainLoop()
-

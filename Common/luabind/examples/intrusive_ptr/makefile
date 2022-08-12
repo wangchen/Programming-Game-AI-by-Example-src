@@ -7,4 +7,3 @@ intrusive_ptr: intrusive_ptr.cpp
 
 clean:
 	rm -f intrusive_ptr
-

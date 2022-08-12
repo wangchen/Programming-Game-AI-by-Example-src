@@ -1,62 +1,58 @@
 #include "Raven_Door.h"
-#include "Messaging/telegram.h"
-#include "misc/Stream_Utility_Functions.h"
+
 #include <algorithm>
-#include "Raven_Messages.h"
-#include "Raven_Map.h"
+
 #include "2d/wall2d.h"
+#include "Messaging/telegram.h"
+#include "Raven_Map.h"
+#include "Raven_Messages.h"
+#include "misc/Stream_Utility_Functions.h"
 
 //---------------------------- ctor -------------------------------------------
 //-----------------------------------------------------------------------------
-Raven_Door::Raven_Door(Raven_Map* pMap,
-                       std::ifstream& is):
+Raven_Door::Raven_Door(Raven_Map * pMap, std::ifstream & is)
+:
 
-                                  BaseGameEntity(GetValueFromStream<int>(is)),
-                                  m_Status(closed),
-                                  m_iNumTicksStayOpen(60)                   //MGC!
+  BaseGameEntity(GetValueFromStream<int>(is)),
+  m_Status(closed),
+  m_iNumTicksStayOpen(60)  //MGC!
 {
   Read(is);
 
-  m_vtoP2Norm =  Vec2DNormalize(m_vP2 - m_vP1);
+  m_vtoP2Norm = Vec2DNormalize(m_vP2 - m_vP1);
   m_dCurrentSize = m_dSize = Vec2DDistance(m_vP2, m_vP1);
 
   Vector2D perp = m_vtoP2Norm.Perp();
-  
+
   //create the walls that make up the door's geometry
-  m_pWall1 = pMap->AddWall(m_vP1+perp, m_vP2+perp);
-  m_pWall2 = pMap->AddWall(m_vP2-perp, m_vP1-perp);
+  m_pWall1 = pMap->AddWall(m_vP1 + perp, m_vP2 + perp);
+  m_pWall2 = pMap->AddWall(m_vP2 - perp, m_vP1 - perp);
 }
 
 //---------------------------- dtor -------------------------------------------
 //-----------------------------------------------------------------------------
-Raven_Door::~Raven_Door()
-{
-}
-
+Raven_Door::~Raven_Door() {}
 
 //--------------------------- Update ------------------------------------------
 void Raven_Door::Update()
 {
-  switch (m_Status)
-  {
-  case opening:
+  switch (m_Status) {
+    case opening:
 
-      Open(); break;
+      Open();
+      break;
 
-  case closing:
+    case closing:
 
-      Close(); break;
+      Close();
+      break;
 
-  case open:
-    {
-      if (m_iNumTicksCurrentlyOpen-- < 0)
-      {
+    case open: {
+      if (m_iNumTicksCurrentlyOpen-- < 0) {
         m_Status = closing;
       }
     }
   }
-
-
 }
 
 //---------------------------- ChangePosition ---------------------------------
@@ -75,16 +71,13 @@ void Raven_Door::ChangePosition(Vector2D newP1, Vector2D newP2)
 //---------------------------- Open -------------------------------------------
 void Raven_Door::Open()
 {
-  if (m_Status == opening)
-  {
-    if (m_dCurrentSize < 2)
-    {
+  if (m_Status == opening) {
+    if (m_dCurrentSize < 2) {
       m_Status = open;
 
       m_iNumTicksCurrentlyOpen = m_iNumTicksStayOpen;
 
       return;
-      
     }
 
     //reduce the current size
@@ -93,7 +86,6 @@ void Raven_Door::Open()
     Clamp(m_dCurrentSize, 0, m_dSize);
 
     ChangePosition(m_vP1, m_vP1 + m_vtoP2Norm * m_dCurrentSize);
-
   }
 }
 
@@ -101,13 +93,10 @@ void Raven_Door::Open()
 //-----------------------------------------------------------------------------
 void Raven_Door::Close()
 {
-  if (m_Status == closing)
-  {
-    if (m_dCurrentSize == m_dSize)
-    {
+  if (m_Status == closing) {
+    if (m_dCurrentSize == m_dSize) {
       m_Status = closed;
       return;
-      
     }
 
     //reduce the current size
@@ -116,7 +105,6 @@ void Raven_Door::Close()
     Clamp(m_dCurrentSize, 0, m_dSize);
 
     ChangePosition(m_vP1, m_vP1 + m_vtoP2Norm * m_dCurrentSize);
-
   }
 }
 
@@ -127,26 +115,22 @@ void Raven_Door::Close()
 void Raven_Door::AddSwitch(unsigned int id)
 {
   //only add the trigger if it isn't already present
-  if (std::find(m_Switches.begin(),
-                m_Switches.end(),
-                id) != m_Switches.end())
-  {
+  if (std::find(m_Switches.begin(), m_Switches.end(), id) != m_Switches.end()) {
     m_Switches.push_back(id);
   }
 }
 
-
 //----------------------------- Read -----------------------------------------
 //-----------------------------------------------------------------------------
-void Raven_Door::Read(std::ifstream&  os)
+void Raven_Door::Read(std::ifstream & os)
 {
   double x, y;
 
   //grab the hinge points
   os >> x >> y;
-  m_vP1 = Vector2D(x,y);
+  m_vP1 = Vector2D(x, y);
   os >> x >> y;
-  m_vP2 = Vector2D(x,y);
+  m_vP2 = Vector2D(x, y);
 
   //grab the number of triggers
   int num, trig;
@@ -154,8 +138,7 @@ void Raven_Door::Read(std::ifstream&  os)
   os >> num;
 
   //save the trigger IDs
-  for (int i=0; i<num; ++i)
-  {
+  for (int i = 0; i < num; ++i) {
     os >> trig;
 
     m_Switches.push_back(trig);
@@ -164,12 +147,10 @@ void Raven_Door::Read(std::ifstream&  os)
 
 //------------------------------- HandleMessage -------------------------------
 //-----------------------------------------------------------------------------
-bool Raven_Door::HandleMessage(const Telegram& msg)
+bool Raven_Door::HandleMessage(const Telegram & msg)
 {
-  if (msg.Msg == Msg_OpenSesame)
-  {
-    if (m_Status != open)
-    {
+  if (msg.Msg == Msg_OpenSesame) {
+    if (m_Status != open) {
       m_Status = opening;
     }
 
@@ -179,13 +160,10 @@ bool Raven_Door::HandleMessage(const Telegram& msg)
   return false;
 }
 
-
 //-------------------------------- Render -------------------------------------
 //-----------------------------------------------------------------------------
 void Raven_Door::Render()
 {
   gdi->ThickBluePen();
-  gdi->Line(m_vP1, m_vP2); 
+  gdi->Line(m_vP1, m_vP2);
 }
-
-

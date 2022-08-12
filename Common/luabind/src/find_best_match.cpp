@@ -20,49 +20,47 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-extern "C"
-{
-	#include "lua.h"
+extern "C" {
+#include "lua.h"
 }
 
 #include <luabind/luabind.hpp>
 
 using namespace luabind::detail;
 
-bool luabind::detail::find_best_match(lua_State* L, const overload_rep_base* start, int num_overloads, size_t orep_size, bool& ambiguous, int& min_match, int& match_index, int num_params)
+bool luabind::detail::find_best_match(
+  lua_State * L, const overload_rep_base * start, int num_overloads, size_t orep_size,
+  bool & ambiguous, int & min_match, int & match_index, int num_params)
 {
-	int min_but_one_match = std::numeric_limits<int>::max();
-	bool found = false;
+  int min_but_one_match = std::numeric_limits<int>::max();
+  bool found = false;
 
-	for (int index = 0; index < num_overloads; ++index)
-	{
-		int match_value = start->match(L, num_params);
-		reinterpret_cast<const char*&>(start) += orep_size;
+  for (int index = 0; index < num_overloads; ++index) {
+    int match_value = start->match(L, num_params);
+    reinterpret_cast<const char *&>(start) += orep_size;
 
-		if (match_value < 0) continue;
-		if (match_value < min_match)
-		{
-			found = true;
-			match_index = index;
-			min_but_one_match = min_match;
-			min_match = match_value;
-		}
-		else if (match_value < min_but_one_match)
-		{
-			min_but_one_match = match_value;
-		}
-	}
+    if (match_value < 0) continue;
+    if (match_value < min_match) {
+      found = true;
+      match_index = index;
+      min_but_one_match = min_match;
+      min_match = match_value;
+    } else if (match_value < min_but_one_match) {
+      min_but_one_match = match_value;
+    }
+  }
 
-	ambiguous = min_match == min_but_one_match && min_match < std::numeric_limits<int>::max();
-	return found;
+  ambiguous = min_match == min_but_one_match && min_match < std::numeric_limits<int>::max();
+  return found;
 }
 
-void luabind::detail::find_exact_match(lua_State* L, const overload_rep_base* start, int num_overloads, size_t orep_size, int cmp_match, int num_params, std::vector<const overload_rep_base*>& dest)
+void luabind::detail::find_exact_match(
+  lua_State * L, const overload_rep_base * start, int num_overloads, size_t orep_size,
+  int cmp_match, int num_params, std::vector<const overload_rep_base *> & dest)
 {
-	for (int i = 0; i < num_overloads; ++i)
-	{
-		int match_value = start->match(L, num_params);
-		if (match_value == cmp_match) dest.push_back(start);
-		reinterpret_cast<const char*&>(start) += orep_size;
-	}
+  for (int i = 0; i < num_overloads; ++i) {
+    int match_value = start->match(L, num_params);
+    if (match_value == cmp_match) dest.push_back(start);
+    reinterpret_cast<const char *&>(start) += orep_size;
+  }
 }

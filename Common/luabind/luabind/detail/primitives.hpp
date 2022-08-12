@@ -20,74 +20,106 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 #ifndef LUABIND_PRIMITIVES_HPP_INCLUDED
 #define LUABIND_PRIMITIVES_HPP_INCLUDED
 
 #include <algorithm>
-
 #include <luabind/config.hpp>
 
-namespace luabind { namespace detail
+namespace luabind
 {
-	template<class T>
-	struct identity
-	{
-		typedef T type;
-	};
+namespace detail
+{
+template <class T>
+struct identity
+{
+  typedef T type;
+};
 
-	template<class T>
-	struct type {};
+template <class T>
+struct type
+{
+};
 
-	struct null_type {};
+struct null_type
+{
+};
 
-	struct yes_t { char x; };
-	struct no_t { double x; };
+struct yes_t
+{
+  char x;
+};
+struct no_t
+{
+  double x;
+};
 
 /*	typedef char yes_t;
 	typedef double no_t;*/
 
-	struct lua_to_cpp {};
-	struct cpp_to_lua {};
+struct lua_to_cpp
+{
+};
+struct cpp_to_lua
+{
+};
 
-	template<class T> struct by_value {};
-	template<class T> struct by_reference {};
-	template<class T> struct by_const_reference {};
-	template<class T> struct by_pointer {};
-	template<class T> struct by_const_pointer {};
+template <class T>
+struct by_value
+{
+};
+template <class T>
+struct by_reference
+{
+};
+template <class T>
+struct by_const_reference
+{
+};
+template <class T>
+struct by_pointer
+{
+};
+template <class T>
+struct by_const_pointer
+{
+};
 
-	struct converter_policy_tag {};
+struct converter_policy_tag
+{
+};
 
-	struct ltstr
-	{
-		bool operator()(const char* s1, const char* s2) const { return std::strcmp(s1, s2) < 0; }
-	};
+struct ltstr
+{
+  bool operator()(const char * s1, const char * s2) const { return std::strcmp(s1, s2) < 0; }
+};
 
-	inline char* dup_string(const char* s)
-	{
-		std::size_t l = std::strlen(s);
-		char* c = new char[l+1];
-		std::copy(s, s+l+1, c);
-		return c;
-	}
+inline char * dup_string(const char * s)
+{
+  std::size_t l = std::strlen(s);
+  char * c = new char[l + 1];
+  std::copy(s, s + l + 1, c);
+  return c;
+}
 
-	template<int N>
-	struct aligned 
-	{
-		char storage[N];
-	};
+template <int N>
+struct aligned
+{
+  char storage[N];
+};
 
-	// returns the offset added to a Derived* when cast to a Base*
-	template<class Derived, class Base>
-	int ptr_offset(type<Derived>, type<Base>)
-	{
-		aligned<sizeof(Derived)> obj;
-		Derived* ptr = reinterpret_cast<Derived*>(&obj);
+// returns the offset added to a Derived* when cast to a Base*
+template <class Derived, class Base>
+int ptr_offset(type<Derived>, type<Base>)
+{
+  aligned<sizeof(Derived)> obj;
+  Derived * ptr = reinterpret_cast<Derived *>(&obj);
 
-		return static_cast<char*>(static_cast<void*>(static_cast<Base*>(ptr)))
-		- static_cast<char*>(static_cast<void*>(ptr));
-	}
+  return static_cast<char *>(static_cast<void *>(static_cast<Base *>(ptr))) -
+         static_cast<char *>(static_cast<void *>(ptr));
+}
 
-}}
+}  // namespace detail
+}  // namespace luabind
 
-#endif // LUABIND_PRIMITIVES_HPP_INCLUDED
+#endif  // LUABIND_PRIMITIVES_HPP_INCLUDED
